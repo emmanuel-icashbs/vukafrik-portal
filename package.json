@@ -1,0 +1,44 @@
+{
+  "name": "evente",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.1",
+    "bootstrap": "^5.3.8",
+    "jarallax": "^2.2.1",
+    "next": "^16.0.10",
+    "nodemailer": "^7.0.11",
+    "react": "^19.2.3",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.2.3",
+    "react-intersection-observer": "^10.0.0",
+    "react-paginate": "^8.3.0",
+    "react-player": "^3.4.0",
+    "react-range": "^1.10.0",
+    "react-redux": "^9.2.0",
+    "react-responsive-modal": "^7.1.0",
+    "react-simple-star-rating": "^5.1.7",
+    "react-timer-hook": "^4.0.5",
+    "react-toastify": "^11.0.5",
+    "react-use": "^17.6.0",
+    "sass": "^1.96.0",
+    "swiper": "^12.0.3",
+    "yet-another-react-lightbox": "^3.27.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
+    "@types/node": "^20.19.27",
+    "@types/nodemailer": "^7.0.4",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^15.5.0",
+    "typescript": "^5.9.3"
+  }
+}
