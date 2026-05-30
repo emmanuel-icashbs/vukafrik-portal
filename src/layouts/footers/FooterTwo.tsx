@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 
 import bg_img from "@/assets/img/footer/bg.jpg"
-import logo from "@/assets/img/logo/logo-white.png"
+import logo from "@/assets/img/logo/vukafrik-white-gold-logo-optimized.png"
 import instagram_img1 from "@/assets/img/footer/insta/insta-1.jpg"
 import instagram_img2 from "@/assets/img/footer/insta/insta-2.jpg"
 import instagram_img3 from "@/assets/img/footer/insta/insta-3.jpg"

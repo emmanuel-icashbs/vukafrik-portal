@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import MobileMenus from "./MobileMenu";
 
-import logo from "@/assets/img/logo/logo-black.png"
+import logo from "@/assets/img/logo/vukafrik-black-gold-logo.png"
 
 interface MobileSidebarProps {
    sidebar: boolean;
