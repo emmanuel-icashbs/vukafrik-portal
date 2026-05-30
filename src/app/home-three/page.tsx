@@ -2,8 +2,9 @@ import HomeThree from "@/components/homes/home-three";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Home Three Evente - Conference and Event React Next js Template",
+  title: "VUK'AFRIK 2026 Programme Hub",
 };
+
 const page = () => {
   return (
     <Wrapper>

@@ -3,15 +3,13 @@ import Banner from "./Banner"
 import Countdown from "./Countdown"
 import Feature from "./Feature"
 import About from "./About"
-import Team from "./Team"
-import Pricing from "./Pricing"
 import FooterOne from "@/layouts/footers/FooterOne"
 import Event from "./Event"
+import Audience from "./Audience"
 import TextSlider from "../home-one/TextSlider"
 import Experience from "../home-one/Experience"
-import Testimonial from "./Testimonial"
-import Brand from "../home-two/Brand"
-import Blog from "./Blog"
+import Partners from "./Partners"
+import Venue from "./Venue"
 
 const HomeThree = () => {
    return (
@@ -24,12 +22,10 @@ const HomeThree = () => {
             <About />
             <Event />
             <TextSlider />
+            <Audience />
             <Experience />
-            <Team />
-            <Pricing />
-            <Testimonial />
-            <Brand />
-            <Blog />
+            <Partners />
+            <Venue />
          </main>
          <FooterOne />
       </>

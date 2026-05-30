@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import DealCounter from '@/components/common/DealCounter'
 
-import bg_img from "@/assets/img/feature/special-features.jpg"
+import { vukafrikCountdown } from "@/data/vukafrik-content"
 
 const Countdown = () => {
    return (
-      <div className="td-countdown-area bg-position" style={{ backgroundImage: `url(${bg_img.src})` }}>
+      <div className="td-countdown-area bg-position" style={{ backgroundImage: `url(${vukafrikCountdown.background.src})` }}>
          <div className="container">
             <div className="td-countdown-3-wrap p-relative z-index-1">
                <span className="td-countdown-3-shape d-none d-sm-block">
@@ -21,14 +21,14 @@ const Countdown = () => {
                <div className="row align-items-center">
                   <div className="col-xxl-4 col-xl-3 col-lg-5">
                      <div className="td-countdown-2-title mb-30">
-                        <h2 className="title text-white">Hurry Up!</h2>
-                        <span className="subtitle text-white">Book Your Seat Now</span>
+                        <h2 className="title text-white">{vukafrikCountdown.title}</h2>
+                        <span className="subtitle text-white">{vukafrikCountdown.subtitle}</span>
                      </div>
                   </div>
                   <div className="col-xxl-4 col-xl-5 col-lg-7">
                      <div className="td-hero-countdown mb-10">
                         <ul className="deal-counter ml0-md" id="timer">
-                           <DealCounter expiryTimestamp={new Date("2026-11-22T18:28:59")} />
+                           <DealCounter expiryTimestamp={vukafrikCountdown.expiryTimestamp} />
                         </ul>
                      </div>
                   </div>
@@ -41,8 +41,7 @@ const Countdown = () => {
                                  <path d="M23.3637 30.2727C27.1293 30.2727 30.1819 27.2201 30.1819 23.4545C30.1819 19.689 27.1293 16.6364 23.3637 16.6364C19.5981 16.6364 16.5455 19.689 16.5455 23.4545C16.5455 27.2201 19.5981 30.2727 23.3637 30.2727Z" stroke="white" strokeWidth="4.54545" strokeLinecap="round" strokeLinejoin="round" />
                               </svg>
                            </span>
-                           <Link className="td-countdown-3-location" href="https://www.google.com/maps" target="_blank">23rd Avenue, 4th Street,
-                              Chicago, Illinois, USA</Link>
+                           <Link className="td-countdown-3-location" href="/#venue">{vukafrikCountdown.locationLabel}</Link>
                         </div>
                      </div>
                   </div>

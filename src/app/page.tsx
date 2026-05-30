@@ -1,13 +1,14 @@
-import HomeOne from "@/components/homes/home-one";
+import HomeThree from "@/components/homes/home-three";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Evente - Conference and Event React Next js Template",
+  title: "VUK'AFRIK 2026 | Foire de l'Innovation et de l'Entrepreneuriat",
 };
+
 const page = () => {
   return (
     <Wrapper>
-      <HomeOne />
+      <HomeThree />
     </Wrapper>
   )
 }
