@@ -15,7 +15,6 @@ const DealCounter: React.FC<DealCounterProps> = ({ expiryTimestamp }) => {
 
    const { seconds, minutes, hours, days } = useTimer({
       expiryTimestamp,
-      onExpire: () => console.warn("Timer expired!"),
    });
 
    if (!mounted) {
@@ -25,16 +24,16 @@ const DealCounter: React.FC<DealCounterProps> = ({ expiryTimestamp }) => {
    return (
       <>
          <li className="list-inline-item days mb-20">
-            {days} <span>days</span>
+            {days} <span>jours</span>
          </li>
          <li className="list-inline-item hours mb-20">
-            {hours} <span>hrs</span>
+            {hours} <span>heures</span>
          </li>
          <li className="list-inline-item minutes mb-20">
-            {minutes} <span>mins</span>
+            {minutes} <span>minutes</span>
          </li>
          <li className="list-inline-item seconds mb-20">
-            {seconds} <span>secs</span>
+            {seconds} <span>secondes</span>
          </li>
       </>
    );

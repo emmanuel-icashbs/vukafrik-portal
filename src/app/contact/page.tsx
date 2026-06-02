@@ -1,15 +1,15 @@
-import Contact from "@/components/contact";
+import ContactPage from "@/components/vukafrik/pages/ContactPage";
 import Wrapper from "@/layouts/Wrapper";
+import { createVukafrikMetadata } from "@/lib/vukafrik-route";
 
-export const metadata = {
-  title: "Contact Evente - Conference and Event React Next js Template",
-};
+export const metadata = createVukafrikMetadata("/contact");
+
 const page = () => {
   return (
     <Wrapper>
-      <Contact />
+      <ContactPage />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default page
+export default page;

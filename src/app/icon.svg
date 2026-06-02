@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="vukaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00CFFF" />
+      <stop offset="100%" stop-color="#003CFF" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#050505" />
+  <path
+    d="M18 16 L28 48 L36 28 L44 48 L52 16"
+    fill="none"
+    stroke="url(#vukaGradient)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

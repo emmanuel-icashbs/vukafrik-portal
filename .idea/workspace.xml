@@ -1,4 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/faq/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/faq/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home-three/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-three/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/register/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/register/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/_mobile-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/_mobile-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/layout/_vukafrik-brand.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/layout/_vukafrik-brand.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/utils/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/utils/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/DealCounter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/DealCounter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-one/Experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-one/Experience.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Audience.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Countdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Countdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Event.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Event.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Feature.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Partners.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Partners.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Venue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Venue.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/vukafrik-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/vukafrik-content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/footers/FooterOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/footers/FooterOne.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/headers/HeaderThree.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/headers/HeaderThree.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/headers/menu/HeaderTopOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/headers/menu/HeaderTopOne.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/headers/menu/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/headers/menu/Sidebar.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;emmanuel-icashbs&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:emmanuel-icashbs/vukafrik-portal.git&quot;,
+    &quot;accountId&quot;: &quot;6892ef1c-5928-43ac-8230-f1ed0da11af6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3EUpc0QfLL1KdEES0oiHWrjIZSB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="vukafrik-portal" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="vukafrik-portal" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="vukafrik-portal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="vukafrik-portal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="" />
+      <created>1780243081624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780243081624</updated>
+      <workItem from="1780243083340" duration="611000" />
+      <workItem from="1780250241610" duration="717000" />
+      <workItem from="1780391484851" duration="819000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>
