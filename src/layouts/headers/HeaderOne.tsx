@@ -9,10 +9,9 @@ import Sidebar from './menu/Sidebar'
 import Searchbar from './menu/Searchbar'
 import HeaderCart from './menu/HeaderCart'
 import TotalCart from './menu/TotalCart'
-import { HEADER_LOGO_SIZE } from './headerLogoConfig'
 
-import logo_1 from "@/assets/img/logo/vukafrik-white-logo.png"
-import logo_2 from "@/assets/img/logo/vukafrik-black-gold-logo.png"
+import logo_1 from "@/assets/img/logo/logo-white.png"
+import logo_2 from "@/assets/img/logo/logo-black.png"
 
 const HeaderOne = () => {
 
@@ -31,8 +30,8 @@ const HeaderOne = () => {
                   <div className="col-xxl-9 col-xl-10 col-lg-10 col-6">
                      <div className="tdmenu__wrap d-flex align-items-center justify-content-between">
                         <div className="logo">
-                           <Link className="logo-1 logo-sticky-none" href="/"><Image src={logo_1} alt="Logo" width={HEADER_LOGO_SIZE.width} height={HEADER_LOGO_SIZE.height} /></Link>
-                           <Link className="logo-2 d-none" href="/"><Image src={logo_2} alt="Logo" width={HEADER_LOGO_SIZE.width} height={HEADER_LOGO_SIZE.height} /></Link>
+                           <Link className="logo-1 logo-sticky-none" href="/"><Image data-width="150" src={logo_1} alt="Logo" /></Link>
+                           <Link className="logo-2 d-none" href="/"><Image data-width="150" src={logo_2} alt="Logo" /></Link>
                         </div>
                         <nav className="tdmenu__nav ml-50 mr-50 d-none d-xl-flex">
                            <div className="tdmenu__navbar-wrap tdmenu__main-menu">

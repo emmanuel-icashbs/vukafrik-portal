@@ -1,6 +1,6 @@
 
 
-import bg_img from "@/assets/img/feature/feature.jpg"
+import bg_img from "@/assets/img/feature/special-features.jpg"
 
 interface DataType {
    id: number;
@@ -38,18 +38,8 @@ const feature_data: DataType[] = [
 
 const Feature = () => {
    return (
-      <div className="td-feature-area pt-140 pb-115 bg-position" style={{ backgroundImage: `url(${bg_img.src})` }}>
+      <div className="td-feature-area bg-position pt-120 pb-80" style={{ backgroundImage: `url(${bg_img.src})` }}>
          <div className="container">
-            <div className="row justify-content-center">
-               <div className="col-lg-8">
-                  <div className="td-feature-4-wrap text-center mb-50 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                     <span className="td-section-subtitle td-section-subtitle-2 mb-25">Event Information</span>
-                     <h2 className="td-section-title text-white mb-15">Why you should Join Our Event</h2>
-                     <p className="text-white">Like previous year this year we are arranging world marketing <br />
-                        summit 2025. Its the gathering of all the big</p>
-                  </div>
-               </div>
-            </div>
             <div className="row">
                {feature_data.map((item) => (
                   <div key={item.id} className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">

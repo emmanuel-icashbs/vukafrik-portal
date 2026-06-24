@@ -4,7 +4,10 @@ import { Autoplay } from 'swiper/modules';
 import Image from 'next/image'
 
 import arrow from "@/assets/img/text/round.png"
-import { vukafrikTextSlider } from "@/data/vukafrik-content";
+
+const slider_data: string[] = ["Business Conference", "Book Your Ticket", "Industry Lead Company", "Business Conference 2025", "Industry Lead Company",
+   "Business Conference", "Book Your Ticket", "Industry Lead Company", "Business Conference 2025", "Industry Lead Company",
+];
 
 const setting = {
    loop: true,
@@ -28,7 +31,7 @@ const TextSlider = () => {
                <Swiper {...setting} modules={[Autoplay]} onSwiper={(swiper) => {
                   swiper.wrapperEl.classList.add("slide-transition");
                }} className="swiper-container td-text-slider-active">
-                  {vukafrikTextSlider.map((item, i) => (
+                  {slider_data.map((item, i) => (
                      <SwiperSlide key={i} className="swiper-slide">
                         <div className="td-text-slider-item">
                            <h3 className="text">{item}</h3>

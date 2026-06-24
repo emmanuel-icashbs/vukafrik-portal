@@ -10,7 +10,7 @@ import HeaderCart from './menu/HeaderCart'
 import TotalCart from './menu/TotalCart'
 import HeaderTopTwo from './menu/HeaderTopTwo'
 
-import logo_1 from "@/assets/img/logo/vukafrik-black-gold-logo.png"
+import logo_1 from "@/assets/img/logo/logo-black.png"
 
 const HeaderSix = () => {
 

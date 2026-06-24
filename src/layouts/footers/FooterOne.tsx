@@ -1,104 +1,101 @@
-import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"
+import Image from "next/image"
 
-import logo from "@/assets/img/logo/vukafrik-white-gold-logo-optimized.png";
-import { vukafrikEvent, vukafrikFooter } from "@/data/vukafrik-content";
+import logo from "@/assets/img/logo/logo-white.png"
+import bg_img from "@/assets/img/footer/bg.jpg"
 
 const FooterOne = () => {
-  return (
-    <footer>
-      <div
-        className="td-footer-area td-footer-area--vukafrik bg-position"
-        style={{ backgroundImage: `url(${vukafrikFooter.background.src})` }}
-      >
-        <div className="td-footer-main td-footer-main--vukafrik pt-55 pb-50">
-          <div className="container">
-            <div className="row mb-10">
-              <div className="col-xl-4 col-lg-5 col-md-6">
-                <div className="td-footer-widget td-footer-4-widget td-footer-4-widget--brand mb-35">
-                  <div className="td-footer-logo mb-20">
-                    <Link href="/">
-                      <Image src={logo} alt={vukafrikEvent.name} />
-                    </Link>
+   return (
+      <footer>
+         <div className="td-footer-area bg-position pt-130" style={{ backgroundImage: `url(${bg_img.src})` }}>
+            <div className="container">
+               <div className="row mb-30">
+                  <div className="col-lg-3 col-md-5">
+                     <div className="td-footer-widget mb-40">
+                        <div className="td-footer-logo mb-20">
+                           <Link href="/"><Image src={logo} alt="logo" /></Link>
+                        </div>
+                        <p className="text mb-10">Middlest 2 East 42nd Streearketplace
+                           New York, NY 10017</p>
+                        <Link className="number mb-10 d-inline-block" href="tel:+123(55)90067990">+123(55) 90067990</Link>
+                        <Link className="email" href="mailto:info@gmail.com">info@gmail.com</Link>
+                     </div>
                   </div>
-                  <p className="text mb-0">{vukafrikFooter.blurb}</p>
-                </div>
-              </div>
-
-              <div className="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                <div className="td-footer-widget td-footer-4-widget mb-35">
-                  <h3 className="td-footer-title mb-18">Evenement</h3>
-                  <div className="td-footer-links">
-                    <ul>
-                      {vukafrikFooter.quickLinks.map((link) => (
-                        <li key={link.href}>
-                          <Link href={link.href}>{link.label}</Link>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="col-lg-5 col-md-7">
+                     <div className="td-footer-widget space ml-90 mb-40">
+                        <h3 className="td-footer-title mb-20">Quick links</h3>
+                        <div className="row">
+                           <div className="col-lg-6 col-md-6 col-sm-6">
+                              <div className="td-footer-links">
+                                 <ul>
+                                    <li><Link href="#">About this Event</Link></li>
+                                    <li><Link href="#">Venue</Link></li>
+                                    <li><Link href="#">Speakers</Link></li>
+                                    <li><Link href="#">Agenda</Link></li>
+                                    <li><Link href="#">Sponsors</Link></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div className="col-lg-6 col-md-6 col-sm-6">
+                              <div className="td-footer-links">
+                                 <ul>
+                                    <li><Link href="#">News</Link></li>
+                                    <li><Link href="#">Get Tickets</Link></li>
+                                    <li><Link href="#">Benefits</Link></li>
+                                    <li><Link href="#">Contact Us</Link></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div className="td-footer-widget td-footer-4-widget mb-35">
-                  <h3 className="td-footer-title mb-18">Participer</h3>
-                  <div className="td-footer-links">
-                    <ul>
-                      {vukafrikFooter.actionLinks.map((link) => (
-                        <li key={link.href}>
-                          <Link href={link.href}>{link.label}</Link>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="col-lg-4 col-md-6">
+                     <div className="td-footer-widget td-footer-subscribe mb-40">
+                        <h3 className="td-footer-title mb-20">Quick links</h3>
+                        <p className="text mb-0">Our expertise, as well as our passion for web
+                           design, sets us apart from other agencies.</p>
+                        <div className="td-footer-form p-relative">
+                           <input type="text" placeholder="E-mail Address" />
+                           <button type="submit" className="td-footer-form-btn">
+                              <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1.03931 8.9707H19.0393M19.0393 8.9707L12.0393 1.9707M19.0393 8.9707L12.0393 15.9707" stroke="#F248B4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="col-xl-3 col-lg-12 col-md-6">
-                <div className="td-footer-widget td-footer-4-widget mb-35">
-                  <h3 className="td-footer-title mb-18">Contact</h3>
-                  <div className="td-footer-links td-footer-links--contact">
-                    <ul>
-                      {vukafrikFooter.contactLinks.map((link) => (
-                        <li key={link.href}>
-                          <Link href={link.href}>{link.label}</Link>
-                        </li>
-                      ))}
-                    </ul>
+               </div>
+               <div className="row">
+                  <div className="col-12">
+                     <div className="td-footer-bottom pt-40 pb-15">
+                        <div className="row align-items-center">
+                           <div className="col-md-9">
+                              <div className="td-footer-bottom-copyright mb-30">
+                                 <p>Copyright © 2025 evente.com. All rights reserved.</p>
+                              </div>
+                           </div>
+                           <div className="col-md-3">
+                              <div className="td-footer-bottom-social text-right mb-30">
+                                 <span><Link href="#"><i className="fa-brands fa-linkedin"></i></Link></span>
+                                 <span><Link href="#"><i className="fa-brands fa-instagram"></i></Link></span>
+                                 <span>
+                                    <Link href="#">
+                                       <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16.3783 0.111328H19.3942L12.8054 7.64181L20.5565 17.8891H14.4875L9.73399 11.6742L4.2949 17.8891H1.27723L8.32453 9.83441L0.888855 0.111328H7.11199L11.4087 5.79201L16.3783 0.111328ZM15.3199 16.084H16.991L6.20396 1.82164H4.41068L15.3199 16.084Z" fill="currentColor" />
+                                       </svg>
+                                    </Link>
+                                 </span>
+                                 <span><Link href="#"><i className="fa-brands fa-whatsapp"></i></Link></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
+      </footer>
+   )
+}
 
-        <div className="td-footer-bottom-copyright td-footer-4-copyright td-footer-4-copyright--vukafrik">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-md-8">
-                <p className="mb-0">{vukafrikFooter.copyright}</p>
-              </div>
-              <div className="col-md-4">
-                <div className="td-footer-bottom-social text-md-right text-start mt-20 mt-md-0">
-                  {vukafrikEvent.socialLinks.map((item) => (
-                    <span key={item.label}>
-                      <Link
-                        href={item.href}
-                        target={item.href.startsWith("http") ? "_blank" : undefined}
-                      >
-                        <i className={item.icon}></i>
-                      </Link>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default FooterOne;
+export default FooterOne

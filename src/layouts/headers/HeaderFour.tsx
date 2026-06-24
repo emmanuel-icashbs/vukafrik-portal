@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Sidebar from './menu/Sidebar'
 import Searchbar from './menu/Searchbar'
 
-import logo_1 from "@/assets/img/logo/vukafrik-black-gold-logo.png"
+import logo_1 from "@/assets/img/logo/logo-black.png"
 
 const HeaderFour = () => {
 

@@ -1,66 +1,41 @@
-import type { Metadata, Viewport } from "next";
-import { Montserrat } from "next/font/google";
-
 import Providers from "@/layouts/Providers";
-import { createVukafrikMetadata, getVukafrikEventStructuredData } from "@/lib/vukafrik-route";
 import "../styles/index.scss";
+ import { Poppins, Unbounded } from 'next/font/google'
 
-const montserratBody = Montserrat({
-  weight: ["400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-  variable: "--td-ff-body",
+const poppins = Poppins({
+  weight: ['100','200','300','400', '500', '600', '700','800','900',],
+  subsets: ['latin'],
+  variable: '--td-ff-poppins',
 });
-
-const montserratUi = Montserrat({
-  weight: ["400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-  variable: "--td-ff-poppins",
+const unbounded = Unbounded({
+  weight: ['200', '400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  variable: '--td-ff-body',
 });
-
-export const metadata: Metadata = {
-  ...createVukafrikMetadata("/"),
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.congocs.org"),
-  applicationName: "VUK'AFRIK 2026",
-  keywords: [
-    "VUK'AFRIK 2026",
-    "innovation",
-    "entrepreneuriat",
-    "Kinshasa",
-    "Afrique",
-    "investissement",
-    "Congolese Computer Community",
-    "CCC",
-  ],
-  category: "event",
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  const isDev = process.env.NODE_ENV === "development";
+
+  const isDev = process.env.NODE_ENV === 'development'
 
   return (
-    <html lang="fr" suppressHydrationWarning={isDev}>
-      <body
-        className={`vukafrik-site ${montserratBody.variable} ${montserratUi.variable}`}
-        suppressHydrationWarning
-      >
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getVukafrikEventStructuredData()),
-          }}
-        />
-        <Providers>{children}</Providers>
+    <html lang="en" suppressHydrationWarning={isDev}>
+      <head>
+        <meta name="keywords" content="Evente - Conference and Event React Next js Template" />
+        <meta name="description" content="Evente - Conference and Event React Next js Template" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        {/* For IE  */}
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="icon" href="/favicon.png" sizes="any" />
+      </head>
+      <body className={`${poppins.variable} ${unbounded.variable}`} suppressHydrationWarning={true}>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
-  );
+  )
 }

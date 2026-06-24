@@ -1,15 +1,15 @@
 import HomeThree from "@/components/homes/home-three";
 import Wrapper from "@/layouts/Wrapper";
-import { createVukafrikMetadata } from "@/lib/vukafrik-route";
 
-export const metadata = createVukafrikMetadata("/");
-
+export const metadata = {
+  title: "Home Three Evente - Conference and Event React Next js Template",
+};
 const page = () => {
   return (
     <Wrapper>
       <HomeThree />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default page;
+export default page

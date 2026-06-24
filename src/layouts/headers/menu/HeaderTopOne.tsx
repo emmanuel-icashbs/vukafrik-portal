@@ -1,7 +1,5 @@
 import Link from 'next/link'
 
-import { vukafrikEvent } from "@/data/vukafrik-content";
-
 const HeaderTopOne = () => {
    return (
       <div className="td-header-3-top d-none d-lg-block">
@@ -9,17 +7,27 @@ const HeaderTopOne = () => {
             <div className="row">
                <div className="col-lg-6">
                   <div className="td-header-3-top-info">
-                     <span><Link href="/venue-travel"><i className="flaticon-gps"></i>{vukafrikEvent.venue}</Link></span>
+                     <span><Link href="#"><i className="flaticon-gps"></i>775 Rolling Green Rd, Australia</Link></span>
                      <span className="dvdr">/</span>
-                     <span><Link href="/program"><i className="flaticon-calendar"></i>{vukafrikEvent.dates}</Link></span>
+                     <span><Link href="#"><i className="flaticon-phone"></i>+1 (1234)-567-800</Link></span>
                   </div>
                </div>
                <div className="col-lg-6">
                   <div className="d-none d-lg-block">
                      <div className="td-header-3-top-social d-flex align-items-center justify-content-end">
-                        <span className="td-email"><Link href={`mailto:${vukafrikEvent.contacts.generalEmail}`}><i className="flaticon-mail"></i>{vukafrikEvent.contacts.generalEmail}</Link></span>
+                        <span className="td-email"><Link href="mailto:info@gmail.com"><i className="flaticon-mail"></i>info@gmail.com</Link></span>
                         <span className="dvdr">/</span>
-                        <span><Link href={vukafrikEvent.contacts.phoneHref}><i className="flaticon-request"></i>{vukafrikEvent.contacts.phoneLabel}</Link></span>
+                        <span><Link href="#"><i className="fa-brands fa-facebook"></i></Link></span>
+                        <span>
+                           <Link href="#">
+                              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M13.8679 1.60596H16.4382L10.8229 8.02398L17.4289 16.7575H12.2564L8.20515 11.4607L3.56956 16.7575H0.997689L7.00391 9.89267L0.666687 1.60596H5.97049L9.6325 6.44745L13.8679 1.60596ZM12.9658 15.219H14.3901L5.1966 3.06361H3.66824L12.9658 15.219Z" fill="currentColor" />
+                              </svg>
+                           </Link>
+                        </span>
+                        <span><Link href="#"><i className="fa-brands fa-linkedin"></i></Link></span>
+                        <span><Link href="#"><i className="fa-brands fa-instagram"></i></Link></span>
+                        <span><Link href="#"><i className="fa-brands fa-whatsapp"></i></Link></span>
                      </div>
                   </div>
                </div>

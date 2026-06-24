@@ -1,15 +1,15 @@
-import FaqPage from "@/components/vukafrik/pages/FaqPage";
+import Faq from "@/components/pages/faq";
 import Wrapper from "@/layouts/Wrapper";
-import { createVukafrikMetadata } from "@/lib/vukafrik-route";
 
-export const metadata = createVukafrikMetadata("/faq");
-
+export const metadata = {
+  title: "Faq Evente - Conference and Event React Next js Template",
+};
 const page = () => {
   return (
     <Wrapper>
-      <FaqPage />
+      <Faq />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default page;
+export default page

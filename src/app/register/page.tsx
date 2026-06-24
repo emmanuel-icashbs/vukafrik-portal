@@ -1,15 +1,15 @@
-import RegisterPage from "@/components/vukafrik/pages/RegisterPage";
+import Register from "@/components/pages/register";
 import Wrapper from "@/layouts/Wrapper";
-import { createVukafrikMetadata } from "@/lib/vukafrik-route";
 
-export const metadata = createVukafrikMetadata("/register");
-
+export const metadata = {
+  title: "Register Evente - Conference and Event React Next js Template",
+};
 const page = () => {
   return (
     <Wrapper>
-      <RegisterPage />
+      <Register />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default page;
+export default page
