@@ -66,7 +66,7 @@
   --td-common-white: #fff;
   --td-common-black: #141418;
   --td-common-black-2: #000;
-  --td-common-yellow: #FCCB0A;
+  --td-common-yellow: #fccb0a;
   --td-common-blue: #1b0166;
   --td-grey-1: #444;
   --td-grey-2: #a5a5b0;
@@ -172,12 +172,12 @@ textarea:focus {
   outline: 0;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=number],
-input[type=password],
-input[type=url],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
 textarea {
   outline: none;
   background-color: #fff;
@@ -190,48 +190,48 @@ textarea {
   padding-right: 26px;
   border: 1px solid #a2a9ac;
 }
-input[type=text]::-webkit-input-placeholder,
-input[type=email]::-webkit-input-placeholder,
-input[type=tel]::-webkit-input-placeholder,
-input[type=number]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder,
-input[type=url]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: var(--td-grey-1);
 }
-input[type=text]::-moz-placeholder,
-input[type=email]::-moz-placeholder,
-input[type=tel]::-moz-placeholder,
-input[type=number]::-moz-placeholder,
-input[type=password]::-moz-placeholder,
-input[type=url]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
 textarea::-moz-placeholder {
   color: var(--td-grey-1);
 }
-input[type=text]:-moz-placeholder,
-input[type=email]:-moz-placeholder,
-input[type=tel]:-moz-placeholder,
-input[type=number]:-moz-placeholder,
-input[type=password]:-moz-placeholder,
-input[type=url]:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="number"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+input[type="url"]:-moz-placeholder,
 textarea:-moz-placeholder {
   color: var(--td-grey-1);
 }
-input[type=text]:-ms-input-placeholder,
-input[type=email]:-ms-input-placeholder,
-input[type=tel]:-ms-input-placeholder,
-input[type=number]:-ms-input-placeholder,
-input[type=password]:-ms-input-placeholder,
-input[type=url]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: var(--td-grey-1);
 }
-input[type=text]::placeholder,
-input[type=email]::placeholder,
-input[type=tel]::placeholder,
-input[type=number]::placeholder,
-input[type=password]::placeholder,
-input[type=url]::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder,
+input[type="url"]::placeholder,
 textarea::placeholder {
   color: var(--td-grey-1);
 }
@@ -290,7 +290,7 @@ label {
   cursor: pointer;
 }
 
-input[type=color] {
+input[type="color"] {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -474,8 +474,12 @@ textarea {
 
 .underline-black {
   background-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
-  background-size: 0 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    0 2px,
+    0 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
   -webkit-transition: all 0.4s ease 0.3s 0s ease-out;
@@ -486,8 +490,12 @@ textarea {
 }
 .underline-black:hover {
   background-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
-  background-size: 0 2px, 100% 2px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    0 2px,
+    100% 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
   -webkit-transition: all 0.4s ease 0.3s 0s ease-out;
@@ -499,8 +507,12 @@ textarea {
 
 .underline-white {
   background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
-  background-size: 0 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    0 2px,
+    0 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
   -webkit-transition: all 0.4s ease 0.3s 0s ease-out;
@@ -511,8 +523,12 @@ textarea {
 }
 .underline-white:hover {
   background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
-  background-size: 0 2px, 100% 2px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    0 2px,
+    100% 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
   -webkit-transition: all 0.4s ease 0.3s 0s ease-out;
@@ -596,7 +612,16 @@ textarea {
 }
 .td-btn-square {
   object-fit: cover;
-  clip-path: polygon(0 0, 90% 0%, 100% 28%, 100% 80%, 100% 100%, 11% 100%, 0% 72%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 28%,
+    100% 80%,
+    100% 100%,
+    11% 100%,
+    0% 72%,
+    0% 20%
+  );
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
@@ -610,7 +635,16 @@ textarea {
 .td-btn-square-xl {
   padding: 22px 34px;
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
-  clip-path: polygon(0 0, 91% 0%, 100% 28%, 100% 80%, 100% 100%, 9% 100%, 0% 72%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    91% 0%,
+    100% 28%,
+    100% 80%,
+    100% 100%,
+    9% 100%,
+    0% 72%,
+    0% 20%
+  );
 }
 .td-btn-square:hover {
   background: var(--td-theme-primary);
@@ -658,8 +692,12 @@ textarea {
 .loader::after {
   content: "";
   grid-area: 1/1;
-  --c:no-repeat radial-gradient(farthest-side,#5033ff 92%,#0000);
-  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%, var(--c) 0 50%;
+  --c: no-repeat radial-gradient(farthest-side, #5033ff 92%, #0000);
+  background:
+    var(--c) 50% 0,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
+    var(--c) 0 50%;
   background-size: 12px 12px;
   animation: l12 1s infinite;
 }
@@ -888,7 +926,8 @@ textarea {
   padding-top: 210px;
   padding-bottom: 120px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-breadcrumb-spacing {
     padding-top: 130px;
     padding-bottom: 100px;
@@ -975,7 +1014,11 @@ textarea {
   height: 10px;
   width: 90%;
   opacity: 1;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
 }
 .scroll__top:hover {
   background: var(--td-theme-secondary);
@@ -997,7 +1040,11 @@ textarea {
   border-radius: 40px;
   padding: 6px 20px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-section-subtitle br {
     display: none;
   }
@@ -1021,12 +1068,17 @@ textarea {
   text-transform: capitalize;
   color: #141418;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-section-title br {
     display: none;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-section-title {
     font-size: 30px;
   }
@@ -1036,7 +1088,11 @@ textarea {
   font-size: 18px;
   line-height: 28px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-section-text br {
     display: none;
   }
@@ -1189,7 +1245,11 @@ textarea {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.tdmobile__menu .navigation li.menu-item-has-children .dropdown-btn .plus-line::after {
+.tdmobile__menu
+  .navigation
+  li.menu-item-has-children
+  .dropdown-btn
+  .plus-line::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1208,10 +1268,18 @@ textarea {
 .tdmobile__menu .navigation li.menu-item-has-children .dropdown-btn.open {
   background-color: var(--td-theme-primary);
 }
-.tdmobile__menu .navigation li.menu-item-has-children .dropdown-btn.open .plus-line {
+.tdmobile__menu
+  .navigation
+  li.menu-item-has-children
+  .dropdown-btn.open
+  .plus-line {
   background-color: var(--td-common-white);
 }
-.tdmobile__menu .navigation li.menu-item-has-children .dropdown-btn.open .plus-line::after {
+.tdmobile__menu
+  .navigation
+  li.menu-item-has-children
+  .dropdown-btn.open
+  .plus-line::after {
   display: none;
 }
 .tdmobile__menu .navigation li > a {
@@ -1427,7 +1495,9 @@ textarea {
 }
 
 .td-arrow-angle path {
-  transition: transform 0.38s cubic-bezier(0.37, 0.08, 0.02, 0.93), opacity 0.18s ease-out;
+  transition:
+    transform 0.38s cubic-bezier(0.37, 0.08, 0.02, 0.93),
+    opacity 0.18s ease-out;
 }
 
 .td-arrow-angle path:nth-of-type(1) {
@@ -1437,7 +1507,8 @@ textarea {
 }
 
 .td-arrow-angle path:nth-of-type(2) {
-  transform: translateX(calc(-1 * var(--qode-hover-move-x))) translateY(var(--qode-hover-move-y));
+  transform: translateX(calc(-1 * var(--qode-hover-move-x)))
+    translateY(var(--qode-hover-move-y));
   opacity: 0.5;
   transition-delay: 0s, 0s;
 }
@@ -1449,7 +1520,8 @@ textarea {
 }
 
 .td-left-right:hover .td-arrow-angle path:nth-of-type(1) {
-  transform: translateX(var(--qode-hover-move-x)) translateY(calc(-1 * var(--qode-hover-move-y)));
+  transform: translateX(var(--qode-hover-move-x))
+    translateY(calc(-1 * var(--qode-hover-move-y)));
   opacity: 0;
   transition-delay: 0s, 0s;
 }
@@ -1637,7 +1709,8 @@ textarea {
   }
 }
 .td-animetion-right {
-  animation: td-animetion-right 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  animation: td-animetion-right 1.3s forwards
+    cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
 }
 
@@ -1654,7 +1727,8 @@ textarea {
   }
 }
 .td-animetion-left {
-  animation: td-animetion-left 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  animation: td-animetion-left 1.3s forwards
+    cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
 }
 
@@ -1742,9 +1816,15 @@ textarea {
   -ms-transform: translateY(calc(-100% - 80px));
   -o-transform: translateY(calc(-100% - 80px));
   transform: translateY(calc(-100% - 80px));
-  -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  -moz-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  -moz-transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   transition-delay: 0.5s;
 }
 .search__popup.search-opened {
@@ -2107,8 +2187,12 @@ textarea {
   height: 100%;
   transform: translateX(calc(100% + 80px));
   background: var(--td-common-white) none repeat scroll 0 0;
-  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -moz-transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
+  transition:
+    transform 0.45s ease-in-out,
+    opacity 0.45s ease-in-out;
   z-index: 99991;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
@@ -2187,193 +2271,321 @@ textarea {
 /*=============================
 	13. spacing default responsive
 ===============================*/
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-170 {
     padding-top: 115px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-165 {
     padding-top: 110px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-160 {
     padding-top: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-155 {
     padding-top: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-150 {
     padding-top: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-145 {
     padding-top: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-140 {
     padding-top: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-135 {
     padding-top: 95px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-130 {
     padding-top: 90px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-125 {
     padding-top: 85px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-120 {
     padding-top: 80px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-115 {
     padding-top: 75px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-110 {
     padding-top: 70px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-105 {
     padding-top: 65px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pt-100 {
     padding-top: 60px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-170 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-165 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-160 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-155 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-150 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-145 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-140 {
     padding-bottom: 100px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-135 {
     padding-bottom: 95px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-130 {
     padding-bottom: 90px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-125 {
     padding-bottom: 85px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-120 {
     padding-bottom: 80px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-115 {
     padding-bottom: 75px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-110 {
     padding-bottom: 70px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-105 {
     padding-bottom: 65px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-100 {
     padding-bottom: 60px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-95 {
     padding-bottom: 55px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .pb-90 {
     padding-bottom: 50px;
   }
@@ -2385,7 +2597,7 @@ textarea {
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -2419,7 +2631,9 @@ textarea {
 .nice-select .current {
   font-size: 15px;
 }
-.nice-select:active, .nice-select.open, .nice-select:focus {
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
   border-color: var(--td-theme-primary);
 }
 .nice-select::after {
@@ -2509,8 +2723,12 @@ textarea {
   -webkit-transform: scale(0.75) translateY(-21px);
   -ms-transform: scale(0.75) translateY(-21px);
   transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-transition:
+    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
+  transition:
+    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
   z-index: 9;
   width: 100%;
 }
@@ -2588,7 +2806,11 @@ textarea {
 .td-about-item:hover .td-about-icon {
   color: var(--td-theme-primary);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-item {
     margin-left: 0;
   }
@@ -2600,8 +2822,8 @@ textarea {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #E9E9E9;
-  -webkit-text-strokeWidth: 2px;
+  -webkit-text-stroke-color: #e9e9e9;
+  -webkit-text-strokewidth: 2px;
   margin-bottom: 0;
   text-transform: uppercase;
   position: absolute;
@@ -2613,23 +2835,50 @@ textarea {
 }
 .td-about-2-thumb .thumb {
   margin-left: 124px;
-  clip-path: polygon(0 0, 84% 0%, 100% 15%, 100% 80%, 100% 100%, 15% 100%, 0% 84%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    84% 0%,
+    100% 15%,
+    100% 80%,
+    100% 100%,
+    15% 100%,
+    0% 84%,
+    0% 20%
+  );
   border-radius: 12px 110px 12px 110px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-2-thumb .thumb {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-2-thumb .thumb {
-    clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(
+      0 0,
+      80% 0%,
+      100% 20%,
+      100% 80%,
+      100% 100%,
+      20% 100%,
+      0% 80%,
+      0% 20%
+    );
   }
 }
 .td-about-2-content {
   margin-right: 85px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-2-content {
     margin-right: 0;
   }
@@ -2639,7 +2888,10 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-2-content-wrap {
     margin-left: 0;
   }
@@ -2648,7 +2900,10 @@ textarea {
   display: grid;
   grid-template-columns: auto auto;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-2-list ul {
     grid-template-columns: inherit;
   }
@@ -2675,7 +2930,9 @@ textarea {
   transform: translateY(2px);
   flex: 0 0 auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-3-content-wrap {
     margin-left: 0;
   }
@@ -2685,12 +2942,20 @@ textarea {
   font-size: 18px;
   color: var(--td-common-black);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-3-content-wrap .para-2 br {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-3-content-wrap .td-about-2-content {
     margin-right: 0;
   }
@@ -2724,7 +2989,8 @@ textarea {
   margin-left: 70px;
   margin-right: 70px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-3-clients .td-border {
     margin-left: 40px;
     margin-right: 40px;
@@ -2756,7 +3022,11 @@ textarea {
 .td-about-3-number .td-number a:hover {
   color: var(--td-theme-primary);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-3-thumb {
     margin-right: 0;
   }
@@ -2781,7 +3051,8 @@ textarea {
   z-index: 2;
   position: relative;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-4-thumb-wrap {
     margin-right: 0;
   }
@@ -2808,7 +3079,11 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-5-thumb .thumb-2 {
     width: 53%;
   }
@@ -2863,7 +3138,11 @@ textarea {
   line-height: 175%;
   text-transform: capitalize;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-6-content .para br {
     display: none;
   }
@@ -2884,7 +3163,10 @@ textarea {
     font-size: 35px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-6-tittle {
     font-size: 30px;
   }
@@ -2910,7 +3192,10 @@ textarea {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-about-7-thumb {
     margin-right: 0;
   }
@@ -2931,7 +3216,8 @@ textarea {
   top: 25%;
   left: 30%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 575px) {
   .td-about-7-video {
     left: 41%;
   }
@@ -3067,7 +3353,10 @@ textarea {
     padding: 0 12px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-header-6-main {
     padding: 20px 12px;
   }
@@ -3078,24 +3367,39 @@ textarea {
 .td-header-6-main .tdmenu__navbar-wrap > ul > li > a::before {
   bottom: 32px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-header-6-main .tdmenu-2 .tdmenu__navbar-wrap ul li a {
     margin: 0 13px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-header-6-main .tdmenu__nav {
     margin-left: 16px;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .header-mobile-spacing {
     padding: 20px 0px;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .tdmenu__nav {
     margin-right: 0;
   }
@@ -3215,7 +3519,8 @@ textarea {
   font-size: 14px;
   margin: 0;
 }
-.tdmenu__navbar-wrap > ul > li .sub-menu li:hover > a, .tdmenu__navbar-wrap > ul > li .sub-menu li.active > a {
+.tdmenu__navbar-wrap > ul > li .sub-menu li:hover > a,
+.tdmenu__navbar-wrap > ul > li .sub-menu li.active > a {
   color: var(--td-theme-secondary);
 }
 .tdmenu__navbar-wrap > ul > li .sub-menu li:hover > .sub-menu {
@@ -3228,7 +3533,8 @@ textarea {
   visibility: visible;
   transform: scale(1);
 }
-.tdmenu__navbar-wrap > ul > li.active > a, .tdmenu__navbar-wrap > ul > li:hover > a {
+.tdmenu__navbar-wrap > ul > li.active > a,
+.tdmenu__navbar-wrap > ul > li:hover > a {
   color: var(--td-theme-secondary) !important;
 }
 .tdmenu__main-menu li.menu-item-has-children .dropdown-btn {
@@ -3258,7 +3564,7 @@ textarea {
   display: flex;
   width: 535px;
   border-radius: 100px;
-  border: 1px solid #D3D2DF;
+  border: 1px solid #d3d2df;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tdmenu__search-form {
@@ -3311,7 +3617,7 @@ textarea {
   transform: translateY(-50%);
   width: 1px;
   height: 20px;
-  background: #BDBABB;
+  background: #bdbabb;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tdmenu__search-form .select-grp::after {
@@ -3361,10 +3667,10 @@ textarea {
   font-family: var(--td-heading-font-family);
 }
 .tdmenu__search-form input::placeholder {
-  color: #8D9DB5;
+  color: #8d9db5;
   font-size: 14px;
 }
-.tdmenu__search-form [type=submit] {
+.tdmenu__search-form [type="submit"] {
   position: absolute;
   display: -webkit-box;
   display: -moz-box;
@@ -3393,7 +3699,7 @@ textarea {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-.tdmenu__search-form [type=submit]:hover {
+.tdmenu__search-form [type="submit"]:hover {
   background: var(--td-theme-secondary);
   color: var(--td-heading-color);
 }
@@ -3434,10 +3740,10 @@ textarea {
   font-family: var(--td-heading-font-family);
 }
 .tdmenu__search-bar form input::placeholder {
-  color: #8D9DB5;
+  color: #8d9db5;
   font-size: 14px;
 }
-.tdmenu__search-bar form [type=submit] {
+.tdmenu__search-bar form [type="submit"] {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(-90deg);
@@ -3450,9 +3756,9 @@ textarea {
   padding: 0 0;
   background: transparent;
   font-size: 24px;
-  color: #8D9DB5;
+  color: #8d9db5;
 }
-.tdmenu__search-bar form [type=submit]:hover {
+.tdmenu__search-bar form [type="submit"]:hover {
   color: var(--td-theme-primary);
 }
 .tdmenu-offcanvas-open-btn {
@@ -3599,12 +3905,15 @@ textarea {
   width: 1190px;
   z-index: 2;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px) {
   .td-hero-text-shape {
     width: 900px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-text-shape {
     width: 100%;
   }
@@ -3612,12 +3921,17 @@ textarea {
 .td-hero-content {
   padding-top: 40px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-content {
     padding-left: 100px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-content {
     padding-left: 0;
     padding-top: 0;
@@ -3637,7 +3951,10 @@ textarea {
   text-transform: uppercase;
   color: var(--td-common-white);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-title {
     font-size: 50px;
   }
@@ -3687,7 +4004,8 @@ textarea {
   transform: translateY(-50%) rotate(-180deg);
   gap: 24px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-social {
     display: none !important;
   }
@@ -3723,7 +4041,10 @@ textarea {
     margin-left: -20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-thumb {
     margin-left: 0;
   }
@@ -3752,7 +4073,10 @@ textarea {
     margin-top: 110px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-2-spacing {
     margin-top: 75px;
   }
@@ -3799,7 +4123,12 @@ textarea {
   right: -50px;
   top: 260px;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-2-wrap .td-hero-social {
     right: 10px;
   }
@@ -3807,7 +4136,12 @@ textarea {
 .td-hero-2-wrap .td-hero-social span {
   color: var(--td-common-black);
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-2-wrap .td-hero-social span {
     color: var(--td-common-white);
   }
@@ -3815,7 +4149,14 @@ textarea {
 .td-hero-2-thumb {
   padding: 210px 30px 190px 130px;
   object-fit: cover;
-  clip-path: polygon(90px 0, 100% 0, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0 100%, 0 90px);
+  clip-path: polygon(
+    90px 0,
+    100% 0,
+    100% calc(100% - 90px),
+    calc(100% - 90px) 100%,
+    0 100%,
+    0 90px
+  );
   border-radius: 120px 10px 120px 10px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3836,7 +4177,14 @@ textarea {
 @media (max-width: 575px) {
   .td-hero-2-thumb {
     padding: 120px 30px 100px 30px;
-    clip-path: polygon(30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 30px);
+    clip-path: polygon(
+      30px 0,
+      100% 0,
+      100% calc(100% - 30px),
+      calc(100% - 30px) 100%,
+      0 100%,
+      0 30px
+    );
     border-radius: 44px 10px 44px 10px;
   }
 }
@@ -3850,23 +4198,25 @@ textarea {
   z-index: -1;
 }
 .td-hero-3-spacing {
-  padding-top: 270px;
-  padding-bottom: 230px;
+  padding-top: 135px; /*270px;*/
+  padding-bottom: 115px; /*230px;*/
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-3-spacing {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 65px; /*130px;*/
+    padding-bottom: 65px; /*130px;*/
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-3-spacing {
-    padding-bottom: 230px;
+    padding-bottom: 115px; /*230px;*/
   }
 }
 @media (max-width: 575px) {
   .td-hero-3-spacing {
-    padding-bottom: 180px;
+    padding-bottom: 90px; /*180px;*/
   }
 }
 .td-hero-3-bg {
@@ -3888,12 +4238,14 @@ textarea {
   line-height: 123%;
   color: var(--td-common-white);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px) {
   .td-hero-3-title {
     font-size: 60px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-3-title {
     font-size: 50px;
   }
@@ -3920,17 +4272,22 @@ textarea {
   display: inline-block;
   transition: all 0.4s ease;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px) {
   .td-hero-3-navigation span {
     right: 134px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-3-navigation span {
     right: 5%;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-3-navigation span {
     right: auto;
     left: 5%;
@@ -3944,7 +4301,8 @@ textarea {
 .td-hero-3-navigation span.td-hero-3-prev {
   margin-top: 60px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-3-navigation span.td-hero-3-prev {
     margin-top: 0;
   }
@@ -3999,7 +4357,9 @@ textarea {
   padding-top: 140px;
   padding-bottom: 70px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-4-spacing {
     padding-top: 85px;
   }
@@ -4039,12 +4399,16 @@ textarea {
     font-size: 60px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-4-tittle {
     font-size: 50px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-4-tittle img {
     width: 80px;
   }
@@ -4127,7 +4491,10 @@ textarea {
   right: -85px;
   z-index: -1;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-4-slider-wrap {
     margin-right: 0;
   }
@@ -4143,17 +4510,29 @@ textarea {
     margin-right: 100px;
   }
 }
-@media only screen and (min-width: 1600px) and (max-width: 1700px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1600px) and (max-width: 1700px),
+  only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-content-bottom {
     margin-right: 40px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-content-bottom {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-content-bottom {
     margin-left: 15px;
     margin-right: 15px;
@@ -4165,7 +4544,11 @@ textarea {
   font-family: var(--td-ff-poppins);
   text-transform: capitalize;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-content-bottom p br {
     display: none;
   }
@@ -4174,7 +4557,11 @@ textarea {
   font-size: 30px;
   line-height: 1;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-content-bottom .td-hero-4-dates {
     font-size: 25px;
   }
@@ -4185,7 +4572,14 @@ textarea {
   text-transform: capitalize;
   font-family: var(--td-ff-body);
 }
-@media only screen and (min-width: 1700px) and (max-width: 1800px), only screen and (min-width: 1600px) and (max-width: 1700px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1700px) and (max-width: 1800px),
+  only screen and (min-width: 1600px) and (max-width: 1700px),
+  only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-content-bottom .td-hero-4-para br {
     display: none;
   }
@@ -4204,7 +4598,12 @@ textarea {
     padding-left: 140px;
   }
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-tittle {
     padding-left: 15px;
   }
@@ -4214,7 +4613,8 @@ textarea {
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-tittle {
     font-size: 30px;
   }
@@ -4250,13 +4650,18 @@ textarea {
   margin-left: -30px;
   height: 100%;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-thumb-slider {
     margin-top: 50px;
     margin-left: 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-thumb-slider {
     margin-left: 0;
   }
@@ -4276,7 +4681,9 @@ textarea {
 .td-hero-5-small-thumb {
   height: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-small-thumb {
     margin-bottom: 30px;
     display: block;
@@ -4286,37 +4693,47 @@ textarea {
   height: 100%;
   object-fit: cover;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-5-small-thumb img {
     width: 100%;
     height: auto;
   }
 }
 .td-hero-6-area .td-hero-3-spacing {
-  padding-top: 390px;
-  padding-bottom: 215px;
+  padding-top: 195px; /*390px;*/
+  padding-bottom: 107px; /*215px;*/
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-6-area .td-hero-3-spacing {
-    padding-top: 290px;
-    padding-bottom: 150px;
+    padding-top: 145px; /* 290px; */
+    padding-bottom: 75px; /* 150px; */
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-6-area .td-hero-3-spacing {
-    padding-top: 190px;
-    padding-bottom: 150px;
+    padding-top: 95px; /* 190px; */
+    padding-bottom: 75px; /* 150px; */
   }
 }
 .td-hero-6-area .td-hero-3-content {
   padding-left: 85px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px) {
   .td-hero-6-area .td-hero-3-content {
     padding-left: 30px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-6-area .td-hero-3-content {
     padding-left: 0;
   }
@@ -4327,7 +4744,11 @@ textarea {
 .td-hero-6-area .td-hero-3-item::before {
   position: absolute;
   content: "";
-  background: radial-gradient(266.37% 59.82% at 19.01% 29.04%, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0.19) 50%);
+  background: radial-gradient(
+    266.37% 59.82% at 19.01% 29.04%,
+    rgba(0, 0, 0, 0.73) 0%,
+    rgba(0, 0, 0, 0.19) 50%
+  );
   width: 100%;
   height: 100%;
   left: 0;
@@ -4344,7 +4765,10 @@ textarea {
   left: 0;
   top: -100px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-hero-6-box {
     display: none;
   }
@@ -4407,7 +4831,8 @@ textarea {
   z-index: 1;
   position: relative;
 }
-.td-pulse-border::after, .td-pulse-border::before {
+.td-pulse-border::after,
+.td-pulse-border::before {
   position: absolute;
   content: "";
   left: 50%;
@@ -4457,7 +4882,8 @@ textarea {
   padding-left: 40px;
   padding-bottom: 10px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-content {
     padding-left: 20px;
   }
@@ -4528,8 +4954,8 @@ textarea {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #E9E9E9;
-  -webkit-text-strokeWidth: 2px;
+  -webkit-text-stroke-color: #e9e9e9;
+  -webkit-text-strokewidth: 2px;
   position: absolute;
   right: -15px;
   top: 659px;
@@ -4541,7 +4967,12 @@ textarea {
     right: -50px;
   }
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-bigtext {
     display: none;
   }
@@ -4549,7 +4980,9 @@ textarea {
 .td-team-2-iteam {
   padding: 26px 66px 27px 30px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 575px) {
   .td-team-2-iteam {
     padding: 26px 66px 27px 20px;
   }
@@ -4592,7 +5025,10 @@ textarea {
   color: var(--td-common-black);
   margin-bottom: 0;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-2-title {
     font-size: 18px;
   }
@@ -4603,7 +5039,9 @@ textarea {
 .td-team-2-title-text {
   margin-left: 90px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-2-title-text {
     margin-left: 0;
   }
@@ -4638,7 +5076,10 @@ textarea {
   overflow: hidden;
   border-radius: 50%;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-3-thumb {
     margin: 0 0 20px;
   }
@@ -4698,7 +5139,10 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-details-content {
     margin-left: 0;
   }
@@ -4709,7 +5153,10 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-team-details-info {
     margin-right: 0;
   }
@@ -4883,9 +5330,15 @@ textarea {
   }
 }
 .td-team-5-content h5 a {
-  background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
-  background-size: 0 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
+  background-image:
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor);
+  background-size:
+    0 2px,
+    0 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
   -webkit-transition: all 0.4s ease 0.3s 0s ease-out;
@@ -4896,9 +5349,15 @@ textarea {
   color: var(--td-common-white);
 }
 .td-team-5-content h5 a:hover {
-  background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
-  background-size: 0 2px, 100% 2px;
-  background-position: 100% 100%, 0 100%;
+  background-image:
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor);
+  background-size:
+    0 2px,
+    100% 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.3s linear;
   -webkit-transition: all 0.4s ease 0.3s 0s ease-out;
@@ -4951,20 +5410,24 @@ textarea {
   background: #cdc5ff;
 }
 
-.td-social-icon-style a, .td-social-icon-style .icons {
+.td-social-icon-style a,
+.td-social-icon-style .icons {
   -webkit-transition: 0.3s cubic-bezier(0.12, 0, 0.39, 0);
   transition: 0.3s cubic-bezier(0.12, 0, 0.39, 0);
   z-index: 1;
 }
-.td-social-icon-style a:hover, .td-social-icon-style .icons:hover {
+.td-social-icon-style a:hover,
+.td-social-icon-style .icons:hover {
   color: var(--td-common-white);
 }
-.td-social-icon-style a:hover span, .td-social-icon-style .icons:hover span {
+.td-social-icon-style a:hover span,
+.td-social-icon-style .icons:hover span {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
-.td-social-icon-style a span, .td-social-icon-style .icons span {
+.td-social-icon-style a span,
+.td-social-icon-style .icons span {
   display: block;
   border-radius: 100%;
   height: 100%;
@@ -5019,7 +5482,8 @@ textarea {
   font-size: 50px;
   line-height: 120%;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-title-wrap .td-section-title {
     font-size: 40px;
   }
@@ -5031,7 +5495,11 @@ textarea {
   text-transform: capitalize;
   color: var(--td-common-white);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-title-wrap p br {
     display: none;
   }
@@ -5041,7 +5509,16 @@ textarea {
   color: var(--td-common-white);
 }
 .td-banner-title-wrap-2 .td-btn-square {
-  clip-path: polygon(0 0, 90% 0%, 100% 30%, 100% 56%, 100% 100%, 9% 100%, 0% 66%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 30%,
+    100% 56%,
+    100% 100%,
+    9% 100%,
+    0% 66%,
+    0% 20%
+  );
 }
 .td-banner-title-wrap-2 .td-btn-square:hover {
   background: var(--td-theme-primary);
@@ -5051,7 +5528,8 @@ textarea {
   padding-top: 174px;
   padding-bottom: 204px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-spacing {
     padding-top: 114px;
     padding-bottom: 120px;
@@ -5061,18 +5539,24 @@ textarea {
   padding-top: 174px;
   padding-bottom: 190px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-spacing-2 {
     padding-top: 114px;
     padding-bottom: 120px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-2-video-wrap {
     margin-left: 40px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-2-video-wrap {
     margin-top: 100px;
   }
@@ -5092,7 +5576,8 @@ textarea {
   padding-top: 174px;
   padding-bottom: 160px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-5-spacing {
     padding-top: 114px;
     padding-bottom: 100px;
@@ -5105,7 +5590,8 @@ textarea {
   padding-top: 165px;
   padding-bottom: 150px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-6-spacing {
     padding-top: 114px;
     padding-bottom: 100px;
@@ -5118,7 +5604,10 @@ textarea {
   width: 49%;
   height: 100%;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-6-thumb {
     width: 100%;
     position: inherit;
@@ -5137,7 +5626,8 @@ textarea {
   padding-top: 90px;
   padding-bottom: 120px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-banner-7-spacing {
     padding-top: 114px;
     padding-bottom: 100px;
@@ -5191,7 +5681,11 @@ textarea {
   padding: 57px 10px;
   border-radius: 0 20px 20px 0;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-time {
     padding: 70px 10px;
   }
@@ -5218,7 +5712,9 @@ textarea {
   border-radius: 30px;
   transform: translateY(-4px);
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-time {
     border-radius: 20px !important;
   }
@@ -5226,17 +5722,25 @@ textarea {
 .td-schedule-item {
   margin-top: -2px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-item {
     margin-bottom: 30px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-content {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-content {
     text-align: left !important;
   }
@@ -5268,7 +5772,9 @@ textarea {
   border-radius: 20px 0px 0px 20px;
   border: 2px solid #d9d9d9;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-details {
     border-radius: 20px !important;
     margin-top: -2px;
@@ -5343,7 +5849,10 @@ textarea {
   background: var(--td-common-white);
   border-radius: 0px 0px 15px 15px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-2-content {
     padding: 20px 15px 35px 15px;
   }
@@ -5354,7 +5863,16 @@ textarea {
   font-size: 14px;
   color: var(--td-theme-secondary);
   padding: 18px 34px;
-  clip-path: polygon(0 0, 90% 0%, 100% 28%, 100% 80%, 100% 100%, 11% 100%, 0% 72%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 28%,
+    100% 80%,
+    100% 100%,
+    11% 100%,
+    0% 72%,
+    0% 20%
+  );
   border-radius: 5px 15px 5px 15px;
 }
 .td-schedule-2-content .td-btn-square:hover {
@@ -5381,7 +5899,8 @@ textarea {
   border-radius: 10px;
   overflow: hidden;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-3-thumb {
     margin: 30px 30px 30px 30px;
   }
@@ -5417,7 +5936,10 @@ textarea {
   line-height: 30px;
   color: var(--td-common-black);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-3-title br {
     display: none;
   }
@@ -5469,12 +5991,18 @@ textarea {
   padding: 30px 100px 30px 0px;
   margin-left: -25px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-3-content {
     padding: 30px 30px 30px 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-3-content {
     margin-left: 0;
     padding: 0 30px 30px 30px;
@@ -5562,7 +6090,10 @@ textarea {
   font-family: var(--td-ff-poppins);
   line-height: 28px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-details-right {
     margin-left: 0;
   }
@@ -5571,7 +6102,8 @@ textarea {
   padding: 36px 40px 5px 40px;
   border-radius: 20px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  (max-width: 575px) {
   .td-schedule-details-right-list {
     padding: 36px 20px 5px 20px;
   }
@@ -5580,7 +6112,8 @@ textarea {
   display: grid;
   grid-template-columns: auto auto;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-details-list ul {
     grid-template-columns: auto;
   }
@@ -5721,7 +6254,8 @@ textarea {
   border-radius: 15px;
   padding: 35px 50px 20px 40px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  (max-width: 575px) {
   .td-schedule-team {
     padding: 35px 20px 20px 15px;
   }
@@ -5772,7 +6306,8 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-team-social-wrap {
     margin-left: 0;
   }
@@ -5804,7 +6339,10 @@ textarea {
 .td-schedule-team-btn .td-btn:hover {
   background: var(--td-theme-primary);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-team-btn .td-btn {
     float: left;
     margin-bottom: 20px;
@@ -5953,17 +6491,26 @@ textarea {
   padding: 43px 0 25px 55px;
   height: 100%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-5-left-content {
     padding: 43px 0 25px 25px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-5-left-content {
     border-right: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-5-left-content {
     padding-right: 20px;
   }
@@ -6008,7 +6555,9 @@ textarea {
 .td-schedule-5-content {
   padding: 48px 0 10px 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-5-content {
     padding-left: 30px;
     padding-top: 0;
@@ -6040,12 +6589,19 @@ textarea {
 .td-schedule-5-btn {
   padding-right: 55px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-5-btn {
     padding-right: 25px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-5-btn {
     padding-bottom: 20px;
     padding-left: 30px;
@@ -6074,7 +6630,11 @@ textarea {
 .td-schedule-6-wrap .td-schedule-3-btn .dvdr {
   height: 53px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-6-wrap .td-schedule-3-btn .dvdr {
     margin-left: 15px;
     margin-right: 15px;
@@ -6084,7 +6644,11 @@ textarea {
   padding: 0 30px 30px 0px;
   margin-left: 25px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-6-wrap .td-schedule-3-content {
     padding: 0 0 30px 0px;
     margin-left: 0;
@@ -6093,7 +6657,11 @@ textarea {
 .td-schedule-6-wrap .td-schedule-3-thumb {
   margin: 0px 10px 30px 62px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-schedule-6-wrap .td-schedule-3-thumb {
     margin: 0px 0 30px 0;
   }
@@ -6108,7 +6676,9 @@ textarea {
 .td-brands-btn {
   text-align: right;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-brands-btn {
     text-align: left;
   }
@@ -6175,7 +6745,9 @@ textarea {
   border-radius: 20px;
   background: var(--td-common-white);
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-tickets-details {
     text-align: center;
   }
@@ -6188,7 +6760,9 @@ textarea {
 .td-tickets-item {
   margin-top: -1px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-tickets-item {
     margin-bottom: 30px;
   }
@@ -6200,7 +6774,11 @@ textarea {
   border-radius: 20px;
   background: var(--td-common-white);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-tickets-time {
     padding: 66px 10px 62px 10px;
   }
@@ -6273,7 +6851,11 @@ textarea {
   padding: 37px 38px 34px 38px;
   border-radius: 0px 0px 20px 20px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-blog-content {
     padding: 37px 20px 34px 20px;
   }
@@ -6301,7 +6883,10 @@ textarea {
   margin-left: 8px;
   border-left: 1px solid #dfdfdf;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-blog-sidebar-wrapper {
     margin-left: 0;
     padding-left: 0;
@@ -6411,7 +6996,11 @@ textarea {
   left: 0;
   z-index: 1;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-blog-5-item .td-blog-content {
     padding: 37px 18px 34px 18px;
   }
@@ -6419,7 +7008,11 @@ textarea {
 .td-blog-5-item .td-blog-title {
   color: var(--td-common-white);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-blog-5-item .td-blog-title {
     font-size: 21px;
   }
@@ -6439,7 +7032,11 @@ textarea {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 35%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 35%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
 }
 .td-blog-5-item .td-blog-thumb img {
   border-radius: 20px;
@@ -6465,7 +7062,9 @@ textarea {
   filter: saturate(0);
   line-height: 1;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-map-inner iframe {
     height: 350px;
   }
@@ -6477,12 +7076,14 @@ textarea {
 /*=============================
     	11. footer
 ===============================*/
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px) {
   .td-footer-widget.space {
     margin-left: 30px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-footer-widget.space {
     margin-left: 0;
   }
@@ -6492,7 +7093,10 @@ textarea {
   line-height: 32px;
   color: #a5a5b0;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-footer-widget .text br {
     display: none;
   }
@@ -6522,7 +7126,10 @@ textarea {
 .td-footer-subscribe {
   margin-right: 70px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-footer-subscribe {
     margin-right: 0;
   }
@@ -6589,7 +7196,8 @@ textarea {
   font-weight: 500;
   color: var(--td-grey-2);
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-footer-bottom-social {
     text-align: left;
   }
@@ -6599,7 +7207,7 @@ textarea {
 }
 .td-footer-bottom-social span a {
   font-size: 22px;
-  color: #C2C2C2;
+  color: #c2c2c2;
 }
 .td-footer-bottom-social span a:hover {
   color: var(--td-common-white);
@@ -6608,7 +7216,9 @@ textarea {
   transform: translateY(-2px);
   display: inline-block;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-footer-2-widget {
     margin-left: 0;
   }
@@ -6692,7 +7302,11 @@ textarea {
   border-radius: 10px;
   right: 5px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-footer-5-widget {
     margin-left: 0;
   }
@@ -6726,11 +7340,23 @@ textarea {
   width: 114px;
   height: 112px;
   padding-top: 30px;
-  clip-path: polygon(0 0, 75% 0%, 100% 28%, 100% 80%, 100% 100%, 25% 100%, 0% 72%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    75% 0%,
+    100% 28%,
+    100% 80%,
+    100% 100%,
+    25% 100%,
+    0% 72%,
+    0% 20%
+  );
   border-radius: 10px 35px 10px 35px;
   margin-right: 5px !important;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-countdown-2-wrap ul li {
     font-size: 34px;
     width: 104px;
@@ -6754,10 +7380,23 @@ textarea {
   background: var(--td-theme-primary);
   display: inline-block;
   padding: 27px 50px 27px 70px;
-  clip-path: polygon(0 0, 90% 0%, 100% 28%, 100% 80%, 100% 100%, 10% 100%, 0% 72%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    90% 0%,
+    100% 28%,
+    100% 80%,
+    100% 100%,
+    10% 100%,
+    0% 72%,
+    0% 20%
+  );
   border-radius: 10px 45px 10px 45px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-2-location {
     padding: 27px 40px 27px 50px;
   }
@@ -6781,7 +7420,10 @@ textarea {
   text-transform: uppercase;
   color: var(--td-common-white);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-2-location-wrap {
     text-align: left !important;
   }
@@ -6830,7 +7472,10 @@ textarea {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-3-wrap .td-countdown-2-location {
     margin-left: 0;
   }
@@ -6845,7 +7490,11 @@ textarea {
 .td-countdown-3-wrap .td-hero-countdown {
   margin-left: -38px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-3-wrap .td-hero-countdown {
     margin-left: 0;
     margin-right: -30px;
@@ -6880,7 +7529,8 @@ textarea {
   background: var(--td-theme-primary);
   padding: 50px 60px 20px 50px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-6-wrap {
     padding: 30px 20px 0px 20px;
   }
@@ -6903,17 +7553,29 @@ textarea {
 .td-countdown-6-wrap .td-countdown-3-shape {
   right: 32%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-6-wrap .td-countdown-2-title {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-6-wrap .td-countdown-2-location {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-countdown-6-wrap .td-countdown-2-title .subtitle {
     font-size: 18px;
   }
@@ -6926,7 +7588,11 @@ textarea {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-counter-2-wrap {
     margin-left: 0;
   }
@@ -6943,7 +7609,11 @@ textarea {
   margin-bottom: 0;
   line-height: 1;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-counter-2-title {
     font-size: 55px;
   }
@@ -6954,7 +7624,11 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-counter-2-subtitle {
     font-size: 14px;
   }
@@ -6979,7 +7653,11 @@ textarea {
   border-radius: 24px;
   background: #f4f2ff;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-counter-5-wrap .td-counter-2-icon i {
     font-size: 46px;
     width: 80px;
@@ -7031,7 +7709,9 @@ textarea {
 .td-pricing-2-item {
   padding: 60px 20px 78px 92px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 575px) {
   .td-pricing-2-item {
     padding: 60px 40px 78px 40px;
     text-align: center;
@@ -7042,7 +7722,16 @@ textarea {
   color: var(--td-common-black);
   padding: 22px 30px;
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.25);
-  clip-path: polygon(0 0, 93% 0%, 100% 28%, 100% 80%, 100% 100%, 7% 100%, 0% 72%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    93% 0%,
+    100% 28%,
+    100% 80%,
+    100% 100%,
+    7% 100%,
+    0% 72%,
+    0% 20%
+  );
 }
 .td-pricing-2-item .td-btn-square:hover {
   background: var(--td-theme-primary);
@@ -7055,7 +7744,11 @@ textarea {
 .td-pricing-3-item .td-btn-3-squre {
   margin-left: 22px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-3-item .td-btn-3-squre {
     margin-left: 0;
   }
@@ -7111,7 +7804,9 @@ textarea {
   padding: 55px 50px 55px 50px;
   border-radius: 30px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-4-item {
     padding: 55px 40px 55px 40px;
   }
@@ -7131,7 +7826,11 @@ textarea {
   right: 10%;
   z-index: -1;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-4-shape-2 {
     right: 2%;
   }
@@ -7151,7 +7850,11 @@ textarea {
   position: sticky;
   top: 100px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-5-item {
     padding: 30px 25px 17px 24px;
   }
@@ -7162,12 +7865,16 @@ textarea {
   margin-right: -20px;
   padding-right: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-5-item .td-pricing-4-price {
     border-right: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-5-item .td-pricing-2-feature {
     margin-left: 0;
   }
@@ -7181,7 +7888,11 @@ textarea {
   padding: 60px 60px 70px 60px;
   border-radius: 30px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-pricing-6-item {
     padding: 40px 40px 40px 40px;
   }
@@ -7240,13 +7951,20 @@ textarea {
   margin-right: 60px;
   margin-top: 5px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-location-2-addres .td-border {
     margin-left: 30px;
     margin-right: 30px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-location-2-map {
     margin-left: 0;
   }
@@ -7255,17 +7973,37 @@ textarea {
   width: 100%;
   height: 100%;
   filter: saturate(0);
-  clip-path: polygon(0 0, 94% 0%, 100% 10%, 100% 80%, 100% 100%, 7% 100%, 0% 87%, 0% 20%);
+  clip-path: polygon(
+    0 0,
+    94% 0%,
+    100% 10%,
+    100% 80%,
+    100% 100%,
+    7% 100%,
+    0% 87%,
+    0% 20%
+  );
   border-radius: 30px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-location-2-map iframe {
     height: 500px;
   }
 }
 @media (max-width: 575px) {
   .td-location-2-map iframe {
-    clip-path: polygon(0 0, 100% 0%, 100% 10%, 100% 100%, 100% 100%, 7% 100%, 0% 100%, 0% 20%);
+    clip-path: polygon(
+      0 0,
+      100% 0%,
+      100% 10%,
+      100% 100%,
+      100% 100%,
+      7% 100%,
+      0% 100%,
+      0% 20%
+    );
     height: 300px;
   }
 }
@@ -7291,7 +8029,10 @@ textarea {
 .td-cta-2-wrap {
   padding: 65px 70px 46px 70px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-cta-2-wrap {
     border-radius: 12px;
   }
@@ -7377,7 +8118,10 @@ textarea {
   background: var(--td-theme-secondary);
   border-radius: 30px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-cta-6-wrap {
     padding: 45px 40px 26px 40px;
   }
@@ -7387,7 +8131,11 @@ textarea {
     padding: 45px 20px 26px 20px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-cta-6-wrap .td-cta-2-title {
     font-size: 28px;
   }
@@ -7411,12 +8159,17 @@ textarea {
   line-height: 26px;
   color: #fff;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-feature-3-wrap {
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-feature-4-wrap p br {
     display: none;
   }
@@ -7433,12 +8186,17 @@ textarea {
   padding-left: 282px;
   margin-right: 120px;
 }
-@media only screen and (min-width: 1600px) and (max-width: 1700px), only screen and (min-width: 1400px) and (max-width: 1599px) {
+@media only screen and (min-width: 1600px) and (max-width: 1700px),
+  only screen and (min-width: 1400px) and (max-width: 1599px) {
   .td-testimonial-3-wrap {
     padding-left: 130px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-testimonial-3-wrap {
     padding-left: 50px;
   }
@@ -7495,7 +8253,11 @@ textarea {
   right: 0;
   z-index: 2;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-testimonial-3-navigation {
     bottom: 17%;
   }
@@ -7528,7 +8290,11 @@ textarea {
   margin-left: 2px;
   margin-bottom: 1px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-testimonial-4-item {
     padding: 25px 25px 25px 25px;
   }
@@ -7563,13 +8329,18 @@ textarea {
   bottom: 50px;
   right: 40px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-testimonial-4-qoute {
     bottom: 30px;
     right: 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 575px) {
   .td-testimonial-4-qoute {
     bottom: auto;
     top: 17px;
@@ -7668,7 +8439,10 @@ textarea {
   padding: 90px 90px 85px 100px;
   height: 100%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px) {
   .td-venue-content-wrap {
     padding: 60px 55px 55px 65px;
   }
@@ -7724,7 +8498,9 @@ textarea {
 /*=============================
     	19. product
 ===============================*/
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-wrap {
     margin-left: 0;
   }
@@ -7734,7 +8510,9 @@ textarea {
   padding-right: 40px;
   margin-right: 5px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-left-sidebar {
     border-right: none;
     padding-right: 0;
@@ -7799,7 +8577,7 @@ textarea {
   margin-right: 4px;
 }
 .td-product-widget-filter .ui-widget.ui-widget-content {
-  background-color: #DEE2E3;
+  background-color: #dee2e3;
   height: 5px;
   border: none;
 }
@@ -7813,9 +8591,12 @@ textarea {
   background: var(--td-theme-secondary);
   border-radius: 40px;
   top: -8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), -2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    -2px 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
-.td-product-widget-filter .ui-slider-handle.ui-corner-all.ui-state-default:focus-visible {
+.td-product-widget-filter
+  .ui-slider-handle.ui-corner-all.ui-state-default:focus-visible {
   outline: 0;
 }
 .td-product-color-filter .td-checkbox {
@@ -8078,7 +8859,8 @@ textarea {
   margin-right: 10px;
   border-radius: 10px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  (max-width: 575px) {
   .td-product-details-thumb-wrapper .nav-tabs .nav-link {
     width: 90px;
     height: 90px;
@@ -8118,7 +8900,10 @@ textarea {
 .td-product-details-nav-main-thumb img {
   border-radius: 20px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-content-wrap {
     margin-left: 0;
   }
@@ -8129,7 +8914,11 @@ textarea {
   line-height: 155%;
   text-transform: capitalize;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-title br {
     display: none;
   }
@@ -8205,7 +8994,11 @@ textarea {
   grid-template-columns: 1fr 1fr;
   margin-right: 60px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-length-list ul {
     margin-right: 0;
   }
@@ -8371,7 +9164,12 @@ textarea {
 .td-product-details-cart-btn-wrap {
   width: 76%;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px),
+  only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-cart-btn-wrap {
     width: 65%;
   }
@@ -8401,7 +9199,11 @@ textarea {
   grid-template-columns: 1fr 1fr;
   margin-right: 60px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-query {
     margin-right: 0;
   }
@@ -8474,7 +9276,8 @@ textarea {
   margin: 0;
   border: 0;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-tab-nav .nav-tabs .nav-link {
     padding-bottom: 10px;
   }
@@ -8482,15 +9285,18 @@ textarea {
 .td-product-details-tab-nav .nav-tabs .nav-link:not(:first-child) {
   margin-left: 40px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-product-details-tab-nav .nav-tabs .nav-link:not(:first-child) {
     margin-left: 20px;
   }
 }
-.td-product-details-tab-nav .nav-tabs .nav-link.active, .td-product-details-tab-nav .nav-tabs .nav-link:hover {
+.td-product-details-tab-nav .nav-tabs .nav-link.active,
+.td-product-details-tab-nav .nav-tabs .nav-link:hover {
   color: var(--td-theme-secondary);
 }
-.td-product-details-tab-nav .nav-tabs .nav-link.active::after, .td-product-details-tab-nav .nav-tabs .nav-link:hover::after {
+.td-product-details-tab-nav .nav-tabs .nav-link.active::after,
+.td-product-details-tab-nav .nav-tabs .nav-link:hover::after {
   width: 100%;
   left: 0;
   right: auto;
@@ -8527,14 +9333,14 @@ textarea {
 }
 .td-product-details-additional-info.td-table-style-2 table tr td {
   padding: 7px 24px;
-  border: 1px solid #E6E7E8;
+  border: 1px solid #e6e7e8;
 }
 .td-product-details-additional-info.td-table-style-2 table tr td:first-child {
   padding-left: 24px;
   border-right: 0;
   font-size: 16px;
   color: var(--tp-common-black);
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   width: 306px;
 }
 .td-product-details-additional-info.td-table-style-2 table tr td:last-child {
@@ -8558,7 +9364,7 @@ textarea {
 .td-product-details-review-avater-rating span {
   font-size: 13px;
   margin-right: 2px;
-  color: #FFB21D;
+  color: #ffb21d;
   font-family: var(--td-ff-poppins);
 }
 .td-product-details-review-avater-title {
@@ -8592,7 +9398,7 @@ textarea {
 }
 .td-product-details-review-form-rating-icon span {
   font-size: 12px;
-  color: #FFB21D;
+  color: #ffb21d;
 }
 .td-product-details-review-form > p {
   font-size: 16px;
@@ -8601,7 +9407,7 @@ textarea {
 }
 .td-product-details-review-item-wrapper-2 {
   padding-bottom: 80px;
-  border-bottom: 1px solid #E6E7E8;
+  border-bottom: 1px solid #e6e7e8;
   font-family: var(--td-ff-poppins);
 }
 
@@ -8676,7 +9482,9 @@ textarea {
   width: 100%;
   height: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-contact-map {
     height: 400px;
   }
@@ -8802,7 +9610,9 @@ textarea {
   background: var(--td-theme-primary);
   color: var(--td-common-white);
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-postbox-wrapper {
     margin-right: 0;
   }
@@ -8810,7 +9620,10 @@ textarea {
 .td-postbox-details-qoute {
   margin: 0 100px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-postbox-details-qoute {
     margin: 0;
   }
@@ -8866,7 +9679,10 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-postbox-navigation p br {
     display: none;
   }
@@ -8948,7 +9764,10 @@ textarea {
   text-transform: capitalize;
   color: var(--td-grey-1);
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-faq-wrapper {
     margin: 0;
   }
@@ -9095,7 +9914,10 @@ textarea {
   padding: 30px 33px 30px 40px;
   border-radius: 20px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px),
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (min-width: 576px) and (max-width: 767px),
+  (max-width: 575px) {
   .td-cetagory-content {
     padding: 15px 18px 15px 20px;
   }

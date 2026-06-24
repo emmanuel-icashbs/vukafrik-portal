@@ -19,7 +19,7 @@ const HeaderThree = () => {
   const [cartOpen, setCartOpen] = useState<boolean>(false);
   return (
     <header className="td-header-height">
-      <div className="td-header__area z-index-999 td-transparent ">
+      <div className="td-header__area z-index-999 td-transparent">
         <HeaderTopOne />
         <div
           id="header-sticky"

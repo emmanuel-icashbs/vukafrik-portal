@@ -7,6 +7,7 @@ import { StaticImageData } from "next/image";
 import bg_img1 from "@/assets/img/hero/hero-3/slider.jpg";
 import bg_img2 from "@/assets/img/hero/hero-3/slider-2.jpg";
 import bg_img3 from "@/assets/img/hero/hero-3/slider-3.jpg";
+import { getTextWithFixedLength } from "@/utils/text_utils";
 
 interface DataType {
   id: number;
@@ -19,20 +20,21 @@ const banner_data: DataType[] = [
   {
     id: 1,
     bg_img: bg_img1,
-    sub_title: "18 - 22 Nov, 2025",
-    title: "Digital Marketing Meetup 2025",
+    title: "Foire de l'Innovation, Investissement et de l'Entrepreneuriat.", // , investissement et transformation economique depuis Kinshasa
+    sub_title: "VUK'AFRIK 2026",
   },
   {
     id: 2,
     bg_img: bg_img2,
-    sub_title: "18 - 22 Nov, 2025",
-    title: "Digital Marketing Meetup 2025",
+    title: "Connecter les initiatives congolaises aux opportunites regionales.",
+    sub_title: "KINSHASA, 25-27 AOUT 2026",
   },
   {
     id: 3,
     bg_img: bg_img3,
-    sub_title: "18 - 22 Nov, 2025",
-    title: "Digital Marketing Meetup 2025",
+    sub_title: "PULLMAN HOTEL, KINSHASA",
+    title:
+      "Sommet strategique, foire multisectorielle, villages thematiques et rencontres business sur trois jours.",
   },
 ];
 
@@ -63,29 +65,32 @@ const Banner = () => {
       >
         {banner_data.map((item) => (
           <SwiperSlide key={item.id} className="swiper-slide">
-            <div className="td-hero-3-item">
+            <div className="td-hero-3-item ">
               <div
                 className="td-hero-3-bg bg-position"
                 style={{ backgroundImage: `url(${item.bg_img.src})` }}
                 data-swiper-parallax="1000"
               ></div>
-              <div className="container">
-                <div className="td-hero-3-spacing">
+              <div className="container ">
+                <div className="td-hero-3-spacing ">
                   <div className="row align-items-end">
-                    <div className="col-xl-8 col-lg-10">
-                      <div className="td-hero-3-content mb-40">
+                    <div className="col-lg-11">
+                      <div
+                        className="td-hero-3-content"
+                        style={{ height: "350px" }}
+                      >
                         <span className="td-hero-3-subtitle text mb-10 d-inline-block">
                           {item.sub_title}
                         </span>
                         <h2 className="td-hero-3-title mb-35 text2">
-                          {item.title}
+                          {getTextWithFixedLength(item.title)}
                         </h2>
                         <Link
                           className="td-btn td-btn-3-border td-left-right text3"
-                          href="/events"
+                          href="#"
                         >
                           <span className="mr10 td-text d-inline-block mr-5">
-                            Book Your Seat
+                            {"Réserver votre stand"}
                           </span>
                           <span className="td-arrow-angle">
                             <svg

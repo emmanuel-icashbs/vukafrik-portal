@@ -1,3 +1,9 @@
+import { StaticImageData } from "next/image";
+
+import heroSlideOne from "@/assets/img/hero/hero-3/slider.jpg";
+import heroSlideTwo from "@/assets/img/hero/hero-3/slider-2.jpg";
+import heroSlideThree from "@/assets/img/hero/hero-3/slider-3.jpg";
+
 export const vukafrikEvent = {
   name: "VUK'AFRIK 2026",
   subtitle: "Foire de l'Innovation et de l'Entrepreneuriat",
@@ -46,3 +52,37 @@ export const vukafrikEvent = {
     },
   ],
 } as const;
+
+export const vukafrikHeroSlides: {
+  id: number;
+  bg_img: StaticImageData;
+  sub_title: string;
+  title: string;
+  kicker: string;
+}[] = [
+  {
+    id: 1,
+    bg_img: heroSlideOne,
+    sub_title:
+      "La rencontre regionale qui connecte investissement, business, innovation et transformation economique depuis Kinshasa.",
+    title: "VUK'AFRIK 2026",
+    kicker: "Foire de l'Innovation et de l'Entrepreneuriat",
+  },
+  {
+    id: 2,
+    bg_img: heroSlideTwo,
+    sub_title:
+      "Un cadre structure pour rapprocher institutions, secteur prive, investisseurs, startups, PME, medias et acteurs de l'innovation.",
+    title: "Connecter les initiatives congolaises aux opportunites regionales",
+    kicker: "Kinshasa | 25-27 aout 2026",
+  },
+  {
+    id: 3,
+    bg_img: heroSlideThree,
+    sub_title:
+      "Sommet strategique, foire multisectorielle, villages thematiques et rencontres business sur trois jours.",
+    title:
+      "Un rendez-vous concu pour donner de la visibilite aux secteurs, aux talents et aux partenariats",
+    kicker: "Pullman Hotel, Kinshasa",
+  },
+];
