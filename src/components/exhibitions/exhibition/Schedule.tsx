@@ -24,8 +24,9 @@ const tab_title: BtnData[] = [
   },
 ];
 
-const EventHomeSix = () => {
+const ExhibitionSchedule = () => {
   const [activeTab, setActiveTab] = useState(0);
+
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
@@ -44,10 +45,10 @@ const EventHomeSix = () => {
               data-wow-delay="0.3s"
             >
               <span className="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-30">
-                Event Schedule
+                Exhibition Schedule
               </span>
               <h2 className="td-section-title mb-10">
-                Our Events Schedule Plan
+                Our Exhibitions Schedule Plan
               </h2>
               <p className="td-section-text">
                 Like previous year this year we are arranging world marketing{" "}
@@ -100,7 +101,7 @@ const EventHomeSix = () => {
                       <div className="row align-items-center">
                         <div className="col-xl-4 col-lg-5">
                           <div className="td-schedule-3-thumb p-relative">
-                            <Link href="/events-details">
+                            <Link href="/exhibitions-details">
                               <Image
                                 className="w-100"
                                 src={item.thumb}
@@ -116,7 +117,7 @@ const EventHomeSix = () => {
                               {item.date}
                             </span>
                             <h2 className="td-schedule-3-title mb-20">
-                              <Link href="/events-details">{item.title}</Link>
+                              <Link href="/exhibitions-details">{item.title}</Link>
                             </h2>
                             <div className="td-schedule-3-btn d-flex align-items-center flex-wrap">
                               <div className="td-schedule-3-user-wrap d-flex align-items-center">
@@ -144,7 +145,7 @@ const EventHomeSix = () => {
                               <span className="dvdr"></span>
                               <Link
                                 className="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                href="/events-details"
+                                href="/exhibitions-details"
                               >
                                 <span className="mr10 td-text d-inline-block mr-5">
                                   Buy Ticket
@@ -184,4 +185,4 @@ const EventHomeSix = () => {
   );
 };
 
-export default EventHomeSix;
+export default ExhibitionSchedule;
