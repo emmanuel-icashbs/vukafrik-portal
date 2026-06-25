@@ -61,7 +61,7 @@ const HeaderThree = () => {
                   <div className="td-header-menu-bar lh-1 p-relative ml-20">
                     <Link
                       className="td-btn td-left-right d-none d-xl-block"
-                      href="#"
+                      href="/register"
                     >
                       <span className="mr10 td-text d-inline-block mr-5">
                         {"S'inscrire"}

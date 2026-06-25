@@ -1,3 +1,5 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { JSX } from "react";
@@ -7,6 +9,7 @@ import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_3 from "@/assets/img/team/team-5/thumb-3.png";
 import team_4 from "@/assets/img/team/team-5/thumb-4.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
+import { useRouter } from "next/navigation";
 
 interface DataType {
   id: number;
@@ -130,6 +133,7 @@ const team_data: DataType[] = [
 ];
 
 const TeamHomeSix = () => {
+  const router = useRouter();
   return (
     <div className="td-team-area pt-130 pb-100">
       <div className="container-fluid container-1700">
@@ -167,8 +171,12 @@ const TeamHomeSix = () => {
             <div key={item.id} className="col">
               <div
                 className="td-team-5-wrap p-relative z-index-1 mb-30 wow fadeInUp"
+                style={{ cursor: "pointer" }}
                 data-wow-duration="1.5s"
                 data-wow-delay="0.3s"
+                onClick={() => {
+                  router.push("/team-details");
+                }}
               >
                 <span className="td-team-5-shape">{item.shape}</span>
                 <div className="td-team-5-thumb">

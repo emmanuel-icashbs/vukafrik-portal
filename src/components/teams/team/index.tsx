@@ -1,8 +1,10 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import Counter from "./Counter";
-import InnerFooter from "@/layouts/footers/InnerFooter";
 import TeamHomeSix from "@/components/homes/home-six/Team";
+import FooterOne from "@/layouts/footers/FooterOne";
+import Cta from "./Cta";
+import FormArea from "./FormArea";
 
 const Team = () => {
   return (
@@ -11,9 +13,11 @@ const Team = () => {
       <main>
         <Breadcrumb title="Our Speakers" sub_title="Speakers8" />
         <TeamHomeSix />
+        <Cta />
+        <FormArea />
         <Counter />
       </main>
-      <InnerFooter />
+      <FooterOne />
     </>
   );
 };
