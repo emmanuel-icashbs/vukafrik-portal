@@ -86,3 +86,43 @@ export const vukafrikHeroSlides: {
     kicker: "Pullman Hotel, Kinshasa",
   },
 ];
+
+export const vukafrikFooter = {
+  blurb:
+    "VUK'AFRIK 2026 relie initiatives locales, partenaires regionaux et opportunites de croissance a travers un Sommet strategique, une foire multisectorielle et des espaces de networking a Kinshasa.",
+  quickLinks: [
+    { label: "A propos", href: "/about" },
+    { label: "Programme", href: "/program" },
+    { label: "Speakers", href: "/speakers" },
+    { label: "Lieu & acces", href: "/venue-travel" },
+    { label: "FAQ", href: "/faq" },
+  ],
+  actionLinks: [
+    { label: "S'inscrire", href: vukafrikEvent.ctaLink },
+    { label: "Devenir sponsor", href: "/sponsors-partners#sponsor-inquiry" },
+    {
+      label: "S'inscrire comme exposant",
+      href: "/exhibitors-opportunities#exhibitor-registration",
+    },
+    { label: "Proposer une intervention", href: "/speaker-application" },
+    { label: "Accreditation media", href: "/media-accreditation" },
+    { label: "Volontariat", href: "/volunteer" },
+  ],
+  contactLinks: [
+    {
+      label: vukafrikEvent.contacts.generalEmail,
+      href: `mailto:${vukafrikEvent.contacts.generalEmail}`,
+    },
+    {
+      label: vukafrikEvent.contacts.partnershipsEmail,
+      href: `mailto:${vukafrikEvent.contacts.partnershipsEmail}`,
+    },
+    {
+      label: vukafrikEvent.contacts.phoneLabel,
+      href: vukafrikEvent.contacts.phoneHref,
+    },
+    { label: vukafrikEvent.venue, href: "/event-venue" },
+  ],
+  copyright:
+    "© 2026 VUK'AFRIK. Tous droits réservés. Powered by Congolese Computer Community.",
+};

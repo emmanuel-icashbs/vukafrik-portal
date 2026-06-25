@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from "@/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/vukafrik-white-gold-logo.png";
 import bg_img from "@/assets/img/footer/bg.jpg";
+import { vukafrikEvent, vukafrikFooter } from "@/data/VukAfrikData";
 
 const FooterOne = () => {
   return (
@@ -20,18 +21,11 @@ const FooterOne = () => {
                     <Image src={logo} alt="logo" />
                   </Link>
                 </div>
-                <p className="text mb-10">
-                  Middlest 2 East 42nd Streearketplace New York, NY 10017
+                <p className="text mb-0">
+                  {
+                    "VUK'AFRIK 2026 relie initiatives locales, partenaires regionaux et opportunites de croissance a travers un Sommet strategique, une foire multisectorielle et des espaces de networking a Kinshasa."
+                  }
                 </p>
-                <Link
-                  className="number mb-10 d-inline-block"
-                  href="tel:+123(55)90067990"
-                >
-                  +123(55) 90067990
-                </Link>
-                <Link className="email" href="mailto:info@gmail.com">
-                  info@gmail.com
-                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -50,7 +44,7 @@ const FooterOne = () => {
                       <Link href="/program">Programme</Link>
                     </li>
                     <li>
-                      <Link href="/events-venue">Lieu & access</Link>
+                      <Link href="/event-venue">Lieu & access</Link>
                     </li>
                     <li>
                       <Link href="/faq">FAQ</Link>
@@ -96,29 +90,14 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="td-footer-widget td-footer-subscribe mb-40">
                 <h3 className="td-footer-title mb-20">Contact</h3>
-                <p className="text mb-0">
-                  Our expertise, as well as our passion for web design, sets us
-                  apart from other agencies.
-                </p>
-                <div className="td-footer-form p-relative">
-                  <input type="text" placeholder="E-mail Address" />
-                  <button type="submit" className="td-footer-form-btn">
-                    <svg
-                      width="21"
-                      height="17"
-                      viewBox="0 0 21 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.03931 8.9707H19.0393M19.0393 8.9707L12.0393 1.9707M19.0393 8.9707L12.0393 15.9707"
-                        stroke="#F248B4"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
+                <div className="td-footer-links">
+                  <ul>
+                    {vukafrikFooter.contactLinks.map((link) => (
+                      <li key={link.href}>
+                        <Link href={link.href}>{link.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -127,44 +106,25 @@ const FooterOne = () => {
             <div className="col-12">
               <div className="td-footer-bottom pt-40 pb-15">
                 <div className="row align-items-center">
-                  <div className="col-md-9">
-                    <div className="td-footer-bottom-copyright mb-30">
-                      <p>Copyright © 2025 evente.com. All rights reserved.</p>
-                    </div>
+                  <div className="col-md-8">
+                    <p className="mb-0">{vukafrikFooter.copyright}</p>
                   </div>
-                  <div className="col-md-3">
-                    <div className="td-footer-bottom-social text-right mb-30">
-                      <span>
-                        <Link href="#">
-                          <i className="fa-brands fa-linkedin"></i>
-                        </Link>
-                      </span>
-                      <span>
-                        <Link href="#">
-                          <i className="fa-brands fa-instagram"></i>
-                        </Link>
-                      </span>
-                      <span>
-                        <Link href="#">
-                          <svg
-                            width="21"
-                            height="18"
-                            viewBox="0 0 21 18"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
+                  <div className="col-md-4">
+                    <div className="td-footer-bottom-social text-md-right text-start mt-20 mt-md-0">
+                      {vukafrikEvent.socialLinks.map((item) => (
+                        <span key={item.label}>
+                          <Link
+                            href={item.href}
+                            target={
+                              item.href.startsWith("http")
+                                ? "_blank"
+                                : undefined
+                            }
                           >
-                            <path
-                              d="M16.3783 0.111328H19.3942L12.8054 7.64181L20.5565 17.8891H14.4875L9.73399 11.6742L4.2949 17.8891H1.27723L8.32453 9.83441L0.888855 0.111328H7.11199L11.4087 5.79201L16.3783 0.111328ZM15.3199 16.084H16.991L6.20396 1.82164H4.41068L15.3199 16.084Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </Link>
-                      </span>
-                      <span>
-                        <Link href="#">
-                          <i className="fa-brands fa-whatsapp"></i>
-                        </Link>
-                      </span>
+                            <i className={item.icon}></i>
+                          </Link>
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
