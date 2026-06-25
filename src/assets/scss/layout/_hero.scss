@@ -257,8 +257,8 @@
   }
   &-3 {
     &-spacing {
-      padding-top: 180px; /*270px;*/
-      padding-bottom: 115px; /* 230px; */
+      padding-top: 180px; /*270px; n-n/3*/
+      padding-bottom: 115px; /* 230px; n/2*/
       @media #{$md,$sm,$xs} {
         padding-top: 130px;
         padding-bottom: 130px;
