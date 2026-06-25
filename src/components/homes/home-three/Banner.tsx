@@ -75,10 +75,7 @@ const Banner = () => {
                 <div className="td-hero-3-spacing ">
                   <div className="row align-items-end">
                     <div className="col-lg-11">
-                      <div
-                        className="td-hero-3-content"
-                        style={{ height: "350px" }}
-                      >
+                      <div className="td-hero-3-content p-relative mb-40">
                         <span className="td-hero-3-subtitle text mb-10 d-inline-block">
                           {item.sub_title}
                         </span>

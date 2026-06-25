@@ -4201,6 +4201,15 @@ textarea {
   padding-top: 135px; /*270px;*/
   padding-bottom: 115px; /*230px;*/
 }
+.td-hero-3-content {
+  min-height: 350px;
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .td-hero-3-content {
+    min-height: auto;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
