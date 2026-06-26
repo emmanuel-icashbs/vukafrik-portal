@@ -6,17 +6,14 @@ import UseSticky from "@/hooks/UseSticky";
 import { useState } from "react";
 import HeaderTopOne from "./menu/HeaderTopOne";
 import Sidebar from "./menu/Sidebar";
-import Searchbar from "./menu/Searchbar";
-import HeaderCart from "./menu/HeaderCart";
 
 import logo_1 from "@/assets/img/logo/vukafrik-white-gold-logo.png";
 import logo_2 from "@/assets/img/logo/vukafrik-black-gold-logo.png";
+import { cta_data } from "@/data/CtaData";
 
 const HeaderThree = () => {
   const { sticky } = UseSticky();
   const [sidebar, setSidebar] = useState<boolean>(false);
-  const [isSearch, setIsSearch] = useState<boolean>(false);
-  const [cartOpen, setCartOpen] = useState<boolean>(false);
   return (
     <header className="td-header-height">
       <div className="td-header__area z-index-999 td-transparent">
@@ -61,10 +58,10 @@ const HeaderThree = () => {
                   <div className="td-header-menu-bar lh-1 p-relative ml-20">
                     <Link
                       className="td-btn td-left-right d-none d-xl-block"
-                      href="/register"
+                      href={cta_data.register.href}
                     >
                       <span className="mr10 td-text d-inline-block mr-5">
-                        {"S'inscrire"}
+                        {cta_data.register.title}
                       </span>
                       <span className="td-arrow-angle">
                         <svg
@@ -102,8 +99,6 @@ const HeaderThree = () => {
         </div>
       </div>
       <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-      <Searchbar isSearch={isSearch} setIsSearch={setIsSearch} />
-      <HeaderCart cartOpen={cartOpen} setCartOpen={setCartOpen} />
     </header>
   );
 };
