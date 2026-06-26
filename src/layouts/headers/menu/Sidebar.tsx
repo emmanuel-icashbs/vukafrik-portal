@@ -3,7 +3,7 @@ import Link from "next/link";
 import MobileMenus from "./MobileMenu";
 
 import logo from "@/assets/img/logo/vukafrik-black-gold-logo.png";
-import { vukafrikEvent } from "@/data/VukAfrikData";
+import { vukafrik_event_data } from "@/data/VukAfrikData";
 
 interface MobileSidebarProps {
   sidebar: boolean;
@@ -55,14 +55,16 @@ const Sidebar = ({ sidebar, setSidebar }: MobileSidebarProps) => {
           </div>
           <div className="social-links">
             <ul className="list-wrap">
-              {vukafrikEvent.socialLinks.map((social, index) => (
+              {vukafrik_event_data.socialLinks.map((social, index) => (
                 <li key={index}>
                   <Link
-                    href={vukafrikEvent.socialLinks[index].href}
+                    href={vukafrik_event_data.socialLinks[index].href}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className={vukafrikEvent.socialLinks[index].icon}></i>
+                    <i
+                      className={vukafrik_event_data.socialLinks[index].icon}
+                    ></i>
                   </Link>
                 </li>
               ))}

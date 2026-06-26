@@ -1,4 +1,4 @@
-import { vukafrikEvent } from "@/data/VukAfrikData";
+import { vukafrik_event_data } from "@/data/VukAfrikData";
 import Link from "next/link";
 
 const HeaderTopOne = () => {
@@ -10,19 +10,19 @@ const HeaderTopOne = () => {
             <div className="td-header-3-top-info">
               <span>
                 <Link
-                  href={vukafrikEvent.venueHref}
+                  href={vukafrik_event_data.venueHref}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="flaticon-gps"></i>
-                  {vukafrikEvent.venue}
+                  {vukafrik_event_data.venue}
                 </Link>
               </span>
               <span className="dvdr">/</span>
               <span>
                 <Link href="#">
                   <i className="flaticon-calendar"></i>
-                  {vukafrikEvent.dates}
+                  {vukafrik_event_data.dates}
                 </Link>
               </span>
             </div>
@@ -31,28 +31,32 @@ const HeaderTopOne = () => {
             <div className="d-none d-lg-block">
               <div className="td-header-3-top-social d-flex align-items-center justify-content-end">
                 <span className="td-email">
-                  <Link href={`mailto:${vukafrikEvent.contacts.generalEmail}`}>
+                  <Link
+                    href={`mailto:${vukafrik_event_data.contacts.generalEmail}`}
+                  >
                     <i className="flaticon-mail"></i>
-                    {vukafrikEvent.contacts.generalEmail}
+                    {vukafrik_event_data.contacts.generalEmail}
                   </Link>
                 </span>
                 <span className="dvdr">/</span>
                 <span className="td-email">
-                  <Link href={vukafrikEvent.contacts.phoneHref}>
+                  <Link href={vukafrik_event_data.contacts.phoneHref}>
                     <i className="flaticon-phone"></i>
-                    {vukafrikEvent.contacts.phoneLabel}
+                    {vukafrik_event_data.contacts.phoneLabel}
                   </Link>
                 </span>
                 <span className="dvdr">/</span>
 
-                {vukafrikEvent.socialLinks.map((social, index) => (
+                {vukafrik_event_data.socialLinks.map((social, index) => (
                   <span key={index}>
                     <Link
-                      href={vukafrikEvent.socialLinks[index].href}
+                      href={vukafrik_event_data.socialLinks[index].href}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className={vukafrikEvent.socialLinks[index].icon}></i>
+                      <i
+                        className={vukafrik_event_data.socialLinks[index].icon}
+                      ></i>
                     </Link>
                   </span>
                 ))}

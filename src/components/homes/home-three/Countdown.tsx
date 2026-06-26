@@ -1,13 +1,12 @@
 import Link from "next/link";
 import DealCounter from "@/components/common/DealCounter";
-
-import bg_img from "@/assets/img/feature/special-features.jpg";
+import countdown_data from "@/data/CountDownData";
 
 const Countdown = () => {
   return (
     <div
       className="td-countdown-area bg-position"
-      style={{ backgroundImage: `url(${bg_img.src})` }}
+      style={{ backgroundImage: `url(${countdown_data.bg_img.src})` }}
     >
       <div className="container">
         <div className="td-countdown-3-wrap p-relative z-index-1">
@@ -42,9 +41,9 @@ const Countdown = () => {
           <div className="row align-items-center">
             <div className="col-xxl-4 col-xl-4 col-lg-5 ">
               <div className="td-countdown-2-title mb-30">
-                <h2 className="title text-white">{"Hâtez-vous!"}</h2>
+                <h2 className="title text-white">{countdown_data.message1}</h2>
                 <span className="subtitle text-white">
-                  {"Réservez votre place dès maintenant"}
+                  {countdown_data.message2}
                 </span>
               </div>
             </div>
@@ -52,7 +51,7 @@ const Countdown = () => {
               <div className="td-hero-countdown mb-10">
                 <ul className="deal-counter ml0-md" id="timer">
                   <DealCounter
-                    expiryTimestamp={new Date("2026-08-25T08:00:00")}
+                    expiryTimestamp={countdown_data.expiryTimestamp}
                   />
                 </ul>
               </div>
@@ -89,7 +88,7 @@ const Countdown = () => {
                     href="https://www.google.com/maps/place/Pullman+Kinshasa+Grand+H%C3%B4tel/@-4.3712512,15.2993792,12z/data=!4m9!3m8!1s0x1a6a33d0686a8c59:0xa716fe90bc2e9cc8!5m2!4m1!1i2!8m2!3d-4.312448!4d15.27344!16s%2Fg%2F1224nhpv?entry=ttu&g_ep=EgoyMDI2MDYyMy4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                   >
-                    Pullman Hotel, Kinshasa, RD Congo
+                    {countdown_data.location}
                   </Link>
                 </div>
               </div>

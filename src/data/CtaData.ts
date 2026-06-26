@@ -8,7 +8,7 @@ interface CtaDataType {
 }
 export const cta_data: CtaDataType = {
   register: {
-    title: "s'inscrire",
+    title: "S'inscrire",
     href: "/register",
   },
   reserve_stand: {
