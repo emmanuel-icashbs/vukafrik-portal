@@ -52,7 +52,7 @@ const Countdown = () => {
               <div className="td-hero-countdown mb-10">
                 <ul className="deal-counter ml0-md" id="timer">
                   <DealCounter
-                    expiryTimestamp={new Date("2026-08-25T09:30:00")}
+                    expiryTimestamp={new Date("2026-08-25T08:00:00")}
                   />
                 </ul>
               </div>
