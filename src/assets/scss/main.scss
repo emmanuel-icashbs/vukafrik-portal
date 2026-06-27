@@ -47,3 +47,9 @@
 .red-border {
   border: 2px solid red;
 }
+
+.hover-color-secondary {
+  &:hover {
+    color: #f248b4 !important;
+  }
+}
