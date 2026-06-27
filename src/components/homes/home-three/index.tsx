@@ -23,11 +23,12 @@ const HomeThree = () => {
         <Feature />
         <About />
         <Schedule />
-        <TextSlider />
-        <Experience />
+        <Testimonial />
         <Team />
         <Pricing />
-        <Testimonial />
+
+        <TextSlider />
+        <Experience />
         <Brand />
         <Blog />
       </main>
