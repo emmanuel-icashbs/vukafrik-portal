@@ -26,7 +26,7 @@ const TeamArea = () => {
                </div>
             </div>
             <div className="row">
-               {team_data.filter((items) => items.page === "inner_team").map((item) => (
+               {team_data.map((item) => (
                   <div key={item.id} className="col-lg-4 col-md-6 col-sm-6" data-wow-duration=".9s" data-wow-delay=".9s">
                      <div className="td-team-item mb-25 bg-position p-relative" style={{ backgroundImage: `url(${bg_img.src})` }}>
                         <div className="td-team-content">

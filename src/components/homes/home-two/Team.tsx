@@ -24,7 +24,7 @@ const Team = () => {
                </div>
             </div>
             <div className="row">
-               {team_data.filter((items) => items.page === "home_2").map((item) => (
+               {team_data.map((item) => (
                   <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.9s">
                      <div className="td-team-2-iteam p-relative mb-30">
                         <svg className="bg-svg" width="319" height="370" viewBox="0 0 319 370" fill="none" xmlns="http://www.w3.org/2000/svg">

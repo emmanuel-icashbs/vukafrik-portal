@@ -18,7 +18,7 @@ const Team = () => {
                </div>
             </div>
             <div className="row">
-               {team_data.filter((items) => items.page === "home_3").map((item) => (
+               {team_data.map((item) => (
                   <div key={item.id} className="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.9s">
                      <div className="td-team-3-wrap mb-30 text-center">
                         <div className="td-team-3-thumb">
