@@ -13,7 +13,7 @@ import team_data, {
   see_more_link,
   sub_title,
   title,
-} from "@/data/TeamData";
+} from "@/data/SpeakerData";
 import CtaWrapper from "@/components/common/CtaWrapper";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { cta_data } from "@/data/CtaData";
