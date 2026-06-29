@@ -5,11 +5,18 @@ import Link from "next/link";
 import { JSX } from "react";
 import { useRouter } from "next/navigation";
 import team_data, {
+  become_speaker_title,
+  cta_wrapper_sub_title,
+  cta_wrapper_title,
   description,
+  see_more_label,
   see_more_link,
   sub_title,
   title,
 } from "@/data/TeamData";
+import CtaWrapper from "@/components/common/CtaWrapper";
+import ButtonLink from "@/components/ui/ButtonLink";
+import { cta_data } from "@/data/CtaData";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -156,21 +163,16 @@ const TeamHomeSix = () => {
           ))}
         </div>
       </div>
-      <div className="d-flex align-items-center justify-content-end mt-20">
-        <h5>
-          <Link href="/team">
-            <span className="my-link">{see_more_link}</span>
-            <i
-              className="fa-solid fa-angles-right"
-              style={{
-                marginLeft: "10px",
-                marginRight: "10px",
-                color: "#f248b4",
-              }}
-            ></i>
-          </Link>
-        </h5>
-      </div>
+      <CtaWrapper title={cta_wrapper_title} sub_title={cta_wrapper_sub_title}>
+        <div className="d-flex align-items-center justify-content-end">
+          <ButtonLink
+            link={cta_data.become_speaker.href}
+            title={become_speaker_title}
+          />
+          <span className="mx-2"></span>
+          <ButtonLink link={see_more_link} title={see_more_label} />
+        </div>
+      </CtaWrapper>
     </div>
   );
 };

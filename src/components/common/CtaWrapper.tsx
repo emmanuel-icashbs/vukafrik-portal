@@ -12,7 +12,7 @@ const CtaWrapper = ({
   children: JSX.Element;
 }) => {
   return (
-    <div className="td-cta-area">
+    <div className="td-cta-area mt-50">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
