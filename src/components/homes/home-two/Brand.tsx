@@ -17,7 +17,7 @@ import Link from "next/link";
 const Brand = () => {
   return (
     <div className="td-brands-area td-brands-2-wrap pt-140 pb-115">
-      <div className="container mb-20">
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-8">
             <div
