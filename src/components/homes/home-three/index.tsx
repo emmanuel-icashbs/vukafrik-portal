@@ -25,7 +25,6 @@ const HomeThree = () => {
         <Schedule />
         <Testimonial />
         <TeamHomeSix />
-        <Pricing />
 
         <TextSlider />
         <Experience />

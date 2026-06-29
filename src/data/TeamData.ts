@@ -69,6 +69,7 @@ const team_data: DataType[] = [
 const sub_title = "Apprendre grâce aux intervenants";
 const title = "Intervenants à la conférence";
 const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
+const see_more_link = "Voir plus";
 
-export { sub_title, title, description };
+export { sub_title, title, description, see_more_link };
 export default team_data;

@@ -4,7 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { JSX } from "react";
 import { useRouter } from "next/navigation";
-import team_data, { description, sub_title, title } from "@/data/TeamData";
+import team_data, {
+  description,
+  see_more_link,
+  sub_title,
+  title,
+} from "@/data/TeamData";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -150,6 +155,21 @@ const TeamHomeSix = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="d-flex align-items-center justify-content-end mt-20">
+        <h5>
+          <Link href="/team">
+            <span className="my-link">{see_more_link}</span>
+            <i
+              className="fa-solid fa-angles-right"
+              style={{
+                marginLeft: "10px",
+                marginRight: "10px",
+                color: "#f248b4",
+              }}
+            ></i>
+          </Link>
+        </h5>
       </div>
     </div>
   );
