@@ -14,7 +14,18 @@ export const vukafrik_event_data = {
     "Initiee depuis Kinshasa, VUK'AFRIK connecte les initiatives locales aux opportunites regionales a travers un Sommet strategique, une foire multisectorielle ouverte, des villages thematiques et des espaces de networking.",
   positioningLine:
     "La rencontre regionale qui connecte innovation, business, investissement et transformation economique depuis Kinshasa.",
-
+  infos: [
+    {
+      label: "Notre Vision",
+      description:
+        "Initiee depuis Kinshasa, VUK'AFRIK connecte les initiatives locales aux opportunites regionales a travers un Sommet strategique, une foire multisectorielle ouverte, des villages thematiques et des espaces de networking.",
+    },
+    {
+      label: "Notre Mission",
+      description:
+        "Initiee depuis Kinshasa, VUK'AFRIK connecte les initiatives locales aux opportunites regionales a travers un Sommet strategique, une foire multisectorielle ouverte, des villages thematiques et des espaces de networking.",
+    },
+  ],
   contacts: {
     generalEmail: "info@congocs.org",
     partnershipsEmail: "partners@congocs.org",

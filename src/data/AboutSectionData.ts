@@ -33,3 +33,6 @@ export const about_section_data: AboutSectinDataType = {
   call_us_title: "Appelez-nous",
   call_us_phone: vukafrik_event_data.contacts.phoneLabel,
 };
+const info_section_title = "En savoir plus sur nous";
+
+export { info_section_title };

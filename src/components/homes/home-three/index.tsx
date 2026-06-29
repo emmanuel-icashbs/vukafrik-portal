@@ -3,7 +3,6 @@ import Banner from "./Banner";
 import Countdown from "./Countdown";
 import Feature from "./Feature";
 import About from "./About";
-import Pricing from "./Pricing";
 import FooterOne from "@/layouts/footers/FooterOne";
 import TextSlider from "../home-one/TextSlider";
 import Experience from "../home-one/Experience";

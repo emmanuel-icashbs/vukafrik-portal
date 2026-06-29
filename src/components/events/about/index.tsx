@@ -1,31 +1,27 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import AboutArea from "./AboutArea";
 import Feature from "./Feature";
 import TextSlider from "@/components/homes/home-one/TextSlider";
-import Team from "@/components/homes/home-three/Team";
-import Testimonial from "@/components/homes/home-three/Testimonial";
-import Brand from "@/components/homes/home-two/Brand";
-import Cta from "@/components/homes/home-two/Cta";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import FooterOne from "@/layouts/footers/FooterOne";
+import About from "@/components/homes/home-three/About";
+import VukaInfo from "@/components/homes/home-three/VukaInfo";
 
-const About = () => {
+const AboutVukaPage = () => {
   return (
     <>
       <HeaderThree />
       <main>
         <Breadcrumb title="What We Have Done" sub_title="About" />
-        <AboutArea />
+        <About should_display_about_btn={false} />
         <Feature />
-        <TextSlider />
-        <Team />
-        <Testimonial />
-        <Brand />
-        <Cta />
+        <div className="mt-50 mb-50">
+          <TextSlider />
+        </div>
+        <VukaInfo />
       </main>
       <FooterOne />
     </>
   );
 };
 
-export default About;
+export default AboutVukaPage;

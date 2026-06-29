@@ -1,4 +1,5 @@
 import bg_img from "@/assets/img/feature/special-features.jpg";
+import { vukafrik_event_data } from "./VukAfrikData";
 
 interface DataType {
   id: number;
@@ -34,4 +35,8 @@ const feature_data: DataType[] = [
   },
 ];
 
-export { feature_data, bg_img };
+const title = "Pourquoi participer à notre événement ?";
+const sub_title = "Informations sur l'événement";
+const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
+
+export { feature_data, bg_img, title, sub_title, description };
