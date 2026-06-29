@@ -3,7 +3,6 @@ import Banner from "./Banner";
 import Countdown from "./Countdown";
 import Feature from "./Feature";
 import About from "./About";
-import Team from "./Team";
 import Pricing from "./Pricing";
 import FooterOne from "@/layouts/footers/FooterOne";
 import TextSlider from "../home-one/TextSlider";
@@ -12,6 +11,7 @@ import Testimonial from "./Testimonial";
 import Brand from "../home-two/Brand";
 import Blog from "./Blog";
 import Schedule from "../home-one/Schedule";
+import TeamHomeSix from "../home-six/Team";
 
 const HomeThree = () => {
   return (
@@ -24,7 +24,7 @@ const HomeThree = () => {
         <About />
         <Schedule />
         <Testimonial />
-        <Team />
+        <TeamHomeSix />
         <Pricing />
 
         <TextSlider />
