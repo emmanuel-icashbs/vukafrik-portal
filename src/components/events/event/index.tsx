@@ -1,10 +1,9 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Experience from "./Experience";
-import TextSlider from "@/components/homes/home-one/TextSlider";
-import Ticket from "@/components/homes/home-one/Ticket";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import Schedule from "@/components/homes/home-one/Schedule";
+import EventHomeTwo from "@/components/homes/home-two/Event";
+import Feature from "@/components/homes/home-three/Feature";
 
 const Event = () => {
   return (
@@ -13,9 +12,8 @@ const Event = () => {
       <main>
         <Breadcrumb title="All Events" sub_title="Events" />
         <Schedule />
-        <TextSlider />
-        <Experience />
-        <Ticket />
+        <Feature />
+        <EventHomeTwo />
       </main>
       <FooterOne />
     </>

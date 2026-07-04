@@ -4,6 +4,7 @@ import event_thumb1 from "@/assets/img/schedule/schedule-2/thumb.jpg";
 import event_thumb2 from "@/assets/img/schedule/schedule-2/thumb-2.jpg";
 import event_thumb3 from "@/assets/img/schedule/schedule-2/thumb-3.jpg";
 import event_thumb4 from "@/assets/img/schedule/schedule-2/thumb-4.jpg";
+import { vukafrik_event_data } from "./VukAfrikData";
 
 interface DataType {
   id: number;
@@ -16,7 +17,7 @@ interface DataType {
   time: string;
 }
 
-const event_data: DataType[] = [
+const village_data: DataType[] = [
   {
     id: 1,
     page: "home_2",
@@ -89,4 +90,9 @@ const event_data: DataType[] = [
   },
 ];
 
-export default event_data;
+const title = "Nos villages thematiques 2026";
+const sub_title = "villages thematiques";
+const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
+
+export { title, sub_title, description };
+export default village_data;
