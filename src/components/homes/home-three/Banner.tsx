@@ -32,7 +32,10 @@ const Banner = () => {
                         <span className="td-hero-3-subtitle text mb-10 d-inline-block">
                           {item.sub_title}
                         </span>
-                        <h2 className="td-hero-3-title mb-35 text2">
+                        <h2
+                          className="td-hero-3-title mb-35 text2"
+                          style={{ height: "200px" }}
+                        >
                           {getTextWithFixedLength(item.title)}
                         </h2>
                         <Link
