@@ -14,7 +14,7 @@ const AboutVukaPage = () => {
         <Breadcrumb title="What We Have Done" sub_title="About" />
         <About should_display_about_btn={false} />
         <Feature />
-        <div className="mt-50 mb-50">
+        <div className="mt-100">
           <TextSlider />
         </div>
         <VukaInfo />

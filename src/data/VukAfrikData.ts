@@ -49,4 +49,14 @@ export const vukafrik_event_data = {
   ],
   copyright:
     "© 2026 VUK'AFRIK. Tous droits réservés. Powered by Congolese Computer Community.",
+  keywords: [
+    "VUK'AFRIK 2026",
+    "Business Conference",
+    "Innovation and Entrepreneurship ",
+    "Learders Meeting",
+    "Investment Opportunities",
+    "Business Networking",
+    "Learning and Development Place",
+   
+  ],
 } as const;
