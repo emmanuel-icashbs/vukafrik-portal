@@ -6,16 +6,16 @@ const RegisterForm = () => {
    return (
       <form onSubmit={(e) => e.preventDefault()}>
          <div className="row">
-            <div className="col-lg-12 mb-25">
+            <div className="col-lg-6 mb-25">
                <input className="input" type="text" placeholder="Enter your username" />
             </div>
-            <div className="col-lg-12 mb-25">
+            <div className="col-lg-6 mb-25">
                <input className="input" type="email" placeholder="Enter your email" />
             </div>
-            <div className="col-lg-12 mb-25">
+            <div className="col-lg-6 mb-25">
                <input className="input" type="text" placeholder="Password" />
             </div>
-            <div className="col-lg-12 mb-25">
+            <div className="col-lg-6 mb-25">
                <input className="input" type="text" placeholder="Confirm Password" />
             </div>
             <div className="col-lg-12">

@@ -91,3 +91,19 @@
   -o-transition: all 0.4s ease 0.3s 0s ease-out;
   transition: all 0.4s ease 0.3s 0s ease-out;
 }
+textarea {
+  height: auto;
+  min-height: 56px;
+  line-height: 1.5;
+}
+textarea,
+select {
+  border: solid 1px #d8d2fc;
+  border-radius: 8px;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: #5033ff !important;
+}

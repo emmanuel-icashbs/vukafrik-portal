@@ -75,6 +75,11 @@ const see_more_label = "Voir plus";
 const cta_wrapper_title = "Ensemble avec Vous!";
 const cta_wrapper_sub_title = "Nous irons encore plus loin!";
 const become_speaker_title = cta_data.become_speaker.title;
+const cta_sub_title = "Ne manquez pas notre événement !";
+const cta_title = "Inscivez-vous dès aujourd'hui !";
+const form_title = "Candidater comme speaker";
+const form_sub_title =
+  "Partagez votre expertise avec les leaders, entrepreneurs, innovateurs, investisseurs et acteurs d'ecosysteme de VUK'AFRIK 2026";
 
 export {
   sub_title,
@@ -85,5 +90,9 @@ export {
   cta_wrapper_title,
   cta_wrapper_sub_title,
   become_speaker_title,
+  cta_sub_title,
+  cta_title,
+  form_title,
+  form_sub_title,
 };
 export default team_data;

@@ -14,6 +14,7 @@ const Team = () => {
         <Breadcrumb title="Our Speakers" sub_title="Speakers8" />
         <TeamHomeSix />
         <Cta />
+        
         <FormArea />
         <Counter />
       </main>

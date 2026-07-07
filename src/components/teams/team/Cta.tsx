@@ -1,5 +1,7 @@
 "use client";
 import bg_img from "@/assets/img/cta/cta-bg.png";
+import { cta_data } from "@/data/CtaData";
+import { cta_sub_title, cta_title } from "@/data/SpeakerData";
 import { useRouter } from "next/navigation";
 
 const Cta = () => {
@@ -17,9 +19,9 @@ const Cta = () => {
                 <div className="col-lg-5">
                   <div className="td-cta-2-content mb-20">
                     <span className="td-cta-2-subtitle d-inline-block mb-5">
-                      Don’t Miss Our Event!
+                      {cta_sub_title}
                     </span>
-                    <h2 className="td-cta-2-title">Get Subscribed Today!</h2>
+                    <h2 className="td-cta-2-title">{cta_title}</h2>
                   </div>
                 </div>
                 <div className="col-lg-7 text-center">
@@ -32,9 +34,12 @@ const Cta = () => {
                         className="cta-btn"
                         type="button"
                         style={{ border: "solid 1px #fff" }}
-                        onClick={() => router.push("#team_form")}
+                        onClick={() =>
+                          router.push(cta_data.become_speaker.href)
+                        }
                       >
-                        Subscribe Below
+                        {cta_data.become_speaker.title}
+                        
                       </button>
                     </form>
                   </div>
