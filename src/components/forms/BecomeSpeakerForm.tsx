@@ -1,7 +1,7 @@
 "use client";
 const BecomeSpeakerForm = () => {
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
+    <form onSubmit={(e) => e.preventDefault()} id="team_form">
       <div className="row">
         <div className="col-lg-6 mb-25">
           <input className="input" type="text" placeholder="Nom complet *" />

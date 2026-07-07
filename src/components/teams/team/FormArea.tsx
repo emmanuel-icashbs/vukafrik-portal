@@ -4,7 +4,7 @@ import { form_sub_title, form_title } from "@/data/SpeakerData";
 
 const FormArea = () => {
   return (
-    <div className="tg-login-area pt-140 pb-110" id="team_form">
+    <div className="tg-login-area pt-110 pb-110">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">
