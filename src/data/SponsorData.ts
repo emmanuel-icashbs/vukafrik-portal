@@ -30,7 +30,88 @@ const see_more_link = "/sponsors";
 const become_sponsor_title = cta_data.become_sponsor.title;
 const cta_wrapper_sub_title = "Nous irons toujours plus loin!";
 const cta_wrapper_title = "Avec nos partenaires!";
+const breadcrumb = {
+  title: "Sponsors",
+  sub_title: "Sponsors",
+};
+const form_area = {
+  title: "Devenir sponsor ou partenaire",
+  sub_title:
+    "Soumettez l'interet de votre organisation pour un sponsoring ou un partenariat et laissez l'equipe VUK'AFRIK vous orienter vers le bon dispositif.",
+  fields: [
+    "Nom de l'organisation *",
+    "Personne de contact *",
+    "Email *",
+    "Téléphone *",
+    "Site web *",
+    "Categorie de partenariat *",
+    "Message *",
+    "Fourchette budgetaire",
+    "Zone de visibilite souhaitee *",
+    "Secteur d'interet *",
+    "J'accepte que l'equipe VUK'AFRIK examine cette soumission et me contacte si necessaire.",
+  ],
+  submit_button: "Soumettre",
+};
 
+interface DataType {
+  id: number;
+  page: string;
+  title: string;
+  desc: string;
+  showAnswer: boolean;
+}
+
+const sponsor_faq_data: { title: string; sub_title: string; data: DataType[] } =
+  {
+    title: "Vous avez des questions ? Vous trouverez les réponses ici !",
+    sub_title:
+      "em ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet Quisquawe rutruman imperdieEtiam ultricies nisi vel augue. Curabitur.",
+    data: [
+      {
+        id: 1,
+        page: "inner_faq",
+        showAnswer: false,
+        title: "Do you get any event support?",
+        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      },
+      {
+        id: 2,
+        page: "inner_faq",
+        showAnswer: false,
+        title: "How is the selection process organized?",
+        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      },
+      {
+        id: 3,
+        page: "inner_faq",
+        showAnswer: false,
+        title: "What is your customer geography?",
+        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      },
+      {
+        id: 4,
+        page: "inner_faq",
+        showAnswer: false,
+        title: "How quickly can you source developers?",
+        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      },
+      {
+        id: 5,
+        page: "inner_faq",
+        showAnswer: false,
+        title: "What are the main industries we serve?",
+        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      },
+      {
+        id: 6,
+        page: "inner_faq",
+        showAnswer: false,
+        title: "Is Evente payment processing secure?",
+        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      },
+    ],
+  };
 export {
   sub_title,
   title,
@@ -40,5 +121,8 @@ export {
   cta_wrapper_title,
   cta_wrapper_sub_title,
   see_more_link,
+  breadcrumb,
+  form_area,
+  sponsor_faq_data,
 };
 export default brands;

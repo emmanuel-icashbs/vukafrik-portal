@@ -20,6 +20,7 @@ import {
 import CtaWrapper from "@/components/common/CtaWrapper";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { cta_data } from "@/data/CtaData";
+import { become_sponsor_title } from "@/data/SponsorData";
 
 const HomeThree = () => {
   return (
@@ -51,6 +52,16 @@ const HomeThree = () => {
 
         <TextSlider />
         <Brand />
+        <CtaWrapper title={cta_wrapper_title} sub_title={cta_wrapper_sub_title}>
+          <div className="d-flex align-items-center justify-content-end">
+            <ButtonLink
+              link={cta_data.become_sponsor.href}
+              title={become_sponsor_title}
+            />
+            <span className="mx-2"></span>
+            <ButtonLink link={see_more_link} title={see_more_label} />
+          </div>
+        </CtaWrapper>
         <Blog />
       </main>
       <FooterOne />

@@ -1,16 +1,4 @@
-import CtaWrapper from "@/components/common/CtaWrapper";
-import ButtonLink from "@/components/ui/ButtonLink";
-import { cta_data } from "@/data/CtaData";
-import brands, {
-  become_sponsor_title,
-  cta_wrapper_sub_title,
-  cta_wrapper_title,
-  description,
-  see_more_label,
-  see_more_link,
-  sub_title,
-  title,
-} from "@/data/SponsorData";
+import brands, { description, sub_title, title } from "@/data/SponsorData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -50,16 +38,6 @@ const Brand = () => {
           ))}
         </div>
       </div>
-      <CtaWrapper title={cta_wrapper_title} sub_title={cta_wrapper_sub_title}>
-        <div className="d-flex align-items-center justify-content-end">
-          <ButtonLink
-            link={cta_data.become_sponsor.href}
-            title={become_sponsor_title}
-          />
-          <span className="mx-2"></span>
-          <ButtonLink link={see_more_link} title={see_more_label} />
-        </div>
-      </CtaWrapper>
     </div>
   );
 };

@@ -4,7 +4,8 @@ import HeaderThree from "@/layouts/headers/HeaderThree";
 import Wrapper from "@/layouts/Wrapper";
 import FaqArea from "./FaqArea";
 import FormArea from "./FormArea";
-import Cta from "./Cta";
+import Brand from "@/components/homes/home-two/Brand";
+import { breadcrumb } from "@/data/SponsorData";
 
 export const metadata = {
   title: "Register Evente - Conference and Event React Next js Template",
@@ -14,9 +15,9 @@ const page = () => {
     <Wrapper>
       <HeaderThree />
       <main>
-        <Breadcrumb title="Sponsors" sub_title="Sponsors" />
+        <Breadcrumb title={breadcrumb.title} sub_title={breadcrumb.sub_title} />
+        <Brand />
         <FaqArea />
-        <Cta />
         <FormArea />
       </main>
       <FooterOne />
