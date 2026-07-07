@@ -2,17 +2,20 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import ExhibitionSchedule from "./Schedule";
-import Cta from "./Cta";
 import FormArea from "./FormArea";
+import FaqArea from "./FaqArea";
+import { breadcrumb } from "@/data/ExhibitionData";
+import Pricing from "@/components/homes/home-three/Pricing";
 
 const Exhibition = () => {
   return (
     <>
       <HeaderThree />
       <main>
-        <Breadcrumb title="All Exhibitions" sub_title="Exhibitions" />
+        <Breadcrumb title={breadcrumb.title} sub_title={breadcrumb.sub_title} />
         <ExhibitionSchedule />
-        <Cta />
+        <FaqArea />
+        <Pricing />
         <FormArea />
       </main>
       <FooterOne />
