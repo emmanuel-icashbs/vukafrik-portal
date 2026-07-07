@@ -1,49 +1,99 @@
-'use client'
-import React, { useActionState, useEffect } from 'react'
-import { handleContactFormAction } from '@/app/action/sendContactEmail'
+"use client";
+import { useActionState, useEffect } from "react";
+import { handleContactFormAction } from "@/app/action/sendContactEmail";
 import { toast } from "react-toastify";
+import { form_area } from "@/data/ContactData";
 
 const ContactForm = () => {
+  const [state, formAction] = useActionState(handleContactFormAction, {
+    success: false,
+  });
 
-   const [state, formAction] = useActionState(handleContactFormAction, { success: false })
+  useEffect(() => {
+    if (state.success) {
+      toast.success("✅ Message sent successfully!");
+    }
+    if (state.error) {
+      toast.error(`❌ Error: ${state.error}`);
+    }
+  }, [state.success, state.error]);
 
-   useEffect(() => {
-      if (state.success) {
-         toast.success("✅ Message sent successfully!");
-      }
-      if (state.error) {
-         toast.error(`❌ Error: ${state.error}`);
-      }
-   }, [state.success, state.error]);
+  return (
+    <form id="contact-form" action={formAction}>
+      <div className="td-contact-form-box">
+        <h3 className="td-postbox-form-title mb-15">{form_area.title}</h3>
+        <p className="mb-30">{form_area.sub_title}</p>
+        <div className="row">
+          <div className="col-md-6 mb-20">
+            <input
+              className="td-input"
+              name="user_name"
+              type="text"
+              placeholder={form_area.fields[0]}
+            />
+          </div>
+          <div className="col-md-6 mb-20">
+            <input
+              className="td-input"
+              name="user_email"
+              type="email"
+              placeholder={form_area.fields[1]}
+            />
+          </div>
+          <div className="col-md-6 mb-20">
+            <input
+              className="td-input"
+              name="user_phone"
+              type="text"
+              placeholder={form_area.fields[2]}
+            />
+          </div>
+          <div className="col-md-6 mb-25">
+            <select
+              name="budgetRange"
+              className="vuka-form-input"
+              aria-invalid="false"
+              defaultValue={""}
+            >
+              <option value="" disabled>
+                {form_area.fields[3]}
+              </option>
+              <option value="Information generale">Information generale</option>
+              <option value="Inscription">Inscription</option>
+              <option value="Sponsoring">Sponsoring</option>
+              <option value="Exposition">Exposition</option>
+              <option value="Media">Media</option>
+              <option value="Candidature speaker">Candidature speaker</option>
+              <option value="Volontariat">Volontariat</option>
+              <option value="Partenariat">Partenariat</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div className="col-md-12 mb-15">
+            <textarea
+              className="td-input message"
+              name="message"
+              cols={30}
+              rows={10}
+              placeholder={form_area.fields[4]}
+            ></textarea>
+          </div>
+          <div className="col-md-12 mb-25">
+            <label>
+              <input className="input mr-10" type="checkbox" />
+              {form_area.fields[5]}
+            </label>
+          </div>
+          <div className="col-12">
+            <button type="submit" className="td-btn">
+              {form_area.submit_button}
+            </button>
+          </div>
+          <p className="ajax-response pt-20"></p>
+        </div>
+      </div>
+    </form>
+  );
+};
 
-   return (
-      <form id="contact-form" action={formAction}>
-         <div className="td-contact-form-box">
-            <h3 className="td-postbox-form-title mb-15">Send Us Message</h3>
-            <div className="row">
-               <div className="col-lg-4 col-md-6 mb-20">
-                  <input className="td-input" name="user_name" type="text" placeholder="Name" />
-               </div>
-               <div className="col-lg-4 col-md-6 mb-20">
-                  <input className="td-input" name="user_email" type="email" placeholder="Email" />
-               </div>
-               <div className="col-lg-4 col-12 mb-20">
-                  <input className="td-input" name="user_phone" type="text" placeholder="Phone" />
-               </div>
-               <div className="col-12 mb-20">
-                  <input className="td-input" name="website" type="text" placeholder="Website" />
-               </div>
-               <div className="col-md-12 mb-15">
-                  <textarea className="td-input message" name="message" cols={30} rows={10} placeholder="Comment"></textarea>
-               </div>
-               <div className="col-12">
-                  <button type="submit" className="td-btn">Submit Your Message</button>
-               </div>
-               <p className="ajax-response pt-20"></p>
-            </div>
-         </div>
-      </form>
-   )
-}
-
-export default ContactForm
+export default ContactForm;

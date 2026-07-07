@@ -2,18 +2,20 @@ import HeaderThree from "@/layouts/headers/HeaderThree";
 import Breadcrumb from "../common/Breadcrumb";
 import ContactArea from "./ContactArea";
 import ContactFormArea from "./ContactFormArea";
-import Cta from "../homes/home-two/Cta";
 import FooterOne from "@/layouts/footers/FooterOne";
+import { breadcrumb_data } from "@/data/ContactData";
 
 const Contact = () => {
   return (
     <>
       <HeaderThree />
       <main>
-        <Breadcrumb title="Contact With Us" sub_title="Contact" />
+        <Breadcrumb
+          title={breadcrumb_data.sub_title}
+          sub_title={breadcrumb_data.title}
+        />
         <ContactArea />
         <ContactFormArea />
-        <Cta />
       </main>
       <FooterOne />
     </>
