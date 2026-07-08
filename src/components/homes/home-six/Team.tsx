@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { JSX } from "react";
 import { useRouter } from "next/navigation";
-import team_data, { description, sub_title, title } from "@/data/SpeakerData";
+import speaker_data, {
+  description,
+  sub_title,
+  title,
+} from "@/data/SpeakerData";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -112,7 +116,7 @@ const TeamHomeSix = () => {
           </div>
         </div>
         <div className="row row-cols-1 row-cols-xxl-5 row-cols-xl-3 row-cols-lg-3 row-cols-md-2">
-          {team_data.map((item, index) => (
+          {speaker_data.map((item, index) => (
             <div key={item.id} className="col">
               <div
                 className="td-team-5-wrap p-relative z-index-1 mb-30 wow fadeInUp"
@@ -140,9 +144,9 @@ const TeamHomeSix = () => {
                   </div>
                   <div className="td-team-5-content">
                     <h5>
-                      <Link href="/team-details">{item.title}</Link>
+                      <Link href="/team-details">{item.name}</Link>
                     </h5>
-                    <span>{item.designation}</span>
+                    <span>{item.title}</span>
                   </div>
                 </div>
               </div>

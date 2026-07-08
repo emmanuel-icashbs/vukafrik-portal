@@ -1,4 +1,4 @@
-import team_data from "@/data/SpeakerData";
+import speaker_data from "@/data/SpeakerData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +24,7 @@ const Team = () => {
           </div>
         </div>
         <div className="row">
-          {team_data.map((item) => (
+          {speaker_data.map((item) => (
             <div
               key={item.id}
               className="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft"
@@ -37,9 +37,9 @@ const Team = () => {
                 </div>
                 <div className="td-team-3-content">
                   <h3 className="td-title">
-                    <Link href="/team-details">{item.title}</Link>
+                    <Link href="/team-details">{item.name}</Link>
                   </h3>
-                  <span className="td-position">{item.designation}</span>
+                  <span className="td-position">{item.title}</span>
                   <div className="td-team-3-social">
                     <span>
                       <Link href="#">

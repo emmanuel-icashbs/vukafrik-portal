@@ -11,57 +11,69 @@ import { cta_data } from "./CtaData";
 interface DataType {
   id: number;
   thumb: StaticImageData;
+  name: string;
   title: string;
-  designation: string;
   biography: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  years_of_experience?: string;
 }
 
-const team_data: DataType[] = [
+const speaker_data: DataType[] = [
   {
     id: 1,
     thumb: team_1,
-    title: "Devon Lane",
-    designation: "Sr. Software Engineer",
+    name: "Devon Lane",
+    title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    email: vukafrik_event_data.contacts.generalEmail,
+    phone: vukafrik_event_data.contacts.phoneLabel,
+    address: vukafrik_event_data.venue,
+    years_of_experience: "5 years",
   },
   {
     id: 2,
     thumb: team_2,
-    title: "Esther Howard",
-    designation: "Sr. Software Engineer",
+    name: "Esther Howard",
+    title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    email: vukafrik_event_data.contacts.generalEmail,
+    phone: vukafrik_event_data.contacts.phoneLabel,
+    address: vukafrik_event_data.venue,
+    years_of_experience: "4 years",
   },
   {
     id: 3,
     thumb: team_3,
-    title: "Robert Fox",
-    designation: "Sr. Software Engineer",
+    name: "Robert Fox",
+    title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
   {
     id: 4,
     thumb: team_4,
-    title: "Leslie Alexander",
-    designation: "Sr. Software Engineer",
+    name: "Leslie Alexander",
+    title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
   {
     id: 5,
     thumb: team_5,
-    title: "Jane Cooper",
-    designation: "Sr. Software Engineer",
+    name: "Jane Cooper",
+    title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
   {
     id: 6,
     thumb: team_5,
-    title: "Prince Ilunga",
-    designation: "Sr. Software Engineer",
+    name: "Prince Ilunga",
+    title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
@@ -95,4 +107,4 @@ export {
   form_title,
   form_sub_title,
 };
-export default team_data;
+export default speaker_data;

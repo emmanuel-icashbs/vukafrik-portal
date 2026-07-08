@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import team_data from "@/data/SpeakerData";
+import speaker_data from "@/data/SpeakerData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -27,7 +27,7 @@ const TeamArea = () => {
           </div>
         </div>
         <div className="row">
-          {team_data.map((item) => (
+          {speaker_data.map((item) => (
             <div
               key={item.id}
               className="col-lg-4 col-md-6 col-sm-6"
@@ -40,11 +40,9 @@ const TeamArea = () => {
               >
                 <div className="td-team-content">
                   <h3 className="td-team-member-name mb-0">
-                    <Link href="/team-details">{item.title}</Link>
+                    <Link href="/team-details">{item.name}</Link>
                   </h3>
-                  <span className="td-team-member-position">
-                    {item.designation}
-                  </span>
+                  <span className="td-team-member-position">{item.title}</span>
                 </div>
                 <div className="td-team-thumb text-center">
                   <Image src={item.thumb} alt="" />
