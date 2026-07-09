@@ -79,7 +79,7 @@ const Team = () => {
                 </svg>
                 <Image className="team-gradiant-bg" src={shape} alt="" />
                 <div className="td-team-2-thumb fix mb-25">
-                  <Image className="w-100" src={item.thumb} alt="" />
+                  <Image className="w-100" src={item.image} alt="" />
                 </div>
                 <div className="td-team-2-content ml-30">
                   <h2 className="td-team-2-title">

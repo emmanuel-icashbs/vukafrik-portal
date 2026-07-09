@@ -11,6 +11,7 @@ import village_data, {
   sub_title,
   title,
 } from "@/data/VillageData";
+import { vukafrik_event_data } from "@/data/VukAfrikData";
 
 const setting = {
   loop: true,
@@ -70,7 +71,7 @@ const EventHomeTwo = () => {
                 >
                   <div className="td-schedule-2-item mb-30">
                     <div className="td-schedule-2-thumb p-relative">
-                      <Link href="/events-details">
+                      <Link href="#" style={{ cursor: "default" }}>
                         <Image className="w-100" src={item.thumb} alt="" />
                       </Link>
                       <span className="td-schedule-2-date">
@@ -80,7 +81,9 @@ const EventHomeTwo = () => {
                     </div>
                     <div className="td-schedule-2-content">
                       <h5 className="td-schedule-2-title mb-15">
-                        <Link href="/events-details">{item.title}</Link>
+                        <Link href="#" style={{ cursor: "default" }}>
+                          {item.title}
+                        </Link>
                       </h5>
                       <div className="td-schedule-2-destination mb-15">
                         <span>
@@ -96,8 +99,12 @@ const EventHomeTwo = () => {
                           {item.time}
                         </span>
                       </div>
-                      <Link className="td-btn-square" href="/events-details">
-                        Details
+                      <Link
+                        className="td-btn-square"
+                        href="#"
+                        style={{ cursor: "default" }}
+                      >
+                        {vukafrik_event_data.name}
                       </Link>
                     </div>
                   </div>

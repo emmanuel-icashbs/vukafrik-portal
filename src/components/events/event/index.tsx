@@ -4,13 +4,17 @@ import HeaderThree from "@/layouts/headers/HeaderThree";
 import Schedule from "@/components/homes/home-one/Schedule";
 import EventHomeTwo from "@/components/homes/home-two/Event";
 import Feature from "@/components/homes/home-three/Feature";
+import { breadcrumb_data } from "@/data/ScheduleData";
 
 const Event = () => {
   return (
     <>
       <HeaderThree />
       <main>
-        <Breadcrumb title="All Events" sub_title="Events" />
+        <Breadcrumb
+          title={breadcrumb_data.title}
+          sub_title={breadcrumb_data.sub_title}
+        />
         <Schedule />
         <Feature />
         <EventHomeTwo />

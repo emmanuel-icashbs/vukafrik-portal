@@ -33,7 +33,7 @@ const Team = () => {
             >
               <div className="td-team-3-wrap mb-30 text-center">
                 <div className="td-team-3-thumb">
-                  <Image className="w-100" src={item.thumb} alt="" />
+                  <Image className="w-100" src={item.image} alt="" />
                 </div>
                 <div className="td-team-3-content">
                   <h3 className="td-title">

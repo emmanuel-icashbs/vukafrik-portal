@@ -8,6 +8,7 @@ import speaker_data, {
   sub_title,
   title,
 } from "@/data/SpeakerData";
+import { other_links } from "@/data/MenuData";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -124,14 +125,16 @@ const TeamHomeSix = () => {
                 data-wow-duration="1.5s"
                 data-wow-delay="0.3s"
                 onClick={() => {
-                  router.push("/team-details");
+                  router.push(
+                    `${other_links.speakers.details.link}/${item.id}`,
+                  );
                 }}
               >
                 <span className="td-team-5-shape">
                   {team_shapes[index % team_shapes.length]}
                 </span>
                 <div className="td-team-5-thumb">
-                  <Image src={item.thumb} alt="" />
+                  <Image src={item.image} alt="" />
                   <div
                     className="td-team-3-social td-team-5-social align-items-center justify-content-center"
                     style={{
@@ -144,7 +147,11 @@ const TeamHomeSix = () => {
                   </div>
                   <div className="td-team-5-content">
                     <h5>
-                      <Link href="/team-details">{item.name}</Link>
+                      <Link
+                        href={`${other_links.speakers.details.link}/${item.id}`}
+                      >
+                        {item.name}
+                      </Link>
                     </h5>
                     <span>{item.title}</span>
                   </div>

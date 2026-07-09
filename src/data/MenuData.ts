@@ -32,7 +32,7 @@ const menu_data: MenuItem[] = [
     id: 4,
     has_dropdown: false,
     title: "Intervenants",
-    link: "/team",
+    link: "/speakers",
   },
   {
     id: 5,
@@ -47,5 +47,20 @@ const menu_data: MenuItem[] = [
     link: "/contact",
   },
 ];
+const other_links = {
+  speakers: {
+    details: {
+      link: menu_data[3].link,
+      title: "Détails",
+    },
+  },
+  events: { // programme
+    details: {
+      link: menu_data[2].link,
+      title: "Détails",
+    },
+  },
+};
 
+export { other_links };
 export default menu_data;

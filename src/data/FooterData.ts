@@ -13,7 +13,7 @@ export const footer_data = {
   quickLinks: [
     { label: "A propos", href: "/about" },
     { label: "Programme", href: "/program" },
-    { label: "Speakers", href: "/team" },
+    { label: "Speakers", href: "/speakers" },
     { label: "Lieu & acces", href: "/event-venue" },
     { label: "FAQ", href: "/faq" },
   ],
@@ -24,7 +24,7 @@ export const footer_data = {
       label: "S'inscrire comme exposant",
       href: "/exhibitions#exhibitor_form",
     },
-    { label: "Proposer une intervention", href: "/team#team_form" },
+    { label: "Proposer une intervention", href: "/speakers#team_form" },
     { label: "Accreditation media", href: "/media-accreditation#media_form" },
     { label: "Volontariat", href: "/volonteer#volonteer_form" },
   ],

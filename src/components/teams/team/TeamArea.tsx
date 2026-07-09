@@ -45,7 +45,7 @@ const TeamArea = () => {
                   <span className="td-team-member-position">{item.title}</span>
                 </div>
                 <div className="td-team-thumb text-center">
-                  <Image src={item.thumb} alt="" />
+                  <Image src={item.image} alt="" />
                 </div>
                 <div className="td-team-social-wrap">
                   <div className="team__social td-team-social td-social-icon-style">

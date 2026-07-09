@@ -3,17 +3,20 @@ import HeaderThree from "@/layouts/headers/HeaderThree";
 import Counter from "./Counter";
 import TeamHomeSix from "@/components/homes/home-six/Team";
 import FooterOne from "@/layouts/footers/FooterOne";
-import Cta from "./Cta";
 import FormArea from "./FormArea";
+import { speakers_breadcrumb_data } from "@/data/SpeakerData";
 
 const Team = () => {
   return (
     <>
       <HeaderThree />
       <main>
-        <Breadcrumb title="Our Speakers" sub_title="Speakers8" />
+        <Breadcrumb
+          title={speakers_breadcrumb_data.title}
+          sub_title={speakers_breadcrumb_data.sub_title}
+        />
         <TeamHomeSix />
-        
+
         <FormArea />
         <Counter />
       </main>

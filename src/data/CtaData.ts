@@ -35,7 +35,7 @@ export const cta_data: CtaDataType = {
   },
   become_speaker: {
     title: "Proposer une intervention",
-    href: "/team#team_form",
+    href: "/speakers#team_form",
   },
   become_journalist: {
     title: "Accreditation media",

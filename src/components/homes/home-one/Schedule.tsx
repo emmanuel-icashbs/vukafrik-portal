@@ -6,9 +6,11 @@ import schedule_data, {
   sub_title,
   schedule_days,
   title,
+  table_columns,
 } from "@/data/ScheduleData";
 import Link from "next/link";
 import { getSpeakerById } from "@/utils/functions";
+import { other_links } from "@/data/MenuData";
 
 const Schedule = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -86,7 +88,7 @@ const Schedule = () => {
                             <div className="row">
                               <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="td-schedule-content mb-20">
-                                  <span>Topic</span>
+                                  <span>{table_columns.topic}</span>
                                   <p className="m-0">{item.topic}</p>
                                   <span className="td-schedule-category">
                                     {item.category}
@@ -95,12 +97,12 @@ const Schedule = () => {
                               </div>
                               <div className="col-lg-2 col-md-6 col-sm-6">
                                 <div className="td-schedule-content ml-15 mb-20">
-                                  <span>Speaker(s)</span>
+                                  <span>{table_columns.speakers}</span>
                                   <p className="m-0">
                                     {item.speakers.map((speaker_id, index) => (
                                       <a
                                         key={index}
-                                        href={`/team/${speaker_id}`}
+                                        href={`/speakers/${speaker_id}`}
                                         className="my-link"
                                         style={{ cursor: "pointer" }}
                                       >
@@ -113,7 +115,7 @@ const Schedule = () => {
                               </div>
                               <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="td-schedule-content ml-35 mb-20">
-                                  <span>Venue</span>
+                                  <span>{table_columns.venue}</span>
                                   <p className="m-0">{item.venue}</p>
                                 </div>
                               </div>
@@ -121,10 +123,10 @@ const Schedule = () => {
                                 <div className="td-schedule-content text-center mb-20">
                                   <Link
                                     className="td-btn td-left-right"
-                                    href="/events-details"
+                                    href={`${other_links.events.details.link}/${item.id}`}
                                   >
                                     <span className="mr10 td-text d-inline-block mr-5">
-                                      Details
+                                      {other_links.events.details.title}
                                     </span>
                                     <span className="td-arrow-angle">
                                       <svg
