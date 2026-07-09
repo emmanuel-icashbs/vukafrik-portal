@@ -1,19 +1,20 @@
-import RegisterForm from "@/components/forms/RegisterForm";
+import MediaAccreditationForm from "@/components/forms/MediaAccreditationForm";
+import { form_data } from "@/data/MediaAccreditationData";
 
 const FormArea = () => {
   return (
-    <div className="tg-login-area pt-140 pb-110" id="media_form">
+    <div className="tg-login-area pt-100 pb-110" id="media_form">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-xl-6 col-lg-8 col-md-10">
+          <div className="col-md-10">
             <div className="tg-login-wrapper">
               <div className="tg-login-top text-center mb-30">
-                <h2>Register Now!</h2>
-                <p>You can signup with you social account below</p>
+                <h2>{form_data.title}</h2>
+                <p>{form_data.sub_title}</p>
               </div>
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">
-                  <RegisterForm />
+                  <MediaAccreditationForm />
                 </div>
               </div>
             </div>

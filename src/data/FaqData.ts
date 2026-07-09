@@ -1,12 +1,6 @@
-interface DataType {
-  id: number;
-  page: string;
-  title: string;
-  desc: string;
-  showAnswer: boolean;
-}
+import { FaqDataType } from "@/utils/types";
 
-const faq_data: DataType[] = [
+const faq_data: FaqDataType[] = [
   {
     id: 1,
     page: "inner_faq",

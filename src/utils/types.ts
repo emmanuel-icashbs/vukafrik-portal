@@ -30,4 +30,17 @@ interface InBetweenPathDataType {
   href: string;
 }
 
-export type { EventDataType, SpeakerDataType, InBetweenPathDataType };
+interface FaqDataType {
+  id: number;
+  page: string;
+  title: string;
+  desc: string;
+  showAnswer: boolean;
+}
+
+export type {
+  EventDataType,
+  SpeakerDataType,
+  InBetweenPathDataType,
+  FaqDataType,
+};
