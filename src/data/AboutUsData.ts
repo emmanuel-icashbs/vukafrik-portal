@@ -35,4 +35,12 @@ export const about_section_data: AboutSectinDataType = {
 };
 const info_section_title = "En savoir plus sur nous";
 
-export { info_section_title };
+const breadcrumb_data: {
+  title: string;
+  sub_title: string;
+} = {
+  title: "À propos de nous",
+  sub_title: "À propos",
+};
+
+export { info_section_title, breadcrumb_data };

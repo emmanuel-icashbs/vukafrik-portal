@@ -1,4 +1,4 @@
-import { about_section_data } from "@/data/AboutSectionData";
+import { about_section_data } from "@/data/AboutUsData";
 import Image from "next/image";
 import Link from "next/link";
 

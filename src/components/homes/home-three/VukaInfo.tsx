@@ -5,7 +5,7 @@ import { useJarallax } from "@/hooks/useJarallax";
 
 import bg_img from "@/assets/img/testimonial/tes-video.jpg";
 import { vukafrik_event_data } from "@/data/VukAfrikData";
-import { info_section_title } from "@/data/AboutSectionData";
+import { info_section_title } from "@/data/AboutUsData";
 
 const setting = {
   slidesPerView: 1,

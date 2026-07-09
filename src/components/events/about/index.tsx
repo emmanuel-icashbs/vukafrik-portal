@@ -5,13 +5,17 @@ import HeaderThree from "@/layouts/headers/HeaderThree";
 import FooterOne from "@/layouts/footers/FooterOne";
 import About from "@/components/homes/home-three/About";
 import VukaInfo from "@/components/homes/home-three/VukaInfo";
+import { breadcrumb_data } from "@/data/AboutUsData";
 
 const AboutVukaPage = () => {
   return (
     <>
       <HeaderThree />
       <main>
-        <Breadcrumb title="What We Have Done" sub_title="About" />
+        <Breadcrumb
+          title={breadcrumb_data.title}
+          sub_title={breadcrumb_data.sub_title}
+        />
         <About should_display_about_btn={false} />
         <Feature />
         <div className="mt-100">
