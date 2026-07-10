@@ -6,7 +6,7 @@ import team_5 from "@/assets/img/team/team-5/thumb-5.png";
 import { vukafrik_event_data } from "./VukAfrikData";
 import { cta_data } from "./CtaData";
 import { InBetweenPathDataType, SpeakerDataType } from "@/utils/types";
-import menu_data from "./MenuData";
+import { paths_holder } from "./MenuData";
 
 const speaker_data: SpeakerDataType[] = [
   {
@@ -78,7 +78,7 @@ const speaker_data: SpeakerDataType[] = [
 const sub_title = "Apprendre grâce aux intervenants";
 const title = "Intervenants à la conférence";
 const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
-const see_more_link = "/speakers";
+const see_more_link = paths_holder.speakers.list.link;
 const see_more_label = "Voir plus";
 const cta_wrapper_title = "Ensemble avec Vous!";
 const cta_wrapper_sub_title = "Nous irons encore plus loin!";
@@ -96,7 +96,12 @@ const speaker_details_breadcrumb_data: {
 } = {
   title: "Informations sur l'intervenant",
   sub_title: "Informations sur l'intervenant",
-  in_between_paths: [{ label: menu_data[3].title, href: menu_data[3].link }],
+  in_between_paths: [
+    {
+      label: paths_holder.speakers.list.title,
+      href: paths_holder.speakers.list.link,
+    },
+  ],
 };
 const speakers_breadcrumb_data: {
   title: string;

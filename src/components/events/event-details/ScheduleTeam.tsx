@@ -4,7 +4,7 @@ import Image from "next/image";
 import img_1 from "@/assets/img/schedule/schedule-details/avatar.png";
 import { SpeakerDataType } from "@/utils/types";
 import { detail_page_data } from "@/data/ScheduleData";
-import { other_links } from "@/data/MenuData";
+import { paths_holder } from "@/data/MenuData";
 
 const ScheduleTeam = ({ speakers }: { speakers: SpeakerDataType[] }) => {
   return (
@@ -36,10 +36,10 @@ const ScheduleTeam = ({ speakers }: { speakers: SpeakerDataType[] }) => {
               <div className="td-schedule-team-btn">
                 <Link
                   className="td-btn td-left-right mb-20"
-                  href={`${other_links.speakers.details.link}/${speaker.id}`}
+                  href={`${paths_holder.speakers.list.link}/${speaker.id}`}
                 >
                   <span className="mr10 td-text d-inline-block mr-5">
-                    {other_links.speakers.details.title}
+                    {paths_holder.speakers.details_title}
                   </span>
                   <span className="td-arrow-angle">
                     <svg

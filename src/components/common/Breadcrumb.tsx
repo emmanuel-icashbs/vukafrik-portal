@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import bg_img from "@/assets/img/breadcrumb/breadcrumb.jpg";
-import menu_data from "@/data/MenuData";
+import { paths_holder } from "@/data/MenuData";
 import { InBetweenPathDataType } from "@/utils/types";
 
 interface DataType {
@@ -34,7 +34,9 @@ const Breadcrumb = ({ title, sub_title, in_between_paths }: DataType) => {
               >
                 <ul>
                   <li>
-                    <Link href={menu_data[0].link}>{menu_data[0].title}</Link> {/* this is Home(Accueil) menu, the default one */}
+                    <Link href={paths_holder.home.link}>
+                      {paths_holder.home.title}
+                    </Link>{" "}
                   </li>
                   <li>
                     <i className="fa-sharp fa-solid fa-angle-right fa-fw"></i>

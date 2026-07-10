@@ -10,6 +10,7 @@ import brand_7 from "@/assets/img/brands/brands-7.png";
 import brand_8 from "@/assets/img/brands/brands-8.png";
 import { vukafrik_event_data } from "./VukAfrikData";
 import { cta_data } from "./CtaData";
+import { paths_holder } from "./MenuData";
 
 const brands: StaticImageData[] = [
   brand_1,
@@ -26,7 +27,7 @@ const sub_title = "Sponsors";
 const title = "Sponsors et partenaires officiels";
 const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
 const see_more_label = "Voir plus";
-const see_more_link = "/sponsors";
+const see_more_link = paths_holder.sponsors.link;
 const become_sponsor_title = cta_data.become_sponsor.title;
 const cta_wrapper_sub_title = "Nous irons toujours plus loin!";
 const cta_wrapper_title = "Avec nos partenaires!";

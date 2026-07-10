@@ -10,6 +10,7 @@ import Sidebar from "./menu/Sidebar";
 import logo_1 from "@/assets/img/logo/vukafrik-white-gold-logo.png";
 import logo_2 from "@/assets/img/logo/vukafrik-black-gold-logo.png";
 import { cta_data } from "@/data/CtaData";
+import { paths_holder } from "@/data/MenuData";
 
 const HeaderThree = () => {
   const { sticky } = UseSticky();
@@ -27,7 +28,10 @@ const HeaderThree = () => {
               <div className="col-xxl-10 col-xl-10 col-6 ">
                 <div className="tdmenu__wrap d-flex align-items-center justify-content-between ">
                   <div className="logo">
-                    <Link className="logo-1 logo-sticky-none" href="/">
+                    <Link
+                      className="logo-1 logo-sticky-none"
+                      href={paths_holder.home.link}
+                    >
                       <Image
                         data-width="150"
                         src={logo_1}
@@ -36,7 +40,10 @@ const HeaderThree = () => {
                         height={200}
                       />
                     </Link>
-                    <Link className="logo-2 d-none" href="/">
+                    <Link
+                      className="logo-2 d-none"
+                      href={paths_holder.home.link}
+                    >
                       <Image
                         data-width="150"
                         src={logo_2}

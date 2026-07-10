@@ -10,7 +10,7 @@ import schedule_data, {
 } from "@/data/ScheduleData";
 import Link from "next/link";
 import { getSpeakerById } from "@/utils/functions";
-import { other_links } from "@/data/MenuData";
+import { paths_holder } from "@/data/MenuData";
 
 const Schedule = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -102,7 +102,7 @@ const Schedule = () => {
                                     {item.speakers.map((speaker_id, index) => (
                                       <a
                                         key={index}
-                                        href={`/speakers/${speaker_id}`}
+                                        href={`${paths_holder.speakers.list.link}/${speaker_id}`}
                                         className="my-link"
                                         style={{ cursor: "pointer" }}
                                       >
@@ -123,10 +123,10 @@ const Schedule = () => {
                                 <div className="td-schedule-content text-center mb-20">
                                   <Link
                                     className="td-btn td-left-right"
-                                    href={`${other_links.events.details.link}/${item.id}`}
+                                    href={`${paths_holder.events.list.link}/${item.id}`}
                                   >
                                     <span className="mr10 td-text d-inline-block mr-5">
-                                      {other_links.events.details.title}
+                                      {paths_holder.events.details_title}
                                     </span>
                                     <span className="td-arrow-angle">
                                       <svg

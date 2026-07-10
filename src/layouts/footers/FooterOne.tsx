@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { vukafrik_event_data } from "@/data/VukAfrikData";
 import { footer_data } from "@/data/FooterData";
+import { paths_holder } from "@/data/MenuData";
 
 const FooterOne = () => {
   return (
@@ -16,7 +17,7 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="td-footer-widget mb-40">
                 <div className="td-footer-logo mb-20">
-                  <Link href="/">
+                  <Link href={paths_holder.home.link}>
                     <Image src={footer_data.logo} alt="logo" />
                   </Link>
                 </div>

@@ -1,4 +1,4 @@
-import { other_links } from "@/data/MenuData";
+import { paths_holder } from "@/data/MenuData";
 import { speakers_schedule_title } from "@/data/SpeakerData";
 import { EventDataType } from "@/utils/types";
 import Link from "next/link";
@@ -37,7 +37,9 @@ const Schedule = ({ events }: { events: EventDataType[] }) => {
                         <div className="td-schedule-team-name">
                           <span className="dates">{`${event.start_time} - ${event.end_time}`}</span>
                           <h4 className="td-title">
-                            <Link href={"/events/" + event.id}>
+                            <Link
+                              href={`${paths_holder.events.list.link}/${event.id}`}
+                            >
                               {event.topic}
                             </Link>
                           </h4>
@@ -49,10 +51,10 @@ const Schedule = ({ events }: { events: EventDataType[] }) => {
                       <div className="td-schedule-team-btn">
                         <Link
                           className="td-btn td-left-right mb-20"
-                          href={`${other_links.events.details.link}/${event.id}`}
+                          href={`${paths_holder.events.list.link}/${event.id}`}
                         >
                           <span className="mr10 td-text d-inline-block mr-5">
-                            {other_links.events.details.title}
+                            {paths_holder.events.details_title}
                           </span>
                           <span className="td-arrow-angle">
                             <svg

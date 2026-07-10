@@ -8,7 +8,7 @@ import speaker_data, {
   sub_title,
   title,
 } from "@/data/SpeakerData";
-import { other_links } from "@/data/MenuData";
+import { paths_holder } from "@/data/MenuData";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -125,9 +125,7 @@ const TeamHomeSix = () => {
                 data-wow-duration="1.5s"
                 data-wow-delay="0.3s"
                 onClick={() => {
-                  router.push(
-                    `${other_links.speakers.details.link}/${item.id}`,
-                  );
+                  router.push(`${paths_holder.speakers.list.link}/${item.id}`);
                 }}
               >
                 <span className="td-team-5-shape">
@@ -148,7 +146,7 @@ const TeamHomeSix = () => {
                   <div className="td-team-5-content">
                     <h5>
                       <Link
-                        href={`${other_links.speakers.details.link}/${item.id}`}
+                        href={`${paths_holder.speakers.list.link}/${item.id}`}
                       >
                         {item.name}
                       </Link>

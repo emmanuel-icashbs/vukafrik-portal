@@ -1,3 +1,5 @@
+import { paths_holder } from "./MenuData";
+
 export const vukafrik_event_data = {
   name: "VUK'AFRIK 2026",
   subtitle: "Foire de l'Innovation et de l'Entrepreneuriat",
@@ -41,8 +43,16 @@ export const vukafrik_event_data = {
     ],
   },
   socialLinks: [
-    { label: "LinkedIn", href: "/contact", icon: "fa-brands fa-linkedin" },
-    { label: "Instagram", href: "/contact", icon: "fa-brands fa-instagram" },
+    {
+      label: "LinkedIn",
+      href: paths_holder.contact.link,
+      icon: "fa-brands fa-linkedin",
+    },
+    {
+      label: "Instagram",
+      href: paths_holder.contact.link,
+      icon: "fa-brands fa-instagram",
+    },
     {
       label: "WhatsApp",
       href: "https://wa.me/243898470448",

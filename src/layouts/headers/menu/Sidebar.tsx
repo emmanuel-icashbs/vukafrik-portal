@@ -4,6 +4,7 @@ import MobileMenus from "./MobileMenu";
 
 import logo from "@/assets/img/logo/vukafrik-black-gold-logo.png";
 import { vukafrik_event_data } from "@/data/VukAfrikData";
+import { paths_holder } from "@/data/MenuData";
 
 interface MobileSidebarProps {
   sidebar: boolean;
@@ -19,7 +20,7 @@ const Sidebar = ({ sidebar, setSidebar }: MobileSidebarProps) => {
             <i className="fa-solid fa-xmark"></i>
           </div>
           <div className="nav-logo">
-            <Link href="/">
+            <Link href={paths_holder.home.link}>
               <Image src={logo} alt="logo" />
             </Link>
           </div>

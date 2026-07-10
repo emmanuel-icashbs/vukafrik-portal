@@ -3,7 +3,7 @@ import HeaderThree from "@/layouts/headers/HeaderThree";
 import EventDetailsArea from "./EventDetailsArea";
 import { EventDataType } from "@/utils/types";
 import FooterOne from "@/layouts/footers/FooterOne";
-import menu_data from "@/data/MenuData";
+import { paths_holder } from "@/data/MenuData";
 
 const EventDetails = ({ event }: { event: EventDataType }) => {
   return (
@@ -14,7 +14,10 @@ const EventDetails = ({ event }: { event: EventDataType }) => {
           title={event.topic}
           sub_title={event.topic}
           in_between_paths={[
-            { label: menu_data[2].title, href: menu_data[2].link },
+            {
+              label: paths_holder.events.list.title,
+              href: paths_holder.events.list.link,
+            },
           ]}
         />
         <EventDetailsArea event={event} />
