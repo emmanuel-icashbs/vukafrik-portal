@@ -1,79 +1,95 @@
 "use client";
+
+import { form_area, session_preferences } from "@/data/SpeakerData";
+
 const BecomeSpeakerForm = () => {
   return (
-    <form onSubmit={(e) => e.preventDefault()} id="team_form">
+    <form onSubmit={(e) => e.preventDefault()} id={form_area.id}>
       <div className="row">
         <div className="col-lg-6 mb-25">
-          <input className="input" type="text" placeholder="Nom complet *" />
+          <input
+            className="input"
+            type="text"
+            placeholder={form_area.fields[0]}
+          />
         </div>
         <div className="col-lg-6 mb-25">
-          <input className="input" type="email" placeholder="Email *" />
-        </div>
-        <div className="col-lg-6 mb-25">
-          <input className="input" type="text" placeholder="Telephone *" />
-        </div>
-        <div className="col-lg-6 mb-25">
-          <input className="input" type="text" placeholder="Organisation *" />
+          <input
+            className="input"
+            type="email"
+            placeholder={form_area.fields[1]}
+          />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder="Fonction / titre *"
+            placeholder={form_area.fields[2]}
+          />
+        </div>
+        <div className="col-lg-6 mb-25">
+          <input
+            className="input"
+            type="text"
+            placeholder={form_area.fields[3]}
+          />
+        </div>
+        <div className="col-lg-6 mb-25">
+          <input
+            className="input"
+            type="text"
+            placeholder={form_area.fields[4]}
           />
         </div>
         <div className="col-lg-12 mb-25">
-          <textarea placeholder="Courte bio... *" rows={5} />
+          <textarea placeholder={form_area.fields[5]} rows={5} />
         </div>
         <div className="col-lg-12 mb-25">
-          <textarea placeholder="Sujet propose *" rows={5} />
+          <textarea placeholder={form_area.fields[6]} rows={5} />
         </div>
         <div className="col-lg-6 mb-25">
           <select
-            id="_r_7_"
             name="sessionPreference"
             className="vuka-form-input"
             required={true}
             aria-invalid="false"
+            defaultValue={""}
           >
-            <option value="">Selectionner une option *</option>
-            <option value="Keynote">Keynote</option>
-            <option value="Panel">Panel</option>
-            <option value="Fireside Chat">Fireside Chat</option>
-            <option value="Workshop">Workshop</option>
-            <option value="Session de formation">Session de formation</option>
-            <option value="Jury pitch">Jury pitch</option>
-            <option value="Moderateur">Moderateur</option>
-            <option value="Autre">Autre</option>
+            <option value="" disabled>
+              {form_area.fields[7]}
+            </option>
+            {session_preferences.map((preference, index) => (
+              <option key={index} value={preference}>
+                {preference}
+              </option>
+            ))}
           </select>{" "}
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder="LinkedIn / site web *"
+            placeholder={form_area.fields[8]}
           />
         </div>
 
         <div className="col-lg-12 mb-25">
-          <textarea placeholder="Experience de prise de parole" rows={5} />
+          <textarea placeholder={form_area.fields[9]} rows={5} />
         </div>
         <div className="col-lg-12 mb-25">
-          <textarea placeholder="Notes complementaires" rows={5} />
+          <textarea placeholder={form_area.fields[10]} rows={5} />
         </div>
 
         <div className="col-lg-12 mb-25">
           <label>
             <input className="input mr-10" type="checkbox" />
-            {
-              "J'accepte que l'equipe VUK'AFRIK examine cette soumission et me contacte si necessaire."
-            }
+            {form_area.fields[11]}
           </label>
         </div>
 
         <div className="col-lg-12">
           <button type="submit" className="td-btn w-100">
-            Soumettre
+            {form_area.submit_button}
           </button>
         </div>
       </div>

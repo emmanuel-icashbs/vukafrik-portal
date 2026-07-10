@@ -85,9 +85,6 @@ const cta_wrapper_sub_title = "Nous irons encore plus loin!";
 const become_speaker_title = cta_data.become_speaker.title;
 const cta_sub_title = "Ne manquez pas notre événement !";
 const cta_title = "Inscivez-vous dès aujourd'hui !";
-const form_title = "Candidater comme speaker";
-const form_sub_title =
-  "Partagez votre expertise avec les leaders, entrepreneurs, innovateurs, investisseurs et acteurs d'ecosysteme de VUK'AFRIK 2026";
 
 const speaker_details_breadcrumb_data: {
   title: string;
@@ -117,6 +114,38 @@ const info_data = {
   address: "Adresse",
   experience: "Expérience",
 };
+const form_area = {
+  id: "speaker_form",
+  title: "Candidater comme speaker",
+  sub_title:
+    "Partagez votre expertise avec les leaders, entrepreneurs, innovateurs, investisseurs et acteurs d'ecosysteme de VUK'AFRIK 2026",
+  fields: [
+    "Nom complet *",
+    "Email *",
+    "Téléphone *",
+    "Organisation *",
+    "Fonction / titre *",
+    "Courte bio... *",
+    "Sujet propose *",
+    "Preference de session *",
+    "LinkedIn / site web *",
+    "Experience de prise de parole",
+    "Notes complementaires",
+    "J'accepte que l'equipe VUK'AFRIK examine cette soumission et me contacte si necessaire.",
+  ],
+  submit_button: "Soumettre",
+};
+
+const session_preferences = [
+  "Keynote",
+  "Panel",
+  "Fireside Chat",
+  "Workshop",
+  "Session de formation",
+  "Jury pitch",
+  "Moderateur",
+  "Autre",
+];
 
 export {
   sub_title,
@@ -129,11 +158,11 @@ export {
   become_speaker_title,
   cta_sub_title,
   cta_title,
-  form_title,
-  form_sub_title,
+  form_area,
   speaker_details_breadcrumb_data,
   speakers_breadcrumb_data,
   speakers_schedule_title,
   info_data,
+  session_preferences,
 };
 export default speaker_data;

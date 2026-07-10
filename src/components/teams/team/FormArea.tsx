@@ -1,6 +1,5 @@
 import BecomeSpeakerForm from "@/components/forms/BecomeSpeakerForm";
-import RegisterForm from "@/components/forms/RegisterForm";
-import { form_sub_title, form_title } from "@/data/SpeakerData";
+import { form_area } from "@/data/SpeakerData";
 
 const FormArea = () => {
   return (
@@ -10,8 +9,8 @@ const FormArea = () => {
           <div className="col-md-10">
             <div className="tg-login-wrapper">
               <div className="tg-login-top text-center mb-30">
-                <h2>{form_title}</h2>
-                <p>{form_sub_title}</p>
+                <h2>{form_area.title}</h2>
+                <p>{form_area.sub_title}</p>
               </div>
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">

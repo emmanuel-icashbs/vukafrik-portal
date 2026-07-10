@@ -1,6 +1,5 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import HeaderThree from "@/layouts/headers/HeaderThree";
-import Counter from "./Counter";
 import TeamHomeSix from "@/components/homes/home-six/Team";
 import FooterOne from "@/layouts/footers/FooterOne";
 import FormArea from "./FormArea";
@@ -18,7 +17,6 @@ const Team = () => {
         <TeamHomeSix />
 
         <FormArea />
-        <Counter />
       </main>
       <FooterOne />
     </>
