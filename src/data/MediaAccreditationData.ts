@@ -62,5 +62,20 @@ const form_data = {
   title: "Demande d'accreditation media",
   sub_title:
     "Demandez un acces media pour couvrir VUK'AFRIK 2026, son Strategic Summit, ses expositions, ses innovation showcases et ses activites ecosystemiques.",
+  fields: [
+    "Organisation / media *",
+    "Nom du journaliste / representant *",
+    "E-mail *",
+    "Téléphone *",
+    "Pays *",
+    "Type de media *",
+    "Objet de la demande *",
+    "Lien vers des contenus precedents *",
+    "Numero de carte de presse *",
+    "Nombre de representants media *",
+    "Besoins techniques specifiques *",
+    "J'accepte que l'equipe VUK'AFRIK examine cette soumission et me contacte si necessaire.",
+  ],
+  submit_button: "Soumettre",
 };
 export { breadcrumb_data, faq_data, form_data };
