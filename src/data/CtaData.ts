@@ -1,3 +1,4 @@
+import { form_area } from "./ExhibitionData";
 import { paths_holder } from "./MenuData";
 
 type CtaItemType = {
@@ -15,7 +16,7 @@ interface CtaDataType {
   become_volonteer: CtaItemType;
 }
 
-const become_exhibitor_link = `${paths_holder.exhibitions.list.link}#exhibitor_form`;
+const become_exhibitor_link = `${paths_holder.exhibitions.list.link}#${form_area.id}`;
 export const cta_data: CtaDataType = {
   register: {
     title: paths_holder.register.title,

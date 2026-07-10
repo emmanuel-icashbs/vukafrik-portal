@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +10,9 @@ import village_data, {
   sub_title,
   title,
 } from "@/data/VillageData";
-import { vukafrik_event_data } from "@/data/VukAfrikData";
+import { cta_data } from "@/data/CtaData";
+import { paths_holder } from "@/data/MenuData";
+import { form_area } from "@/data/ExhibitionData";
 
 const setting = {
   loop: true,
@@ -62,6 +63,7 @@ const EventHomeTwo = () => {
               <SwiperSlide
                 key={item.id}
                 className="swiper-slide col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
+                style={{ width: "300px" }}
               >
                 <div
                   key={item.id}
@@ -74,10 +76,6 @@ const EventHomeTwo = () => {
                       <Link href="#" style={{ cursor: "default" }}>
                         <Image className="w-100" src={item.thumb} alt="" />
                       </Link>
-                      <span className="td-schedule-2-date">
-                        <i className="flaticon-calendar"></i>
-                        {item.date}
-                      </span>
                     </div>
                     <div className="td-schedule-2-content">
                       <h5 className="td-schedule-2-title mb-15">
@@ -88,23 +86,19 @@ const EventHomeTwo = () => {
                       <div className="td-schedule-2-destination mb-15">
                         <span>
                           <i className="flaticon-gps"></i>
-                          {item.country}
+                          {item.description}
                         </span>
                         <span>
                           <i className="flaticon-account"></i>
-                          {item.user}
-                        </span>
-                        <span>
-                          <i className="flaticon-time"></i>
-                          {item.time}
+                          {item.exhibitorFit}
                         </span>
                       </div>
                       <Link
                         className="td-btn-square"
-                        href="#"
+                        href={`${paths_holder.exhibitions.list.link}?village_id=${item.id}#${form_area.id}`}
                         style={{ cursor: "default" }}
                       >
-                        {vukafrik_event_data.name}
+                        {cta_data.register.title}
                       </Link>
                     </div>
                   </div>

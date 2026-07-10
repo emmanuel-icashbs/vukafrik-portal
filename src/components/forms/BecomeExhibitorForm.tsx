@@ -1,10 +1,15 @@
 "use client";
 
-import { form_area } from "@/data/ExhibitionData";
+import { exhibitions_formats, form_area } from "@/data/ExhibitionData";
+import village_data from "@/data/VillageData";
+import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 
 const BecomeExhibitorForm = () => {
+  const searchParams = useSearchParams();
+  const [village_id, setVillageId] = useState(searchParams.get("village_id"));
   return (
-    <form onSubmit={(e) => e.preventDefault()} id="sponsor_form">
+    <form onSubmit={(e) => e.preventDefault()} id={form_area.id}>
       <div className="row">
         <div className="col-lg-6 mb-25">
           <input
@@ -47,35 +52,18 @@ const BecomeExhibitorForm = () => {
             className="vuka-form-input"
             required={true}
             aria-invalid="false"
-            defaultValue=""
+            value={village_id ? parseInt(village_id) : 3}
+            onChange={(e) => setVillageId(e.target.value)}
           >
             <option value="" disabled>
               {form_area.fields[5]}
             </option>
-            <option value="Agriculture &amp; Agro-transformation">
-              Agriculture &amp; Agro-transformation
-            </option>
-            <option value="Banking, Fintech &amp; Financial Inclusion">
-              Banking, Fintech &amp; Financial Inclusion
-            </option>
-            <option value="Digital &amp; Technologies">
-              Digital &amp; Technologies
-            </option>
-            <option value="Industry &amp; Local Transformation">
-              Industry &amp; Local Transformation
-            </option>
-            <option value="Creative Industries &amp; Culture">
-              Creative Industries &amp; Culture
-            </option>
-            <option value="Entrepreneurship, Youth &amp; Employability">
-              Entrepreneurship, Youth &amp; Employability
-            </option>
-            <option value="Institutions &amp; Regulators">
-              Institutions &amp; Regulators
-            </option>
-            <option value="Gastronomy">Gastronomy</option>
-            <option value="SMEs">SMEs</option>
-            <option value="Other">Other</option>
+            {village_data.map((village) => (
+              <option key={village.id} value={village.title}>
+                {village.title}
+              </option>
+            ))}
+            <option value="0">Other</option>
           </select>
         </div>
         <div className="col-lg-12 mb-25">
@@ -91,16 +79,11 @@ const BecomeExhibitorForm = () => {
             <option value="" disabled>
               {form_area.fields[7]}
             </option>
-            <option value="Stand standard">Stand standard</option>
-            <option value="Stand premium">Stand premium</option>
-            <option value="Espace startup showcase">
-              Espace startup showcase
-            </option>
-            <option value="Stand institutionnel">Stand institutionnel</option>
-            <option value="Espace demonstration produit">
-              Espace demonstration produit
-            </option>
-            <option value="A definir">A definir</option>
+            {exhibitions_formats.map((format) => (
+              <option key={format} value={format}>
+                {format}
+              </option>
+            ))}
           </select>
         </div>
         <div className="col-lg-12 mb-25">

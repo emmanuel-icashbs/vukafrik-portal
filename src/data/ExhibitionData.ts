@@ -270,6 +270,7 @@ const exhibition_stands: {
 };
 
 const form_area = {
+  id: "exhibitor_form",
   title: "S'inscrire comme exposant",
   sub_title:
     "Soumettez votre interet exposant pour integrer un village thematique, renforcer votre visibilite et activer des interactions business.",
@@ -290,6 +291,15 @@ const form_area = {
   submit_button: "Soumettre",
 };
 
+const exhibitions_formats = [
+  "Stand standard",
+  "Stand premium",
+  "Espace startup showcase",
+  "Stand institutionnel",
+  "Espace demonstration produit",
+  "A definir"
+];
+
 export {
   title,
   sub_title,
@@ -299,5 +309,6 @@ export {
   exhibitor_faq_data,
   exhibition_stands,
   form_area,
+  exhibitions_formats
 };
 export default exhibition_data;
