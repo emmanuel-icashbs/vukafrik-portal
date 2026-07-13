@@ -75,4 +75,24 @@ const form_area = {
   submit_button: "Soumettre",
 };
 
-export { breadcrumb_data, form_area, faq_area };
+const volonteer_availabilities = [
+  "Avant l'evenement",
+  "Jour 1 uniquement",
+  "Jour 2 uniquement",
+  "Jour 3 uniquement",
+  "Tous les jours de l'evenement",
+  "Flexible",
+];
+const volonteer_zones_of_interest = [
+  "Accueil et inscription",
+  "Support visiteurs",
+  "Support speakers",
+  "Support media",
+  "Support exposants",
+  "Protocole / VIP",
+  "Logistics",
+  "Support technique",
+  "Reseaux sociaux / contenu",
+  "Support general"
+]
+export { breadcrumb_data, form_area, faq_area, volonteer_availabilities, volonteer_zones_of_interest };

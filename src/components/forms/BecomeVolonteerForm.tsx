@@ -1,6 +1,6 @@
 "use client";
 
-import { form_area } from "@/data/VolonteerData";
+import { form_area, volonteer_availabilities, volonteer_zones_of_interest } from "@/data/VolonteerData";
 
 const BecomeVolonteerForm = () => {
   return (
@@ -45,14 +45,11 @@ const BecomeVolonteerForm = () => {
             <option value="" disabled>
               {form_area.fields[4]}{" "}
             </option>
-            <option value="Avant l'evenement">Avant l'evenement</option>
-            <option value="Jour 1 uniquement">Jour 1 uniquement</option>
-            <option value="Jour 2 uniquement">Jour 2 uniquement</option>
-            <option value="Jour 3 uniquement">Jour 3 uniquement</option>
-            <option value="Tous les jours de l'evenement">
-              Tous les jours de l'evenement
-            </option>
-            <option value="Flexible">Flexible</option>
+            {volonteer_availabilities.map((availability, index) => (
+              <option key={index} value={availability}>
+                {availability}
+              </option>
+            ))}
           </select>{" "}
         </div>
         <div className="col-lg-6 mb-25">
@@ -66,20 +63,11 @@ const BecomeVolonteerForm = () => {
             <option value="" disabled>
               {form_area.fields[5]}{" "}
             </option>
-            <option value="Accueil et inscription">
-              Accueil et inscription
-            </option>
-            <option value="Support visiteurs">Support visiteurs</option>
-            <option value="Support speakers">Support speakers</option>
-            <option value="Support media">Support media</option>
-            <option value="Support exposants">Support exposants</option>
-            <option value="Protocole / VIP">Protocole / VIP</option>
-            <option value="Logistics">Logistics</option>
-            <option value="Support technique">Support technique</option>
-            <option value="Reseaux sociaux / contenu">
-              Reseaux sociaux / contenu
-            </option>
-            <option value="Support general">Support general</option>
+            {
+              volonteer_zones_of_interest.map((zone, index)=>(
+                <option key={index}>{zone}</option>
+              ))
+            }
           </select>{" "}
         </div>
         <div className="col-lg-12 mb-25">
