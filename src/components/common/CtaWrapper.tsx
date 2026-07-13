@@ -20,7 +20,7 @@ const CtaWrapper = ({
               className="td-cta-2-wrap bg-position"
               style={{ backgroundImage: `url(${bg_img.src})` }}
             >
-              <div className="row align-items-end">
+              <div className="row align-items-end d-flex align-items-center">
                 <div className="col-lg-5">
                   <div className="td-cta-2-content mb-20">
                     <span className="td-cta-2-subtitle d-inline-block mb-5">

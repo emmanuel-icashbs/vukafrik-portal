@@ -3,8 +3,9 @@ import Link from "next/link";
 const ButtonLink = ({ link, title }: { link: string; title: string }) => {
   return (
     <Link
-      className="td-btn td-btn-3-border td-left-right text3 mb-20"
+      className="td-btn td-btn-3-border td-left-right text3 mb-20 d-flex align-items-center justify-content-center"
       href={link}
+      style={{ minWidth: "250px" }}
     >
       <span className="mr10 td-text d-inline-block mr-5">{title}</span>
       <span className="td-arrow-angle">

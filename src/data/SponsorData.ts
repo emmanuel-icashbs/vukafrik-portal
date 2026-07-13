@@ -21,9 +21,11 @@ const brands: StaticImageData[] = [
   brand_6,
   brand_7,
   brand_8,
+  brand_4,
+  brand_3,
 ];
 
-const sub_title = "Sponsors";
+const sub_title = "Nos Sponsors";
 const title = "Sponsors et partenaires officiels";
 const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
 const see_more_label = "Voir plus";
@@ -122,15 +124,15 @@ const sponsor_budgets = [
   "Prefere ne pas preciser",
 ];
 const sponsor_categories = [
-"Founding Partner",
-"Strategic Partner",
-"Innovation Partner",
-"Sector Partner",
-"Media Partner",
-"Technical Partner",
-"Institutional Partner",
-"A definir",
-]
+  "Founding Partner",
+  "Strategic Partner",
+  "Innovation Partner",
+  "Sector Partner",
+  "Media Partner",
+  "Technical Partner",
+  "Institutional Partner",
+  "A definir",
+];
 export {
   sub_title,
   title,
