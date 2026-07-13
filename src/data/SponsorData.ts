@@ -113,6 +113,24 @@ const sponsor_faq_data: { title: string; sub_title: string; data: DataType[] } =
       },
     ],
   };
+const sponsor_budgets = [
+  "A discuter",
+  "Moins de $5,000",
+  "$5,000 - $10,000",
+  "$10,000 - $25,000",
+  "$25,000+",
+  "Prefere ne pas preciser",
+];
+const sponsor_categories = [
+"Founding Partner",
+"Strategic Partner",
+"Innovation Partner",
+"Sector Partner",
+"Media Partner",
+"Technical Partner",
+"Institutional Partner",
+"A definir",
+]
 export {
   sub_title,
   title,
@@ -125,5 +143,7 @@ export {
   breadcrumb,
   form_area,
   sponsor_faq_data,
+  sponsor_budgets,
+  sponsor_categories,
 };
 export default brands;

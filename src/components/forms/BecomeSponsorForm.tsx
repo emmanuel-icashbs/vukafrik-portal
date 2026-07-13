@@ -1,6 +1,10 @@
 "use client";
 
-import { form_area } from "@/data/SponsorData";
+import {
+  form_area,
+  sponsor_budgets,
+  sponsor_categories,
+} from "@/data/SponsorData";
 
 const BecomeSponsorForm = () => {
   return (
@@ -53,14 +57,11 @@ const BecomeSponsorForm = () => {
             <option value="" disabled>
               {form_area.fields[5]}
             </option>
-            <option value="Founding Partner">Founding Partner</option>
-            <option value="Strategic Partner">Strategic Partner</option>
-            <option value="Innovation Partner">Innovation Partner</option>
-            <option value="Sector Partner">Sector Partner</option>
-            <option value="Media Partner">Media Partner</option>
-            <option value="Technical Partner">Technical Partner</option>
-            <option value="Institutional Partner">Institutional Partner</option>
-            <option value="A definir">A definir</option>
+            {sponsor_categories.map((category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            ))}
           </select>
         </div>
         <div className="col-lg-12 mb-25">
@@ -74,15 +75,14 @@ const BecomeSponsorForm = () => {
             aria-invalid="false"
             defaultValue={""}
           >
-            <option value="">{form_area.fields[7]}</option>
-            <option value="A discuter">A discuter</option>
-            <option value="Moins de $5,000">Moins de $5,000</option>
-            <option value="$5,000 - $10,000">$5,000 - $10,000</option>
-            <option value="$10,000 - $25,000">$10,000 - $25,000</option>
-            <option value="$25,000+">$25,000+</option>
-            <option value="Prefere ne pas preciser">
-              Prefere ne pas preciser
+            <option value="" disabled>
+              {form_area.fields[7]}
             </option>
+            {sponsor_budgets.map((budget, index) => (
+              <option key={index} value={budget}>
+                {budget}
+              </option>
+            ))}
           </select>
         </div>
         <div className="col-lg-6 mb-25">
