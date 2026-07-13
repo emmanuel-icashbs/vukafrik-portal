@@ -23,4 +23,44 @@ const form_area = {
   submit_button: "Soumettre",
 };
 
-export { breadcrumb_data, form_area };
+const participant_types = [
+  "Entrepreneur",
+  "Fondateur de startup",
+  "Dirigeant de PME",
+  "Representant corporate",
+  "Investisseur",
+  "Institution / Gouvernement",
+  "Etudiant",
+  "Media",
+  "Partenaire",
+  "Autre",
+];
+
+const main_interests = [
+  "Strategic Summit",
+  "Innovation Showcase",
+  "Villages thematiques",
+  "Pitch startup",
+  "Sponsoring",
+  "Exposition",
+  "Opportunites d'investissement",
+  "Networking",
+  "Media",
+  "Volontariat",
+  "Autre",
+];
+
+const attendance_days = [
+  "Jour 1 - Strategic Summit",
+  "Jour 2 - Foire multisectorielle",
+  "Jour 3 - Showcases & cloture",
+  "Les trois jours",
+];
+
+export {
+  breadcrumb_data,
+  form_area,
+  participant_types,
+  main_interests,
+  attendance_days,
+};
