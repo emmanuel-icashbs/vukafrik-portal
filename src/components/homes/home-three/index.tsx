@@ -33,7 +33,7 @@ const HomeThree = () => {
         <About />
         <Schedule />
         <Testimonial />
-        <TeamHomeSix />
+        <TeamHomeSix slice_number={6} />
         <div className="mb-50">
           <CtaWrapper
             title={cta_wrapper_title}

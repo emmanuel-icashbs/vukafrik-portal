@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { JSX } from "react";
+import { JSX, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import speaker_data, {
   description,
@@ -9,6 +9,7 @@ import speaker_data, {
   title,
 } from "@/data/SpeakerData";
 import { paths_holder } from "@/data/MenuData";
+import { SpeakerDataType } from "@/utils/types";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -83,8 +84,17 @@ const team_shapes: JSX.Element[] = [
   </>,
 ];
 
-const TeamHomeSix = () => {
+const TeamHomeSix = ({ slice_number }: { slice_number?: number }) => {
+  const [speakers, setSpeakers] = useState<SpeakerDataType[]>([]);
   const router = useRouter();
+
+  useEffect(() => {
+    if (slice_number) {
+      setSpeakers(speaker_data.slice(0, slice_number));
+    } else {
+      setSpeakers(speaker_data);
+    }
+  }, []);
 
   return (
     <div className="td-team-area pt-130 pb-100">
@@ -117,7 +127,7 @@ const TeamHomeSix = () => {
           </div>
         </div>
         <div className="row row-cols-1 row-cols-xxl-5 row-cols-xl-3 row-cols-lg-3 row-cols-md-2">
-          {speaker_data.map((item, index) => (
+          {speakers.map((item, index) => (
             <div key={item.id} className="col">
               <div
                 className="td-team-5-wrap p-relative z-index-1 mb-30 wow fadeInUp"
