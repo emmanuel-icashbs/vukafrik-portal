@@ -141,7 +141,7 @@ const schedule_data: EventDataType[] = [
     topic: "Women in business conference",
     category: "Conference",
     image: event_thumb4,
-    speakers: [3, 4, 8],
+    speakers: [3, 4, 2],
     venue: "Salle 001",
     key_points: [
       "Business Networking",
