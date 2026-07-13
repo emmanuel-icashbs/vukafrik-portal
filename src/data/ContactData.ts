@@ -39,4 +39,16 @@ const form_area = {
   submit_button: "Envoyer le message",
 };
 
-export { breadcrumb_data, info_area, form_area };
+const contact_request_types = [
+  "Information generale",
+  "Inscription",
+  "Sponsoring",
+  "Exposition",
+  "Media",
+  "Candidature speaker",
+  "Volontariat",
+  "Partenariat",
+  "Autre",
+];
+
+export { breadcrumb_data, info_area, form_area, contact_request_types };

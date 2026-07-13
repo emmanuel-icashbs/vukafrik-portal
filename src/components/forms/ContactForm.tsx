@@ -2,7 +2,7 @@
 import { useActionState, useEffect } from "react";
 import { handleContactFormAction } from "@/app/action/sendContactEmail";
 import { toast } from "react-toastify";
-import { form_area } from "@/data/ContactData";
+import { contact_request_types, form_area } from "@/data/ContactData";
 
 const ContactForm = () => {
   const [state, formAction] = useActionState(handleContactFormAction, {
@@ -58,15 +58,11 @@ const ContactForm = () => {
               <option value="" disabled>
                 {form_area.fields[3]}
               </option>
-              <option value="Information generale">Information generale</option>
-              <option value="Inscription">Inscription</option>
-              <option value="Sponsoring">Sponsoring</option>
-              <option value="Exposition">Exposition</option>
-              <option value="Media">Media</option>
-              <option value="Candidature speaker">Candidature speaker</option>
-              <option value="Volontariat">Volontariat</option>
-              <option value="Partenariat">Partenariat</option>
-              <option value="Autre">Autre</option>
+              {contact_request_types.map((type, index) => (
+                <option key={index} value={type}>
+                  {type}
+                </option>
+              ))}
             </select>
           </div>
           <div className="col-md-12 mb-15">
