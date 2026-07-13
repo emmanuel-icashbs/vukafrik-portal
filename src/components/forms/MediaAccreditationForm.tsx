@@ -1,6 +1,6 @@
 "use client";
 
-import { form_data } from "@/data/MediaAccreditationData";
+import { form_data, media_types } from "@/data/MediaAccreditationData";
 
 const MediaAccreditationForm = () => {
   return (
@@ -53,17 +53,11 @@ const MediaAccreditationForm = () => {
             <option value="" disabled>
               {form_data.fields[5]}{" "}
             </option>
-            <option value="TV">TV</option>
-            <option value="Radio">Radio</option>
-            <option value="Presse ecrite">Presse ecrite</option>
-            <option value="Media en ligne">Media en ligne</option>
-            <option value="Blog">Blog</option>
-            <option value="Podcast">Podcast</option>
-            <option value="Photo / Video">Photo / Video</option>
-            <option value="Reseaux sociaux / Createur de contenu">
-              Reseaux sociaux / Createur de contenu
-            </option>
-            <option value="Autre">Autre</option>
+            {media_types.map((media_type, index) => (
+              <option key={index} value={media_type}>
+                {media_type}
+              </option>
+            ))}
           </select>{" "}
         </div>
         <div className="col-lg-12 mb-25">

@@ -78,4 +78,16 @@ const form_data = {
   ],
   submit_button: "Soumettre",
 };
-export { breadcrumb_data, faq_data, form_data };
+
+const media_types = [
+  "TV",
+  "Radio",
+  "Presse ecrite",
+  "Media en ligne",
+  "Blog",
+  "Podcast",
+  "Photo / Video",
+  "Reseaux sociaux / Createur de contenu",
+  "Autre"
+]
+export { breadcrumb_data, faq_data, form_data, media_types };
