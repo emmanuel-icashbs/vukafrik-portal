@@ -3,7 +3,7 @@ import { form_area } from "@/data/ExhibitionData";
 
 const FormArea = () => {
   return (
-    <div className="tg-login-area pt-110 pb-110" id="exhibitor_form">
+    <div className="tg-login-area pt-110 pb-110">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">
