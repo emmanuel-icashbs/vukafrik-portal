@@ -1,12 +1,13 @@
 import Link from "next/link";
 import DealCounter from "@/components/common/DealCounter";
 import countdown_data from "@/data/CountDownData";
+import { bg_img } from "@/data/ScheduleData";
 
 const Countdown = () => {
   return (
     <div
       className="td-countdown-area bg-position"
-      style={{ backgroundImage: `url(${countdown_data.bg_img.src})` }}
+      style={{ backgroundImage: `url(${bg_img.src})` }}
     >
       <div className="container">
         <div className="td-countdown-3-wrap p-relative z-index-1">
@@ -20,7 +21,7 @@ const Countdown = () => {
             >
               <path
                 d="M257 -45.5C257 25.4686 199.469 83 128.5 83C57.5314 83 0 25.4686 0 -45.5C0 -116.469 57.5314 -174 128.5 -174C199.469 -174 257 -116.469 257 -45.5ZM41.577 -45.5C41.577 2.50624 80.4938 41.423 128.5 41.423C176.506 41.423 215.423 2.50624 215.423 -45.5C215.423 -93.5062 176.506 -132.423 128.5 -132.423C80.4938 -132.423 41.577 -93.5062 41.577 -45.5Z"
-                fill="#FF5EC4"
+                fill="#FFC247"
               />
             </svg>
           </span>
@@ -34,7 +35,7 @@ const Countdown = () => {
             >
               <path
                 d="M257 128.5C257 199.469 199.469 257 128.5 257C57.5314 257 0 199.469 0 128.5C0 57.5314 57.5314 0 128.5 0C199.469 0 257 57.5314 257 128.5ZM41.577 128.5C41.577 176.506 80.4938 215.423 128.5 215.423C176.506 215.423 215.423 176.506 215.423 128.5C215.423 80.4938 176.506 41.577 128.5 41.577C80.4938 41.577 41.577 80.4938 41.577 128.5Z"
-                fill="#FF5EC4"
+                fill="#FFC247"
               />
             </svg>
           </span>

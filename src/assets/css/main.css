@@ -66,15 +66,15 @@
   --td-common-white: #fff;
   --td-common-black: #141418;
   --td-common-black-2: #000;
-  --td-common-yellow: #fccb0a;
+  --td-common-yellow: #ffc247;
   --td-common-blue: #1b0166;
   --td-grey-1: #444;
   --td-grey-2: #a5a5b0;
   --td-grey-3: #f8f8f8;
   --td-grey-4: #f2f7f7;
   --td-grey-5: #eaeaea;
-  --td-theme-primary: #5033ff;
-  --td-theme-secondary: #f248b4;
+  --td-theme-primary: #192b4c;
+  --td-theme-secondary: #f5a623;
   --td-border-1: #d9d9d9;
 }
 
@@ -692,7 +692,7 @@ textarea {
 .loader::after {
   content: "";
   grid-area: 1/1;
-  --c: no-repeat radial-gradient(farthest-side, #5033ff 92%, #0000);
+  --c: no-repeat radial-gradient(farthest-side, #192b4c 92%, #0000);
   background:
     var(--c) 50% 0,
     var(--c) 50% 100%,
@@ -1034,7 +1034,7 @@ textarea {
   font-size: 15px;
   text-transform: uppercase;
   color: var(--td-common-white);
-  box-shadow: 0 4px 0 0 #2b12c3;
+  box-shadow: 0 4px 0 0 #ffc247;
   display: inline-block;
   background: var(--td-theme-primary);
   border-radius: 40px;
@@ -1058,7 +1058,7 @@ textarea {
   display: inline-block;
 }
 .td-section-subtitle-3 {
-  border: 1px solid #5033ff;
+  border: 1px solid #192b4c;
   border-radius: 6px;
 }
 .td-section-title {
@@ -4795,7 +4795,7 @@ textarea {
 }
 .td-hero-6-blur-2 {
   filter: blur(150px);
-  background: #f248b4;
+  background: #f5a623;
   opacity: 0.6;
   width: 535px;
   height: 535px;
@@ -6280,7 +6280,7 @@ textarea {
 .td-schedule-team-border {
   width: 50px;
   height: 6px;
-  background: #5033ff;
+  background: #192b4c;
   display: inline-block;
   border-radius: 6px;
 }
@@ -7608,7 +7608,7 @@ textarea {
 }
 .td-counter-2-icon i {
   font-size: 70px;
-  color: #f248b4;
+  color: #f5a623;
 }
 .td-counter-2-title {
   font-weight: 700;
@@ -8189,7 +8189,7 @@ textarea {
 ===============================*/
 .td-testimonial-3-ratings span {
   font-size: 20px;
-  color: #ffb600;
+  color: #ffc247;
 }
 .td-testimonial-3-wrap {
   padding-left: 282px;
@@ -8387,7 +8387,7 @@ textarea {
   height: 100%;
   top: 0;
   left: 0;
-  background: #5033ff;
+  background: #192b4c;
   border-radius: 20px;
   transform: scale(0.6);
   visibility: hidden;
@@ -9641,7 +9641,7 @@ textarea {
   background: #f5f3ff;
   border-radius: 0px 4px 4px 0px;
   padding: 20px 25px 25px 30px;
-  border-left: 8px solid #5033ff;
+  border-left: 8px solid #192b4c;
 }
 .td-postbox-blockquote p {
   font-family: var(--td-ff-poppins);

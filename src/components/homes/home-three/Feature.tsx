@@ -1,4 +1,5 @@
-import { feature_data, bg_img } from "@/data/FeatureData";
+import { feature_data } from "@/data/FeatureData";
+import { bg_img } from "@/data/ScheduleData";
 
 const Feature = () => {
   return (
@@ -17,10 +18,17 @@ const Feature = () => {
             >
               <div className="td-feature-3-wrap mr-60 mb-30">
                 <span className="td-feature-3-icon d-inline-block mb-20">
-                  <i className={item.icon}></i>
+                  <i className={item.icon} style={{ color: "#000" }}></i>
                 </span>
-                <h3 className="td-feature-3-title mb-15">{item.title}</h3>
-                <p className="td-feature-3-text">{item.desc}</p>
+                <h3
+                  className="td-feature-3-title mb-15"
+                  style={{ color: "#000" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="td-feature-3-text" style={{ color: "#000" }}>
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}

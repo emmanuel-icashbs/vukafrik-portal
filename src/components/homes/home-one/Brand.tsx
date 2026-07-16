@@ -24,7 +24,10 @@ const Brand = ({ slice_number }: { slice_number?: number }) => {
   }, []);
 
   return (
-    <div className="td-brands-area td-brands-home-one blue-bg pt-110 pb-115">
+    <div
+      className="td-brands-area td-brands-home-one blue-bg pt-110 pb-115"
+      style={{ backgroundColor: "#192b4c" }}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

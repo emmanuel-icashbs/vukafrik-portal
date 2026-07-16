@@ -147,7 +147,7 @@ const TeamHomeSix = ({ slice_number }: { slice_number?: number }) => {
                     className="td-team-3-social td-team-5-social align-items-center justify-content-center"
                     style={{
                       color: "#fff",
-                      backgroundColor: "#5033ff",
+                      backgroundColor: "#192b4c",
                       padding: "10px",
                     }}
                   >

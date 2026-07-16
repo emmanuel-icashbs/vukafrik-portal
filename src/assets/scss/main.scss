@@ -50,11 +50,11 @@
 
 .hover-color-secondary {
   &:hover {
-    color: #f248b4 !important;
+    color: #f5a623 !important;
   }
 }
 .my-link {
-  color: #f248b4 !important;
+  color: #f5a623 !important;
   background-image:
     linear-gradient(currentColor, currentColor),
     linear-gradient(currentColor, currentColor);
@@ -105,7 +105,7 @@ select {
 select:focus,
 input:focus,
 textarea:focus {
-  border-color: #5033ff !important;
+  border-color: #192b4c !important;
 }
 
 .td-venue-thumb {

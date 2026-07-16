@@ -1,5 +1,4 @@
 "use client";
-import bg_img from "@/assets/img/cta/cta-bg.png";
 import { JSX } from "react";
 
 const CtaWrapper = ({
@@ -18,7 +17,7 @@ const CtaWrapper = ({
           <div className="col-lg-12">
             <div
               className="td-cta-2-wrap bg-position"
-              style={{ backgroundImage: `url(${bg_img.src})` }}
+              style={{ backgroundColor: "#F5A623" }}
             >
               <div className="row align-items-end d-flex align-items-center">
                 <div className="col-lg-5">

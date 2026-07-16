@@ -1,5 +1,4 @@
 import {
-  bg_img,
   description,
   feature_data,
   sub_title,
@@ -10,7 +9,7 @@ const Feature = () => {
   return (
     <div
       className="td-feature-area pt-140 pb-115 bg-position"
-      style={{ backgroundImage: `url(${bg_img.src})` }}
+      style={{ backgroundColor: `#192b4c` }}
     >
       <div className="container">
         <div className="row justify-content-center">
