@@ -5,9 +5,11 @@ import Wrapper from "@/layouts/Wrapper";
 import FaqArea from "./FaqArea";
 import FormArea from "./FormArea";
 import { breadcrumb_data } from "@/data/VolonteerData";
+import { paths_holder } from "@/data/MenuData";
+import { vukafrik_event_data } from "@/data/VukAfrikData";
 
 export const metadata = {
-  title: "Register Evente - Conference and Event React Next js Template",
+  title: `${vukafrik_event_data.name} | ${paths_holder.volunteer.title}`,
 };
 const page = () => {
   return (

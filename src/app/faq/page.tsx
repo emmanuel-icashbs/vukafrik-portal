@@ -1,8 +1,10 @@
 import Faq from "@/components/pages/faq";
+import { paths_holder } from "@/data/MenuData";
+import { vukafrik_event_data } from "@/data/VukAfrikData";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Faq Evente - Conference and Event React Next js Template",
+  title: `${vukafrik_event_data.name} | ${paths_holder.faq.title}`,
 };
 const page = () => {
   return (

@@ -6,9 +6,11 @@ import FaqArea from "./FaqArea";
 import FormArea from "./FormArea";
 import Brand from "@/components/homes/home-two/Brand";
 import { breadcrumb } from "@/data/SponsorData";
+import { paths_holder } from "@/data/MenuData";
+import { vukafrik_event_data } from "@/data/VukAfrikData";
 
 export const metadata = {
-  title: "Register Evente - Conference and Event React Next js Template",
+  title: `${vukafrik_event_data.name} | ${paths_holder.sponsors.title}`,
 };
 const page = () => {
   return (
