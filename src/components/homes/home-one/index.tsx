@@ -1,15 +1,15 @@
-import HeaderOne from "@/layouts/headers/HeaderOne"
-import Banner from "./Banner"
-import Team from "./Team"
-import TextSlider from "./TextSlider"
-import Brand from "./Brand"
-import Ticket from "./Ticket"
-import Map from "./Map"
-import FooterOne from "@/layouts/footers/FooterOne"
-import Schedule from "./Schedule"
-import About from "./About"
-import Experience from "./Experience"
-import Blog from "./Blog"
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import Banner from "./Banner";
+import Team from "./Team";
+import TextSlider from "./TextSlider";
+import Brand from "./Brand";
+import Ticket from "./Ticket";
+import Map from "./Map";
+import FooterOne from "@/layouts/footers/FooterOne";
+import Schedule from "./Schedule";
+import AboutHomeOne from "./About";
+import Experience from "./Experience";
+import Blog from "./Blog";
 
 const HomeOne = () => {
   return (
@@ -17,7 +17,7 @@ const HomeOne = () => {
       <HeaderOne />
       <main>
         <Banner />
-        <About />
+        <AboutHomeOne />
         <Team />
         <Experience />
         <TextSlider />
@@ -30,7 +30,7 @@ const HomeOne = () => {
       </main>
       <FooterOne />
     </>
-  )
-}
+  );
+};
 
-export default HomeOne
+export default HomeOne;

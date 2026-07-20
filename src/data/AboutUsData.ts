@@ -10,6 +10,10 @@ import about_thumb from "@/assets/img/about/about-3/thumb.png";
 import { cta_data } from "./CtaData";
 import { vukafrik_event_data } from "./VukAfrikData";
 
+import about_thumb4 from "@/assets/img/about/thumb.jpg";
+import bg_img1 from "@/assets/img/about/bg.jpg";
+import bg_img2 from "@/assets/img/about/flower.png";
+
 interface AboutSectinDataType {
   about_thumb: StaticImageData;
   title: string;
@@ -49,6 +53,16 @@ const breadcrumb_data: {
   sub_title: "À propos",
 };
 
+const about_home_one = {
+  title:
+    "Welcome to Evente, The Original Business & Cultural Entertainment Venue Get Ready to Informative Knowledge Share Skills.",
+  sub_title: "About This Event",
+  info1: "6,000+ people’s In Person Meet-up",
+  info2: "Connect with Industry Leaders",
+  info3: "Sessions on Knowledge Sharing",
+  videoLink: "https://www.youtube.com/watch?v=TfU0qjuZkJ4",
+};
+
 export {
   info_section_title,
   breadcrumb_data,
@@ -57,4 +71,8 @@ export {
   about_thumb3,
   shape_1,
   shape_2,
+  about_thumb4,
+  bg_img1,
+  bg_img2,
+  about_home_one,
 };

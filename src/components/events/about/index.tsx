@@ -1,11 +1,11 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Feature from "./Feature";
-import TextSlider from "@/components/homes/home-one/TextSlider";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import FooterOne from "@/layouts/footers/FooterOne";
 import About from "@/components/homes/home-three/About";
 import VukaInfo from "@/components/homes/home-three/VukaInfo";
 import { breadcrumb_data } from "@/data/AboutUsData";
+import AboutHomeOne from "@/components/homes/home-one/About";
 
 const AboutVukaPage = () => {
   return (
@@ -18,9 +18,7 @@ const AboutVukaPage = () => {
         />
         <About should_display_about_btn={false} />
         <Feature />
-        <div className="mt-100">
-          <TextSlider />
-        </div>
+        <AboutHomeOne />
         <VukaInfo />
       </main>
       <FooterOne />
