@@ -128,7 +128,7 @@ const form_area = {
     "Courte bio... *",
     "Sujet propose *",
     "Preference de session *",
-    "LinkedIn / site web *",
+    "LinkedIn / site web",
     "Experience de prise de parole",
     "Notes complementaires",
     "J'accepte que l'equipe VUK'AFRIK examine cette soumission et me contacte si necessaire.",

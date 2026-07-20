@@ -279,7 +279,7 @@ const form_area = {
     "Personne de contact *",
     "Email *",
     "Téléphone *",
-    "Site web *",
+    "Site web",
     "Secteur / village *",
     "Description du produit ou service *",
     "Format souhaité *",
@@ -297,7 +297,7 @@ const exhibitions_formats = [
   "Espace startup showcase",
   "Stand institutionnel",
   "Espace demonstration produit",
-  "A definir"
+  "A definir",
 ];
 
 export {
@@ -309,6 +309,6 @@ export {
   exhibitor_faq_data,
   exhibition_stands,
   form_area,
-  exhibitions_formats
+  exhibitions_formats,
 };
 export default exhibition_data;
