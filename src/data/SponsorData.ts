@@ -133,6 +133,13 @@ const sponsor_categories = [
   "Institutional Partner",
   "A definir",
 ];
+const visibility_zones = [
+  "Zone Innovation",
+  "Zone Business",
+  "Zone Entrepreneurship",
+  "Zone Startup",
+  "Zone Investissement",
+];
 export {
   sub_title,
   title,
@@ -147,5 +154,6 @@ export {
   sponsor_faq_data,
   sponsor_budgets,
   sponsor_categories,
+  visibility_zones,
 };
 export default brands;

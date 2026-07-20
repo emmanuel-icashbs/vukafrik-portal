@@ -4,6 +4,7 @@ import {
   form_area,
   sponsor_budgets,
   sponsor_categories,
+  visibility_zones,
 } from "@/data/SponsorData";
 
 const BecomeSponsorForm = () => {
@@ -84,11 +85,23 @@ const BecomeSponsorForm = () => {
           </select>
         </div>
         <div className="col-lg-6 mb-25">
-          <input
-            className="input"
-            type="text"
-            placeholder={form_area.fields[8]}
-          />
+          <select
+            id="_r_i_"
+            name="sponsorCategory"
+            className="vuka-form-input"
+            required={true}
+            aria-invalid="false"
+            defaultValue=""
+          >
+            <option value="" disabled>
+              {form_area.fields[8]}
+            </option>
+            {visibility_zones.map((category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="col-lg-6 mb-25">
