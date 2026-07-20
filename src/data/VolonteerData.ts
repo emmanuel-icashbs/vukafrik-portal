@@ -57,7 +57,8 @@ const faq_area: { title: string; sub_title: string; data: FaqDataType[] } = {
     },
   ],
 };
-const form_area = {
+const volonteer_form_area = {
+  id:"volonteer_form",
   title: "Devenir volontaire a VUK'AFRIK 2026",
   sub_title:
     "Rejoignez l'equipe qui accompagne l'une des plateformes africaines emergentes de l'innovation, de l'entrepreneuriat et du business.",
@@ -95,4 +96,4 @@ const volonteer_zones_of_interest = [
   "Reseaux sociaux / contenu",
   "Support general"
 ]
-export { breadcrumb_data, form_area, faq_area, volonteer_availabilities, volonteer_zones_of_interest };
+export { breadcrumb_data, volonteer_form_area, faq_area, volonteer_availabilities, volonteer_zones_of_interest };

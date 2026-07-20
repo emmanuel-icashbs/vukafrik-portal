@@ -269,7 +269,7 @@ const exhibition_stands: {
   submit_button: "Souscrire",
 };
 
-const form_area = {
+const exhibitor_form_area = {
   id: "exhibitor_form",
   title: "S'inscrire comme exposant",
   sub_title:
@@ -308,7 +308,7 @@ export {
   breadcrumb,
   exhibitor_faq_data,
   exhibition_stands,
-  form_area,
+  exhibitor_form_area,
   exhibitions_formats,
 };
 export default exhibition_data;

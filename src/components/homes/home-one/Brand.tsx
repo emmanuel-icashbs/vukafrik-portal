@@ -2,7 +2,6 @@
 import ButtonLink from "@/components/ui/ButtonLink";
 import { cta_data } from "@/data/CtaData";
 import brands, {
-  become_sponsor_title,
   see_more_label,
   see_more_link,
   sub_title,
@@ -50,7 +49,7 @@ const Brand = ({ slice_number }: { slice_number?: number }) => {
               <div className="d-flex flex-wrap align-items-center justify-content-center gap-4">
                 <ButtonLink
                   link={cta_data.become_sponsor.href}
-                  title={become_sponsor_title}
+                  title={cta_data.become_sponsor.title}
                 />
                 <ButtonLink link={see_more_link} title={see_more_label} />
               </div>

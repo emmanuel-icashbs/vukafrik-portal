@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  form_area,
+  sponsor_form_area,
   sponsor_budgets,
   sponsor_categories,
   visibility_zones,
@@ -9,41 +9,41 @@ import {
 
 const BecomeSponsorForm = () => {
   return (
-    <form onSubmit={(e) => e.preventDefault()} id="sponsor_form">
+    <form onSubmit={(e) => e.preventDefault()} id={sponsor_form_area.id}>
       <div className="row">
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[0]}
+            placeholder={sponsor_form_area.fields[0]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[1]}
+            placeholder={sponsor_form_area.fields[1]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="email"
-            placeholder={form_area.fields[2]}
+            placeholder={sponsor_form_area.fields[2]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[3]}
+            placeholder={sponsor_form_area.fields[3]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[4]}
+            placeholder={sponsor_form_area.fields[4]}
           />
         </div>
         <div className="col-lg-6 mb-25">
@@ -56,7 +56,7 @@ const BecomeSponsorForm = () => {
             defaultValue=""
           >
             <option value="" disabled>
-              {form_area.fields[5]}
+              {sponsor_form_area.fields[5]}
             </option>
             {sponsor_categories.map((category, index) => (
               <option key={index} value={category}>
@@ -75,7 +75,7 @@ const BecomeSponsorForm = () => {
             defaultValue={""}
           >
             <option value="" disabled>
-              {form_area.fields[7]}
+              {sponsor_form_area.fields[7]}
             </option>
             {sponsor_budgets.map((budget, index) => (
               <option key={index} value={budget}>
@@ -94,7 +94,7 @@ const BecomeSponsorForm = () => {
             defaultValue=""
           >
             <option value="" disabled>
-              {form_area.fields[8]}
+              {sponsor_form_area.fields[8]}
             </option>
             {visibility_zones.map((category, index) => (
               <option key={index} value={category}>
@@ -108,23 +108,23 @@ const BecomeSponsorForm = () => {
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[9]}
+            placeholder={sponsor_form_area.fields[9]}
           />
         </div>
         <div className="col-lg-12 mb-25">
-          <textarea placeholder={form_area.fields[6]} rows={5} />
+          <textarea placeholder={sponsor_form_area.fields[6]} rows={5} />
         </div>
 
         <div className="col-lg-12 mb-25">
           <label>
             <input className="input mr-10" type="checkbox" />
-            {form_area.fields[10]}
+            {sponsor_form_area.fields[10]}
           </label>
         </div>
 
         <div className="col-lg-12">
           <button type="submit" className="td-btn w-100">
-            {form_area.submit_button}
+            {sponsor_form_area.submit_button}
           </button>
         </div>
       </div>

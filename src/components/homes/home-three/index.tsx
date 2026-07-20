@@ -10,7 +10,6 @@ import Blog from "./Blog";
 import Schedule from "../home-one/Schedule";
 import TeamHomeSix from "../home-six/Team";
 import {
-  become_speaker_title,
   cta_wrapper_sub_title,
   cta_wrapper_title,
   see_more_label,
@@ -42,7 +41,7 @@ const HomeThree = () => {
             <div className="d-flex flex-wrap align-items-center justify-content-center gap-4">
               <ButtonLink
                 link={cta_data.become_speaker.href}
-                title={become_speaker_title}
+                title={cta_data.become_speaker.title}
               />
               <ButtonLink link={see_more_link} title={see_more_label} />
             </div>

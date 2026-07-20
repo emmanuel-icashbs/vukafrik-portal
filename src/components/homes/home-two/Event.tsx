@@ -12,7 +12,7 @@ import village_data, {
 } from "@/data/VillageData";
 import { cta_data } from "@/data/CtaData";
 import { paths_holder } from "@/data/MenuData";
-import { form_area } from "@/data/ExhibitionData";
+import { exhibitor_form_area } from "@/data/ExhibitionData";
 
 const setting = {
   loop: true,
@@ -95,7 +95,7 @@ const EventHomeTwo = () => {
                       </div>
                       <Link
                         className="td-btn-square"
-                        href={`${paths_holder.exhibitions.list.link}?village_id=${item.id}#${form_area.id}`}
+                        href={`${paths_holder.exhibitions.list.link}?village_id=${item.id}#${exhibitor_form_area.id}`}
                         style={{ cursor: "default" }}
                       >
                         {cta_data.register.title}

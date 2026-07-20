@@ -1,6 +1,6 @@
 "use client";
 
-import { exhibitions_formats, form_area } from "@/data/ExhibitionData";
+import { exhibitions_formats, exhibitor_form_area } from "@/data/ExhibitionData";
 import village_data from "@/data/VillageData";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
@@ -9,34 +9,34 @@ const BecomeExhibitorForm = () => {
   const searchParams = useSearchParams();
   const [village_id, setVillageId] = useState(searchParams.get("village_id"));
   return (
-    <form onSubmit={(e) => e.preventDefault()} id={form_area.id}>
+    <form onSubmit={(e) => e.preventDefault()} id={exhibitor_form_area.id}>
       <div className="row">
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[0]}
+            placeholder={exhibitor_form_area.fields[0]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[1]}
+            placeholder={exhibitor_form_area.fields[1]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="email"
-            placeholder={form_area.fields[2]}
+            placeholder={exhibitor_form_area.fields[2]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[3]}
+            placeholder={exhibitor_form_area.fields[3]}
           />
         </div>
 
@@ -50,7 +50,7 @@ const BecomeExhibitorForm = () => {
             // onChange={(e) => setVillageId(e.target.value)}
           >
             <option value="" disabled>
-              {form_area.fields[5]}
+              {exhibitor_form_area.fields[5]}
             </option>
             {village_data.map((village) => (
               <option key={village.id} value={village.title}>
@@ -68,7 +68,7 @@ const BecomeExhibitorForm = () => {
             defaultValue={""}
           >
             <option value="" disabled>
-              {form_area.fields[7]}
+              {exhibitor_form_area.fields[7]}
             </option>
             {exhibitions_formats.map((format) => (
               <option key={format} value={format}>
@@ -78,24 +78,24 @@ const BecomeExhibitorForm = () => {
           </select>
         </div>
         <div className="col-lg-12 mb-25">
-          <textarea placeholder={form_area.fields[6]} rows={5} />
+          <textarea placeholder={exhibitor_form_area.fields[6]} rows={5} />
         </div>
 
         <div className="col-lg-12 mb-25">
-          <textarea placeholder={form_area.fields[8]} rows={5} />
+          <textarea placeholder={exhibitor_form_area.fields[8]} rows={5} />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[10]}
+            placeholder={exhibitor_form_area.fields[10]}
           />
         </div>
         <div className="col-lg-6 mb-25">
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[4]}
+            placeholder={exhibitor_form_area.fields[4]}
           />
         </div>
 
@@ -103,20 +103,20 @@ const BecomeExhibitorForm = () => {
           <input
             className="input"
             type="text"
-            placeholder={form_area.fields[9]}
+            placeholder={exhibitor_form_area.fields[9]}
           />
         </div>
 
         <div className="col-lg-12 mb-25">
           <label>
             <input className="input mr-10" type="checkbox" />
-            {form_area.fields[11]}
+            {exhibitor_form_area.fields[11]}
           </label>
         </div>
 
         <div className="col-lg-12">
           <button type="submit" className="td-btn w-100">
-            {form_area.submit_button}
+            {exhibitor_form_area.submit_button}
           </button>
         </div>
       </div>

@@ -58,7 +58,8 @@ const faq_data: { title: string; sub_title: string; data: FaqDataType[] } = {
   ],
 };
 
-const form_data = {
+const media_accred_form_area = {
+  id: "media_form",
   title: "Demande d'accreditation media",
   sub_title:
     "Demandez un acces media pour couvrir VUK'AFRIK 2026, son Strategic Summit, ses expositions, ses innovation showcases et ses activites ecosystemiques.",
@@ -88,6 +89,6 @@ const media_types = [
   "Podcast",
   "Photo / Video",
   "Reseaux sociaux / Createur de contenu",
-  "Autre"
-]
-export { breadcrumb_data, faq_data, form_data, media_types };
+  "Autre",
+];
+export { breadcrumb_data, faq_data, media_accred_form_area, media_types };

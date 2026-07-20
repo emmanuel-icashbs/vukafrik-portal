@@ -1,6 +1,6 @@
 "use client";
 import bg_img from "@/assets/img/cta/cta-bg.png";
-import { form_area } from "@/data/ExhibitionData";
+import { exhibitor_form_area } from "@/data/ExhibitionData";
 import { useRouter } from "next/navigation";
 
 const Cta = () => {
@@ -33,7 +33,9 @@ const Cta = () => {
                         className="cta-btn"
                         type="button"
                         style={{ border: "solid 1px #fff" }}
-                        onClick={() => router.push(`#${form_area.id}`)}
+                        onClick={() =>
+                          router.push(`#${exhibitor_form_area.id}`)
+                        }
                       >
                         Subscribe Below
                       </button>

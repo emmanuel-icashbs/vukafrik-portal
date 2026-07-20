@@ -4,7 +4,6 @@ import team_3 from "@/assets/img/team/team-5/thumb-3.png";
 import team_4 from "@/assets/img/team/team-5/thumb-4.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
 import { vukafrik_event_data } from "./VukAfrikData";
-import { cta_data } from "./CtaData";
 import { InBetweenPathDataType, SpeakerDataType } from "@/utils/types";
 import { paths_holder } from "./MenuData";
 
@@ -82,7 +81,6 @@ const see_more_link = paths_holder.speakers.list.link;
 const see_more_label = "Voir plus";
 const cta_wrapper_title = "Ensemble avec Vous!";
 const cta_wrapper_sub_title = "Nous irons encore plus loin!";
-const become_speaker_title = cta_data.become_speaker.title;
 const cta_sub_title = "Ne manquez pas notre événement !";
 const cta_title = "Inscivez-vous dès aujourd'hui !";
 
@@ -114,7 +112,7 @@ const info_data = {
   address: "Adresse",
   experience: "Expérience",
 };
-const form_area = {
+const speaker_form_area = {
   id: "speaker_form",
   title: "Candidater comme speaker",
   sub_title:
@@ -155,10 +153,9 @@ export {
   see_more_label,
   cta_wrapper_title,
   cta_wrapper_sub_title,
-  become_speaker_title,
   cta_sub_title,
   cta_title,
-  form_area,
+  speaker_form_area,
   speaker_details_breadcrumb_data,
   speakers_breadcrumb_data,
   speakers_schedule_title,
