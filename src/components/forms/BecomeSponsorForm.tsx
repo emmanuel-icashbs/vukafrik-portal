@@ -64,9 +64,7 @@ const BecomeSponsorForm = () => {
             ))}
           </select>
         </div>
-        <div className="col-lg-12 mb-25">
-          <textarea placeholder={form_area.fields[6]} rows={5} />
-        </div>
+
         <div className="col-lg-6 mb-25">
           <select
             id="_r_k_"
@@ -99,6 +97,9 @@ const BecomeSponsorForm = () => {
             type="text"
             placeholder={form_area.fields[9]}
           />
+        </div>
+        <div className="col-lg-12 mb-25">
+          <textarea placeholder={form_area.fields[6]} rows={5} />
         </div>
 
         <div className="col-lg-12 mb-25">
