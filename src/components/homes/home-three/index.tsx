@@ -5,7 +5,6 @@ import Feature from "./Feature";
 import About from "./About";
 import FooterOne from "@/layouts/footers/FooterOne";
 import TextSlider from "../home-one/TextSlider";
-import Testimonial from "./Testimonial";
 import Brand from "../home-one/Brand";
 import Blog from "./Blog";
 import Schedule from "../home-one/Schedule";
@@ -20,6 +19,7 @@ import {
 import CtaWrapper from "@/components/common/CtaWrapper";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { cta_data } from "@/data/CtaData";
+import Experience from "../home-one/Experience";
 
 const HomeThree = () => {
   return (
@@ -32,7 +32,7 @@ const HomeThree = () => {
         <About />
         <Schedule />
         <TextSlider />
-        <Testimonial />
+        <Experience />
         <TeamHomeSix slice_number={6} />
         <div className="mb-50">
           <CtaWrapper
