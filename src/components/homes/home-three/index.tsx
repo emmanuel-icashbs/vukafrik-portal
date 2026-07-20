@@ -33,7 +33,7 @@ const HomeThree = () => {
         <Schedule />
         <TextSlider />
         <Experience />
-        <TeamHomeSix slice_number={6} />
+        <TeamHomeSix slice_number={5} />
         <div className="mb-50">
           <CtaWrapper
             title={cta_wrapper_title}

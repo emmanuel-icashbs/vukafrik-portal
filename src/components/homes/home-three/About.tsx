@@ -1,4 +1,11 @@
-import { about_section_data } from "@/data/AboutUsData";
+import {
+  about_section_data,
+  about_thumb1,
+  about_thumb2,
+  about_thumb3,
+  shape_1,
+  shape_2,
+} from "@/data/AboutUsData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,14 +23,55 @@ const About = ({
             data-wow-duration="1.5s"
             data-wow-delay="0.3s"
           >
-            <div className="td-about-3-thumb mr-60 mb-30">
-              <Image
-                className="w-100"
-                src={about_section_data.about_thumb}
-                alt=""
-              />
+            <div className="td-about-4-thumb-wrap mr-45 mb-30">
+              <div className="row align-items-end">
+                <div className="col-lg-7 col-md-7 col-sm-7">
+                  <div className="td-about-4-thumb mb-25">
+                    <Image
+                      className="w-100 thumb wow td-animetion-left"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.2s"
+                      src={about_thumb1}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-5 col-md-5 col-sm-5">
+                  <div className="td-about-4-thumb text-center mb-25">
+                    <Image
+                      className="mb-25 tdtranslateX2"
+                      src={shape_1}
+                      alt=""
+                    />
+                    <Image
+                      className="w-100 thumb wow td-animetion-right"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.2s"
+                      src={about_thumb3}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-12">
+                  <div className="td-about-4-thumb-2 p-relative text-center pb-40 mb-25 pl-70 mr-70">
+                    <Image
+                      className="td-about-4-shape up-down"
+                      src={shape_2}
+                      alt=""
+                    />
+                    <Image
+                      className="w-100 thumb wow td-animetion-top"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.2s"
+                      src={about_thumb2}
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div
             className="col-xl-6 col-lg-9 wow fadeInRight"
             data-wow-duration="1.5s"

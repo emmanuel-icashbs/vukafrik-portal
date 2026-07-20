@@ -126,7 +126,7 @@ const TeamHomeSix = ({ slice_number }: { slice_number?: number }) => {
             </div>
           </div>
         </div>
-        <div className="row row-cols-1 row-cols-xxl-5 row-cols-xl-3 row-cols-lg-3 row-cols-md-2">
+        <div className="row row-cols-1 row-cols-xxl-5 row-cols-xl-5 row-cols-lg-5 row-cols-md-2">
           {speakers.map((item, index) => (
             <div key={item.id} className="col">
               <div

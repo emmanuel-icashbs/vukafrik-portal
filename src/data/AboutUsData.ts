@@ -1,5 +1,11 @@
 import { StaticImageData } from "next/image";
 
+import about_thumb1 from "@/assets/img/about/about-details/thumb.jpg";
+import about_thumb2 from "@/assets/img/about/about-details/thumb-2.jpg";
+import about_thumb3 from "@/assets/img/about/about-details/thumb-3.jpg";
+import shape_1 from "@/assets/img/about/about-details/shape-2.png";
+import shape_2 from "@/assets/img/about/about-details/shape.png";
+
 import about_thumb from "@/assets/img/about/about-3/thumb.png";
 import { cta_data } from "./CtaData";
 import { vukafrik_event_data } from "./VukAfrikData";
@@ -43,4 +49,12 @@ const breadcrumb_data: {
   sub_title: "À propos",
 };
 
-export { info_section_title, breadcrumb_data };
+export {
+  info_section_title,
+  breadcrumb_data,
+  about_thumb1,
+  about_thumb2,
+  about_thumb3,
+  shape_1,
+  shape_2,
+};
