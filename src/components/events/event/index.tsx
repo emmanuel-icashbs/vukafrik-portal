@@ -3,8 +3,8 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import Schedule from "@/components/homes/home-one/Schedule";
 import { breadcrumb_data } from "@/data/ScheduleData";
-import TextSlider from "@/components/homes/home-one/TextSlider";
 import Feature from "../about/Feature";
+import Blog from "@/components/homes/home-three/Blog";
 
 const Event = () => {
   return (
@@ -17,9 +17,7 @@ const Event = () => {
         />
         <Schedule />
         <Feature />
-        <div className="mt-100">
-          <TextSlider />
-        </div>
+        <Blog />
       </main>
       <FooterOne />
     </>
