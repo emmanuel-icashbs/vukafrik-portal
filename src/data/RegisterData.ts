@@ -16,7 +16,6 @@ const form_area = {
     "Pays *",
     "Ville *",
     "Type de participant *",
-    "Interet principal *",
     "Jours de participation *",
     "J'accepte que l'equipe VUK'AFRIK examine cette soumission et me contacte si necessaire.",
   ],

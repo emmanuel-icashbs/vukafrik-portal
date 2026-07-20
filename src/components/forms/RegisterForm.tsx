@@ -3,7 +3,6 @@
 import {
   attendance_days,
   form_area,
-  main_interests,
   participant_types,
 } from "@/data/RegisterData";
 
@@ -83,6 +82,7 @@ const RegisterForm = () => {
             ))}
           </select>
         </div>
+
         <div className="col-md-6 mb-25">
           <select
             className="vuka-form-input"
@@ -91,22 +91,6 @@ const RegisterForm = () => {
           >
             <option value="" disabled>
               {form_area.fields[9]}
-            </option>
-            {main_interests.map((interest, index) => (
-              <option key={index} value={interest}>
-                {interest}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="col-md-6 mb-25">
-          <select
-            className="vuka-form-input"
-            aria-invalid="false"
-            defaultValue={""}
-          >
-            <option value="" disabled>
-              {form_area.fields[10]}
             </option>
             {attendance_days.map((day, index) => (
               <option key={index} value={day}>
@@ -118,7 +102,7 @@ const RegisterForm = () => {
         <div className="col-md-12 mb-25">
           <label>
             <input className="input mr-10" type="checkbox" />
-            {form_area.fields[11]}
+            {form_area.fields[10]}
           </label>
         </div>
         <div className="col-lg-12">
