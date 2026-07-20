@@ -39,21 +39,15 @@ const BecomeExhibitorForm = () => {
             placeholder={form_area.fields[3]}
           />
         </div>
-        <div className="col-lg-6 mb-25">
-          <input
-            className="input"
-            type="text"
-            placeholder={form_area.fields[4]}
-          />
-        </div>
+
         <div className="col-lg-6 mb-25">
           <select
             name="sponsorCategory"
             className="vuka-form-input"
             required={true}
             aria-invalid="false"
-            value={village_id ? parseInt(village_id) : 3}
-            onChange={(e) => setVillageId(e.target.value)}
+            defaultValue={""}
+            // onChange={(e) => setVillageId(e.target.value)}
           >
             <option value="" disabled>
               {form_area.fields[5]}
@@ -65,9 +59,6 @@ const BecomeExhibitorForm = () => {
             ))}
             <option value="0">Other</option>
           </select>
-        </div>
-        <div className="col-lg-12 mb-25">
-          <textarea placeholder={form_area.fields[6]} rows={5} />
         </div>
         <div className="col-lg-6 mb-25">
           <select
@@ -87,7 +78,25 @@ const BecomeExhibitorForm = () => {
           </select>
         </div>
         <div className="col-lg-12 mb-25">
+          <textarea placeholder={form_area.fields[6]} rows={5} />
+        </div>
+
+        <div className="col-lg-12 mb-25">
           <textarea placeholder={form_area.fields[8]} rows={5} />
+        </div>
+        <div className="col-lg-6 mb-25">
+          <input
+            className="input"
+            type="text"
+            placeholder={form_area.fields[10]}
+          />
+        </div>
+        <div className="col-lg-6 mb-25">
+          <input
+            className="input"
+            type="text"
+            placeholder={form_area.fields[4]}
+          />
         </div>
 
         <div className="col-lg-6 mb-25">
@@ -95,13 +104,6 @@ const BecomeExhibitorForm = () => {
             className="input"
             type="text"
             placeholder={form_area.fields[9]}
-          />
-        </div>
-        <div className="col-lg-6 mb-25">
-          <input
-            className="input"
-            type="text"
-            placeholder={form_area.fields[10]}
           />
         </div>
 
