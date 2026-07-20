@@ -2,15 +2,16 @@
 import Link from "next/link";
 import { useJarallax } from "@/hooks/useJarallax";
 
-import bg_img from "@/assets/img/banner/banner-6.jpg";
+import experience_data from "@/data/ExperienceData";
+import { paths_holder } from "@/data/MenuData";
 
-const Experience = () => {
+const ExperienceHomeSix = () => {
   useJarallax(0.2);
 
   return (
     <div
       className="td-banner-area td-banner-7-spacing bg-position jarallax"
-      style={{ backgroundImage: `url(${bg_img.src})` }}
+      style={{ backgroundImage: `url(${experience_data.bg_img2.src})` }}
     >
       <div className="container">
         <div className="row align-items-center">
@@ -21,32 +22,30 @@ const Experience = () => {
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
-                GET EXPERIENCE
+                {experience_data.sub_title}
               </span>
               <h2
                 className="td-section-title mb-15  wow fadeInLeft"
                 data-wow-duration=".9s"
                 data-wow-delay=".4s"
               >
-                Get the best experience in Business Objective
+                {experience_data.title}
               </h2>
               <p
                 className="mb-35  wow fadeInLeft"
                 data-wow-duration=".9s"
                 data-wow-delay=".6s"
               >
-                Like previous year this year we are arranging world marketing{" "}
-                <br />
-                summit 2025. Its the gathering of all the big
+                {experience_data.description}
               </p>
               <Link
                 className="td-btn td-btn-3-squre td-left-right  wow fadeInLeft"
                 data-wow-duration=".9s"
                 data-wow-delay=".8s"
-                href="/events-details"
+                href={paths_holder.events.list.link}
               >
                 <span className="mr10 td-text d-inline-block mr-5">
-                  See event Details
+                  {experience_data.btn_text}
                 </span>
                 <span className="td-arrow-angle">
                   <svg
@@ -96,4 +95,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperienceHomeSix;

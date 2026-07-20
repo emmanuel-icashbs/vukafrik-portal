@@ -2,7 +2,7 @@ import HeaderSix from "@/layouts/headers/HeaderSix";
 import Banner from "./Banner";
 import Countdown from "./Countdown";
 import About from "./About";
-import Experience from "./Experience";
+import ExperienceHomeSix from "./Experience";
 import TeamHomeSix from "./Team";
 import EventHomeSix from "./Event";
 import TextSlider from "./TextSlider";
@@ -23,7 +23,7 @@ const HomeSix = () => {
         <About />
         <TextSlider />
         <EventHomeSix />
-        <Experience />
+        <ExperienceHomeSix />
         <TeamHomeSix />
         <Pricing />
         <Testimonial />

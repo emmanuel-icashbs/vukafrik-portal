@@ -1,7 +1,9 @@
 import bg_img from "@/assets/img/banner/banner.jpg";
+import bg_img2 from "@/assets/img/banner/banner-6.jpg";
 
 const experience_data = {
   bg_img: bg_img,
+  bg_img2: bg_img2,
   title: "Get the best experience in Business Objective",
   sub_title: "GET EXPERIENCE",
   description:
