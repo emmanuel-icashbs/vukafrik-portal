@@ -15,13 +15,13 @@ const banner_data: BannerDataType[] = [
   {
     id: 1,
     bg_img: bg_img1,
-    title: "Foire de l'Innovation, Investissement et de l'Entrepreneuriat.", // , investissement et transformation economique depuis Kinshasa
+    title: "Foire de l'Innovation et de l'Entrepreneuriat.", // , investissement et transformation economique depuis Kinshasa
     sub_title: "VUK'AFRIK 2026",
   },
   {
     id: 2,
     bg_img: bg_img2,
-    title: "Connecter les initiatives congolaises aux opportunites regionales.",
+    title: "Sommet strategique, Foire multisectorielle, villages thematiques.",
     sub_title: "KINSHASA, 25-27 AOUT 2026",
   },
   {
@@ -29,7 +29,7 @@ const banner_data: BannerDataType[] = [
     bg_img: bg_img3,
     sub_title: "PULLMAN HOTEL, KINSHASA",
     title:
-      "Sommet strategique, foire multisectorielle, villages thematiques et rencontres business sur trois jours.",
+      "Construire aujourd'hui l'économie congolaise de demain.",
   },
 ];
 

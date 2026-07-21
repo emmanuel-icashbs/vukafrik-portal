@@ -22,12 +22,17 @@ export const vukafrik_event_data = {
     {
       label: "Notre Vision",
       description:
-        "Initiee depuis Kinshasa, VUK'AFRIK connecte les initiatives locales aux opportunites regionales a travers un Sommet strategique, une foire multisectorielle ouverte, des villages thematiques et des espaces de networking.",
+        "Devenir la plateforme africaine de référence autour de l'innovation, de l'entrepreneuriat, du business, de l'investissement et de la transformation économique. En favorisant les connexions entre les écosystèmes congolais, régionaux et africains, la plateforme contribue à stimuler les opportunités économiques, les collaborations stratégiques et les nouvelles dynamiques de croissance",
     },
     {
       label: "Notre Mission",
       description:
-        "Initiee depuis Kinshasa, VUK'AFRIK connecte les initiatives locales aux opportunites regionales a travers un Sommet strategique, une foire multisectorielle ouverte, des villages thematiques et des espaces de networking.",
+          "Créer un cadre structuré de dialogue, de collaboration et de visibilité afin de renforcer les connexions entre innovation, entrepreneuriat, investissement, institutions et marchés, tout en contribuant au développement des écosystèmes économiques et entrepreneuriaux en RDC et en Afrique. ",
+    },
+    {
+      label: "Nos Pilliers",
+      description:
+          "Initiee depuis Kinshasa, VUK'AFRIK connecte les initiatives locales aux opportunites regionales a travers un Sommet strategique, une foire multisectorielle ouverte, des villages thematiques et des espaces de networking.",
     },
   ],
   contacts: {

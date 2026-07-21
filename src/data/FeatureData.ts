@@ -12,31 +12,31 @@ const feature_data: DataType[] = [
   {
     id: 1,
     icon: "flaticon-meeting",
-    title: "Panel",
-    desc: "anunknown printer took galley type and scrambled type specimen book survived.",
+    title: "Panels stratégiques",
+    desc: "Des discussions de haut niveau entre décideurs, acteurs de développement  , investisseurs et leaders d'opinion autour des grands enjeux économiques et technologiques.",
   },
   {
     id: 2,
     icon: "flaticon-teamwork-2",
-    title: "Ateliers",
-    desc: "anunknown printer took galley type and scrambled type specimen book survived.",
+    title: "Ateliers Pratiques",
+    desc: "Sessions interactives pour développer des compétences, découvrir des outils pratiques et partager les meilleures approches en innovation, entrepreneuriat et transformation digitale.",
   },
   {
     id: 3,
     icon: "flaticon-puzzle",
     title: "Hackathon",
-    desc: "anunknown printer took galley type and scrambled type specimen book survived.",
+    desc: "Des développeurs, designers et entrepreneurs collaborent pour imaginer des solutions innovantes répondant aux défis économiques, sociaux et technologiques de la RDC",
   },
   {
     id: 4,
     icon: "flaticon-share",
     title: "Exposition",
-    desc: "anunknown printer took galley type and scrambled type specimen book survived.",
+    desc: "Découvrez les innovations, produits, services et technologies présentés par des startups, PME, grandes entreprises et partenaires venus de plusieurs secteurs.",
   },
 ];
 
 const title = "Pourquoi participer à notre événement ?";
-const sub_title = "Informations sur l'événement";
-const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
+const sub_title = "Une plateforme, Plusieurs expériences";
+const description = `Contrairement à un événement traditionnel, ${vukafrik_event_data.name} combine plusieurs espaces complémentaires pour favoriser les échanges, l'apprentissage, les partenariats et les opportunités d'investissement.`;
 
 export { feature_data, bg_img, title, sub_title, description };
