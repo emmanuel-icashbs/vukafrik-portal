@@ -4,36 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="add text content part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/faq/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/faq/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home-three/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-three/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/register/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/register/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/_mobile-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/_mobile-menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/layout/_vukafrik-brand.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/layout/_vukafrik-brand.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/utils/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/utils/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/DealCounter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/DealCounter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-one/Experience.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-one/Experience.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Audience.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Countdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Countdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Event.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Event.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Feature.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Partners.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Partners.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Venue.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Venue.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/vukafrik-content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/vukafrik-content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/footers/FooterOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/footers/FooterOne.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/headers/HeaderThree.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/headers/HeaderThree.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/headers/menu/HeaderTopOne.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/headers/menu/HeaderTopOne.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/headers/menu/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/headers/menu/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ExperienceData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ExperienceData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ScheduleData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ScheduleData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/SpeakerData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/SpeakerData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,68 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/repositories/gbs/anadec-sss-project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\repositories\\gbs\\vukafrik\\vukafrik-portal\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="vukafrik-portal" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="vukafrik-portal" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="vukafrik-portal" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="vukafrik-portal" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -145,10 +73,27 @@
       <workItem from="1780243083340" duration="611000" />
       <workItem from="1780250241610" duration="717000" />
       <workItem from="1780391484851" duration="819000" />
+      <workItem from="1784673051342" duration="1736000" />
+      <workItem from="1784675224777" duration="1443000" />
+      <workItem from="1784924238394" duration="623000" />
     </task>
+    <task id="LOCAL-00001" summary="add text content part 1">
+      <option name="closed" value="true" />
+      <created>1784640614111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784640614111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add ignore" />
+    <MESSAGE value="add text content part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add text content part 1" />
   </component>
 </project>

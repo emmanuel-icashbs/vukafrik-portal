@@ -11,8 +11,8 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 1,
     image: team_1,
-    name: "Devon Lane",
-    title: "Sr. Software Engineer",
+    name: "Dr Emmanuel LOMAMI",
+    title: "Président & Fondateur de CCC",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
     email: vukafrik_event_data.contacts.generalEmail,
@@ -72,11 +72,107 @@ const speaker_data: SpeakerDataType[] = [
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
+    {
+        id: 8,
+        image: team_5,
+        name: "Equipe d'acceille",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 9,
+        image: team_5,
+        name: "Maitre de Ceremonie",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 10,
+        image: team_5,
+        name: "Répresentant du gouvernement",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 11,
+        image: team_5,
+        name: "Expert Sectoriel",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 12,
+        image: team_5,
+        name: "Expert Entrepreneuriat",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 13,
+        image: team_5,
+        name: "Equipe VUK'AFRIK",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 14,
+        image: team_5,
+        name: "Equipe CCC",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 15,
+        image: team_5,
+        name: "Equipe FPI",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 16,
+        image: team_5,
+        name: "Equipe CCC Consulting",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 17,
+        image: team_5,
+        name: "Equipe Agence CSB",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 18,
+        image: team_5,
+        name: "Equipe ENA",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
+    {
+        id: 19,
+        image: team_5,
+        name: "Equipe Bracongo",
+        title: "Sr. Software Engineer",
+        biography:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+    },
 ];
 
-const sub_title = "Apprendre grâce aux intervenants";
+const sub_title = "DES VOIX QUI FAÇONNENT L'AVENIR";
 const title = "Intervenants à la conférence";
-const description = `Comme l'année dernière, nous organisons cette année ${vukafrik_event_data.name}. Il s'agit du rendez-vous de tous les grands`;
+const description = "Rencontrez les leaders qui inspirent, innovent et transforment. Écoutez ceux qui façonnent les grandes transformations économiques.";
 const see_more_link = paths_holder.speakers.list.link;
 const see_more_label = "Voir plus";
 const cta_wrapper_title = "Ensemble avec Vous!";

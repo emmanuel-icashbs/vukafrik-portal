@@ -18,15 +18,15 @@ const blog_data: BlogDataType[] = [
   {
     id: 1,
     thumb: blog_1,
-    title: "Civil Litigation paper’s Of Conference",
+    title: "Innovation, régulation et inclusion numérique",
     date: "16 Jan, 2025",
-    comment: "12 Comments",
+    comment: "Dr LOMAMI, Pres KATENDE",
     tag: "Business",
   },
   {
     id: 2,
     thumb: blog_2,
-    title: "Reinventing Experiences of Creativity",
+    title: "Développer le capital humain",
     date: "16 Jan, 2025",
     comment: "12 Comments",
     tag: "Conference",
@@ -34,17 +34,17 @@ const blog_data: BlogDataType[] = [
   {
     id: 3,
     thumb: blog_3,
-    title: "The Save soil, save world Projects in 2025",
+    title: "Construire une nation d’entrepreneurs",
     date: "16 Jan, 2025",
     comment: "12 Comments",
     tag: "Marketing",
   },
 ];
 
-const title = "Rencontres avec des experts du monde des affaires";
-const sub_title = "Quelques rencontres";
+const title = "Des échanges privilégiés avec les leaders qui façonnent l’avenir.";
+const sub_title = "Fireside Chats";
 const description =
-  "Les rencontres qui bougent les lignes, qui change les affaires en mieux.";
+  "Des Echanges privilégiés avec des dirigeants d’entreprises, investisseurs, décideurs publics et entrepreneurs visionnaires. Dans un format interactif, offrant un accès unique aux idées, aux expériences et aux stratégies qui accélèrent l’innovation et la transformation économique.";
 
 export { title, sub_title, description };
 

@@ -4,11 +4,11 @@ import bg_img2 from "@/assets/img/banner/banner-6.jpg";
 const experience_data = {
   bg_img: bg_img,
   bg_img2: bg_img2,
-  title: "Get the best experience in Business Objective",
-  sub_title: "GET EXPERIENCE",
+  title: "Des experts qui créent l'impact.",
+  sub_title: "INTERVENANTS D'EXCEPTION",
   description:
-    "Like previous year this year we are arranging world marketing summit 2025. Its the gathering of all the big",
-  btn_text: "Voir le programme de l'événement",
+    "VUK'AFRIK réunit des dirigeants, entrepreneurs, investisseurs, responsables institutionnels et leaders d'opinion qui partagent une ambition commune : accélérer l'innovation, stimuler l'entrepreneuriat et bâtir une économie africaine plus competitive.",
+  btn_text: "Devenir un intervenant",
 };
 
 export default experience_data;
