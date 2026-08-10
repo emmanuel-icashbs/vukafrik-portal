@@ -72,107 +72,108 @@ const speaker_data: SpeakerDataType[] = [
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
-    {
-        id: 8,
-        image: team_5,
-        name: "Equipe d'acceille",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 9,
-        image: team_5,
-        name: "Maitre de Ceremonie",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 10,
-        image: team_5,
-        name: "Répresentant du gouvernement",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 11,
-        image: team_5,
-        name: "Expert Sectoriel",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 12,
-        image: team_5,
-        name: "Expert Entrepreneuriat",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 13,
-        image: team_5,
-        name: "Equipe VUK'AFRIK",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 14,
-        image: team_5,
-        name: "Equipe CCC",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 15,
-        image: team_5,
-        name: "Equipe FPI",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 16,
-        image: team_5,
-        name: "Equipe CCC Consulting",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 17,
-        image: team_5,
-        name: "Equipe Agence CSB",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 18,
-        image: team_5,
-        name: "Equipe ENA",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
-    {
-        id: 19,
-        image: team_5,
-        name: "Equipe Bracongo",
-        title: "Sr. Software Engineer",
-        biography:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-    },
+  {
+    id: 8,
+    image: team_5,
+    name: "Equipe d'acceille",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 9,
+    image: team_5,
+    name: "Maitre de Ceremonie",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 10,
+    image: team_5,
+    name: "Répresentant du gouvernement",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 11,
+    image: team_5,
+    name: "Expert Sectoriel",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 12,
+    image: team_5,
+    name: "Expert Entrepreneuriat",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 13,
+    image: team_5,
+    name: "Equipe VUK'AFRIK",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 14,
+    image: team_5,
+    name: "Equipe CCC",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 15,
+    image: team_5,
+    name: "Equipe FPI",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 16,
+    image: team_5,
+    name: "Equipe CCC Consulting",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 17,
+    image: team_5,
+    name: "Equipe Agence CSB",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 18,
+    image: team_5,
+    name: "Equipe ENA",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 19,
+    image: team_5,
+    name: "Equipe Bracongo",
+    title: "Sr. Software Engineer",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
 ];
 
 const sub_title = "DES VOIX QUI FAÇONNENT L'AVENIR";
 const title = "Intervenants à la conférence";
-const description = "Rencontrez les leaders qui inspirent, innovent et transforment. Écoutez ceux qui façonnent les grandes transformations économiques.";
+const description =
+  "Rencontrez les leaders qui inspirent, innovent et transforment. Écoutez ceux qui façonnent les grandes transformations économiques.";
 const see_more_link = paths_holder.speakers.list.link;
 const see_more_label = "Voir plus";
 const cta_wrapper_title = "Ensemble avec Vous!";
