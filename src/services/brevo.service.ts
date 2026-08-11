@@ -4,7 +4,8 @@ const BREVO_API_URL = "https://api.brevo.com/v3";
 
 const BREVO_API_KEY =
   process.env.BREVO_API_KEY ||
-  "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";
+  "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";
+//"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";
 
 export interface BrevoContactData {
   email: string;
@@ -29,7 +30,11 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
       updateEnabled: true,
     }),
   });
-  const result = await response.json();
+  let result = null;
+  // logged 201
+  if ([200, 201, 202].includes(response.status)) {
+    result = await response.json();
+  }
   if (!response.ok) {
     throw new Error(result?.message ?? "Failed to create/update Brevo contact");
   }
