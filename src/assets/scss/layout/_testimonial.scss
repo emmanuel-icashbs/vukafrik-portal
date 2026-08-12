@@ -32,7 +32,7 @@
         font-family: var(--td-ff-poppins);
         font-weight: 500;
         line-height: 26px;
-        text-transform: capitalize;
+
         color: var(--td-common-white);
       }
     }
@@ -59,7 +59,7 @@
       & .td-position {
         font-family: var(--td-ff-poppins);
         font-size: 14px;
-        text-transform: capitalize;
+
         color: var(--td-common-white);
         line-height: 1;
       }
@@ -121,7 +121,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 187%;
-        text-transform: capitalize;
+
         color: var(--tp-grey-1);
       }
     }
@@ -135,14 +135,14 @@
       & h5 {
         font-weight: 600;
         font-size: 16px;
-        text-transform: capitalize;
+
         margin-bottom: 0;
       }
       & span {
         font-family: var(--td-ff-poppins);
         font-weight: 400;
         font-size: 14px;
-        text-transform: capitalize;
+
         color: var(--tp-grey-1);
       }
     }

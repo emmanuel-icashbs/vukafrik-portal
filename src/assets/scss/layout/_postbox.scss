@@ -35,7 +35,7 @@
   &-content {
     & p {
       font-family: var(--td-ff-poppins);
-      text-transform: capitalize;
+
       color: var(--td-grey-1);
       line-height: 28px;
     }
@@ -86,7 +86,7 @@
     & .navigation-btn {
       font-weight: 600;
       font-size: 18px;
-      text-transform: capitalize;
+
       color: var(--td-common-black);
       & a {
         &:hover {
@@ -101,7 +101,7 @@
       font-family: var(--td-ff-poppins);
       font-weight: 500;
       font-size: 15px;
-      text-transform: capitalize;
+
       color: var(--td-grey-1);
       & i {
         font-size: 18px;
@@ -114,7 +114,7 @@
       font-family: var(--td-ff-poppins);
       font-weight: 500;
       line-height: 26px;
-      text-transform: capitalize;
+
       color: var(--td-grey-1);
       @media #{$lg,$md,$sm,$xs} {
         & br {
@@ -134,7 +134,7 @@
     }
     & p {
       font-family: var(--td-ff-poppins);
-      text-transform: capitalize;
+
       color: var(--td-grey-1);
       margin-bottom: 22px;
     }
@@ -142,7 +142,6 @@
       font-family: var(--td-ff-poppins);
       font-weight: 700;
       font-size: 24px;
-      text-transform: capitalize;
     }
     & .td-contact-form-box {
       padding: 0;

@@ -914,7 +914,7 @@ textarea {
 .td-breadcrumb-title {
   font-weight: 700;
   font-size: 40px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
 }
 @media (max-width: 575px) {
@@ -1065,7 +1065,7 @@ textarea {
   font-weight: 600;
   font-size: 36px;
   line-height: 125%;
-  text-transform: capitalize;
+
   color: #141418;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
@@ -1101,7 +1101,7 @@ textarea {
   font-weight: 500;
   font-size: 18px;
   line-height: 144%;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   font-family: var(--td-ff-poppins);
 }
@@ -1124,7 +1124,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 400;
   font-size: 16px;
-  text-transform: capitalize;
+
   padding-right: 50px;
   color: var(--td-grey-1);
 }
@@ -1135,7 +1135,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 400;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .tdmobile__search button {
@@ -1333,7 +1333,6 @@ textarea {
 .tdmobile__menu .navigation ul li ul li > a {
   font-size: 16px;
   margin-left: 20px;
-  text-transform: capitalize;
 }
 .tdmobile__menu .navigation:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -2000,7 +1999,7 @@ textarea {
 }
 .cartmini__top-title h4 {
   font-size: 16px;
-  text-transform: capitalize;
+
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -2151,7 +2150,7 @@ textarea {
   text-align: center;
   padding: 10px 30px;
   position: relative;
-  text-transform: capitalize;
+
   z-index: 1;
   overflow: hidden;
   letter-spacing: -0.02em;
@@ -2171,7 +2170,7 @@ textarea {
   text-align: center;
   padding: 10px 30px;
   font-size: 15px;
-  text-transform: capitalize;
+
   border-radius: 50px;
 }
 .cartmini-btn-border:hover {
@@ -2801,7 +2800,6 @@ textarea {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
-  text-transform: capitalize;
 }
 .td-about-item:hover .td-about-icon {
   color: var(--td-theme-primary);
@@ -2885,7 +2883,7 @@ textarea {
 }
 .td-about-2-content .para {
   font-family: var(--td-ff-poppins);
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -2912,7 +2910,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   display: flex;
   margin-bottom: 10px;
@@ -3136,7 +3134,6 @@ textarea {
 .td-about-6-content .para {
   font-family: var(--td-ff-poppins);
   line-height: 175%;
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px),
@@ -3258,7 +3255,7 @@ textarea {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  text-transform: capitalize;
+
   font-family: var(--td-ff-poppins);
   color: var(--td-common-white);
   background: var(--td-theme-primary);
@@ -4453,7 +4450,7 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 .td-hero-4-border {
@@ -4551,7 +4548,6 @@ textarea {
   font-weight: 500;
   line-height: 187%;
   font-family: var(--td-ff-poppins);
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px),
@@ -4578,7 +4574,7 @@ textarea {
 .td-hero-5-content-bottom .td-hero-4-para {
   font-weight: 500;
   line-height: 162%;
-  text-transform: capitalize;
+
   font-family: var(--td-ff-body);
 }
 @media only screen and (min-width: 1700px) and (max-width: 1800px),
@@ -4597,7 +4593,7 @@ textarea {
   font-weight: 700;
   font-size: 60px;
   line-height: 133%;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   margin-bottom: 80px;
   padding-left: 240px;
@@ -4908,14 +4904,13 @@ textarea {
 .td-team-member-name {
   font-weight: 600;
   font-size: 22px;
-  text-transform: capitalize;
 }
 .td-team-member-name a:hover {
   color: var(--td-theme-primary);
 }
 .td-team-member-position {
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-text-grey);
 }
 .td-team-social {
@@ -5100,7 +5095,7 @@ textarea {
 .td-team-3-content .td-title {
   font-weight: 600;
   font-size: 22px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   margin-bottom: 0;
 }
@@ -5110,7 +5105,7 @@ textarea {
 .td-team-3-content .td-position {
   font-family: var(--td-ff-poppins);
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-team-3-social {
@@ -5145,7 +5140,7 @@ textarea {
 .td-team-details-subtitle {
   font-family: var(--td-ff-poppins);
   font-size: 18px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -5159,7 +5154,7 @@ textarea {
 .td-team-details-content p {
   font-family: var(--td-ff-poppins);
   line-height: 30px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -5190,7 +5185,7 @@ textarea {
 .td-team-details-info-item .name {
   font-weight: 500;
   font-size: 14px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   display: block;
   line-height: 1;
@@ -5261,7 +5256,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 600;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   margin-bottom: 10px;
   display: inline-block;
@@ -5329,7 +5324,7 @@ textarea {
 .td-team-5-content h5 {
   font-weight: 600;
   font-size: 20px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
   margin-bottom: 4px;
 }
@@ -5378,7 +5373,7 @@ textarea {
 .td-team-5-content span {
   font-weight: 400;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
@@ -5501,7 +5496,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-size: 18px;
   line-height: 28px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
@@ -5993,7 +5988,7 @@ textarea {
 .td-schedule-3-user-wrap .position {
   font-weight: 400;
   font-size: 12px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-schedule-3-content {
@@ -6020,7 +6015,7 @@ textarea {
 .td-schedule-3-content .para {
   font-family: var(--td-ff-poppins);
   line-height: 28px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-schedule-3-btn .dvdr {
@@ -6171,7 +6166,6 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   color: var(--td-grey-1);
-  text-transform: capitalize;
 }
 .td-schedule-details-form-quantity .price {
   font-weight: 700;
@@ -6301,7 +6295,7 @@ textarea {
 .td-schedule-team-name .td-title {
   font-weight: 600;
   font-size: 18px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   margin-bottom: 0;
 }
@@ -6312,7 +6306,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 400;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 576px) and (max-width: 767px),
@@ -6367,7 +6361,7 @@ textarea {
   background: var(--td-grey-5);
   font-weight: 700;
   font-size: 20px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   font-family: var(--td-ff-poppins);
 }
@@ -6388,7 +6382,7 @@ textarea {
 .td-schedule-4-tab-btn button .td-counts {
   font-weight: 600;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   border-radius: 6px;
   padding: 2px 20px;
@@ -6452,7 +6446,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 700;
   font-size: 20px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   padding: 12px 30px;
   padding-right: 55px;
@@ -6476,7 +6470,7 @@ textarea {
 .td-schedule-5-tab-btn button .td-counts {
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-schedule-5-left-border {
@@ -6577,7 +6571,6 @@ textarea {
 .td-schedule-5-content p {
   font-family: var(--td-ff-poppins);
   line-height: 162%;
-  text-transform: capitalize;
 }
 .td-schedule-5-content .td-schedule-4-destination {
   display: flex;
@@ -6738,7 +6731,7 @@ textarea {
 .td-tickets-details span {
   font-weight: 600;
   font-size: 22px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   display: inline-block;
   margin-bottom: 15px;
@@ -6796,7 +6789,7 @@ textarea {
   display: block;
   font-weight: 700;
   font-size: 24px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 
@@ -6821,7 +6814,7 @@ textarea {
   font-weight: 500;
   font-size: 22px;
   line-height: 127%;
-  text-transform: capitalize;
+
   color: var(--td-common-black-2);
 }
 .td-blog-title-sm {
@@ -6838,7 +6831,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-blog-date span.date svg {
@@ -6945,7 +6938,6 @@ textarea {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  text-transform: capitalize;
 }
 .td-blog-post-title a:hover {
   color: var(--td-theme-secondary);
@@ -6954,7 +6946,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-blog-post-date i {
@@ -6971,7 +6963,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 14px;
-  text-transform: capitalize;
+
   background: #ffe9f7;
   color: var(--td-theme-secondary);
   border-radius: 4px;
@@ -7512,7 +7504,7 @@ textarea {
 .td-countdown-3-location {
   font-size: 18px;
   line-height: 24px;
-  text-transform: capitalize;
+
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--td-common-white);
@@ -7630,7 +7622,7 @@ textarea {
 .td-counter-2-subtitle {
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
@@ -7692,7 +7684,7 @@ textarea {
 .td-pricing-2-price .subtitle {
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
   display: block;
 }
@@ -7790,7 +7782,7 @@ textarea {
 .td-pricing-4-price .price {
   font-weight: 700;
   font-size: 36px;
-  text-transform: capitalize;
+
   display: flex;
   align-items: self-start;
   line-height: 0.9;
@@ -7805,7 +7797,7 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 175%;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-pricing-4-item {
@@ -7915,7 +7907,7 @@ textarea {
   font-weight: 600;
   font-size: 18px;
   line-height: 144%;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 .td-pricing-6-item .subtitle {
@@ -8220,7 +8212,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   line-height: 26px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
 }
 .td-testimonial-3-qoute {
@@ -8245,7 +8237,7 @@ textarea {
 .td-testimonial-3-avatar .td-position {
   font-family: var(--td-ff-poppins);
   font-size: 14px;
-  text-transform: capitalize;
+
   color: var(--td-common-white);
   line-height: 1;
 }
@@ -8313,7 +8305,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
-  text-transform: capitalize;
+
   color: var(--tp-grey-1);
 }
 .td-testimonial-4-avatar img {
@@ -8323,14 +8315,14 @@ textarea {
 .td-testimonial-4-content h5 {
   font-weight: 600;
   font-size: 16px;
-  text-transform: capitalize;
+
   margin-bottom: 0;
 }
 .td-testimonial-4-content span {
   font-family: var(--td-ff-poppins);
   font-weight: 400;
   font-size: 14px;
-  text-transform: capitalize;
+
   color: var(--tp-grey-1);
 }
 .td-testimonial-4-qoute {
@@ -8463,19 +8455,18 @@ textarea {
 }
 .td-venue-subtitle {
   font-weight: 500;
-  text-transform: capitalize;
+
   color: var(--td-theme-primary);
 }
 .td-venue-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
-  text-transform: capitalize;
 }
 .td-venue-text {
   font-family: var(--td-ff-poppins);
   line-height: 30px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-venue-info {
@@ -8491,7 +8482,7 @@ textarea {
 .td-venue-info .subtitle {
   font-weight: 500;
   font-size: 14px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   display: block;
   line-height: 1.3;
@@ -8531,7 +8522,7 @@ textarea {
 .td-product-left-title {
   font-weight: 600;
   font-size: 20px;
-  text-transform: capitalize;
+
   margin-bottom: 0;
 }
 .td-product-left-border {
@@ -8555,7 +8546,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 17px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   display: flex;
   align-items: center;
@@ -8688,7 +8679,7 @@ textarea {
 .td-product-widget-title {
   font-weight: 500;
   font-size: 14px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 .td-product-widget-rating {
@@ -8698,7 +8689,7 @@ textarea {
 .td-product-widget-price {
   font-weight: 600;
   font-size: 12px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 @media (max-width: 575px) {
@@ -8731,7 +8722,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   border: none;
   padding: 0;
@@ -8750,7 +8741,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 15px;
-  text-transform: capitalize;
+
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -8758,7 +8749,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 .td-product-thumb {
@@ -8776,11 +8767,10 @@ textarea {
 .td-product-price {
   font-weight: 600;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 .td-product-title {
-  text-transform: capitalize;
   color: var(--td-grey-1);
   font-size: 16px;
   font-weight: 400;
@@ -8837,7 +8827,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 24px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   border-radius: 100px;
   width: 50px;
@@ -8921,7 +8911,6 @@ textarea {
   font-weight: 600;
   font-size: 22px;
   line-height: 155%;
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px),
   only screen and (min-width: 992px) and (max-width: 1199px),
@@ -8978,13 +8967,13 @@ textarea {
 .td-product-details-price-wrapper span {
   font-weight: 700;
   font-size: 24px;
-  text-transform: capitalize;
+
   margin-right: 14px;
 }
 .td-product-details-price-wrapper span.old-price {
   font-weight: 500;
   font-size: 14px;
-  text-transform: capitalize;
+
   text-decoration: line-through;
   color: var(--td-grey-1);
 }
@@ -9191,7 +9180,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   margin-bottom: 10px;
 }
@@ -9278,7 +9267,7 @@ textarea {
 .td-product-details-tab-nav .nav-tabs .nav-link {
   font-weight: 500;
   font-size: 18px;
-  text-transform: capitalize;
+
   color: #9d9fa8;
   position: relative;
   padding: 0;
@@ -9318,7 +9307,7 @@ textarea {
 .td-product-details-desc-wrapper > p {
   font-family: var(--td-ff-poppins);
   line-height: 28px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-product-details-additional-info-title {
@@ -9441,7 +9430,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 400;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-contact-form-box .td-input:focus {
@@ -9451,7 +9440,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 400;
   font-size: 16px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-contact-form-box .td-input.message {
@@ -9517,12 +9506,11 @@ textarea {
   font-weight: 500;
   font-size: 20px;
   line-height: 180%;
-  text-transform: capitalize;
 }
 .td-contact-info > p {
   font-family: var(--td-ff-poppins);
   line-height: 30px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-contact-info-list ul li {
@@ -9538,7 +9526,7 @@ textarea {
 .td-contact-info-list ul li .address span {
   font-weight: 500;
   font-size: 14px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   display: block;
   line-height: 1.2;
@@ -9605,7 +9593,7 @@ textarea {
 }
 .td-postbox-content p {
   font-family: var(--td-ff-poppins);
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   line-height: 28px;
 }
@@ -9659,7 +9647,7 @@ textarea {
 .td-postbox-navigation .navigation-btn {
   font-weight: 600;
   font-size: 18px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
 }
 .td-postbox-navigation .navigation-btn a:hover {
@@ -9672,7 +9660,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-postbox-navigation .td-date i {
@@ -9685,7 +9673,7 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   line-height: 26px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -9710,7 +9698,7 @@ textarea {
 }
 .td-postbox-form p {
   font-family: var(--td-ff-poppins);
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
   margin-bottom: 22px;
 }
@@ -9718,7 +9706,6 @@ textarea {
   font-family: var(--td-ff-poppins);
   font-weight: 700;
   font-size: 24px;
-  text-transform: capitalize;
 }
 .td-postbox-form .td-contact-form-box {
   padding: 0;
@@ -9765,12 +9752,11 @@ textarea {
   font-weight: 600;
   font-size: 30px;
   line-height: 133%;
-  text-transform: capitalize;
 }
 .td-faq-para {
   font-family: var(--td-ff-poppins);
   line-height: 28px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -9800,7 +9786,7 @@ textarea {
   font-family: var(--td-ff-body);
   font-weight: 500;
   font-size: 20px;
-  text-transform: capitalize;
+
   color: var(--td-common-black);
   padding: 29px 0;
   background: none;
@@ -9891,13 +9877,12 @@ textarea {
 .td-cetagory-tittle {
   font-weight: 600;
   font-size: 20px;
-  text-transform: capitalize;
 }
 .td-cetagory-subtittle {
   font-family: var(--td-ff-poppins);
   font-weight: 500;
   font-size: 15px;
-  text-transform: capitalize;
+
   color: var(--td-grey-1);
 }
 .td-cetagory-item:hover .td-cetagory-thumb img {

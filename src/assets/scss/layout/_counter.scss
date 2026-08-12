@@ -33,7 +33,7 @@
     &-subtitle {
       font-weight: 500;
       font-size: 16px;
-      text-transform: capitalize;
+
       color: var(--td-grey-1);
       @media #{$xl,$lg,$md,$sm,$xs} {
         font-size: 14px;

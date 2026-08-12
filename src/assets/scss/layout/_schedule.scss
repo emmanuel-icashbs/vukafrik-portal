@@ -304,7 +304,7 @@
         & .position {
           font-weight: 400;
           font-size: 12px;
-          text-transform: capitalize;
+
           color: var(--td-grey-1);
         }
       }
@@ -322,7 +322,7 @@
       & .para {
         font-family: var(--td-ff-poppins);
         line-height: 28px;
-        text-transform: capitalize;
+
         color: var(--td-grey-1);
       }
     }
@@ -480,7 +480,6 @@
         font-weight: 400;
         font-size: 14px;
         color: var(--td-grey-1);
-        text-transform: capitalize;
       }
       &-quantity {
         & .price {
@@ -617,7 +616,7 @@
       & .td-title {
         font-weight: 600;
         font-size: 18px;
-        text-transform: capitalize;
+
         color: var(--td-common-black);
         margin-bottom: 0;
         & a {
@@ -630,7 +629,7 @@
         font-family: var(--td-ff-poppins);
         font-weight: 400;
         font-size: 15px;
-        text-transform: capitalize;
+
         color: var(--td-grey-1);
       }
     }
@@ -689,7 +688,7 @@
           background: var(--td-grey-5);
           font-weight: 700;
           font-size: 20px;
-          text-transform: capitalize;
+
           color: var(--td-grey-1);
           font-family: var(--td-ff-poppins);
           &.active {
@@ -709,7 +708,7 @@
           & .td-counts {
             font-weight: 600;
             font-size: 16px;
-            text-transform: capitalize;
+
             color: var(--td-grey-1);
             border-radius: 6px;
             padding: 2px 20px;
@@ -788,7 +787,7 @@
           font-family: var(--td-ff-poppins);
           font-weight: 700;
           font-size: 20px;
-          text-transform: capitalize;
+
           color: var(--td-common-black);
           padding: 12px 30px;
           padding-right: 55px;
@@ -811,7 +810,7 @@
           & .td-counts {
             font-weight: 500;
             font-size: 16px;
-            text-transform: capitalize;
+
             color: var(--td-grey-1);
           }
         }
@@ -897,7 +896,6 @@
       & p {
         font-family: var(--td-ff-poppins);
         line-height: 162%;
-        text-transform: capitalize;
       }
       & .td-schedule-4-destination {
         display: flex;

@@ -466,7 +466,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 162%;
-      text-transform: capitalize;
+
       color: var(--td-common-black);
     }
     &-border {
@@ -543,7 +543,7 @@
           font-weight: 500;
           line-height: 187%;
           font-family: var(--td-ff-poppins);
-          text-transform: capitalize;
+
           @media #{$xl,$lg,$md,$sm,$xs} {
             & br {
               display: none;
@@ -560,7 +560,7 @@
         & .td-hero-4-para {
           font-weight: 500;
           line-height: 162%;
-          text-transform: capitalize;
+
           font-family: var(--td-ff-body);
           @media #{$x4l,$x3l,$xxl,$xl,$lg,$md,$sm,$xs} {
             & br {
@@ -574,7 +574,7 @@
       font-weight: 700;
       font-size: 60px;
       line-height: 133%;
-      text-transform: capitalize;
+
       color: var(--td-common-black);
       margin-bottom: 80px;
       padding-left: 240px;
