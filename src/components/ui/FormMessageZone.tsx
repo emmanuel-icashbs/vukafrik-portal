@@ -1,17 +1,31 @@
 const FormMessageZone = ({
   successMessage,
   errorMessage,
+  isOpen,
 }: {
-  successMessage: string;
-  errorMessage: string;
+  successMessage: string | null;
+  errorMessage: string | null;
+  isOpen: boolean;
 }) => {
   return (
-    <div className="col-sm-12">
-      {successMessage && (
-        <div className="successMessage mb-25">{successMessage}</div>
+    <>
+      {isOpen && (
+        <div className="my-toast-wrapper">
+          {successMessage && (
+            <div className="successMessage">
+              <span>{successMessage}</span>
+              <span className="messageCloseBtn"></span>
+            </div>
+          )}
+          {errorMessage && (
+            <div className="errorMessage">
+              <span>{errorMessage}</span>
+              <span className="messageCloseBtn"></span>
+            </div>
+          )}
+        </div>
       )}
-      {errorMessage && <div className="errorMessage mb-25">{errorMessage}</div>}
-    </div>
+    </>
   );
 };
 

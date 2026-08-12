@@ -7,6 +7,7 @@ import {
 import { AttendeeFormType } from "@/utils/types";
 import FormMessageZone from "../ui/FormMessageZone";
 import { usePost } from "@/hooks/use_post";
+import SubmitButton from "../ui/SubmitButton";
 const INIT_ATTENDEE_DATA: AttendeeFormType = {
   first_name: "",
   last_name: "",
@@ -28,7 +29,8 @@ const RegisterForm = () => {
     errorMessage,
     isSubmitting,
     handleSubmit,
-  } = usePost({
+    isToastOpen,
+  } = usePost<AttendeeFormType>({
     initialData: INIT_ATTENDEE_DATA,
     apiUrl: "/api/attendee",
     dataModelName: "Participant",
@@ -38,6 +40,7 @@ const RegisterForm = () => {
     <form onSubmit={(e) => handleSubmit(e)}>
       <div className="row">
         <FormMessageZone
+          isOpen={isToastOpen}
           errorMessage={errorMessage}
           successMessage={successMessage}
         />
@@ -189,15 +192,10 @@ const RegisterForm = () => {
             {form_area.fields[10]}
           </label>
         </div>
-        <div className="col-lg-12">
-          <button
-            type="submit"
-            className="td-btn w-100"
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "Envoi encours..." : form_area.submit_button}
-          </button>
-        </div>
+        <SubmitButton
+          isSubmitting={isSubmitting}
+          title={form_area.submit_button}
+        />
       </div>
     </form>
   );

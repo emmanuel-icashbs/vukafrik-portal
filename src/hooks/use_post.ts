@@ -1,7 +1,7 @@
 "use client";
 import { FormEvent, useCallback, useEffect, useState } from "react";
 import { ApiResponseType } from "@/utils/types";
-import useScrollToTop from "./use_scroll_to_top";
+import useToat from "./useToat";
 
 interface UsePostProps<I> {
   initialData: I;
@@ -14,11 +14,11 @@ export function usePost<I>({
   apiUrl,
   dataModelName,
 }: UsePostProps<I>) {
-  const { setSchouldScrollToTop } = useScrollToTop();
+  const { isToastOpen, setIsToastOpen } = useToat();
   const [data, setData] = useState<I>(initialData);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const [successMessage, setSuccessMessage] = useState<string>("");
-  const [errorMessage, setErrorMessage] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,6 +28,7 @@ export function usePost<I>({
   useEffect(() => {
     const submitForm = async () => {
       if (isSubmitting) {
+        console.log(dataModelName + " isSubmitting >> ", data);
         const responsePromise = await fetch(apiUrl, {
           method: "POST",
           body: JSON.stringify(data),
@@ -35,17 +36,17 @@ export function usePost<I>({
         const response: ApiResponseType = await responsePromise.json();
         if (response.success) {
           setSuccessMessage(
-            `Fait avec Success !!\n A bientot cher ${dataModelName}`,
+            `Fait avec Success, a bientot cher ${dataModelName} !`,
           );
           setErrorMessage("");
         } else {
           setErrorMessage(
-            `Fait avec Echec !!\n Recommencer ou contacter l'Admin cher ${dataModelName}.`,
+            `Fait avec Echec, recommencer ou contacter l'Admin cher ${dataModelName} !`,
           );
           setSuccessMessage("");
         }
         setIsSubmitting(false);
-        setSchouldScrollToTop(true);
+        setIsToastOpen(true);
       }
     };
     submitForm();
@@ -78,5 +79,7 @@ export function usePost<I>({
     errorMessage,
     isSubmitting,
     handleSubmit,
+    isToastOpen,
+    setIsToastOpen,
   };
 }

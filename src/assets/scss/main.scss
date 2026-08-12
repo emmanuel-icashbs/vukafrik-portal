@@ -120,20 +120,39 @@ textarea:focus {
   z-index: 0;
 }
 
-.successMessage {
-  background-color: rgb(183, 252, 183);
-  color: green;
-  padding: 5px;
-  border-radius: 5px;
+.my-toast-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.successMessage,
+.errorMessage {
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: fixed;
+  top: 100;
+  z-index: 200;
+  margin: 10px;
+  padding: 10px;
+}
+.successMessage {
+  background-color: rgb(183, 252, 183);
+  color: green;
+}
 .errorMessage {
   background-color: rgb(252, 183, 183);
   color: red;
-  padding: 5px;
-  border-radius: 5px;
+}
+.messageCloseBtn {
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
