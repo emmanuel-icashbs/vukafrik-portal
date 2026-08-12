@@ -9918,3 +9918,9 @@ textarea {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.successMessage {
+  background-color: rgb(85, 252, 85);
+  color: green;
+  padding: 5px;
+}

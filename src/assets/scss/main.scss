@@ -119,3 +119,22 @@ textarea:focus {
   background-color: rgba(27, 1, 102, 0.6);
   z-index: 0;
 }
+
+.successMessage {
+  background-color: rgb(183, 252, 183);
+  color: green;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.errorMessage {
+  background-color: rgb(252, 183, 183);
+  color: red;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

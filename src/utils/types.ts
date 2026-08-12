@@ -20,7 +20,7 @@ interface GeneralContactFormType {
   phone: string;
   request_type: string;
   message: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface AttendeeFormType {
@@ -34,7 +34,7 @@ interface AttendeeFormType {
   city: string;
   participant_type: string;
   participation_days: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface SpeakerDataType {
@@ -61,7 +61,7 @@ interface SpeakerFormType {
   linkedin_or_website: string;
   speaking_experience: string;
   additional_notes: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface SponsorFormType {
@@ -75,7 +75,7 @@ interface SponsorFormType {
   budget_range: string;
   preferred_visibility_zone: string;
   interest_sector: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface ExhibitorFormType {
@@ -90,7 +90,7 @@ interface ExhibitorFormType {
   specific_needs: string;
   social_media_links: string;
   no_of_participants: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface VolunteerFormType {
@@ -102,7 +102,7 @@ interface VolunteerFormType {
   interest_area: string;
   skills: string;
   previous_event_experience: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface JournalistFormType {
@@ -117,7 +117,7 @@ interface JournalistFormType {
   press_card_number: string;
   no_of_media_representatives: string;
   specific_technical_needs: string;
-  accept_review_and_contact: string;
+  accept_review_and_contact: boolean;
 }
 
 interface InBetweenPathDataType {
@@ -133,6 +133,11 @@ interface FaqDataType {
   showAnswer: boolean;
 }
 
+interface ApiResponseType {
+  data: any;
+  status: number;
+  success: boolean;
+}
 export type {
   EventDataType,
   SpeakerDataType,
@@ -145,4 +150,5 @@ export type {
   JournalistFormType,
   VolunteerFormType,
   GeneralContactFormType,
+  ApiResponseType,
 };

@@ -27,3 +27,29 @@ export const getEventById = (id: number): EventDataType => {
   }
   return event;
 };
+
+export function deepTrim<T>(value: T): T {
+  // Trim strings
+  if (typeof value === "string") {
+    return value.replace(/\s{2,}/g, " ").trim() as T;
+  }
+
+  // Handle arrays
+  if (Array.isArray(value)) {
+    return value.map((item) => deepTrim(item)) as T;
+  }
+
+  // Handle plain objects (exclude null & special objects)
+  if (typeof value === "object" && value !== null && value.constructor === Object) {
+    const result: Record<string, any> = {};
+
+    for (const [key, val] of Object.entries(value)) {
+      result[key] = deepTrim(val);
+    }
+
+    return result as T;
+  }
+
+  // Return everything else unchanged
+  return value;
+}

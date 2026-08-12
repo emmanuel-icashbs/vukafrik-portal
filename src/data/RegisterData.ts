@@ -53,6 +53,9 @@ const attendance_days = [
   "Jour 1 - Strategic Summit",
   "Jour 2 - Foire multisectorielle",
   "Jour 3 - Showcases & cloture",
+  "Les deux premiers jours",
+  "Les deux derniers jours",
+  "Le premier et dernier jours",
   "Les trois jours",
 ];
 
