@@ -2,10 +2,11 @@ import { NextResponse } from "next/server";
 
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
+import { JournalistFormType } from "@/utils/types";
 
 export async function POST(request: Request) {
   try {
-    const data = await request.json();
+    const data: JournalistFormType = await request.json();
 
     const {
       organisation,

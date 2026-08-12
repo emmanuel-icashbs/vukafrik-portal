@@ -23,7 +23,7 @@ interface GeneralContactFormType {
   accept_review_and_contact: string;
 }
 
-interface AttendeeDataType {
+interface AttendeeFormType {
   first_name: string;
   last_name: string;
   email: string;
@@ -138,7 +138,7 @@ export type {
   SpeakerDataType,
   InBetweenPathDataType,
   FaqDataType,
-  AttendeeDataType,
+  AttendeeFormType,
   SponsorFormType,
   SpeakerFormType,
   ExhibitorFormType,
@@ -146,13 +146,3 @@ export type {
   VolunteerFormType,
   GeneralContactFormType,
 };
-
-export enum ContactType {
-  ATTENDEE,
-  SPONSOR,
-  EXHIBITOR,
-  SPEAKER,
-  JOURNALIST,
-  VOLUNTEER,
-  GENERAL,
-}

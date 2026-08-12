@@ -1,10 +1,11 @@
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
+import { ExhibitorFormType } from "@/utils/types";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
-    const data = await request.json();
+    const data: ExhibitorFormType = await request.json();
 
     const {
       organisation,
