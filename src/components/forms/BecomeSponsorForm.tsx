@@ -11,7 +11,7 @@ import { SponsorFormType } from "@/utils/types";
 import FormMessageZone from "../ui/FormMessageZone";
 import SubmitButton from "../ui/SubmitButton";
 
-const INIT_SPONSOR_DATA = {
+const INIT_SPONSOR_DATA: SponsorFormType = {
   name: "",
   contact_person: "",
   email: "",
