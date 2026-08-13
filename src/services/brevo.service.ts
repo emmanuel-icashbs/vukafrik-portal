@@ -4,7 +4,8 @@ const BREVO_API_URL = "https://api.brevo.com/v3";
 
 const BREVO_API_KEY =
   process.env.BREVO_API_KEY ||
-  "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";
+  "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";
+// "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";
 //"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";
 
 export interface BrevoContactData {
@@ -14,6 +15,7 @@ export interface BrevoContactData {
 }
 
 export async function createOrUpdateBrevoContact(data: BrevoContactData) {
+  console.log("Data >> ", data);
   const response = await fetch(`${BREVO_API_URL}/contacts`, {
     method: "POST",
 
@@ -32,6 +34,7 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
   });
   let result = null;
   // logged 201
+  console.log("Brevo response >> ", response);
   if ([200, 201, 202].includes(response.status)) {
     result = await response.json();
   }
