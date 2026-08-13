@@ -3,7 +3,7 @@ import { media_accred_form_area } from "./MediaAccreditationData";
 import { paths_holder } from "./MenuData";
 import { speaker_form_area } from "./SpeakerData";
 import { sponsor_form_area } from "./SponsorData";
-import { volonteer_form_area } from "./VolonteerData";
+import { volunteer_form_area } from "./VolonteerData";
 
 type CtaItemType = {
   title: string;
@@ -53,6 +53,6 @@ export const cta_data: CtaDataType = {
   },
   become_volonteer: {
     title: "Volontariat",
-    href: `${paths_holder.volunteer.link}#${volonteer_form_area.id}`,
+    href: `${paths_holder.volunteer.link}#${volunteer_form_area.id}`,
   },
 };

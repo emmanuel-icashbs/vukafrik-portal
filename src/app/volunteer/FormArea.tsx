@@ -1,5 +1,5 @@
-import BecomeVolonteerForm from "@/components/forms/BecomeVolonteerForm";
-import { volonteer_form_area } from "@/data/VolonteerData";
+import BecomeVolunteerForm from "@/components/forms/BecomeVolunteerForm";
+import { volunteer_form_area } from "@/data/VolonteerData";
 
 const FormArea = () => {
   return (
@@ -9,12 +9,12 @@ const FormArea = () => {
           <div className="col-md-10">
             <div className="tg-login-wrapper">
               <div className="tg-login-top text-center mb-30">
-                <h2>{volonteer_form_area.title}</h2>
-                <p>{volonteer_form_area.sub_title}</p>
+                <h2>{volunteer_form_area.title}</h2>
+                <p>{volunteer_form_area.sub_title}</p>
               </div>
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">
-                  <BecomeVolonteerForm />
+                  <BecomeVolunteerForm />
                 </div>
               </div>
             </div>
