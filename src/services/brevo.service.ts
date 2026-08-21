@@ -4,9 +4,7 @@ const BREVO_API_URL = "https://api.brevo.com/v3";
 
 const BREVO_API_KEY =
   process.env.BREVO_API_KEY ||
-  "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";
-// "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";
-//"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";
+  "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";
 
 export interface BrevoContactData {
   email: string;
@@ -15,7 +13,12 @@ export interface BrevoContactData {
 }
 
 export async function createOrUpdateBrevoContact(data: BrevoContactData) {
-  console.log("Data >> ", data);
+  const requestData = JSON.stringify({
+    email: data.email,
+    attributes: data.attributes ?? {},
+    listIds: data.listIds,
+    updateEnabled: true,
+  });
   const response = await fetch(`${BREVO_API_URL}/contacts`, {
     method: "POST",
 
@@ -25,24 +28,40 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
       "content-type": "application/json",
     },
 
-    body: JSON.stringify({
-      email: data.email,
-      attributes: data.attributes ?? {},
-      listIds: data.listIds,
-      updateEnabled: true,
-    }),
+    body: requestData,
   });
-  let result = null;
-  // logged 201
-  console.log("Brevo response >> ", response);
-  if ([200, 201, 202].includes(response.status)) {
-    result = await response.json();
+
+  console.log("Request & Response >> ", {
+    Request: requestData,
+    Response: response,
+  });
+
+  const hasBody =
+    response.status !== 204 &&
+    response.status !== 205 &&
+    response.status !== 304;
+
+  let result = {
+    message: "Brevo contact created or updated successfully.",
+  };
+
+  if (response.ok && hasBody) {
+    const text = await response.text();
+
+    if (text) {
+      result = JSON.parse(text);
+    }
   }
+
   if (!response.ok) {
     throw new Error(result?.message ?? "Failed to create/update Brevo contact");
   }
 
-  return { data: result, status: response.status, success: response.ok };
+  return {
+    data: result,
+    status: response.status === 204 ? 200 : response.status,
+    success: response.ok,
+  };
 }
 
 export async function testBrevoConnection() {

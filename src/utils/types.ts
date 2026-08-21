@@ -120,6 +120,14 @@ interface JournalistFormType {
   accept_review_and_contact: boolean;
 }
 
+interface HackathonTeamFormType {
+  team_name: string;
+  team_leader_name: string;
+  team_leader_email: string;
+  team_leader_phone: string;
+  accept_review_and_contact: boolean;
+}
+
 interface InBetweenPathDataType {
   label: string;
   href: string;
@@ -151,4 +159,5 @@ export type {
   VolunteerFormType,
   GeneralContactFormType,
   ApiResponseType,
+  HackathonTeamFormType,
 };

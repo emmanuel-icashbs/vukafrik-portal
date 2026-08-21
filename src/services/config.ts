@@ -6,10 +6,12 @@ export const BREVO_LISTS = {
   journalist: 42,
   volunteer: 43,
   general: 44,
+  hackathon: 45,
 } as const;
 
 export const BREVO_CONTACT_TYPES = {
   attendee: "ATTENDEE",
+  hackathon: "HACKATHON",
   sponsor: "SPONSOR",
   exhibitor: "EXHIBITOR",
   speaker: "SPEAKER",
