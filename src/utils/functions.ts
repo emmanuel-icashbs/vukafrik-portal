@@ -40,7 +40,11 @@ export function deepTrim<T>(value: T): T {
   }
 
   // Handle plain objects (exclude null & special objects)
-  if (typeof value === "object" && value !== null && value.constructor === Object) {
+  if (
+    typeof value === "object" &&
+    value !== null &&
+    value.constructor === Object
+  ) {
     const result: Record<string, any> = {};
 
     for (const [key, val] of Object.entries(value)) {
@@ -53,3 +57,15 @@ export function deepTrim<T>(value: T): T {
   // Return everything else unchanged
   return value;
 }
+
+// Write a split schedule dates function receiving a string in the format "Jour 01 - 25 aout, 2026" and returning an object with Jour 01, 25, aout, 2026 separate properties.
+// The function should be named splitScheduleDate and should return an object with the properties schedule_day, month_day, month, year.
+export const splitScheduleDate = (dateString: string) => {
+  const dateStringNoExtraSpace = dateString.replace(/\s{2,}/, " ");
+  const [schedule_day, date] = dateStringNoExtraSpace.split(/\s*-\s*/);
+
+  const [month_day, month, year] = date.split(/\s*,\s*|\s+/);
+  console.log({ month_day, month, year });
+
+  return { schedule_day, month_day, month, year };
+};

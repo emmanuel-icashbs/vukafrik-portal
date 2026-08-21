@@ -1,4 +1,4 @@
-import Event from "@/components/events/event";
+import EventPage from "@/components/events/event";
 import { paths_holder } from "@/data/MenuData";
 import { vukafrik_event_data } from "@/data/VukAfrikData";
 import Wrapper from "@/layouts/Wrapper";
@@ -9,7 +9,7 @@ export const metadata = {
 const page = () => {
   return (
     <Wrapper>
-      <Event />
+      <EventPage />
     </Wrapper>
   );
 };

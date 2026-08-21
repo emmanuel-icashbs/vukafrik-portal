@@ -7,7 +7,6 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import TextSlider from "../home-one/TextSlider";
 import Brand from "../home-one/Brand";
 import Blog from "./Blog";
-import Schedule from "../home-one/Schedule";
 import TeamHomeSix from "../home-six/Team";
 import {
   cta_wrapper_sub_title,
@@ -19,6 +18,7 @@ import CtaWrapper from "@/components/common/CtaWrapper";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { cta_data } from "@/data/CtaData";
 import Experience from "../home-one/Experience";
+import Event from "../home-five/Event";
 
 const HomeThree = () => {
   return (
@@ -29,7 +29,7 @@ const HomeThree = () => {
         <Countdown />
         <Feature />
         <About />
-        <Schedule />
+        <Event />
         <TextSlider />
         <Experience />
         <TeamHomeSix slice_number={5} />

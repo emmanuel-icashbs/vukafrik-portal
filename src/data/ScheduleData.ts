@@ -8,7 +8,7 @@ import event_thumb3 from "@/assets/img/schedule/schedule-2/thumb-3.jpg";
 import event_thumb4 from "@/assets/img/schedule/schedule-2/thumb-4.jpg";
 
 const schedule_days: string[] = [
-  "Jour 01 - 25 aout, 2026",
+  "Jour 01 - 25 aout, 2026", // keep the same format, even after updates
   "Jour 02 - 26 aout, 2026",
   "Jour 03 - 27 aout, 2026",
 ];

@@ -1,12 +1,13 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
-import Schedule from "@/components/homes/home-one/Schedule";
 import { breadcrumb_data } from "@/data/ScheduleData";
 import Feature from "../about/Feature";
 import Blog from "@/components/homes/home-three/Blog";
+import Event from "@/components/homes/home-five/Event";
+import Experience from "@/components/homes/home-five/Experience";
 
-const Event = () => {
+const EventPage = () => {
   return (
     <>
       <HeaderThree />
@@ -15,13 +16,14 @@ const Event = () => {
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}
         />
-        <Schedule />
+        <Event />
         <Feature />
         <Blog />
+        <Experience />
       </main>
       <FooterOne />
     </>
   );
 };
 
-export default Event;
+export default EventPage;
