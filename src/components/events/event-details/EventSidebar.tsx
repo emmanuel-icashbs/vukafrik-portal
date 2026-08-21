@@ -6,10 +6,13 @@ import { cta_data } from "@/data/CtaData";
 import { detail_page_data } from "@/data/ScheduleData";
 import { useRouter } from "next/navigation";
 
+function getDayByDate(dateString: string): number {
+  return parseInt(dateString.match(/Jour\s*(\d+)/)?.[1] ?? "0", 10);
+}
 const EventSidebar = ({ event }: { event: EventDataType }) => {
   const route = useRouter();
-  const handleClickForRegistering = (event_id?: number) => {
-    const path = event_id ? "?event_id=" + event_id : "";
+  const handleClickForRegistering = (event_date?: string) => {
+    const path = `?event_day=${event_date ? getDayByDate(event_date) : "7"}`;
     route.push(`/register${path}`);
   };
 
@@ -77,7 +80,7 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
               <button
                 type="submit"
                 className="td-btn w-100"
-                onClick={() => handleClickForRegistering()}
+                onClick={() => handleClickForRegistering(event.date)}
               >
                 {`${cta_data.register.title} pour ce event seulement`}
               </button>
@@ -87,7 +90,7 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
               <button
                 type="submit"
                 className="td-btn w-100"
-                onClick={() => handleClickForRegistering(event.id)}
+                onClick={() => handleClickForRegistering()}
               >
                 {`${cta_data.register.title} pour tout le programme`}
               </button>

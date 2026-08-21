@@ -8,6 +8,8 @@ import { AttendeeFormType } from "@/utils/types";
 import FormMessageZone from "../ui/FormMessageZone";
 import { usePost } from "@/hooks/use_post";
 import SubmitButton from "../ui/SubmitButton";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 const INIT_ATTENDEE_DATA: AttendeeFormType = {
   first_name: "",
   last_name: "",
@@ -22,6 +24,8 @@ const INIT_ATTENDEE_DATA: AttendeeFormType = {
   accept_review_and_contact: false,
 };
 const RegisterForm = () => {
+  const searchParams = useSearchParams();
+  const [event_day] = useState<string | null>(searchParams.get("event_day"));
   const {
     data: registerForm,
     handleChange,
@@ -35,6 +39,15 @@ const RegisterForm = () => {
     apiUrl: "/api/attendee",
     dataModelName: "Participant",
   });
+
+  useEffect(() => {
+    if (event_day) {
+      handleChange(
+        "participation_days",
+        attendance_days[Number(event_day) - 1],
+      );
+    }
+  }, [event_day]);
 
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
