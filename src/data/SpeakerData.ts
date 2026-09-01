@@ -11,7 +11,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 1,
     image: team_1,
-    name: "Dr Emmanuel LOMAMI",
+    name: "Docteur Emmanuel LOMAMI (Président & Fondateur de la CCC)",
     title: "Président & Fondateur de CCC",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -23,7 +23,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 2,
     image: team_2,
-    name: "Esther Howard",
+    name: "Représeantant ARPTC",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -35,7 +35,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 3,
     image: team_3,
-    name: "Robert Fox",
+    name: "Représentant ANIMF",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -43,7 +43,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 4,
     image: team_4,
-    name: "Leslie Alexander",
+    name: "Représentant First Bank",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -51,7 +51,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 5,
     image: team_5,
-    name: "Jane Cooper",
+    name: "Représentant Fintech",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -59,7 +59,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 6,
     image: team_5,
-    name: "Prince Ilunga",
+    name: "Monsieur Christian KATENDE (Président de l'ARPTC)",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -67,7 +67,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 7,
     image: team_5,
-    name: "David Ilunga",
+    name: "Monsieur Hervé Claude NTUMBA (DG FPI)",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -75,7 +75,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 8,
     image: team_5,
-    name: "Equipe d'acceille",
+    name: "Equipe d'acceille VUK'AFRIK",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -99,7 +99,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 11,
     image: team_5,
-    name: "Expert Sectoriel",
+    name: "Madame Sibia NGAYIHEMBAKO (DGA Finca)",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -107,7 +107,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 12,
     image: team_5,
-    name: "Expert Entrepreneuriat",
+    name: "DG FOGEC",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -115,7 +115,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 13,
     image: team_5,
-    name: "Equipe VUK'AFRIK",
+    name: "Representant FEC",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -123,7 +123,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 14,
     image: team_5,
-    name: "Equipe CCC",
+    name: "DG APROCEM",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -131,7 +131,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 15,
     image: team_5,
-    name: "Equipe FPI",
+    name: "DG d'une PME",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -139,7 +139,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 16,
     image: team_5,
-    name: "Equipe CCC Consulting",
+    name: "DG ARESP",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -147,7 +147,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 17,
     image: team_5,
-    name: "Equipe Agence CSB",
+    name: "Madame Jeannette CILOMBA (Vice Président de la CCC)",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -155,7 +155,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 18,
     image: team_5,
-    name: "Equipe ENA",
+    name: "DG CADECO",
     title: "Sr. Software Engineer",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",

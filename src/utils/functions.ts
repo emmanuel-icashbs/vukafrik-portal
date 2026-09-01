@@ -58,7 +58,7 @@ export function deepTrim<T>(value: T): T {
   return value;
 }
 
-// Write a split schedule dates function receiving a string in the format "Jour 01 - 25 aout, 2026" and returning an object with Jour 01, 25, aout, 2026 separate properties.
+// Write a split schedule dates function receiving a string in the format "Jour 01 - 23 septembre, 2026" and returning an object with Jour 01, 23, septembre, 2026 separate properties.
 // The function should be named splitScheduleDate and should return an object with the properties schedule_day, month_day, month, year.
 export const splitScheduleDate = (dateString: string) => {
   const dateStringNoExtraSpace = dateString.replace(/\s{2,}/, " ");

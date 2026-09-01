@@ -5,7 +5,7 @@ export const vukafrik_event_data = {
   subtitle: "Foire de l'Innovation et de l'Entrepreneuriat",
   theme:
     "Innovation, entrepreneuriat et transformation economique : construire les nouvelles dynamiques de croissance africaines",
-  dates: "25-27 aout 2026",
+  dates: "23-25 septembre 2026",
   venue: "Pullman Hotel, Kinshasa",
   venueHref:
     "https://www.google.com/maps/place/Pullman+Kinshasa+Grand+H%C3%B4tel/@-4.3712512,15.2993792,12z/data=!4m9!3m8!1s0x1a6a33d0686a8c59:0xa716fe90bc2e9cc8!5m2!4m1!1i2!8m2!3d-4.312448!4d15.27344!16s%2Fg%2F1224nhpv?entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3D",

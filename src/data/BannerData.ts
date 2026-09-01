@@ -22,7 +22,7 @@ const banner_data: BannerDataType[] = [
     id: 2,
     bg_img: bg_img2,
     title: "Sommet strategique, Foire multisectorielle, villages thematiques.",
-    sub_title: "KINSHASA, 25-27 AOUT 2026",
+    sub_title: "KINSHASA, 23-25 SEPTEMBRE 2026",
   },
   {
     id: 3,
