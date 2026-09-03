@@ -42,5 +42,5 @@ next-env.d.ts
 
 #yarn
 yarn.lock
-.idea/
-workspace.xml
+.idea
+.idea/workspace.xml

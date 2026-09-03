@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="add text content part 1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-five/Event.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-five/Event.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/BannerData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/BannerData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/CountDownData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/CountDownData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ScheduleData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ScheduleData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/SpeakerData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/SpeakerData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/VukAfrikData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/VukAfrikData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions.ts" afterDir="false" />
-    </list>
+    <list default="true" id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="day 1 done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +72,7 @@
       <workItem from="1784675224777" duration="1443000" />
       <workItem from="1784924238394" duration="623000" />
       <workItem from="1788288858465" duration="405000" />
-      <workItem from="1788294311472" duration="6546000" />
+      <workItem from="1788294311472" duration="7501000" />
     </task>
     <task id="LOCAL-00001" summary="add text content part 1">
       <option name="closed" value="true" />
@@ -92,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784640614111</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day 1 done">
+      <option name="closed" value="true" />
+      <created>1788303516898</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788303516898</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add ignore" />
     <MESSAGE value="add text content part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add text content part 1" />
+    <MESSAGE value="day 1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 1 done" />
   </component>
 </project>
