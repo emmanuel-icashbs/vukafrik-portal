@@ -29,7 +29,7 @@ const Sidebar = ({ sidebar, setSidebar }: MobileSidebarProps) => {
             <MobileMenus />
           </div>
           <div className="mt-30 ml-25 mr-25">
-            <Link className="td-btn td-left-right w-100 text-center" href="#">
+            <Link className="td-btn td-left-right w-100 text-center" href="/register">
               <span className="mr10 td-text d-inline-block mr-5">
                 {"S'inscrire"}
               </span>
