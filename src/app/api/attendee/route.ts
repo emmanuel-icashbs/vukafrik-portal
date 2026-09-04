@@ -3,6 +3,14 @@ import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
 import { AttendeeFormType } from "@/utils/types";
 import { NextResponse } from "next/server";
 
+function isBrevoApiError(error: unknown): error is Error & { status: number } {
+  return (
+    error instanceof Error &&
+    "status" in error &&
+    typeof error.status === "number"
+  );
+}
+
 export async function POST(request: Request) {
   try {
     const data: AttendeeFormType = await request.json();
@@ -61,6 +69,16 @@ export async function POST(request: Request) {
     );
   } catch (error) {
     console.error("Attendee submission error:", error);
+
+    if (isBrevoApiError(error)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: error.message,
+        },
+        { status: error.status },
+      );
+    }
 
     return NextResponse.json(
       {

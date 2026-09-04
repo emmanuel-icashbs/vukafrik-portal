@@ -1,15 +1,23 @@
-"use server";
-
 const BREVO_API_URL = "https://api.brevo.com/v3";
 
 const BREVO_API_KEY =
   process.env.BREVO_API_KEY ||
-  "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";
+  "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";
 
 export interface BrevoContactData {
   email: string;
   attributes?: Record<string, string | number | boolean | null>;
   listIds: number[];
+}
+
+class BrevoApiError extends Error {
+  status: number;
+
+  constructor(message: string, status: number) {
+    super(message);
+    this.name = "BrevoApiError";
+    this.status = status;
+  }
 }
 
 export async function createOrUpdateBrevoContact(data: BrevoContactData) {
@@ -41,20 +49,29 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
     response.status !== 205 &&
     response.status !== 304;
 
-  let result = {
+  let result: Record<string, unknown> = {
     message: "Brevo contact created or updated successfully.",
   };
 
-  if (response.ok && hasBody) {
+  if (hasBody) {
     const text = await response.text();
 
     if (text) {
-      result = JSON.parse(text);
+      try {
+        result = JSON.parse(text);
+      } catch {
+        result = { message: text };
+      }
     }
   }
 
   if (!response.ok) {
-    throw new Error(result?.message ?? "Failed to create/update Brevo contact");
+    throw new BrevoApiError(
+      typeof result.message === "string"
+        ? result.message
+        : "Failed to create/update Brevo contact",
+      response.status,
+    );
   }
 
   return {
@@ -74,7 +91,10 @@ export async function testBrevoConnection() {
   });
   const result = await response.json();
   if (!response.ok) {
-    throw new Error(result?.message ?? "Failed to connect to Brevo API");
+    throw new BrevoApiError(
+      result?.message ?? "Failed to connect to Brevo API",
+      response.status,
+    );
   }
   return { data: result, status: response.status, success: response.ok };
 }
