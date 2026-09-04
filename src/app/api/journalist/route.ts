@@ -40,6 +40,7 @@ export async function POST(request: Request) {
         ORGANISATION: organisation,
         NAME: name,
         PHONE: phone,
+        WHATSAPP: phone,
         COUNTRY: country,
         MEDIA_TYPE: media_type,
         REQUEST_SUBJECT: request_subject,

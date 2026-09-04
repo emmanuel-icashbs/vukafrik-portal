@@ -36,6 +36,7 @@ export async function POST(request: Request) {
       attributes: {
         NAME: full_name,
         PHONE: phone,
+        WHATSAPP: phone,
         CITY: city,
         AVAILABILITY: availability,
         INTEREST_AREA: interest_area,

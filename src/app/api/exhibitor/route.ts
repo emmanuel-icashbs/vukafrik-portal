@@ -39,6 +39,7 @@ export async function POST(request: Request) {
         ORGANISATION: organisation,
         CONTACT_PERSON: contact_person,
         PHONE: phone,
+        WHATSAPP: phone,
         WEBSITE: website,
         SECTOR: sector,
         PRODUCT_SERVICE_DESCRIPTION: product_service_description,

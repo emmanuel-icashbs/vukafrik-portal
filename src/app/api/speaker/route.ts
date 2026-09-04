@@ -38,6 +38,7 @@ export async function POST(request: Request) {
       attributes: {
         NAME: name,
         PHONE: phone,
+        WHATSAPP: phone,
         ORGANISATION: organisation,
         TITLE: title,
         BIOGRAPHY: biography,
