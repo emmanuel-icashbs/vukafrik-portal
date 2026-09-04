@@ -38,6 +38,7 @@ export async function POST(request: Request) {
         FIRST_NAME: first_name,
         LAST_NAME: last_name,
         PHONE: phone,
+        WHATSAPP: phone,
         ORGANISATION: organisation,
         FUNCTION: contact_function,
         COUNTRY: country,

@@ -33,6 +33,7 @@ export async function POST(request: Request) {
       attributes: {
         NAME: name,
         PHONE: phone,
+        WHATSAPP: phone,
         REQUEST_TYPE: request_type,
         MESSAGE: message,
         ACCEPT_REVIEW_AND_CONTACT: accept_review_and_contact,

@@ -38,6 +38,7 @@ export async function POST(request: Request) {
         NAME: name,
         CONTACT_PERSON: contact_person,
         PHONE: phone,
+        WHATSAPP: phone,
         WEBSITE: website,
         PARTNERSHIP_CATEGORY: partnership_category,
         MESSAGE: message,

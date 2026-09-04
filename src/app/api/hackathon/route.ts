@@ -38,6 +38,7 @@ export async function POST(request: Request) {
         ORGANISATION: team_name,
         CONTACT_PERSON: team_leader_name,
         PHONE: team_leader_phone,
+        WHATSAPP: team_leader_phone,
         ACCEPT_REVIEW_AND_CONTACT: accept_review_and_contact,
         CONTACT_TYPE: BREVO_CONTACT_TYPES.hackathon,
       },
