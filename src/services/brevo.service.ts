@@ -2,7 +2,7 @@ const BREVO_API_URL = "https://api.brevo.com/v3";
 
 const BREVO_API_KEY =
   process.env.BREVO_API_KEY ||
-  "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";
+  "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";
 
 export interface BrevoContactData {
   email: string;
