@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="day 1 done" />
+    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="api key fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/brevo.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/brevo.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,10 +29,9 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="3EUpc0QfLL1KdEES0oiHWrjIZSB" />
+  <component name="ProjectId" id="3IrSFlchpOpzPkPiWtXMf25wnUg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,9 +41,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/repositories/gbs/anadec-sss-project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/repositories/gbs/blf-project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -59,38 +60,40 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="8845acbf-249d-48bb-9e86-7b6889f4d3c2" name="Changes" comment="" />
-      <created>1780243081624</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1780243081624</updated>
-      <workItem from="1780243083340" duration="611000" />
-      <workItem from="1780250241610" duration="717000" />
-      <workItem from="1780391484851" duration="819000" />
-      <workItem from="1784673051342" duration="1736000" />
-      <workItem from="1784675224777" duration="1443000" />
-      <workItem from="1784924238394" duration="623000" />
-      <workItem from="1788288858465" duration="405000" />
-      <workItem from="1788294311472" duration="7501000" />
-    </task>
-    <task id="LOCAL-00001" summary="add text content part 1">
+    <task id="LOCAL-00001" summary="fix the issue with registration">
       <option name="closed" value="true" />
-      <created>1784640614111</created>
+      <created>1788434825875</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1784640614111</updated>
+      <updated>1788434825875</updated>
     </task>
-    <task id="LOCAL-00002" summary="day 1 done">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="fix the issue with registration" />
+      <created>1788521117574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788521117574</updated>
+      <workItem from="1788521126363" duration="11161000" />
+      <workItem from="1788548759315" duration="4619000" />
+    </task>
+    <task id="LOCAL-00002" summary="api key fix">
       <option name="closed" value="true" />
-      <created>1788303516898</created>
+      <created>1788550784791</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1788303516898</updated>
+      <updated>1788550784791</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="api key fix">
+      <option name="closed" value="true" />
+      <created>1788552050062</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788552050062</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,8 +101,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add ignore" />
-    <MESSAGE value="add text content part 1" />
-    <MESSAGE value="day 1 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 1 done" />
+    <MESSAGE value="fix the issue with registration" />
+    <MESSAGE value="api key fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="api key fix" />
   </component>
 </project>
