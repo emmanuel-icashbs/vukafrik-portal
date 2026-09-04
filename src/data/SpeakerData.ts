@@ -158,15 +158,79 @@ const speaker_data: SpeakerDataType[] = [
     name: "DG CADECO",
     title: "Sr. Software Engineer",
     biography:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
   {
     id: 19,
     image: team_5,
-    name: "Equipe Bracongo",
+    name: "Formatteur CCC",
     title: "Sr. Software Engineer",
     biography:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 20,
+    image: team_5,
+    name: "Equipe CCC Consulting",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 21,
+    image: team_5,
+    name: "Madame Malou Nzuzi (DG Agence CSB)",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 22,
+    image: team_5,
+    name: "Equipe d'organisation CCC",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 23,
+    image: team_5,
+    name: "Equipe Ministere de l'Economie National",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 24,
+    image: team_5,
+    name: "Equipe Ministere du FOGEC",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 25,
+    image: team_5,
+    name: "PME ou Entrepreneur",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 26,
+    image: team_5,
+    name: "Equipe FPI",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 27,
+    image: team_5,
+    name: "Equipe Visa Congo",
+    title: "Sr. Software Engineer",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
 ];
 
