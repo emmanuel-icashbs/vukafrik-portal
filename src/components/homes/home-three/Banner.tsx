@@ -34,16 +34,16 @@ const Banner = () => {
                         </span>
                         <h2
                           className="td-hero-3-title mb-35 text2"
-                          style={{ height: "200px" }}
+                          style={{ minHeight: "200px" }}
                         >
                           {getTextWithFixedLength(item.title)}
                         </h2>
                         <Link
                           className="td-btn td-btn-3-border td-left-right text3"
-                          href="#"
+                          href={item.action.href}
                         >
                           <span className="mr10 td-text d-inline-block mr-5">
-                            {"Réserver votre stand"}
+                            {item.action.title}
                           </span>
                           <span className="td-arrow-angle">
                             <svg
