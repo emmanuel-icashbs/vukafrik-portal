@@ -1,7 +1,14 @@
 const BREVO_API_URL = "https://api.brevo.com/v3";
 
-const BREVO_API_KEY = process.env.BREVO_API_KEY ||
-  "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";
+function getBrevoApiKey(): string {
+  const apiKey = process.env.BREVO_API_KEY?.trim();
+
+  if (!apiKey) {
+    throw new Error("BREVO_API_KEY is not configured on the server.");
+  }
+
+  return apiKey;
+}
 
 export interface BrevoContactData {
   email: string;
@@ -31,7 +38,7 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
 
     headers: {
       accept: "application/json",
-      "api-key": BREVO_API_KEY,
+      "api-key": getBrevoApiKey(),
       "content-type": "application/json",
     },
 
@@ -85,7 +92,7 @@ export async function testBrevoConnection() {
     method: "GET",
     headers: {
       accept: "application/json",
-      "api-key": BREVO_API_KEY,
+      "api-key": getBrevoApiKey(),
     },
   });
   const result = await response.json();
@@ -120,7 +127,7 @@ export async function testBrevoContactCreation() {
     method: "POST",
     headers: {
       accept: "application/json",
-      "api-key": BREVO_API_KEY,
+      "api-key": getBrevoApiKey(),
       "content-type": "application/json",
     },
     body: JSON.stringify(payload),
