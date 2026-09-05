@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="api key fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/brevo.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/brevo.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="fix issue of number validation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +73,7 @@
       <updated>1788521117574</updated>
       <workItem from="1788521126363" duration="11161000" />
       <workItem from="1788548759315" duration="4619000" />
-      <workItem from="1788599052305" duration="496000" />
+      <workItem from="1788599052305" duration="1495000" />
     </task>
     <task id="LOCAL-00002" summary="api key fix">
       <option name="closed" value="true" />
@@ -94,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788552050062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix issue of number validation">
+      <option name="closed" value="true" />
+      <created>1788601201821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788601201821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +109,7 @@
     <MESSAGE value="add ignore" />
     <MESSAGE value="fix the issue with registration" />
     <MESSAGE value="api key fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="api key fix" />
+    <MESSAGE value="fix issue of number validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix issue of number validation" />
   </component>
 </project>

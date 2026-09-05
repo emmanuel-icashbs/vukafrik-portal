@@ -144,7 +144,7 @@ interface FaqDataType {
 
 interface ApiResponseType {
   message?: string;
-  data: any;
+  data: unknown;
   status: number;
   success: boolean;
 }
