@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { JSX, useEffect, useState } from "react";
+import { JSX } from "react";
 import { useRouter } from "next/navigation";
 import speaker_data, {
   description,
@@ -9,7 +9,6 @@ import speaker_data, {
   title,
 } from "@/data/SpeakerData";
 import { paths_holder } from "@/data/MenuData";
-import { SpeakerDataType } from "@/utils/types";
 
 const team_shapes: JSX.Element[] = [
   <>
@@ -85,16 +84,13 @@ const team_shapes: JSX.Element[] = [
 ];
 
 const TeamHomeSix = ({ slice_number }: { slice_number?: number }) => {
-  const [speakers, setSpeakers] = useState<SpeakerDataType[]>([]);
+  const individualSpeakers = speaker_data.filter(
+    (speaker) => speaker.type === "Individual",
+  );
+  const speakers = slice_number === undefined
+    ? individualSpeakers
+    : individualSpeakers.slice(0, slice_number);
   const router = useRouter();
-
-  useEffect(() => {
-    if (slice_number) {
-      setSpeakers(speaker_data.slice(0, slice_number));
-    } else {
-      setSpeakers(speaker_data);
-    }
-  }, []);
 
   return (
     <div className="td-team-area pt-130 pb-100">

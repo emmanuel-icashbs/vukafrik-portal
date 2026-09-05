@@ -39,6 +39,7 @@ interface AttendeeFormType {
 
 interface SpeakerDataType {
   id: number;
+  type: "Individual" | "Team";
   image: StaticImageData;
   name: string;
   title: string;

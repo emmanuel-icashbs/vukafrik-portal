@@ -10,8 +10,9 @@ import { paths_holder } from "./MenuData";
 const speaker_data: SpeakerDataType[] = [
   {
     id: 1,
+    type: "Individual",
     image: team_1,
-    name: "Docteur Emmanuel LOMAMI (Président & Fondateur de la CCC)",
+    name: "Docteur Emmanuel LOMAMI",
     title: "Président & Fondateur de CCC",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
@@ -22,53 +23,59 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 2,
-    image: team_2,
-    name: "Représeantant ARPTC",
-    title: "Sr. Software Engineer",
+    type: "Individual",
+    image: team_1,
+    name: "Monsieur Christian KATENDE",
+    title: "Président de l'ARPTC",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 3,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant",
+    title: "ANIMF",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 4,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant",
+    title: "First Bank",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 5,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant",
+    title: "Fintech",
+    biography:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
+  },
+  {
+    id: 6,
+    type: "Individual",
+    image: team_2,
+    name: "Représentant",
+    title: "ARPTC",
+    biography:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
     email: vukafrik_event_data.contacts.generalEmail,
     phone: vukafrik_event_data.contacts.phoneLabel,
     address: vukafrik_event_data.venue,
     years_of_experience: "4 years",
   },
   {
-    id: 3,
-    image: team_3,
-    name: "Représentant ANIMF",
-    title: "Sr. Software Engineer",
-    biography:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-  },
-  {
-    id: 4,
-    image: team_4,
-    name: "Représentant First Bank",
-    title: "Sr. Software Engineer",
-    biography:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-  },
-  {
-    id: 5,
-    image: team_5,
-    name: "Représentant Fintech",
-    title: "Sr. Software Engineer",
-    biography:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-  },
-  {
-    id: 6,
-    image: team_5,
-    name: "Monsieur Christian KATENDE (Président de l'ARPTC)",
-    title: "Sr. Software Engineer",
-    biography:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
-  },
-  {
     id: 7,
+    type: "Individual",
     image: team_5,
-    name: "Monsieur Hervé Claude NTUMBA (DG FPI)",
-    title: "Sr. Software Engineer",
+    name: "Monsieur Hervé Claude NTUMBA",
+    title: "Directeur Général FPI",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
@@ -76,20 +83,23 @@ const speaker_data: SpeakerDataType[] = [
     id: 8,
     image: team_5,
     name: "Equipe d'acceille VUK'AFRIK",
-    title: "Sr. Software Engineer",
+    title: "VUK'AFRIK",
+    type: "Team",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
   {
     id: 9,
+    type: "Individual",
     image: team_5,
-    name: "Maitre de Ceremonie",
-    title: "Sr. Software Engineer",
+    name: "Monsieur Sony Ngandu",
+    title: "Maitre de Cerémonie",
     biography:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
   {
     id: 10,
+    type: "Individual",
     image: team_5,
     name: "Répresentant du gouvernement",
     title: "Sr. Software Engineer",
@@ -98,6 +108,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 11,
+    type: "Individual",
     image: team_5,
     name: "Madame Sibia NGAYIHEMBAKO (DGA Finca)",
     title: "Sr. Software Engineer",
@@ -106,6 +117,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 12,
+    type: "Individual",
     image: team_5,
     name: "DG FOGEC",
     title: "Sr. Software Engineer",
@@ -114,6 +126,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 13,
+    type: "Individual",
     image: team_5,
     name: "Representant FEC",
     title: "Sr. Software Engineer",
@@ -122,6 +135,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 14,
+    type: "Individual",
     image: team_5,
     name: "DG APROCEM",
     title: "Sr. Software Engineer",
@@ -130,6 +144,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 15,
+    type: "Individual",
     image: team_5,
     name: "DG d'une PME",
     title: "Sr. Software Engineer",
@@ -138,6 +153,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 16,
+    type: "Individual",
     image: team_5,
     name: "DG ARESP",
     title: "Sr. Software Engineer",
@@ -146,6 +162,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 17,
+    type: "Individual",
     image: team_5,
     name: "Madame Jeannette CILOMBA (Vice Président de la CCC)",
     title: "Sr. Software Engineer",
@@ -154,6 +171,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 18,
+    type: "Individual",
     image: team_5,
     name: "DG CADECO",
     title: "Sr. Software Engineer",
@@ -162,6 +180,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 19,
+    type: "Individual",
     image: team_5,
     name: "Formatteur CCC",
     title: "Sr. Software Engineer",
@@ -170,6 +189,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 20,
+    type: "Team",
     image: team_5,
     name: "Equipe CCC Consulting",
     title: "Sr. Software Engineer",
@@ -178,6 +198,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 21,
+    type: "Individual",
     image: team_5,
     name: "Madame Malou Nzuzi (DG Agence CSB)",
     title: "Sr. Software Engineer",
@@ -186,6 +207,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 22,
+    type: "Team",
     image: team_5,
     name: "Equipe d'organisation CCC",
     title: "Sr. Software Engineer",
@@ -194,6 +216,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 23,
+    type: "Team",
     image: team_5,
     name: "Equipe Ministere de l'Economie National",
     title: "Sr. Software Engineer",
@@ -202,6 +225,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 24,
+    type: "Team",
     image: team_5,
     name: "Equipe Ministere du FOGEC",
     title: "Sr. Software Engineer",
@@ -210,6 +234,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 25,
+    type: "Individual",
     image: team_5,
     name: "PME ou Entrepreneur",
     title: "Sr. Software Engineer",
@@ -218,6 +243,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 26,
+    type: "Team",
     image: team_5,
     name: "Equipe FPI",
     title: "Sr. Software Engineer",
@@ -226,6 +252,7 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 27,
+    type: "Team",
     image: team_5,
     name: "Equipe Visa Congo",
     title: "Sr. Software Engineer",
