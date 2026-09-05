@@ -1,3 +1,4 @@
+import { validateContactFields } from "@/utils/contactFields";
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
 import { GeneralContactFormType } from "@/utils/types";
@@ -7,10 +8,14 @@ export async function POST(request: Request) {
   try {
     const data: GeneralContactFormType = await request.json();
 
+    const validation = validateContactFields(data, false);
+    if (validation.error) {
+      return NextResponse.json({ success: false, message: validation.error, field: validation.field }, { status: 400 });
+    }
+
     const {
       name,
       email,
-      phone,
       request_type,
       message,
       accept_review_and_contact,
@@ -32,8 +37,8 @@ export async function POST(request: Request) {
 
       attributes: {
         NAME: name,
-        PHONE: phone,
-        WHATSAPP: phone,
+        PHONE: validation.phone,
+        WHATSAPP: validation.phone,
         REQUEST_TYPE: request_type,
         MESSAGE: message,
         ACCEPT_REVIEW_AND_CONTACT: accept_review_and_contact,

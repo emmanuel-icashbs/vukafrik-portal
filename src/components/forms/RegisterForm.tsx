@@ -1,4 +1,7 @@
 "use client";
+import CountrySelect from "../ui/CountrySelect";
+import { DRC_COUNTRY } from "@/utils/contactFields";
+import PhoneInput from "../ui/PhoneInput";
 import {
   attendance_days,
   form_area,
@@ -17,7 +20,7 @@ const INIT_ATTENDEE_DATA: AttendeeFormType = {
   phone: "",
   organisation: "",
   function: "",
-  country: "",
+  country: DRC_COUNTRY,
   city: "",
   participant_type: "",
   participation_days: "",
@@ -94,9 +97,8 @@ const RegisterForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={form_area.fields[3]}
             title={form_area.fields[3]}
             value={registerForm.phone}
@@ -128,14 +130,11 @@ const RegisterForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
-            className="input"
-            type="text"
-            placeholder={form_area.fields[6]}
+          <CountrySelect
+            className="vuka-form-input"
             title={form_area.fields[6]}
             value={registerForm.country}
             onChange={(e) => handleChange("country", e.target.value)}
-            maxLength={255}
             required
           />
         </div>

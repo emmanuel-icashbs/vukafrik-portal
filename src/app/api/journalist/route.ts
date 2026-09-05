@@ -1,3 +1,4 @@
+import { validateContactFields } from "@/utils/contactFields";
 import { NextResponse } from "next/server";
 
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
@@ -8,11 +9,15 @@ export async function POST(request: Request) {
   try {
     const data: JournalistFormType = await request.json();
 
+    const validation = validateContactFields(data, true);
+    if (validation.error) {
+      return NextResponse.json({ success: false, message: validation.error, field: validation.field }, { status: 400 });
+    }
+
     const {
       organisation,
       name,
       email,
-      phone,
       country,
       media_type,
       request_subject,
@@ -39,8 +44,8 @@ export async function POST(request: Request) {
       attributes: {
         ORGANISATION: organisation,
         NAME: name,
-        PHONE: phone,
-        WHATSAPP: phone,
+        PHONE: validation.phone,
+        WHATSAPP: validation.phone,
         COUNTRY: country,
         MEDIA_TYPE: media_type,
         REQUEST_SUBJECT: request_subject,

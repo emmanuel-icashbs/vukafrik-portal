@@ -1,4 +1,5 @@
 "use client";
+import PhoneInput from "../ui/PhoneInput";
 
 import {
   volunteer_form_area,
@@ -69,9 +70,8 @@ const BecomeVolunteerForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={volunteer_form_area.fields[2]}
             title={volunteer_form_area.fields[2]}
             value={volunteerForm.phone}

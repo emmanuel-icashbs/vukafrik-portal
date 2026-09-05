@@ -1,4 +1,5 @@
 "use client";
+import PhoneInput from "../ui/PhoneInput";
 
 import { speaker_form_area, session_preferences } from "@/data/SpeakerData";
 import { usePost } from "@/hooks/use_post";
@@ -68,9 +69,8 @@ const BecomeSpeakerForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={speaker_form_area.fields[2]}
             title={speaker_form_area.fields[2]}
             value={speakerForm.phone}

@@ -1,3 +1,4 @@
+import { validateContactFields } from "@/utils/contactFields";
 import { NextResponse } from "next/server";
 
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
@@ -8,10 +9,14 @@ export async function POST(request: Request) {
   try {
     const data: VolunteerFormType = await request.json();
 
+    const validation = validateContactFields(data, false);
+    if (validation.error) {
+      return NextResponse.json({ success: false, message: validation.error, field: validation.field }, { status: 400 });
+    }
+
     const {
       full_name,
       email,
-      phone,
       city,
       availability,
       interest_area,
@@ -35,8 +40,8 @@ export async function POST(request: Request) {
 
       attributes: {
         NAME: full_name,
-        PHONE: phone,
-        WHATSAPP: phone,
+        PHONE: validation.phone,
+        WHATSAPP: validation.phone,
         CITY: city,
         AVAILABILITY: availability,
         INTEREST_AREA: interest_area,

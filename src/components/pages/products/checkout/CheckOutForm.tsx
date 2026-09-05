@@ -1,5 +1,10 @@
+"use client";
+import { useState } from "react";
+import PhoneInput from "@/components/ui/PhoneInput";
+import CountrySelect from "@/components/ui/CountrySelect";
 
 const CheckOutForm = () => {
+   const [phone, setPhone] = useState("");
    return (
       <div className="col-lg-7">
          <form onSubmit={(e) => e.preventDefault()} className="customer__form-wrap">
@@ -24,13 +29,7 @@ const CheckOutForm = () => {
             </div>
             <div className="form-grp select-grp">
                <label htmlFor="country-name">Country / Region *</label>
-               <select id="country-name" name="country-name" className="country-name">
-                  <option value="United Kingdom (UK)">United Kingdom (UK)</option>
-                  <option value="United States (US)">United States (US)</option>
-                  <option value="Turkey">Turkey</option>
-                  <option value="Saudi Arabia">Saudi Arabia</option>
-                  <option value="Portugal">Portugal</option>
-               </select>
+               <CountrySelect id="country-name" name="country-name" className="country-name" required />
             </div>
             <div className="form-grp">
                <label htmlFor="street-address">Street address *</label>
@@ -61,7 +60,7 @@ const CheckOutForm = () => {
                <div className="col-md-6">
                   <div className="form-grp">
                      <label htmlFor="phone">Phone *</label>
-                     <input type="number" id="phone" />
+                     <PhoneInput id="phone" name="phone" value={phone} onChange={(event) => setPhone(event.target.value)} required />
                   </div>
                </div>
                <div className="col-md-6">

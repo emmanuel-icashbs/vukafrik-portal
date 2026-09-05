@@ -1,4 +1,5 @@
 "use client";
+import PhoneInput from "../ui/PhoneInput";
 import { contact_request_types, form_area } from "@/data/ContactData";
 import { usePost } from "@/hooks/use_post";
 import { GeneralContactFormType } from "@/utils/types";
@@ -65,10 +66,9 @@ const ContactForm = () => {
             />
           </div>
           <div className="col-md-6 mb-20">
-            <input
+            <PhoneInput
               className="td-input"
               name="user_phone"
-              type="text"
               placeholder={form_area.fields[2]}
               title={form_area.fields[2]}
               value={contactForm.phone}

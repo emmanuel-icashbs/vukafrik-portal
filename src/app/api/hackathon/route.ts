@@ -1,3 +1,4 @@
+import { validateContactFields } from "@/utils/contactFields";
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
 import { HackathonTeamFormType } from "@/utils/types";
@@ -7,11 +8,15 @@ export async function POST(request: Request) {
   try {
     const data: HackathonTeamFormType = await request.json();
 
+    const validation = validateContactFields(data, false);
+    if (validation.error) {
+      return NextResponse.json({ success: false, message: validation.error, field: validation.field }, { status: 400 });
+    }
+
     const {
       team_name,
       team_leader_name,
       team_leader_email,
-      team_leader_phone,
       accept_review_and_contact,
     } = data;
 
@@ -19,7 +24,7 @@ export async function POST(request: Request) {
       !team_name ||
       !team_leader_name ||
       !team_leader_email ||
-      !team_leader_phone
+      !validation.phone
     ) {
       return NextResponse.json(
         {
@@ -37,8 +42,8 @@ export async function POST(request: Request) {
       attributes: {
         ORGANISATION: team_name,
         CONTACT_PERSON: team_leader_name,
-        PHONE: team_leader_phone,
-        WHATSAPP: team_leader_phone,
+        PHONE: validation.phone,
+        WHATSAPP: validation.phone,
         ACCEPT_REVIEW_AND_CONTACT: accept_review_and_contact,
         CONTACT_TYPE: BREVO_CONTACT_TYPES.hackathon,
       },

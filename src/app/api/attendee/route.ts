@@ -1,3 +1,4 @@
+import { validateContactFields } from "@/utils/contactFields";
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
 import { AttendeeFormType } from "@/utils/types";
@@ -15,11 +16,15 @@ export async function POST(request: Request) {
   try {
     const data: AttendeeFormType = await request.json();
 
+    const validation = validateContactFields(data, true);
+    if (validation.error) {
+      return NextResponse.json({ success: false, message: validation.error, field: validation.field }, { status: 400 });
+    }
+
     const {
       first_name,
       last_name,
       email,
-      phone,
       organisation,
       function: contact_function,
       country,
@@ -45,8 +50,8 @@ export async function POST(request: Request) {
       attributes: {
         FIRST_NAME: first_name,
         LAST_NAME: last_name,
-        PHONE: phone,
-        WHATSAPP: phone,
+        PHONE: validation.phone,
+        WHATSAPP: validation.phone,
         ORGANISATION: organisation,
         FUNCTION: contact_function,
         COUNTRY: country,

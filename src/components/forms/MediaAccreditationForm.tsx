@@ -1,4 +1,7 @@
 "use client";
+import CountrySelect from "../ui/CountrySelect";
+import { DRC_COUNTRY } from "@/utils/contactFields";
+import PhoneInput from "../ui/PhoneInput";
 
 import {
   media_accred_form_area,
@@ -14,7 +17,7 @@ const INIT_JOURNALIST_DATA: JournalistFormType = {
   name: "",
   email: "",
   phone: "",
-  country: "",
+  country: DRC_COUNTRY,
   media_type: "",
   request_subject: "",
   previous_content_links: "",
@@ -82,9 +85,8 @@ const MediaAccreditationForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={media_accred_form_area.fields[3]}
             title={media_accred_form_area.fields[3]}
             value={journalistForm.phone}
@@ -93,14 +95,11 @@ const MediaAccreditationForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
-            className="input"
-            type="text"
-            placeholder={media_accred_form_area.fields[4]}
+          <CountrySelect
+            className="vuka-form-input"
             title={media_accred_form_area.fields[4]}
             value={journalistForm.country}
             onChange={(e) => handleChange("country", e.target.value)}
-            maxLength={255}
             required
           />
         </div>

@@ -143,6 +143,7 @@ interface FaqDataType {
 }
 
 interface ApiResponseType {
+  message?: string;
   data: any;
   status: number;
   success: boolean;

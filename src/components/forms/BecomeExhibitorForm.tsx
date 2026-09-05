@@ -1,4 +1,5 @@
 "use client";
+import PhoneInput from "../ui/PhoneInput";
 
 import {
   exhibitions_formats,
@@ -97,9 +98,8 @@ const BecomeExhibitorForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={exhibitor_form_area.fields[3]}
             title={exhibitor_form_area.fields[3]}
             value={exhibitorForm.phone}

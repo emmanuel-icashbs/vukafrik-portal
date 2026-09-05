@@ -1,4 +1,5 @@
 "use client";
+import PhoneInput from "../ui/PhoneInput";
 
 import {
   sponsor_form_area,
@@ -84,9 +85,8 @@ const BecomeSponsorForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={sponsor_form_area.fields[3]}
             title={sponsor_form_area.fields[3]}
             value={sponsorForm.phone}

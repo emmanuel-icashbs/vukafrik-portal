@@ -1,3 +1,4 @@
+import { validateContactFields } from "@/utils/contactFields";
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
 import { SponsorFormType } from "@/utils/types";
@@ -7,11 +8,15 @@ export async function POST(request: Request) {
   try {
     const data: SponsorFormType = await request.json();
 
+    const validation = validateContactFields(data, false);
+    if (validation.error) {
+      return NextResponse.json({ success: false, message: validation.error, field: validation.field }, { status: 400 });
+    }
+
     const {
       name,
       contact_person,
       email,
-      phone,
       website,
       partnership_category,
       message,
@@ -37,8 +42,8 @@ export async function POST(request: Request) {
       attributes: {
         NAME: name,
         CONTACT_PERSON: contact_person,
-        PHONE: phone,
-        WHATSAPP: phone,
+        PHONE: validation.phone,
+        WHATSAPP: validation.phone,
         WEBSITE: website,
         PARTNERSHIP_CATEGORY: partnership_category,
         MESSAGE: message,

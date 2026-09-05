@@ -1,4 +1,5 @@
 "use client";
+import PhoneInput from "../ui/PhoneInput";
 import { HackathonTeamFormType } from "@/utils/types";
 import FormMessageZone from "../ui/FormMessageZone";
 import { usePost } from "@/hooks/use_post";
@@ -73,9 +74,8 @@ const HackatonTeamForm = () => {
           />
         </div>
         <div className="col-lg-6 mb-25">
-          <input
+          <PhoneInput
             className="input"
-            type="text"
             placeholder={form_area.fields[3]}
             title={form_area.fields[3]}
             value={hackatonTeamForm.team_leader_phone}
