@@ -18,20 +18,50 @@ export interface BrevoContactData {
 
 class BrevoApiError extends Error {
   status: number;
+  code?: string;
 
-  constructor(message: string, status: number) {
+  constructor(message: string, status: number, code?: string) {
     super(message);
     this.name = "BrevoApiError";
     this.status = status;
+    this.code = code;
   }
 }
 
 export async function createOrUpdateBrevoContact(data: BrevoContactData) {
+  try {
+    return await upsertBrevoContact(data);
+  } catch (error) {
+    // Shared phone numbers must not merge separate email contacts. Retry only
+    // this identifier conflict, leaving the existing WhatsApp owner untouched.
+    if (
+      !(error instanceof BrevoApiError) ||
+      error.status !== 400 ||
+      (error.code !== undefined && error.code !== "duplicate_parameter") ||
+      !/\bWHATSAPP\b.*already associated with another contact/i.test(error.message) ||
+      !data.attributes?.WHATSAPP
+    ) {
+      throw error;
+    }
+
+    const attributes = { ...data.attributes };
+    delete attributes.WHATSAPP;
+    const result = await upsertBrevoContact({ ...data, attributes });
+    console.info("Brevo contact saved with shared phone; WhatsApp association skipped.", {
+      listIds: data.listIds,
+    });
+    return result;
+  }
+}
+
+async function upsertBrevoContact(data: BrevoContactData) {
   const requestData = JSON.stringify({
     email: data.email,
     attributes: data.attributes ?? {},
+    // Brevo adds these memberships; never send unlinkListIds here.
     listIds: data.listIds,
     updateEnabled: true,
+    forceMerge: false,
   });
   const response = await fetch(`${BREVO_API_URL}/contacts`, {
     method: "POST",
@@ -43,11 +73,6 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
     },
 
     body: requestData,
-  });
-
-  console.log("Request & Response >> ", {
-    Request: requestData,
-    Response: response,
   });
 
   const hasBody =
@@ -77,6 +102,7 @@ export async function createOrUpdateBrevoContact(data: BrevoContactData) {
         ? result.message
         : "Failed to create/update Brevo contact",
       response.status,
+      typeof result.code === "string" ? result.code : undefined,
     );
   }
 

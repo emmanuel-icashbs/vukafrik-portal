@@ -9,6 +9,8 @@ export const BREVO_LISTS = {
   hackathon: 45,
 } as const;
 
+// CONTACT_TYPE describes the latest submitted form, not all contact roles.
+// Use the additive BREVO_LISTS memberships to determine every registered role.
 export const BREVO_CONTACT_TYPES = {
   attendee: "ATTENDEE",
   hackathon: "HACKATHON",
