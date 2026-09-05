@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="publish stand details">
-      <change afterPath="$PROJECT_DIR$/src/components/homes/home-three/Pricing.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ExhibitionOffers.ts" afterDir="false" />
+    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="fix heros">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/BecomeExhibitorForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/BecomeExhibitorForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Pricing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Pricing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ExhibitionData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ExhibitionData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/exhibitions/exhibition/Schedule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/exhibitions/exhibition/Schedule.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/AboutUsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/AboutUsData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/MeetUpData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/MeetUpData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/VillageData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/VillageData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <updated>1788521117574</updated>
       <workItem from="1788521126363" duration="11161000" />
       <workItem from="1788548759315" duration="4619000" />
-      <workItem from="1788599052305" duration="3022000" />
+      <workItem from="1788599052305" duration="4501000" />
     </task>
     <task id="LOCAL-00002" summary="api key fix">
       <option name="closed" value="true" />
@@ -125,7 +126,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788602168222</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="publish stand details">
+      <option name="closed" value="true" />
+      <created>1788605378412</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1788605378412</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix heros">
+      <option name="closed" value="true" />
+      <created>1788606133334</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1788606133334</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +155,7 @@
     <MESSAGE value="fix issue of number validation" />
     <MESSAGE value="fix issue of number conflic" />
     <MESSAGE value="publish stand details" />
-    <option name="LAST_COMMIT_MESSAGE" value="publish stand details" />
+    <MESSAGE value="fix heros" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix heros" />
   </component>
 </project>

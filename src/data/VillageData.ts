@@ -1,14 +1,19 @@
+import village_1 from "@/assets/img/vukafrik/content/village-agriculture.webp";
+import village_2 from "@/assets/img/vukafrik/content/village-finance.webp";
+import village_3 from "@/assets/img/vukafrik/content/village-technology.webp";
+import village_4 from "@/assets/img/vukafrik/content/village-industry.webp";
+import village_5 from "@/assets/img/vukafrik/content/village-creative-industries.webp";
+import village_6 from "@/assets/img/vukafrik/content/village-ecology.webp";
+import village_7 from "@/assets/img/vukafrik/content/village-startups.webp";
+import village_8 from "@/assets/img/vukafrik/content/village-institutions.webp";
 import { StaticImageData } from "next/image";
 
-import event_thumb1 from "@/assets/img/schedule/schedule-2/thumb.jpg";
-import event_thumb2 from "@/assets/img/schedule/schedule-2/thumb-2.jpg";
-import event_thumb3 from "@/assets/img/schedule/schedule-2/thumb-3.jpg";
-import event_thumb4 from "@/assets/img/schedule/schedule-2/thumb-4.jpg";
 import { vukafrik_event_data } from "./VukAfrikData";
 
 interface DataType {
   id: number;
   thumb: StaticImageData;
+  imageAlt: string;
   title: string;
   description: string;
   exhibitorFit: string;
@@ -17,7 +22,8 @@ interface DataType {
 const village_data: DataType[] = [
   {
     id: 1,
-    thumb: event_thumb1,
+    thumb: village_1,
+    imageAlt: "Un producteur présente un panier de légumes frais",
     title: "Agriculture & Agro-transformation",
     description:
       "Un espace pour l'agritech, la transformation, les chaines de valeur alimentaires et les solutions liees a la production.",
@@ -26,7 +32,8 @@ const village_data: DataType[] = [
   },
   {
     id: 2,
-    thumb: event_thumb2,
+    thumb: village_2,
+    imageAlt: "Outils numériques de gestion financière sur ordinateur et tablette",
     title: "Finance, Fintech & Inclusion financiere",
     description:
       "Un village pour les banques, fintechs, services de paiement, finance digitale et inclusion financiere.",
@@ -35,7 +42,8 @@ const village_data: DataType[] = [
   },
   {
     id: 3,
-    thumb: event_thumb3,
+    thumb: village_3,
+    imageAlt: "Un développeur travaille sur un ordinateur",
     title: "Hi-Tech, Digital & Technologies",
     description:
       "Un espace dedie aux plateformes, logiciels, solutions numeriques, intelligence artificielle et transformation digitale.",
@@ -44,7 +52,8 @@ const village_data: DataType[] = [
   },
   {
     id: 4,
-    thumb: event_thumb4,
+    thumb: village_4,
+    imageAlt: "Des artisans travaillent le bois dans un atelier",
     title: "Industrie & Transformation locale",
     description:
       "Une vitrine pour la production, la transformation locale, les chaines de valeur industrielles et les savoir-faire de terrain.",
@@ -53,7 +62,8 @@ const village_data: DataType[] = [
   },
   {
     id: 5,
-    thumb: event_thumb2,
+    thumb: village_5,
+    imageAlt: "Des créateurs de mode utilisent une tablette dans leur atelier",
     title: "Industries creatives & Culture",
     description:
       "Un environnement pour la mode, le design, l'audiovisuel, les medias et les initiatives culturelles a fort potentiel.",
@@ -62,7 +72,8 @@ const village_data: DataType[] = [
   },
   {
     id: 6,
-    thumb: event_thumb3,
+    thumb: village_6,
+    imageAlt: "Des éoliennes et des panneaux solaires produisent de l’énergie",
     title: "Ecologie & Environnement",
     description:
       "Un espace pour les solutions liees a l'environnement, a la ville durable, a l'energie et a la gestion responsable des ressources.",
@@ -71,7 +82,8 @@ const village_data: DataType[] = [
   },
   {
     id: 7,
-    thumb: event_thumb4,
+    thumb: village_7,
+    imageAlt: "Une équipe collabore autour d’une table",
     title: "Startup, Entrepreneuriat & PME",
     description:
       "Un espace pour les startups, PME, structures d'accompagnement, incubateurs et talents entrepreneuriaux.",
@@ -80,7 +92,8 @@ const village_data: DataType[] = [
   },
   {
     id: 8,
-    thumb: event_thumb4,
+    thumb: village_8,
+    imageAlt: "Une équipe échange lors d’une réunion professionnelle",
     title: "Institutionnel",
     description:
       "Un espace de representation pour les institutions, regulateurs, agences de developpement et partenaires publics.",

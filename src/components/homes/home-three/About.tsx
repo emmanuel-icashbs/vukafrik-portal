@@ -32,7 +32,9 @@ const About = ({
                       data-wow-duration="1.5s"
                       data-wow-delay="0.2s"
                       src={about_thumb1}
-                      alt=""
+                      alt="Une équipe collabore autour d’un ordinateur"
+                      sizes="(max-width: 575px) 90vw, (max-width: 1199px) 50vw, 25vw"
+                      style={{ height: "auto" }}
                     />
                   </div>
                 </div>
@@ -48,7 +50,9 @@ const About = ({
                       data-wow-duration="1.5s"
                       data-wow-delay="0.2s"
                       src={about_thumb3}
-                      alt=""
+                      alt="Deux professionnels échangent sur un projet"
+                      sizes="(max-width: 575px) 90vw, (max-width: 1199px) 50vw, 25vw"
+                      style={{ height: "auto" }}
                     />
                   </div>
                 </div>
@@ -64,7 +68,9 @@ const About = ({
                       data-wow-duration="1.5s"
                       data-wow-delay="0.2s"
                       src={about_thumb2}
-                      alt=""
+                      alt="Deux femmes assemblent un projet de robotique"
+                      sizes="(max-width: 575px) 90vw, (max-width: 1199px) 50vw, 25vw"
+                      style={{ height: "auto" }}
                     />
                   </div>
                 </div>

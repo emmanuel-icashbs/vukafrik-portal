@@ -37,7 +37,9 @@ const Blog = () => {
               <div className="td-blog-item mb-30">
                 <div className="td-blog-thumb p-relative fix">
                   <Link href="/blog-details">
-                    <Image className="w-100" src={item.thumb} alt="" />
+                    <Image className="w-100" src={item.thumb} alt={item.imageAlt}
+                            sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw"
+                            style={{ aspectRatio: "3 / 2", objectFit: "cover", height: "auto" }} />
                   </Link>
                   <span className="td-blog-tag">{item.tag}</span>
                 </div>

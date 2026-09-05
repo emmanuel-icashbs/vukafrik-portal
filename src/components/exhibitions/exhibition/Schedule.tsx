@@ -49,7 +49,9 @@ const ExhibitionSchedule = () => {
                     <div className="col-xl-4 col-lg-5">
                       <div className="td-schedule-3-thumb p-relative">
                         <Link href="#">
-                          <Image className="w-100" src={item.thumb} alt="" />
+                          <Image className="w-100" src={item.thumb} alt={item.imageAlt}
+                            sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw"
+                            style={{ aspectRatio: "3 / 2", objectFit: "cover", height: "auto" }} />
                         </Link>
                       </div>
                     </div>
