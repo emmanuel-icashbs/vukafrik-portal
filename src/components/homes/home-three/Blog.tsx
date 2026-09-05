@@ -1,100 +1,30 @@
-import blog_data, { description, sub_title, title } from "@/data/MeetUpData";
+import { firesideChats } from "@/data/FiresideChatData";
 import Image from "next/image";
-import Link from "next/link";
 
-import bg_img from "@/assets/img/about/bg.jpg";
 
-const Blog = () => {
-  return (
-    <div
-      className="td-blog-area pt-140 pb-110 bg-position"
-      style={{ backgroundImage: `url(${bg_img.src})` }}
-    >
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-xl-6 col-lg-8">
-            <div
-              className="td-schedule-2-title-wrap text-center mb-40 wow fadeInUp"
-              data-wow-duration="1.5s"
-              data-wow-delay="0.3s"
-            >
-              <span className="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3  mb-30">
-                {sub_title}
-              </span>
-              <h2 className="td-section-title">{title}</h2>
-              <p className="td-section-text">{description}</p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          {blog_data.map((item) => (
-            <div
-              key={item.id}
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-duration=".9s"
-              data-wow-delay=".3s"
-            >
-              <div className="td-blog-item mb-30">
-                <div className="td-blog-thumb p-relative fix">
-                  <Link href="/blog-details">
-                    <Image className="w-100" src={item.thumb} alt={item.imageAlt}
-                            sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw"
-                            style={{ aspectRatio: "3 / 2", objectFit: "cover", height: "auto" }} />
-                  </Link>
-                  <span className="td-blog-tag">{item.tag}</span>
-                </div>
-                <div className="td-blog-content">
-                  <h3 className="td-blog-title mb-20">
-                    <Link className="underline-black" href="/blog-details">
-                      {item.title}
-                    </Link>
-                  </h3>
-                  <div className="td-blog-date">
-                    <span className="mr-20 date">
-                      <svg
-                        width="18"
-                        height="20"
-                        viewBox="0 0 18 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.6 1V4.6M5.40002 1V4.6M0.900024 8.2H17.1M2.70002 2.8H15.3C16.2941 2.8 17.1 3.60589 17.1 4.6V17.2C17.1 18.1941 16.2941 19 15.3 19H2.70002C1.70591 19 0.900024 18.1941 0.900024 17.2V4.6C0.900024 3.60589 1.70591 2.8 2.70002 2.8Z"
-                          stroke="#141418"
-                          strokeWidth="1.35"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      {item.date}
-                    </span>
-                    <span>
-                      <svg
-                        width="20"
-                        height="19"
-                        viewBox="0 0 20 19"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M18.5 12.3333C18.5 12.8343 18.301 13.3147 17.9468 13.669C17.5925 14.0232 17.1121 14.2222 16.6111 14.2222H5.27778L1.5 18V2.88889C1.5 2.38792 1.69901 1.90748 2.05324 1.55324C2.40748 1.19901 2.88792 1 3.38889 1H16.6111C17.1121 1 17.5925 1.19901 17.9468 1.55324C18.301 1.90748 18.5 2.38792 18.5 2.88889V12.3333Z"
-                          stroke="#444444"
-                          strokeWidth="1.8"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      {item.comment}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+export default function Blog() {
+  return <section id="fireside-chats" className="td-blog-area pt-100 pb-100 grey-bg-4" aria-labelledby="fireside-title">
+    <div className="container">
+      <div className="text-center mb-40">
+        <span className="td-section-subtitle">Fireside Chats</span>
+        <h2 id="fireside-title" className="td-section-title">Deux conversations au cœur de VUK’AFRIK</h2>
+        <p>Rencontrez les intervenants de nos deux échanges au programme de la première journée.</p>
       </div>
+      <div className="row">
+        {firesideChats.map(chat => <div key={chat.id} className="col-md-6 mb-30">
+          <article className="td-blog-item h-100 d-flex flex-column">
+              <Image src={chat.image} alt={chat.imageAlt} className="w-100" sizes="(max-width: 767px) 100vw, 50vw" style={{aspectRatio: "3 / 2", objectFit: "cover", height: "auto", borderRadius: "20px 20px 0 0"}} />
+            <div className="td-blog-content d-flex flex-column flex-grow-1">
+              <p className="mb-10">{chat.session.topic}</p>
+              <h3 className="td-blog-title mb-20">{chat.title}</h3>
+              {chat.participants.map(person => <p key={person.id} className="mb-10">{person.displayName}<br/><small>{person.title}</small></p>)}
+              <p>{chat.date} · {chat.session.start_time}–{chat.session.end_time}<br/>{chat.session.venue}</p>
+              <p>{chat.description}</p>
+            </div>
+          </article>
+        </div>)}
+      </div>
+      <p className="text-center"><small>Images d’illustration.</small></p>
     </div>
-  );
-};
-
-export default Blog;
+  </section>;
+}

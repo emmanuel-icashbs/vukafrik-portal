@@ -120,18 +120,11 @@ const schedule_data: EventDataType[] = [
     topic: "Fireside Chat 1",
     category: "Premier Fireside Chat",
     image: event_thumb3,
-    speakers: [1, 6],
+    speakers: [1, 2],
     venue: "Salon Congo",
-    key_points: [
-      "Learning and Development Place",
-      "Investment Opportunities",
-      "Business Networking",
-      "Learning and Development Place",
-    ],
     date: schedule_days[0], // day 01
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Un échange entre Emmanuel LOMAMI, président et fondateur de la CCC, et Christian KATENDE, président de l’ARPTC, dans le cadre de la première journée de VUK’AFRIK 2026.",
     ],
   },
   {
@@ -181,8 +174,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Un échange entre Jeannette CILOMBA, vice-présidente de la CCC, et le directeur général de la CADECO, dans le cadre de la première journée de VUK’AFRIK 2026.",
     ],
   },
   {
