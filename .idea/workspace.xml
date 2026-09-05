@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="fix issue of number validation" />
+    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="publish stand details">
+      <change afterPath="$PROJECT_DIR$/src/components/homes/home-three/Pricing.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/ExhibitionOffers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/BecomeExhibitorForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/BecomeExhibitorForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homes/home-three/Pricing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homes/home-three/Pricing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ExhibitionData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ExhibitionData.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +32,9 @@
     &quot;accountId&quot;: &quot;6892ef1c-5928-43ac-8230-f1ed0da11af6&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -73,7 +83,7 @@
       <updated>1788521117574</updated>
       <workItem from="1788521126363" duration="11161000" />
       <workItem from="1788548759315" duration="4619000" />
-      <workItem from="1788599052305" duration="1495000" />
+      <workItem from="1788599052305" duration="3022000" />
     </task>
     <task id="LOCAL-00002" summary="api key fix">
       <option name="closed" value="true" />
@@ -99,7 +109,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788601201821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix issue of number validation">
+      <option name="closed" value="true" />
+      <created>1788601335900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788601335900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix issue of number conflic">
+      <option name="closed" value="true" />
+      <created>1788602168222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1788602168222</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +136,8 @@
     <MESSAGE value="fix the issue with registration" />
     <MESSAGE value="api key fix" />
     <MESSAGE value="fix issue of number validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix issue of number validation" />
+    <MESSAGE value="fix issue of number conflic" />
+    <MESSAGE value="publish stand details" />
+    <option name="LAST_COMMIT_MESSAGE" value="publish stand details" />
   </component>
 </project>

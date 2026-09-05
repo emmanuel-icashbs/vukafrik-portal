@@ -2,14 +2,14 @@
 import PhoneInput from "../ui/PhoneInput";
 
 import {
-  exhibitions_formats,
   exhibitor_form_area,
 } from "@/data/ExhibitionData";
+import { exhibitionGroups, exhibitionOffers, customExhibitionFormat, exhibitionPricingNote, exhibitionDimensions, formatExhibitionPrice } from "@/data/ExhibitionOffers";
 import village_data from "@/data/VillageData";
 import { usePost } from "@/hooks/use_post";
 import { ExhibitorFormType } from "@/utils/types";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import FormMessageZone from "../ui/FormMessageZone";
 import SubmitButton from "../ui/SubmitButton";
 
@@ -29,7 +29,8 @@ const INIT_EXHIBITOR_DATA: ExhibitorFormType = {
 };
 const BecomeExhibitorForm = () => {
   const searchParams = useSearchParams();
-  const [village_id, setVillageId] = useState(searchParams.get("village_id"));
+  const village_id = searchParams.get("village_id");
+  const offerId = searchParams.get("offer");
   const {
     data: exhibitorForm,
     handleChange,
@@ -51,7 +52,14 @@ const BecomeExhibitorForm = () => {
       );
       handleChange("sector", foundVillage?.title || "");
     }
-  }, [village_id]);
+  }, [village_id, handleChange]);
+
+  useEffect(() => {
+    const offer = exhibitionOffers.find((item) => item.id === offerId);
+    if (offer) handleChange("preferred_format", offer.title);
+  }, [offerId, handleChange]);
+
+  const selectedOffer = exhibitionOffers.find((offer) => offer.title === exhibitorForm.preferred_format);
 
   return (
     <form onSubmit={(e) => handleSubmit(e)} id={exhibitor_form_area.id}>
@@ -132,7 +140,8 @@ const BecomeExhibitorForm = () => {
         </div>
         <div className="col-lg-6 mb-25">
           <select
-            name="budgetRange"
+            name="preferred_format"
+            required
             className="vuka-form-input"
             aria-invalid="false"
             title={exhibitor_form_area.fields[7]}
@@ -142,12 +151,20 @@ const BecomeExhibitorForm = () => {
             <option value="" disabled>
               {exhibitor_form_area.fields[7]}
             </option>
-            {exhibitions_formats.map((format) => (
-              <option key={format} value={format}>
-                {format}
-              </option>
+            {exhibitionGroups.map((group) => (
+              <optgroup key={group.id} label={group.title}>
+                {group.offers.map((offer) => (
+                  <option key={offer.id} value={offer.title}>{offer.title} — {formatExhibitionPrice(offer.price)}</option>
+                ))}
+              </optgroup>
             ))}
+            <option value={customExhibitionFormat}>{customExhibitionFormat}</option>
           </select>
+        </div>
+        <div className="col-lg-12 mb-25" aria-live="polite">
+          {selectedOffer && <p><strong>{selectedOffer.title} — {formatExhibitionPrice(selectedOffer.price)}</strong><br />{exhibitionDimensions(selectedOffer)} · {selectedOffer.badges} badge{selectedOffer.badges > 1 ? "s" : ""} exposant{selectedOffer.badges > 1 ? "s" : ""}</p>}
+          <p>{exhibitionPricingNote}</p>
+          <p>L’envoi de ce formulaire constitue une demande. L’attribution de votre espace sera confirmée par l’équipe VUK’AFRIK.</p>
         </div>
         <div className="col-lg-12 mb-25">
           <textarea

@@ -212,70 +212,13 @@ const exhibitor_faq_data: {
     },
   ],
 };
-const exhibition_stands: {
-  title: string;
-  sub_title: string;
-  description: string;
-  data: {
-    id: number;
-    title: string;
-    price: string;
-    advantages: string[];
-  }[];
-  submit_button: string;
-} = {
-  title: "Nos stands d'exposition",
-  sub_title: "Découvrez nos forfaits de prix flexibles",
-  description:
-    "Découvrez nos forfaits de prix flexibles pour votre exposition.",
-  data: [
-    {
-      id: 1,
-      title: "Standard",
-      price: "$50",
-      advantages: [
-        "advantage 1",
-        "advantage 2",
-        "advantage 3",
-        "advantage 4",
-        "advantage 5",
-      ],
-    },
-    {
-      id: 2,
-      title: "Business",
-      price: "$100",
-      advantages: [
-        "advantage 1",
-        "advantage 2",
-        "advantage 3",
-        "advantage 4",
-        "advantage 5",
-      ],
-    },
-    {
-      id: 3,
-      title: "Premium",
-      price: "$200",
-      advantages: [
-        "advantage 1",
-        "advantage 2",
-        "advantage 3",
-        "advantage 4",
-        "advantage 5",
-      ],
-    },
-  ],
-  submit_button: "Souscrire",
-};
-
 const exhibitor_form_area = {
   id: "exhibitor_form",
   title: "S'inscrire comme exposant",
   sub_title:
     "Soumettez votre interet exposant pour integrer un village thematique, renforcer votre visibilite et activer des interactions business.",
   fields: [
-    "Organisation / entreprise *",
+    "Nom de l’exposant / Organisation *",
     "Personne de contact *",
     "Email *",
     "Téléphone *",
@@ -291,14 +234,7 @@ const exhibitor_form_area = {
   submit_button: "Soumettre",
 };
 
-const exhibitions_formats = [
-  "Stand standard",
-  "Stand premium",
-  "Espace startup showcase",
-  "Stand institutionnel",
-  "Espace demonstration produit",
-  "A definir",
-];
+
 
 export {
   title,
@@ -307,8 +243,6 @@ export {
   tab_title,
   breadcrumb,
   exhibitor_faq_data,
-  exhibition_stands,
   exhibitor_form_area,
-  exhibitions_formats,
 };
 export default exhibition_data;
