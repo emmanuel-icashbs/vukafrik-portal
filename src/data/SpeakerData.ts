@@ -259,6 +259,54 @@ const speaker_data: SpeakerDataType[] = [
     biography:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellat.",
   },
+  {
+    id: 28,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant - Neotex",
+    title: "Neotex",
+    biography: "Neotex présente la stratégie, les cas d’usage et la perception visuelle intelligente au service des entreprises congolaises.",
+  },
+  {
+    id: 29,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant - Pepsi",
+    title: "Pepsi",
+    biography: "Pepsi aborde les opportunités entrepreneuriales liées à la chaîne de distribution et le rôle de l’industrie agroalimentaire pour les PME locales.",
+  },
+  {
+    id: 30,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant - ENA",
+    title: "ENA",
+    biography: "L’ENA présente son rôle dans la professionnalisation de l’administration publique et l’accompagnement de la transformation économique.",
+  },
+  {
+    id: 31,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant - Finca",
+    title: "Finca",
+    biography: "Finca propose un atelier sur les bases de l’éducation financière pour les entrepreneurs et les ménages.",
+  },
+  {
+    id: 32,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant - APROCEC",
+    title: "APROCEC",
+    biography: "APROCEC aborde la création et la structuration d’une coopérative d’épargne et de crédit pour les entrepreneurs et les communautés locales.",
+  },
+  {
+    id: 33,
+    type: "Individual",
+    image: team_1,
+    name: "Représentant - ANADEC",
+    title: "ANADEC",
+    biography: "L’ANADEC présente ses dispositifs d’appui aux PME congolaises, du lancement de l’entreprise à sa croissance.",
+  },
 ];
 
 const sub_title = "DES VOIX QUI FAÇONNENT L'AVENIR";
