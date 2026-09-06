@@ -9,7 +9,7 @@ const Gallery = () => {
       <>
          <HeaderThree />
          <main>
-            <Breadcrumb title="Event Gallery" sub_title="Event Gallery" />
+            <Breadcrumb title="Galerie photos" sub_title="Galerie photos" />
             <GalleryArea />
             <Cta />
          </main>

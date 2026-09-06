@@ -2,7 +2,7 @@ import Gallery from "@/components/events/gallery";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Gallery Evente - Conference and Event React Next js Template",
+  title: "Galerie photos | VUK’AFRIK",
 };
 const page = () => {
   return (

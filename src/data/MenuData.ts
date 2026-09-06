@@ -98,6 +98,12 @@ const menu_data: MenuItem[] = [
     link: paths_holder.exhibitions.list.link,
   },
   {
+    id: 7,
+    has_dropdown: false,
+    title: "Partenaires",
+    link: paths_holder.sponsors.link,
+  },
+  {
     id: 6,
     has_dropdown: false,
     title: paths_holder.contact.title,

@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 
-import about_thumb1 from "@/assets/img/vukafrik/content/about-collaboration.webp";
-import about_thumb2 from "@/assets/img/vukafrik/content/about-practical-innovation.webp";
-import about_thumb3 from "@/assets/img/vukafrik/content/about-business-discussion.webp";
+import about_thumb1 from "@/assets/img/vukafrik/content/audience.webp";
+import about_thumb2 from "@/assets/img/vukafrik/content/canopy-discussion.webp";
+import about_thumb3 from "@/assets/img/vukafrik/content/outdoor-group.webp";
 import shape_1 from "@/assets/img/about/about-details/shape-2.png";
 import shape_2 from "@/assets/img/about/about-details/shape.png";
 

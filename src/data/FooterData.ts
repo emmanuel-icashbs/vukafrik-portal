@@ -12,6 +12,7 @@ export const footer_data = {
     "VUK'AFRIK 2026 relie initiatives locales, partenaires regionaux et opportunites de croissance a travers un Sommet strategique, une foire multisectorielle et des espaces de networking a Kinshasa.",
   titles: ["Événement", "Participer", "Contact"],
   quickLinks: [
+    { label: "Partenaires", href: paths_holder.sponsors.link },
     { label: paths_holder.about.title, href: paths_holder.about.link },
     {
       label: paths_holder.events.list.title,
