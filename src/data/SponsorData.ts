@@ -95,64 +95,17 @@ const sponsor_form_area = {
   submit_button: "Soumettre",
 };
 
-interface DataType {
-  id: number;
-  page: string;
-  title: string;
-  desc: string;
-  showAnswer: boolean;
-}
-
-const sponsor_faq_data: { title: string; sub_title: string; data: DataType[] } =
-  {
-    title: "Vous avez des questions ? Vous trouverez les réponses ici !",
-    sub_title:
-      "em ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet Quisquawe rutruman imperdieEtiam ultricies nisi vel augue. Curabitur.",
-    data: [
-      {
-        id: 1,
-        page: "inner_faq",
-        showAnswer: false,
-        title: "Do you get any event support?",
-        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-      },
-      {
-        id: 2,
-        page: "inner_faq",
-        showAnswer: false,
-        title: "How is the selection process organized?",
-        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-      },
-      {
-        id: 3,
-        page: "inner_faq",
-        showAnswer: false,
-        title: "What is your customer geography?",
-        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-      },
-      {
-        id: 4,
-        page: "inner_faq",
-        showAnswer: false,
-        title: "How quickly can you source developers?",
-        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-      },
-      {
-        id: 5,
-        page: "inner_faq",
-        showAnswer: false,
-        title: "What are the main industries we serve?",
-        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-      },
-      {
-        id: 6,
-        page: "inner_faq",
-        showAnswer: false,
-        title: "Is Evente payment processing secure?",
-        desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-      },
-    ],
-  };
+const sponsor_faq_data = {
+  title: "Devenir partenaire de VUK’AFRIK",
+  sub_title: "Préparez votre demande de sponsoring ou de partenariat.",
+  groups: [{ id: "sponsoring", title: "Sponsoring & partenariats", items: [
+    { id: "demande", title: "Comment devenir sponsor ou partenaire ?", desc: "Remplissez le formulaire ci-dessous pour présenter votre organisation et votre projet de partenariat. L’équipe pourra étudier votre demande.", links: [{ label: "Devenir sponsor", href: paths_holder.sponsors.link + "#" + sponsor_form_area.id }] },
+    { id: "informations", title: "Quelles informations fournir dans ma demande ?", desc: "Indiquez votre organisation, la personne de contact, vos coordonnées, la catégorie de partenariat souhaitée, votre budget indicatif et vos objectifs. Précisez vos besoins de visibilité dans votre message." },
+    { id: "visibilite", title: "Puis-je préciser mes préférences de visibilité ?", desc: "Oui. Le formulaire permet d’indiquer une zone de visibilité souhaitée et votre secteur d’intérêt. Décrivez vos attentes pour permettre à l’équipe d’étudier les possibilités adaptées à votre organisation." },
+    { id: "sur-mesure", title: "Puis-je proposer un partenariat sur mesure ?", desc: "Présentez votre proposition et vos besoins dans le formulaire. Si votre catégorie de partenariat ou votre budget n’est pas encore défini, les options « À définir » et « À discuter » permettent de le préciser." },
+    { id: "contact-partenariat", title: "Qui contacter pour discuter d’un partenariat ?", desc: "Adressez votre demande à l’équipe chargée des partenariats.", links: [{ label: vukafrik_event_data.contacts.partnershipsEmail, href: "mailto:" + vukafrik_event_data.contacts.partnershipsEmail }] },
+  ] }],
+};
 const sponsor_budgets = [
   "A discuter",
   "Moins de $5,000",
