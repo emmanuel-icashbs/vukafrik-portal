@@ -1,13 +1,15 @@
 import schedule from "./ScheduleData";
 import speakers from "./SpeakerData";
-import discussion from "@/assets/img/vukafrik/content/fireside-discussion.webp";
+import discussion from "@/assets/img/vukafrik/content/fireside-chat-1.webp";
 import conversation from "@/assets/img/vukafrik/content/fireside-entrepreneurship.webp";
 
 const definitions = [
   { id: 1, scheduleId: 7, slug: "emmanuel-christian", image: discussion,
-    imageAlt: "Illustration d’un échange entre professionnels" },
+    imageAlt: "Échange entre intervenants assis, microphones en main, avec le drapeau de la RDC en arrière-plan",
+    imageCaption: "Échange entre intervenants." },
   { id: 2, scheduleId: 10, slug: "jeannette-cadeco", image: conversation,
-    imageAlt: "Illustration d’une conversation professionnelle" },
+    imageAlt: "Illustration d’une conversation professionnelle",
+    imageCaption: "Image d’illustration." },
 ];
 
 export const firesideChats = definitions.map((definition) => {

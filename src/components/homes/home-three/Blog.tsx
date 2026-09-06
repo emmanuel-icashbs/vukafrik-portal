@@ -13,7 +13,10 @@ export default function Blog() {
       <div className="row">
         {firesideChats.map(chat => <div key={chat.id} className="col-md-6 mb-30">
           <article className="td-blog-item h-100 d-flex flex-column">
+            <figure className="mb-0">
               <Image src={chat.image} alt={chat.imageAlt} className="w-100" sizes="(max-width: 767px) 100vw, 50vw" style={{aspectRatio: "3 / 2", objectFit: "cover", height: "auto", borderRadius: "20px 20px 0 0"}} />
+              <figcaption className="text-center px-3 py-2"><small>{chat.imageCaption}</small></figcaption>
+            </figure>
             <div className="td-blog-content d-flex flex-column flex-grow-1">
               <p className="mb-10">{chat.session.topic}</p>
               <h3 className="td-blog-title mb-20">{chat.title}</h3>
@@ -24,7 +27,6 @@ export default function Blog() {
           </article>
         </div>)}
       </div>
-      <p className="text-center"><small>Images d’illustration.</small></p>
     </div>
   </section>;
 }

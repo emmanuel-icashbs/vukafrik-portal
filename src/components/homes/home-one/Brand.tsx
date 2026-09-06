@@ -1,4 +1,3 @@
-"use client";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { cta_data } from "@/data/CtaData";
 import brands, {
@@ -7,20 +6,10 @@ import brands, {
   sub_title,
   title,
 } from "@/data/SponsorData";
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import SponsorCard from "@/components/common/SponsorCard";
 
 const Brand = ({ slice_number }: { slice_number?: number }) => {
-  const [sponsors, setSponsors] = useState<StaticImageData[]>([]);
-
-  useEffect(() => {
-    if (slice_number) {
-      setSponsors(brands.slice(0, slice_number));
-    } else {
-      setSponsors(brands);
-    }
-  }, []);
+  const sponsors = slice_number ? brands.slice(0, slice_number) : brands;
 
   return (
     <div
@@ -57,18 +46,14 @@ const Brand = ({ slice_number }: { slice_number?: number }) => {
           </div>
         </div>
         <div className="row">
-          {sponsors.map((brand, i) => (
+          {sponsors.map((brand) => (
             <div
-              key={i}
+              key={brand.id}
               className="col-lg-3 col-md-6 col-6 wow fadeInLeft"
               data-wow-duration=".9s"
               data-wow-delay=".2s"
             >
-              <div className="td-brands-item mb-25">
-                <Link href="#">
-                  <Image src={brand} alt="" className="td-brand-logo" />
-                </Link>
-              </div>
+              <SponsorCard sponsor={brand} />
             </div>
           ))}
         </div>

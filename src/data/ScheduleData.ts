@@ -1,3 +1,4 @@
+import firesideChat1 from "@/assets/img/vukafrik/content/fireside-chat-1.webp";
 import bg_img from "@/assets/img/schedule/schedule-4/bg.jpg";
 import { vukafrik_event_data } from "./VukAfrikData";
 import { EventDataType } from "@/utils/types";
@@ -119,7 +120,7 @@ const schedule_data: EventDataType[] = [
     end_time: "12:50",
     topic: "Fireside Chat 1",
     category: "Premier Fireside Chat",
-    image: event_thumb3,
+    image: firesideChat1,
     speakers: [1, 2],
     venue: "Salon Congo",
     date: schedule_days[0], // day 01

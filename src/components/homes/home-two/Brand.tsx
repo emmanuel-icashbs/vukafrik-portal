@@ -1,6 +1,5 @@
 import brands, { description, sub_title, title } from "@/data/SponsorData";
-import Image from "next/image";
-import Link from "next/link";
+import SponsorCard from "@/components/common/SponsorCard";
 
 const Brand = () => {
   return (
@@ -22,18 +21,14 @@ const Brand = () => {
           </div>
         </div>
         <div className="row">
-          {brands.map((brand, i) => (
+          {brands.map((brand) => (
             <div
-              key={i}
+              key={brand.id}
               className="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp"
               data-wow-duration="1.5s"
               data-wow-delay="0.2s"
             >
-              <div className="td-brands-item mb-25">
-                <Link href="#">
-                  <Image src={brand} alt="" />
-                </Link>
-              </div>
+              <SponsorCard sponsor={brand} />
             </div>
           ))}
         </div>
