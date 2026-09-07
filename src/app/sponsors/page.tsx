@@ -1,3 +1,4 @@
+import { getPageMetadata } from "@/lib/metadata";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
@@ -6,12 +7,8 @@ import FaqArea from "./FaqArea";
 import FormArea from "./FormArea";
 import Brand from "@/components/homes/home-two/Brand";
 import { breadcrumb } from "@/data/SponsorData";
-import { paths_holder } from "@/data/MenuData";
-import { vukafrik_event_data } from "@/data/VukAfrikData";
 
-export const metadata = {
-  title: `${vukafrik_event_data.name} | ${paths_holder.sponsors.title}`,
-};
+export const metadata = getPageMetadata("/sponsors");
 const page = () => {
   return (
     <Wrapper>

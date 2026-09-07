@@ -1,9 +1,8 @@
+import { createPageMetadata, pageCopy } from "@/lib/metadata";
 import HomeTwo from "@/components/homes/home-two";
 import Wrapper from "@/layouts/Wrapper";
 
-export const metadata = {
-  title: "Home Two Evente - Conference and Event React Next js Template",
-};
+export const metadata = createPageMetadata("/home-two", ...pageCopy["/"]);
 const page = () => {
   return (
     <Wrapper>

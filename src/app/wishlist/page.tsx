@@ -1,9 +1,8 @@
+import { getPageMetadata } from "@/lib/metadata";
 import Wishlist from "@/components/pages/products/wishlist";
 import Wrapper from "@/layouts/Wrapper";
 
-export const metadata = {
-  title: "Wishlist Evente - Conference and Event React Next js Template",
-};
+export const metadata = getPageMetadata("/wishlist");
 const page = () => {
   return (
     <Wrapper>

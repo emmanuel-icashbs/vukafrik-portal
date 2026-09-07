@@ -1,9 +1,8 @@
+import { getPageMetadata } from "@/lib/metadata";
 import Pricing from "@/components/pages/pricing";
 import Wrapper from "@/layouts/Wrapper";
 
-export const metadata = {
-  title: "Pricing Evente - Conference and Event React Next js Template",
-};
+export const metadata = getPageMetadata("/pricing");
 const page = () => {
   return (
     <Wrapper>
