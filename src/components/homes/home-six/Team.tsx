@@ -93,7 +93,7 @@ const TeamHomeSix = ({ slice_number }: { slice_number?: number }) => {
   const router = useRouter();
 
   return (
-    <div className="td-team-area pt-130 pb-100">
+    <div className="td-team-area content-section-spacing">
       <div className="container-fluid container-1700">
         <div className="row justify-content-center">
           <div className="col-lg-7 col-md-10">
@@ -152,7 +152,7 @@ const TeamHomeSix = ({ slice_number }: { slice_number?: number }) => {
                   <div className="td-team-5-content">
                     <h5>
                       <Link
-                        href={`${paths_holder.speakers.list.link}/${item.id}`}
+                        href={{ pathname: paths_holder.speakers.list.link + "/" + item.id }}
                       >
                         {item.name}
                       </Link>

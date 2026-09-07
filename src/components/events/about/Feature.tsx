@@ -8,7 +8,7 @@ import {
 const Feature = () => {
   return (
     <div
-      className="td-feature-area pt-140 pb-115 bg-position"
+      className="td-feature-area content-section-spacing bg-position"
       style={{ backgroundColor: `#192b4c` }}
     >
       <div className="container">

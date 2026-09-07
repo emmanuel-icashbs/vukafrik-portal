@@ -6,7 +6,7 @@ import { vukafrik_event_data } from "@/data/VukAfrikData";
 
 const EventsVenueArea = () => {
   return (
-    <div className="td-venue-area pt-140 pb-110">
+    <div className="td-venue-area content-section-spacing">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 mb-30">

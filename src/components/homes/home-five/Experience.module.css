@@ -1,3 +1,13 @@
+.section {
+  padding-block: 64px;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-block: 48px;
+  }
+}
+
 .imageWrap {
   width: 100%;
 }

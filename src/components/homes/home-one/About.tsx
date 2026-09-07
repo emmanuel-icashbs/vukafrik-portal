@@ -15,7 +15,7 @@ const AboutHomeOne = () => {
   return (
     <>
       <div
-        className="td-about-area pt-150 bg-position pb-130"
+        className="td-about-area content-section-spacing bg-position"
         style={{ backgroundImage: `url(${bg_img1.src})` }}
       >
         <div className="container">

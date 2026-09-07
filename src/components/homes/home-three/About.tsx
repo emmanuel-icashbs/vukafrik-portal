@@ -15,7 +15,7 @@ const About = ({
   should_display_about_btn?: boolean;
 }) => {
   return (
-    <div className="td-about-area pt-140 pb-110">
+    <div className="td-about-area content-section-spacing">
       <div className="container">
         <div className="row align-items-center">
           <div

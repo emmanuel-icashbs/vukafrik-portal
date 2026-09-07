@@ -9,7 +9,7 @@ import HackatonTeamForm from "@/components/forms/HackatonTeamForm";
 
 const Experience = () => {
   return (
-    <div className="td-banner-area td-banner-6-spacing fix p-relative black-bg">
+    <div className={`td-banner-area ${styles.section} fix p-relative black-bg`}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-9">
@@ -40,7 +40,7 @@ const Experience = () => {
                 </ul>
               </div>
               <HackatonTeamForm />
-              
+
             </div>
           </div>
           <div className="col-xl-6 col-lg-12">
@@ -51,7 +51,7 @@ const Experience = () => {
             >
               <Image
                 src={banner_thumb}
-                alt="Une équipe collabore autour d’écrans affichant du code informatique."
+                alt="Une Ã©quipe collabore autour dâ€™Ã©crans affichant du code informatique."
                 sizes="(min-width: 1400px) 636px, (min-width: 1200px) 546px, (min-width: 992px) 936px, (min-width: 768px) 696px, (min-width: 576px) 516px, calc(100vw - 24px)"
                 className={styles.image}
               />

@@ -6,12 +6,13 @@ import Feature from "../about/Feature";
 import Blog from "@/components/homes/home-three/Blog";
 import Event from "@/components/homes/home-five/Event";
 import Experience from "@/components/homes/home-five/Experience";
+import styles from "./Program.module.css";
 
 const EventPage = () => {
   return (
     <>
       <HeaderThree />
-      <main>
+      <main className={styles.program}>
         <Breadcrumb
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}

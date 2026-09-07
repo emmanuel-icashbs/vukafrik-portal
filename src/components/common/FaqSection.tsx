@@ -12,7 +12,7 @@ export default function FaqSection({ title, introduction, groups, prefix }: {
 }) {
   const [openId, setOpenId] = useState<string | null>(groups[0]?.items[0]?.id ?? null);
   return (
-    <section className="td-faq-area pt-135 pb-140" aria-labelledby={`${prefix}-title`}>
+    <section className="td-faq-area content-section-spacing" aria-labelledby={`${prefix}-title`}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-9">
