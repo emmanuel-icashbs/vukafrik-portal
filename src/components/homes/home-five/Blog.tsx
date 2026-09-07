@@ -43,7 +43,7 @@ const Blog = () => {
             >
               <div className="td-blog-item td-blog-5-item mb-30">
                 <div className="td-blog-thumb p-relative fix">
-                  <Image className="w-100" src={item.thumb} alt="" />
+                  <Image className="w-100" src={item.thumb} alt={item.imageAlt} />
                   <div className="td-blog-content">
                     <span className="td-blog-5-tag mb-10">{item.tag}</span>
                     <h3 className="td-blog-title mb-15">

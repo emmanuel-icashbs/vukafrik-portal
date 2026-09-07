@@ -18,7 +18,7 @@ const TeamDetails = ({
       <HeaderThree />
       <main>
         <Breadcrumb
-          title={speaker_details_breadcrumb_data.title}
+          title={speaker.name}
           sub_title={speaker_details_breadcrumb_data.sub_title}
           in_between_paths={speaker_details_breadcrumb_data.in_between_paths}
         />

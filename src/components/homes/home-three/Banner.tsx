@@ -8,6 +8,7 @@ import { banner_data, setting } from "@/data/BannerData";
 const Banner = () => {
   return (
     <div className="td-hero-area fix p-relative">
+      <h1 className="visually-hidden">VUK’AFRIK 2026 : innovation et entrepreneuriat à Kinshasa</h1>
       <Swiper
         {...setting}
         modules={[Autoplay, Navigation]}

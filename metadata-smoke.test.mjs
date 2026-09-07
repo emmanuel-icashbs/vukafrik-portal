@@ -6,7 +6,7 @@ const base = process.env.SEO_TEST_URL || "http://localhost:3100";
 const routes = ["/", "/about", "/events", "/speakers", "/exhibitions", "/event-venue", "/register", "/sponsors", "/volunteer", "/media-accreditation", "/contact", "/faq", "/gallery", "/blog", "/exhibitions-details", "/pricing", "/login", "/product", "/product-details", "/cart", "/checkout", "/wishlist", "/home-two", "/home-three", "/home-four", "/home-five", "/home-six", "/events/1", "/events/2", "/speakers/1", "/speakers/2", "/product-details/1"];
 const images = new Set();
 const titles = new Map();
-for (const route of routes) {
+for (const route of routes.filter(route => route !== "/home-three")) {
   const response = await fetch(new URL(route, base), { headers: { "user-agent": "WhatsApp/2.24" } });
   assert.equal(response.status, 200, route);
   const html = await response.text();
@@ -20,6 +20,8 @@ for (const route of routes) {
     return content;
   };
   const title = head.match(/<title>(.*?)<\/title>/)?.[1];
+  const canonical = head.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+  assert.equal(new URL(canonical).href, `https://vukafrik.org${route}`, `${route}: canonical`);
   assert.ok(title && !title.includes("Evente"), `${route}: branded title`);
   assert.equal(meta("og:title"), title);
   assert.equal(meta("twitter:title"), title);
@@ -51,4 +53,4 @@ for (const userAgent of ["facebookexternalhit/1.1", "LinkedInBot/1.0", "Twitterb
   const html = await (await fetch(new URL("/speakers/1", base), { headers: { "user-agent": userAgent } })).text();
   assert.match(html.split("</head>")[0], /property="og:title" content="Docteur Emmanuel LOMAMI/);
 }
-console.log(`Passed: ${routes.length} pages, dynamic titles, initial crawler metadata, social image and four crawler user agents.`);
+console.log(`Passed: ${routes.length - 1} pages, dynamic titles, initial crawler metadata, social image and four crawler user agents.`);

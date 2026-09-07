@@ -8,54 +8,38 @@ const breadcrumb_data: {
   sub_title: "Volontaire",
 };
 const faq_area: { title: string; sub_title: string; data: FaqDataType[] } = {
-  title:
-    "Avez-vous des questions concernant le volontaire ? Vous trouverez les réponses ici.",
-  sub_title:
-    "em ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet Quisquawe rutruman imperdieEtiam ultricies nisi vel augue. Curabitur.",
-  data: [
+  "title": "Participer comme volontaire",
+  "sub_title": "Retrouvez les informations utiles pour présenter votre candidature.",
+  "data": [
     {
-      id: 1,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "Do you get any product support?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      "id": 1,
+      "page": "inner_faq",
+      "showAnswer": true,
+      "title": "Comment devenir volontaire ?",
+      "desc": "Remplissez le formulaire de candidature ci-dessous avec vos coordonnées, vos compétences et votre expérience événementielle."
     },
     {
-      id: 2,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "How is the selection process organized?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      "id": 2,
+      "page": "inner_faq",
+      "showAnswer": false,
+      "title": "Puis-je préciser mes disponibilités ?",
+      "desc": "Oui. Le formulaire vous permet d’indiquer vos disponibilités et votre zone d’intérêt."
     },
     {
-      id: 3,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "What is your customer geography?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      "id": 3,
+      "page": "inner_faq",
+      "showAnswer": false,
+      "title": "Quelles informations préparer ?",
+      "desc": "Préparez votre nom, votre adresse e-mail, votre téléphone, votre ville et une présentation de vos compétences et expériences."
     },
     {
-      id: 4,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "How quickly can you source developers?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-    },
-    {
-      id: 5,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "What are the main industries we serve?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-    },
-    {
-      id: 6,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "Is Evente payment processing secure?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-    },
-  ],
+      "id": 4,
+      "page": "inner_faq",
+      "showAnswer": false,
+      "title": "Comment contacter l’équipe ?",
+      "desc": "Pour toute question sur votre candidature, contactez l’équipe à info@congocs.org."
+    }
+  ]
 };
 const volunteer_form_area = {
   id:"volonteer_form",

@@ -1,5 +1,6 @@
 import RegisterForm from "@/components/forms/RegisterForm";
 import { form_area } from "@/data/RegisterData";
+import { Suspense } from "react";
 
 const RegisterArea = () => {
   return (
@@ -14,7 +15,9 @@ const RegisterArea = () => {
               </div>
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">
-                  <RegisterForm />
+                  <Suspense fallback={<p role="status">Chargement du formulaire d’inscription…</p>}>
+                    <RegisterForm />
+                  </Suspense>
                 </div>
               </div>
             </div>

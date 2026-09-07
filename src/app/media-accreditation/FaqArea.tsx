@@ -1,6 +1,6 @@
 "use client";
 import { faq_data } from "@/data/MediaAccreditationData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface DataType {
   id: number;
@@ -11,15 +11,7 @@ interface DataType {
 }
 
 const FaqArea = () => {
-  const [faqData, setFaqData] = useState<DataType[]>([]);
-
-  useEffect(() => {
-    const updatedData = faq_data.data.map((item, index) => ({
-      ...item,
-      showAnswer: index === 0,
-    }));
-    setFaqData(updatedData);
-  }, []);
+  const [faqData, setFaqData] = useState<DataType[]>(() => faq_data.data.map((item, index) => ({ ...item, showAnswer: index === 0 })));
 
   const toggleAnswer = (faqId: number) => {
     setFaqData((prevFaqData) =>

@@ -20,13 +20,13 @@ const Breadcrumb = ({ title, sub_title, in_between_paths }: DataType) => {
         <div className="row">
           <div className="col-lg-12">
             <div className="td-breadcrumb-title-wrap">
-              <h2
+              <h1
                 className="td-breadcrumb-title mb-10 wow td-animetion-left"
                 data-wow-duration="1.5s"
                 data-wow-delay="0.2s"
               >
                 {title}
-              </h2>
+              </h1>
               <div
                 className="td-breadcrumb-list wow td-animetion-right"
                 data-wow-duration="1.5s"

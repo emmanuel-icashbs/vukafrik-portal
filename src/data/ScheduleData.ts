@@ -26,8 +26,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0], // day 01
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Accueil des participants et ouverture des portes de VUK’AFRIK 2026 au Salon Congo.",
     ],
   },
   {
@@ -46,7 +45,7 @@ const schedule_data: EventDataType[] = [
     ],
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
+      "Séquence d’ouverture protocolaire de VUK’AFRIK 2026, consacrée aux salutations et à l’hymne national.",
     ],
   },
   {
@@ -65,8 +64,7 @@ const schedule_data: EventDataType[] = [
     ],
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Discours d’ouverture de la première journée de VUK’AFRIK 2026.",
     ],
   },
   {
@@ -79,7 +77,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Intervention institutionnelle au programme de la première journée de VUK’AFRIK 2026.",
     ],
     image: event_thumb4,
   },
@@ -95,8 +93,7 @@ const schedule_data: EventDataType[] = [
     key_points: ["Business Networking", "Investment Opportunities"],
     date: schedule_days[0], // day 01
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Première keynote au programme de VUK’AFRIK 2026. Consultez les horaires et les intervenants ci-dessous.",
     ],
   },
   {
@@ -110,8 +107,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Ce panel aborde la régulation, l’innovation, la compétitivité et l’inclusion financière, ainsi que les conditions favorables à la croissance des startups et des PME en RDC.",
     ],
   },
   {
@@ -145,8 +141,7 @@ const schedule_data: EventDataType[] = [
     ],
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Deuxième keynote au programme de VUK’AFRIK 2026. Retrouvez les horaires et les intervenants de cette session.",
     ],
   },
   {
@@ -160,8 +155,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Échange consacré à l’entrepreneuriat, au financement et à l’industrialisation, autour des difficultés rencontrées par les initiatives congolaises pour devenir des leaders régionaux.",
     ],
   },
   {
@@ -189,8 +183,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Présentation des équipes pour le hackathon dans le cadre de VUK’AFRIK 2026.",
     ],
   },
   {
@@ -204,8 +197,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Synthèse des discussions et présentation des recommandations de la première journée.",
     ],
   },
   {
@@ -219,8 +211,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Clôture officielle de la première journée de VUK’AFRIK 2026.",
     ],
   },
   {
@@ -234,8 +225,7 @@ const schedule_data: EventDataType[] = [
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised.",
-      "Aimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dum my text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.",
+      "Cocktail et rafraîchissements au programme de la première journée de VUK’AFRIK 2026.",
     ],
   },
   // Day 2

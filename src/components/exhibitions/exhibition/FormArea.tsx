@@ -1,5 +1,6 @@
 import BecomeExhibitorForm from "@/components/forms/BecomeExhibitorForm";
 import { exhibitor_form_area } from "@/data/ExhibitionData";
+import { Suspense } from "react";
 
 const FormArea = () => {
   return (
@@ -14,7 +15,9 @@ const FormArea = () => {
               </div>
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">
-                  <BecomeExhibitorForm />
+                  <Suspense fallback={<p role="status">Chargement du formulaire exposant…</p>}>
+                    <BecomeExhibitorForm />
+                  </Suspense>
                 </div>
               </div>
             </div>

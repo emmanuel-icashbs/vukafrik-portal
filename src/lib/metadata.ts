@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { vukafrik_event_data } from "@/data/VukAfrikData";
+import { isIndexablePath } from "./indexing";
 
 export const siteUrl = new URL("https://vukafrik.org");
 export const siteName = vukafrik_event_data.name;
@@ -16,6 +17,8 @@ export function createPageMetadata(path: string, heading: string, description: s
   return {
     title,
     description,
+    alternates: { canonical: new URL(path, siteUrl).href },
+    robots: { index: isIndexablePath(path), follow: true },
     openGraph: {
       title,
       description,

@@ -27,7 +27,7 @@ const BlogArea = () => {
               {currentItems.map((item) => (
                 <div key={item.id} className="td-postbox-item mb-40">
                   <div className="td-postbox-thumb mb-25">
-                    <Image className="w-100" src={item.thumb} alt="" />
+                    <Image className="w-100" src={item.thumb} alt={item.imageAlt} />
                   </div>
                   <div className="td-postbox-content">
                     <div className="td-blog_data-date mb-10">

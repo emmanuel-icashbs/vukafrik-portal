@@ -8,54 +8,38 @@ const breadcrumb_data: {
   sub_title: "Accréditation des médias",
 };
 const faq_data: { title: string; sub_title: string; data: FaqDataType[] } = {
-  title:
-    "Avez-vous des questions concernant l'accréditation des médias ? Vous trouverez les réponses ici.",
-  sub_title:
-    "em ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet Quisquawe rutruman imperdieEtiam ultricies nisi vel augue. Curabitur.",
-  data: [
+  "title": "Demander une accréditation média",
+  "sub_title": "Préparez votre demande pour couvrir VUK’AFRIK 2026.",
+  "data": [
     {
-      id: 1,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "Do you get any product support?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      "id": 1,
+      "page": "inner_faq",
+      "showAnswer": true,
+      "title": "Comment demander une accréditation ?",
+      "desc": "Complétez le formulaire ci-dessous en indiquant votre média, vos coordonnées et l’objet de votre demande."
     },
     {
-      id: 2,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "How is the selection process organized?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      "id": 2,
+      "page": "inner_faq",
+      "showAnswer": false,
+      "title": "Quelles informations fournir sur mon média ?",
+      "desc": "Indiquez votre organisation, votre type de média et votre pays. Le formulaire prévoit également des liens vers vos contenus précédents et votre numéro de carte de presse."
     },
     {
-      id: 3,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "What is your customer geography?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
+      "id": 3,
+      "page": "inner_faq",
+      "showAnswer": false,
+      "title": "Puis-je préciser des besoins techniques ?",
+      "desc": "Oui. Le formulaire comporte un espace pour vos besoins techniques spécifiques et le nombre de représentants de votre média."
     },
     {
-      id: 4,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "How quickly can you source developers?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-    },
-    {
-      id: 5,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "What are the main industries we serve?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-    },
-    {
-      id: 6,
-      page: "inner_faq",
-      showAnswer: false,
-      title: "Is Evente payment processing secure?",
-      desc: "Applications are like the lifeblood of mobile phones and tablets today. The true potential of your area gear jimanwe mobile phon harnessed by applications can provide utility. Apps come under various segments.Applications are like the lifeblood.",
-    },
-  ],
+      "id": 4,
+      "page": "inner_faq",
+      "showAnswer": false,
+      "title": "Comment contacter l’équipe ?",
+      "desc": "Adressez vos questions sur la couverture de l’événement à info@congocs.org."
+    }
+  ]
 };
 
 const media_accred_form_area = {
