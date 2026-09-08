@@ -9,7 +9,7 @@ import HackatonTeamForm from "@/components/forms/HackatonTeamForm";
 
 const Experience = () => {
   return (
-    <div className="td-banner-area td-banner-6-spacing fix p-relative black-bg">
+    <div id="hackathon" style={{ scrollMarginTop: 120 }} className="td-banner-area td-banner-6-spacing fix p-relative black-bg">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-9">

@@ -18,6 +18,9 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
 
   return (
     <div className="td-schedule-details-right ml-40 mb-40">
+      {[11, 28, 35, 37].includes(event.id) && (
+        <Link href="/hackathon" className="td-btn mb-25">Inscrire mon équipe</Link>
+      )}
       <div className="td-schedule-details-right-list grey-bg mb-40">
         <h3 className="td-schedule-team-title mb-15">
           {detail_page_data.info_title}

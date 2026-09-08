@@ -2,7 +2,7 @@
 export const publicPaths = [
   "/", "/about", "/events", "/speakers", "/exhibitions", "/event-venue",
   "/register", "/sponsors", "/volunteer", "/media-accreditation", "/contact",
-  "/faq", "/gallery", "/blog",
+  "/faq", "/gallery", "/blog", "/hackathon",
 ] as const;
 
 export function isIndexablePath(path: string) {

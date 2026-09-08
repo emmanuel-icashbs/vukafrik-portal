@@ -38,6 +38,7 @@ export function createPageMetadata(path: string, heading: string, description: s
 }
 
 export const pageCopy = {
+  "/hackathon": ["Inscription au Hackathon", "Inscrivez votre équipe au Hackathon VUK’AFRIK 2026, du 23 au 25 septembre au Pullman Hôtel à Kinshasa. Accédez directement au formulaire d’inscription."],
   "/": ["Innovation & entrepreneuriat à Kinshasa", "Du 23 au 25 septembre 2026 au Pullman Hotel à Kinshasa : sommet, foire multisectorielle et networking. Découvrez le programme et inscrivez-vous."],
   "/about": ["À propos de la foire", "Découvrez VUK’AFRIK, la rencontre portée par la Congolese Computer Community pour connecter innovation, entrepreneuriat et investissement depuis Kinshasa."],
   "/events": ["Programme des trois journées", "Consultez le programme de VUK’AFRIK du 23 au 25 septembre 2026 à Kinshasa : panels, ateliers et échanges autour de l’innovation et de l’entrepreneuriat."],

@@ -119,6 +119,9 @@ const Event = () => {
                                 </Link>
                               ))}
                             </p>
+                            {[11, 28, 35, 37].includes(item.id) && (
+                              <Link href="/hackathon" className="my-link">Inscrire mon équipe →</Link>
+                            )}
                           </div>
                         </div>
                         <div className="col-xl-3 col-lg-12">
