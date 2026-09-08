@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 const RegisterArea = () => {
   return (
-    <div className="tg-login-area content-section-spacing">
+    <div className="tg-login-area pt-140 pb-110">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">

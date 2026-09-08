@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 import schedule_data, {
@@ -8,6 +9,7 @@ import schedule_data, {
   schedule_days,
   title,
 } from "@/data/ScheduleData";
+import { paths_holder } from "@/data/MenuData";
 import { getSpeakerById, splitScheduleDate } from "@/utils/functions";
 const Event = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -22,7 +24,7 @@ const Event = () => {
   };
 
   return (
-    <div className="td-schedule-area grey-bg-4 content-section-spacing p-relative z-index-1 fix">
+    <div className="td-schedule-area grey-bg-4 pt-130 p-relative z-index-1 fix pb-130">
       <div className="td-hero-4-blur td-team-5-blur"></div>
       <div className="td-hero-4-blur td-hero-4-blur-2 td-team-5-blur-2"></div>
       <div className="container">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 export default function Blog() {
-  return <section id="fireside-chats" className="td-blog-area content-section-spacing grey-bg-4" aria-labelledby="fireside-title">
+  return <section id="fireside-chats" className="td-blog-area pt-100 pb-100 grey-bg-4" aria-labelledby="fireside-title">
     <div className="container">
       <div className="text-center mb-40">
         <span className="td-section-subtitle">Fireside Chats</span>

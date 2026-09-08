@@ -1,34 +1,12 @@
+@import "react-toastify/dist/ReactToastify.css";
+@import "swiper/css/bundle";
+@import "react-responsive-modal/styles.css";
+@import "yet-another-react-lightbox/styles.css";
+@import "jarallax/dist/jarallax.css";
+
 @import "../assets/css/animate.min.css";
 @import "../assets/css/bootstrap.min.css";
 @import "../assets/css/default.css";
 @import "../assets/css/flaticon_mycollection.css";
 @import "../assets/css/fontawesome-all.min.css";
 @import "../assets/scss/main.scss";
-
-// Content rhythm; applied explicitly so heroes, headers and footers keep their spacing.
-.content-section-spacing,
-.content-section-top {
-  padding-top: 64px;
-}
-.content-section-spacing,
-.content-section-bottom {
-  padding-bottom: 64px;
-}
-.content-section-spacing:is(.td-feature-area, .td-blog-area, .td-brands-area) > .container > .row:last-child {
-  row-gap: 30px;
-}
-.content-section-spacing.td-feature-area .td-feature-3-wrap,
-.content-section-spacing.td-blog-area > .container > .row:last-child > .mb-30,
-.content-section-spacing.td-brands-area > .container > .row:last-child > div > :is(div, a) {
-  margin-bottom: 0;
-}
-@media (max-width: 767px) {
-  .content-section-spacing,
-  .content-section-top {
-    padding-top: 48px;
-  }
-  .content-section-spacing,
-  .content-section-bottom {
-    padding-bottom: 48px;
-  }
-}

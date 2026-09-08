@@ -10,7 +10,7 @@ import { cta_data } from "@/data/CtaData";
 
 const ExhibitionSchedule = () => {
   return (
-    <div className="td-schedule-area  content-section-spacing grey-bg-4 p-relative z-index-1 fix">
+    <div className="td-schedule-area  pt-140 pb-100 grey-bg-4 p-relative z-index-1 fix">
       <div className="td-hero-4-blur td-team-5-blur"></div>
       <div className="td-hero-4-blur td-hero-4-blur-2 td-team-5-blur-2"></div>
       <div className="container">

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ContactArea = () => {
   return (
-    <div className="td-contact-area content-section-top pb-10">
+    <div className="td-contact-area pt-140 pb-10">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">

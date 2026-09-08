@@ -3,7 +3,7 @@ import { volunteer_form_area } from "@/data/VolonteerData";
 
 const FormArea = () => {
   return (
-    <div className="tg-login-area content-section-spacing" id="volonteer_form">
+    <div className="tg-login-area pt-100 pb-110" id="volonteer_form">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">

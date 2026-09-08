@@ -23,7 +23,7 @@ const FaqArea = () => {
   };
 
   return (
-    <div className="td-faq-area content-section-spacing">
+    <div className="td-faq-area pt-135 pb-140">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">

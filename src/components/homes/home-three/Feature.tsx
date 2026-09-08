@@ -4,7 +4,7 @@ import { bg_img } from "@/data/ScheduleData";
 const Feature = () => {
   return (
     <div
-      className="td-feature-area bg-position content-section-spacing"
+      className="td-feature-area bg-position pt-120 pb-80"
       style={{ backgroundImage: `url(${bg_img.src})` }}
     >
       <div className="container">
