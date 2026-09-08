@@ -1,3 +1,4 @@
+import internalStyles from "@/components/common/InternalPage.module.css";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Feature from "./Feature";
 import HeaderThree from "@/layouts/headers/HeaderThree";
@@ -11,7 +12,7 @@ const AboutVukaPage = () => {
   return (
     <>
       <HeaderThree />
-      <main>
+      <main className={internalStyles.main}>
         <Breadcrumb
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}

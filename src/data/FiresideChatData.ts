@@ -5,8 +5,8 @@ import conversation from "@/assets/img/vukafrik/content/fireside-entrepreneurshi
 
 const definitions = [
   { id: 1, scheduleId: 7, slug: "emmanuel-christian", image: discussion,
-    imageAlt: "Échange entre intervenants assis, microphones en main, avec le drapeau de la RDC en arrière-plan",
-    imageCaption: "Échange entre intervenants." },
+    imageAlt: "Christian KATENDE, président de l’ARPTC, et Emmanuel LOMAMI KASONGO, président et fondateur de la CCC, en discussion",
+    imageCaption: "Christian KATENDE (ARPTC) et Emmanuel LOMAMI KASONGO (CCC)." },
   { id: 2, scheduleId: 10, slug: "jeannette-cadeco", image: conversation,
     imageAlt: "Illustration d’une conversation professionnelle",
     imageCaption: "Image d’illustration." },

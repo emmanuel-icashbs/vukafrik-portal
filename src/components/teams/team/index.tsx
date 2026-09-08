@@ -1,3 +1,4 @@
+import internalStyles from "@/components/common/InternalPage.module.css";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import TeamHomeSix from "@/components/homes/home-six/Team";
@@ -9,12 +10,12 @@ const Team = () => {
   return (
     <>
       <HeaderThree />
-      <main>
+      <main className={internalStyles.main}>
         <Breadcrumb
           title={speakers_breadcrumb_data.title}
           sub_title={speakers_breadcrumb_data.sub_title}
         />
-        <TeamHomeSix />
+        <TeamHomeSix ministerFirst />
 
         <FormArea />
       </main>

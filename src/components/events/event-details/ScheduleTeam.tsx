@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import speakerPlaceholder from "@/assets/img/team/team-5/thumb.png";
 
-import img_1 from "@/assets/img/schedule/schedule-details/avatar.png";
 import { SpeakerDataType } from "@/utils/types";
 import { detail_page_data } from "@/data/ScheduleData";
 import { paths_holder } from "@/data/MenuData";
@@ -22,10 +22,10 @@ const ScheduleTeam = ({ speakers }: { speakers: SpeakerDataType[] }) => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="td-schedule-team-thumb mb-15">
-                <Image className="thumb" src={img_1} alt="avatar" />
+                <Image className="thumb" src={speakerPlaceholder} alt="" width={80} height={100} style={{ objectFit: "contain" }} />
                 <div className="td-schedule-team-name">
                   <h4 className="td-title">
-                    <Link href="#">{speaker.name}</Link>
+                    <Link href={{ pathname: paths_holder.speakers.list.link + "/" + speaker.id }}>{speaker.name}</Link>
                   </h4>
                   <span className="position">{speaker.title}</span>
                 </div>
@@ -36,7 +36,7 @@ const ScheduleTeam = ({ speakers }: { speakers: SpeakerDataType[] }) => {
               <div className="td-schedule-team-btn">
                 <Link
                   className="td-btn td-left-right mb-20"
-                  href={`${paths_holder.speakers.list.link}/${speaker.id}`}
+                  href={{ pathname: paths_holder.speakers.list.link + "/" + speaker.id }}
                 >
                   <span className="mr10 td-text d-inline-block mr-5">
                     {paths_holder.speakers.details_title}

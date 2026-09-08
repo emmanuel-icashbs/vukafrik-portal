@@ -3,10 +3,10 @@ import { exhibitionGroups, exhibitionPricingNote, exhibitionDimensions, formatEx
 import Link from "next/link";
 import styles from "./Pricing.module.css";
 
-const Pricing = () => {
+const Pricing = ({ compact = false }: { compact?: boolean }) => {
   const [formPath, formAnchor] = cta_data.become_exhibitor.href.split("#");
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${compact ? styles.compact : ""}`}>
       <div className="container">
         {exhibitionGroups.map((group) => (
           <section key={group.id} id={group.id} aria-labelledby={`${group.id}-title`} className={styles.section}>

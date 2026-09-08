@@ -1,3 +1,4 @@
+import internalStyles from "@/components/common/InternalPage.module.css";
 import { getPageMetadata } from "@/lib/metadata";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterOne from "@/layouts/footers/FooterOne";
@@ -12,7 +13,7 @@ const page = () => {
   return (
     <Wrapper>
       <HeaderThree />
-      <main>
+      <main className={internalStyles.main}>
         <Breadcrumb
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}

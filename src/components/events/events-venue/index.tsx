@@ -1,3 +1,4 @@
+import internalStyles from "@/components/common/InternalPage.module.css";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import Breadcrumb from "../../common/Breadcrumb";
@@ -9,7 +10,7 @@ const EventsVenue = () => {
   return (
     <>
       <HeaderThree />
-      <main>
+      <main className={internalStyles.main}>
         <Breadcrumb
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}

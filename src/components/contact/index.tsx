@@ -1,3 +1,4 @@
+import internalStyles from "@/components/common/InternalPage.module.css";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import Breadcrumb from "../common/Breadcrumb";
 import ContactArea from "./ContactArea";
@@ -9,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <HeaderThree />
-      <main>
+      <main className={internalStyles.main}>
         <Breadcrumb
           title={breadcrumb_data.sub_title}
           sub_title={breadcrumb_data.title}

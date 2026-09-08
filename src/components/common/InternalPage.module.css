@@ -1,0 +1,29 @@
+/* Opt-in on internal pages only: shared homepage components keep their spacing. */
+.main > :is(:global(.td-schedule-area), :global(.td-feature-area), :global(.td-blog-area), :global(.td-team-area), :global(.td-venue-area), :global(.td-faq-area), :global(.tg-login-area), :global(.td-about-area), :global(.td-brands-area), :global(.td-schedule-details-area), :global(.td-banner-area)) {
+  padding-block: 64px;
+}
+
+.main > :global(.td-contact-area) { padding-top: 64px; }
+.main > :global(.td-contact-form-area) { padding-bottom: 64px; }
+.main > :global(.td-team-schedule-area) { padding-bottom: 64px; }
+
+.main > :is(:global(.td-feature-area), :global(.td-blog-area), :global(.td-brands-area)) > :global(.container) > :global(.row:last-child) {
+  row-gap: 30px;
+}
+.main > :global(.td-feature-area) :global(.td-feature-3-wrap),
+.main > :global(.td-blog-area) > :global(.container) > :global(.row:last-child) > :global(.mb-30),
+.main > :global(.td-brands-area) > :global(.container) > :global(.row:last-child) > div > :is(div, a) {
+  margin-bottom: 0;
+}
+
+.download { padding: 24px; text-align: center; background: #f6f6f4; }
+.download a { color: #192b4c; font-weight: 600; text-decoration: underline; }
+
+@media (max-width: 767px) {
+  .main > :is(:global(.td-schedule-area), :global(.td-feature-area), :global(.td-blog-area), :global(.td-team-area), :global(.td-venue-area), :global(.td-faq-area), :global(.tg-login-area), :global(.td-about-area), :global(.td-brands-area), :global(.td-schedule-details-area), :global(.td-banner-area)) {
+    padding-block: 48px;
+  }
+  .main > :global(.td-contact-area) { padding-top: 48px; }
+  .main > :global(.td-contact-form-area) { padding-bottom: 48px; }
+  .main > :global(.td-team-schedule-area) { padding-bottom: 48px; }
+}

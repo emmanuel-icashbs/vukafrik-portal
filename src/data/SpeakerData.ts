@@ -1,3 +1,5 @@
+import ministerPortrait from "@/assets/img/vukafrik/speakers/daniel-mukoko-samba.webp";
+import emmanuelPortrait from "@/assets/img/vukafrik/speakers/emmanuel-lomami-kasongo.webp";
 import team_1 from "@/assets/img/team/team-5/thumb.png";
 import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
@@ -8,11 +10,10 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 1,
     type: "Individual",
-    image: team_1,
-    name: "Docteur Emmanuel LOMAMI",
-    title: "Président et fondateur — CCC",
-    biography:
-      "Emmanuel LOMAMI participe à VUK’AFRIK 2026 au nom de la CCC, avec une allocution d’ouverture et une contribution aux échanges sur l’innovation et l’inclusion financière. Il intervient également dans la synthèse des discussions et la présentation des recommandations de la première journée.",
+    image: emmanuelPortrait,
+    name: "Docteur Emmanuel LOMAMI KASONGO",
+    title: "Président et fondateur — Congolese Computer Community (CCC)",
+    biography: "Docteur Emmanuel LOMAMI KASONGO est président et fondateur de la Congolese Computer Community (CCC). Il prononce l’allocution d’ouverture, échange avec Christian KATENDE lors du fireside chat et présente la synthèse et les recommandations de la première journée.",
   },
   {
     id: 2,
@@ -20,8 +21,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_1,
     name: "Monsieur Christian KATENDE",
     title: "Président — ARPTC",
-    biography:
-        "Christian KATENDE participe au panel consacré à la régulation, à l’innovation, à la compétitivité et à l’inclusion financière. Sa participation au titre de l’ARPTC s’inscrit dans les échanges sur les conditions favorables à la croissance des startups et des PME en RDC.",
+    biography: "Christian KATENDE, président de l’ARPTC, participe au panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière. Il échange avec Docteur Emmanuel LOMAMI KASONGO lors du fireside chat « Le régulateur face à l’innovation ».",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant - ANIMF",
     title: "ANIMF",
     biography:
-      "Le représentant de l’ANIMF participe au panel sur la régulation, l’innovation et l’inclusion financière à VUK’AFRIK 2026. Cette rencontre réunit plusieurs organisations autour des conditions nécessaires pour soutenir la croissance des startups et des PME en RDC.",
+      "La participation d’un représentant de l’ANIMF reste à confirmer dans le programme actuel.",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant - First Bank",
     title: "First Bank",
     biography:
-      "Le représentant de First Bank participe aux échanges sur la régulation, l’innovation, la compétitivité et l’inclusion financière. Son intervention s’inscrit dans un panel consacré au développement d’un environnement favorable aux startups et aux PME en RDC.",
+      "La participation d’un représentant de First Bank reste à confirmer dans le programme actuel.",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant - Fintech",
     title: "Fintech",
     biography:
-      "Le représentant du secteur fintech participe au panel consacré à la régulation, à l’innovation et à l’inclusion financière. Les échanges portent sur les conditions de croissance des startups et des PME et sur leur place dans l’économie congolaise.",
+      "Les représentants fintech annoncés dans le programme actuel figurent sous le nom de leur organisation.",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant - ARPTC",
     title: "ARPTC",
     biography:
-        "Le représentant de l’ARPTC prend part à un fireside chat lors de la première journée de VUK’AFRIK 2026. Ce temps d’échange figure au programme aux côtés des panels consacrés à l’innovation, à la régulation et au développement des entreprises.",
+      "L’ARPTC est représentée par Christian KATENDE dans le panel et le fireside chat de la première journée.",
   },
   {
     id: 7,
@@ -83,8 +83,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Monsieur Sony Ngandu",
     title: "Maître de cérémonie",
-    biography:
-      "Sony Ngandu intervient comme maître de cérémonie à VUK’AFRIK 2026. Le programme l’associe à l’ouverture protocolaire de la première journée ainsi qu’au cocktail et au temps de networking qui réunissent les participants à l’issue des échanges.",
+    biography: "Sony Ngandu anime l’ouverture protocolaire de VUK’AFRIK 2026 en qualité de maître de cérémonie.",
   },
   {
     id: 10,
@@ -92,8 +91,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Représentant - Gouvernement",
     title: "Représentant du gouvernement",
-    biography:
-      "Le représentant du gouvernement participe aux temps institutionnels de VUK’AFRIK 2026, notamment aux allocutions et à la clôture de la première journée. Il est également associé à l’inauguration et à la visite des stands prévues lors de la deuxième journée.",
+    biography: "Un représentant du Gouvernement participe à la clôture officielle de la première journée et à la visite des stands avec la FEC lors de la deuxième journée.",
   },
   {
     id: 11,
@@ -101,15 +99,14 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Madame Sibia NGAYIHEMBAKO",
     title: "Directrice générale adjointe — Finca",
-    biography:
-      "Sibia NGAYIHEMBAKO participe à VUK’AFRIK 2026 au nom de Finca dans le cadre d’une keynote de la première journée. Cette intervention prend place dans un programme consacré à l’innovation, à l’inclusion financière et au développement des entreprises en RDC.",
+    biography: "Sibia NGAYIHEMBAKO est Directrice générale adjointe de Finca. Ses interventions individuelles à VUK’AFRIK restent à confirmer.",
   },
   {
     id: 12,
     type: "Individual",
     image: team_5,
     name: "Représentant - FOGEC",
-    title: "Directeur général — FOGEC",
+    title: "FOGEC",
     biography:
       "Le représentant du FOGEC participe au panel consacré à l’entrepreneuriat, au financement et à l’industrialisation. Les échanges interrogent les difficultés rencontrées par les initiatives congolaises pour se développer et devenir des acteurs économiques de dimension régionale.",
   },
@@ -127,7 +124,7 @@ const speaker_data: SpeakerDataType[] = [
     type: "Individual",
     image: team_5,
     name: "Représentant - APROCEM",
-    title: "Directeur général — APROCEM",
+    title: "APROCEM",
     biography:
       "Le représentant de l’APROCEM participe au panel consacré à l’entrepreneuriat, au financement et à l’industrialisation. Cette rencontre porte sur les obstacles au développement des initiatives congolaises et sur leur capacité à devenir des acteurs économiques de dimension régionale.",
   },
@@ -136,7 +133,7 @@ const speaker_data: SpeakerDataType[] = [
     type: "Individual",
     image: team_5,
     name: "Représentant - PME",
-    title: "Directeur général — PME",
+    title: "PME",
     biography:
       "Le représentant d’une PME participe aux échanges sur l’entrepreneuriat, le financement et l’industrialisation à VUK’AFRIK 2026. Le panel aborde les difficultés de croissance des initiatives congolaises et les conditions de leur développement à l’échelle régionale.",
   },
@@ -145,7 +142,7 @@ const speaker_data: SpeakerDataType[] = [
     type: "Individual",
     image: team_5,
     name: "Représentant - ARSP",
-    title: "Directeur général — ARSP",
+    title: "ARSP",
     biography:
       "Le représentant de l’ARSP participe au panel sur l’entrepreneuriat, le financement et l’industrialisation. Son intervention s’inscrit dans les échanges consacrés aux difficultés rencontrées par les initiatives congolaises pour se développer et prendre une place à l’échelle régionale.",
   },
@@ -182,8 +179,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Équipe CCC Consulting",
     title: "CCC Consulting",
-    biography:
-        "L’équipe CCC Consulting présente une solution ERP destinée aux PME et aux entrepreneurs lors de la deuxième journée de VUK’AFRIK 2026. Cette présentation de produit s’inscrit dans le programme d’ateliers et de démonstrations proposé aux participants.",
+    biography: "CCC Consulting présente des solutions de gestion pour les entreprises. Aucune session dédiée n’est annoncée dans le programme actuel.",
   },
   {
     id: 21,
@@ -200,8 +196,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Équipe d’organisation CCC",
     title: "Organisation — CCC",
-    biography:
-        "L’équipe d’organisation CCC est associée aux animations culturelles et aux mini-pitchs de sélection du Hackathon pendant la deuxième journée de VUK’AFRIK 2026. Ces séquences comprennent les concours de slam et de danse, ainsi que la désignation des cinq équipes finalistes par le jury.",
+    biography: "L’équipe d’organisation de la CCC accompagne la préparation et le déroulement de VUK’AFRIK 2026.",
   },
   {
     id: 23,
@@ -209,8 +204,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Équipe du ministère de l’Économie nationale",
     title: "Ministère de l’Économie nationale",
-    biography:
-        "L’équipe du ministère de l’Économie nationale anime un atelier sur le passage de l’informel au formel. Cette intervention présente la formalisation des entreprises comme un socle de la transformation économique congolaise, dans le cadre de la deuxième journée de VUK’AFRIK 2026.",
+    biography: "Le ministère de l’Économie nationale est représenté lors de l’allocution institutionnelle de la première journée. Aucun atelier dédié à la formalisation n’est annoncé dans le programme actuel.",
   },
   {
     id: 24,
@@ -228,7 +222,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "PME ou entrepreneur",
     title: "Entrepreneuriat et PME",
     biography:
-        "Ce créneau donne la parole à une PME ou à un entrepreneur pour une présentation de service à VUK’AFRIK 2026. L’identité de l’intervenant et le service présenté seront précisés lors de la finalisation des informations du programme.",
+      "Aucun intervenant n’est encore désigné pour le créneau de présentation de produits et services restant à confirmer.",
   },
   {
     id: 26,
@@ -278,7 +272,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_1,
     name: "Représentant - Finca",
     title: "Finca",
-    biography: "Le représentant de Finca anime un atelier consacré aux bases de l’éducation financière pour les entrepreneurs et les ménages. Cette intervention, prévue lors de la troisième journée de VUK’AFRIK 2026, invite les participants à mieux comprendre pour mieux gérer.",
+    biography: "Finca participe au panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière le premier jour, puis anime un atelier sur l’éducation financière pour les entrepreneurs et les ménages le troisième jour.",
   },
   {
     id: 32,
@@ -295,6 +289,38 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant - ANADEC",
     title: "ANADEC",
     biography: "Le représentant de l’ANADEC anime un atelier sur l’accompagnement des entreprises, du lancement à la croissance. Son intervention présente les dispositifs d’appui de l’ANADEC pour les PME congolaises lors de la troisième journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 34,
+    type: "Individual",
+    image: ministerPortrait,
+    name: "Daniel Mukoko Samba",
+    title: "Vice-Premier Ministre, Ministre de l’Économie nationale",
+    biography: "Daniel Mukoko Samba, Vice-Premier Ministre, Ministre de l’Économie nationale, prononce l’allocution institutionnelle de la première journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 35,
+    type: "Individual",
+    image: team_5,
+    name: "Représentant — Banque Centrale du Congo",
+    title: "Banque Centrale du Congo",
+    biography: "La Banque Centrale du Congo participe au panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière.",
+  },
+  {
+    id: 36,
+    type: "Individual",
+    image: team_5,
+    name: "Représentant — pawaPay",
+    title: "pawaPay",
+    biography: "pawaPay participe au premier panel et présente ses solutions de paiement mobile money pour les entreprises lors de la deuxième journée.",
+  },
+  {
+    id: 37,
+    type: "Individual",
+    image: team_5,
+    name: "Représentant — Manitek",
+    title: "Manitek",
+    biography: "Manitek présente sa solution lors d’une session de produits et services le 25 septembre, de 11:30 à 12:00. Le contenu détaillé reste à préciser.",
   },
 ];
 

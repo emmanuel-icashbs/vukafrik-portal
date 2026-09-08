@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import speakerPlaceholder from "@/assets/img/team/team-5/thumb.png";
 
-import bg_img from "@/assets/img/team/bg.png";
 import { SpeakerDataType } from "@/utils/types";
 import { info_data } from "@/data/SpeakerData";
 
@@ -11,18 +11,11 @@ const TeamDetailsArea = ({ speaker }: { speaker: SpeakerDataType }) => {
     <div className="td-team-area pt-130 pb-30 p-relative fix">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-8">
-            <div
-              className="td-team-item mb-25 bg-position pt-40 p-relative mb-40"
-              style={{ backgroundImage: `url(${bg_img.src})` }}
-            >
-              <div className="td-team-thumb text-center">
-                <Image src={speaker.image} alt="" />
-              </div>
-            </div>
+          <div className="col-lg-4 mb-30">
+            <Image src={speakerPlaceholder} alt="" style={{ width: "100%", maxHeight: 340, objectFit: "contain" }} />
           </div>
           <div className="col-lg-8">
-            <div className="td-team-details-content ml-50">
+            <div className="td-team-details-content">
               <h2 className="td-schedule-team-title mb-5">{speaker.name}</h2>
               <span className="td-team-details-subtitle d-block mb-15">
                 {speaker.title}

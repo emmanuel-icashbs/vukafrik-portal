@@ -49,6 +49,8 @@ const EventsVenueArea = () => {
               <h2 className="td-venue-title mb-20">{event_venue_data.title}</h2>
               <p className="td-venue-text mb-30">
                 {event_venue_data.description}
+                <br />
+                Jour 1 (23 septembre) : Salon Congo. Jours 2 et 3 (24–25 septembre) : Chapiteau.
               </p>
               <div>
                 <div className="td-venue-info mb-25">

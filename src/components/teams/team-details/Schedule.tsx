@@ -14,6 +14,7 @@ const Schedule = ({ events }: { events: EventDataType[] }) => {
                 {speakers_schedule_title}
               </h3>
               <span className="td-schedule-team-border mb-25"></span>
+              {events.length === 0 && <p>Les interventions de ce profil restent à confirmer dans le programme actuel.</p>}
 
               {events.map((event, index) => (
                 <div
@@ -38,7 +39,7 @@ const Schedule = ({ events }: { events: EventDataType[] }) => {
                           <span className="dates">{`${event.start_time} - ${event.end_time}`}</span>
                           <h4 className="td-title">
                             <Link
-                              href={`${paths_holder.events.list.link}/${event.id}`}
+                              href={{ pathname: paths_holder.events.list.link + "/" + event.id }}
                             >
                               {event.topic}
                             </Link>
@@ -51,7 +52,7 @@ const Schedule = ({ events }: { events: EventDataType[] }) => {
                       <div className="td-schedule-team-btn">
                         <Link
                           className="td-btn td-left-right mb-20"
-                          href={`${paths_holder.events.list.link}/${event.id}`}
+                          href={{ pathname: paths_holder.events.list.link + "/" + event.id }}
                         >
                           <span className="mr10 td-text d-inline-block mr-5">
                             {paths_holder.events.details_title}

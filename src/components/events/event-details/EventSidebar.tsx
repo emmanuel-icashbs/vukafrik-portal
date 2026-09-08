@@ -51,7 +51,7 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
             </li>
             <li>
               <span className="ceta">{detail_page_data.info_location}:</span>
-              <span>{event.venue}</span>
+              <span>{vukafrik_event_data.venue} — {event.venue}</span>
             </li>
 
             <li>

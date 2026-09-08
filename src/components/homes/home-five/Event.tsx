@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 import schedule_data, {
@@ -105,19 +104,19 @@ const Event = () => {
                         <div className="col-xl-6 col-lg-19">
                           <div className="td-schedule-4-content td-schedule-5-content mb-30">
                             <h4 className="td-schedule-4-title">
-                              <Link href="#">{item.topic}</Link>
+                              <Link href={{ pathname: paths_holder.events.list.link + "/" + item.id }}>{item.topic}</Link>
                             </h4>
                             <p>
                               {item.speakers.map((speaker_id, index) => (
-                                <a
+                                <Link
                                   key={index}
-                                  href="#"
+                                  href={{ pathname: paths_holder.speakers.list.link + "/" + speaker_id }}
                                   className="my-link"
                                   style={{ cursor: "pointer" }}
                                 >
                                   {getSpeakerById(speaker_id)?.name}
                                   {index + 1 < item.speakers.length ? ", " : ""}
-                                </a>
+                                </Link>
                               ))}
                             </p>
                           </div>

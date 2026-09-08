@@ -1,3 +1,4 @@
+import internalStyles from "@/components/common/InternalPage.module.css";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterOne from "@/layouts/footers/FooterOne";
 import HeaderThree from "@/layouts/headers/HeaderThree";
@@ -11,11 +12,11 @@ const Exhibition = () => {
   return (
     <>
       <HeaderThree />
-      <main>
+      <main className={internalStyles.main}>
         <Breadcrumb title={breadcrumb.title} sub_title={breadcrumb.sub_title} />
         <ExhibitionSchedule />
         <ExperienceHomeSix />
-        <Pricing />
+        <Pricing compact />
         <FormArea />
       </main>
       <FooterOne />
