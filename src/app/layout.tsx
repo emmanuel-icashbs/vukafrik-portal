@@ -1,4 +1,9 @@
 import Providers from "@/layouts/Providers";
+import "react-toastify/dist/ReactToastify.css";
+import "swiper/css/bundle";
+import "react-responsive-modal/styles.css";
+import "yet-another-react-lightbox/styles.css";
+import "jarallax/dist/jarallax.css";
 import "../styles/index.scss";
 import { Poppins, Unbounded } from "next/font/google";
 import { getPageMetadata, siteUrl } from "@/lib/metadata";
