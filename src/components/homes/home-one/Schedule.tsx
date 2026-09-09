@@ -9,7 +9,7 @@ import schedule_data, {
   table_columns,
 } from "@/data/ScheduleData";
 import Link from "next/link";
-import { getSpeakerById } from "@/utils/functions";
+import { getProgrammeSpeakerLabel } from "@/utils/functions";
 import { paths_holder } from "@/data/MenuData";
 
 const Schedule = () => {
@@ -104,10 +104,10 @@ const Schedule = () => {
                                         key={index}
                                         href={`${paths_holder.speakers.list.link}/${speaker_id}`}
                                         className="my-link"
-                                        style={{ cursor: "pointer" }}
+                                        style={{ cursor: "pointer", display: "block" }}
                                       >
-                                        {getSpeakerById(speaker_id)?.name}
-                                        {", "}
+                                        {getProgrammeSpeakerLabel(speaker_id)}
+
                                       </a>
                                     ))}
                                   </p>
@@ -123,7 +123,7 @@ const Schedule = () => {
                                 <div className="td-schedule-content text-center mb-20">
                                   <Link
                                     className="td-btn td-left-right"
-                                    href={`${paths_holder.events.list.link}/${item.id}`}
+                                    href={{ pathname: paths_holder.events.list.link + "/" + item.id }}
                                   >
                                     <span className="mr10 td-text d-inline-block mr-5">
                                       {paths_holder.events.details_title}

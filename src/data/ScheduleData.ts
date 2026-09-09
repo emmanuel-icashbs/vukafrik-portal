@@ -135,7 +135,7 @@ const schedule_data: EventDataType[] = [
     topic: "Régulation, innovation, compétitivité et inclusion financière: construire un écosystème favorable à la croissance des startups et PME en RDC",
     category: "Premier Panel",
     image: event_thumb2,
-    speakers: [2, 35, 31, 36, 15],
+    speakers: [6, 35, 38, 36, 15],
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
@@ -249,10 +249,10 @@ const schedule_data: EventDataType[] = [
     topic: "Lancement du Hackathon",
     category: "Activité",
     image: event_thumb1,
-    speakers: [],
+    speakers: [14],
     venue: "Salon Congo",
     date: schedule_days[0],
-    descriptive_paragraphs: ["Présentation du défi du Hackathon et appel à candidatures."],
+    descriptive_paragraphs: ["Présentation du défi du Hackathon et appel à candidatures, avec Monsieur Pascal TCHELO MAZOMBO, Directeur général — APROCM."],
   },
   {
     id: 12,
@@ -315,7 +315,7 @@ const schedule_data: EventDataType[] = [
     topic: "Coupure de ruban",
     category: "Inauguration",
     image: event_thumb2,
-    speakers: [],
+    speakers: [10],
     venue: "Chapiteau",
     date: schedule_days[1],
     descriptive_paragraphs: ["Coupure de ruban pour inaugurer la foire multisectorielle."],
@@ -327,7 +327,7 @@ const schedule_data: EventDataType[] = [
     topic: "Allocution",
     category: "Allocution institutionnelle",
     image: event_thumb2,
-    speakers: [],
+    speakers: [10],
     venue: "Chapiteau",
     date: schedule_days[1],
     descriptive_paragraphs: ["Allocution."],
@@ -339,7 +339,7 @@ const schedule_data: EventDataType[] = [
     topic: "Visite des stands par les officiels",
     category: "Exposition",
     image: event_thumb2,
-    speakers: [10, 13],
+    speakers: [10, 13, 1],
     venue: "Chapiteau",
     date: schedule_days[1],
     descriptive_paragraphs: [
@@ -347,11 +347,23 @@ const schedule_data: EventDataType[] = [
     ],
   },
   {
-    id: 19,
+    id: 18,
     start_time: "10:00",
     end_time: "10:40",
+    topic: "De l’informel au formel : la formalisation des entreprises, socle de la transformation économique congolaise",
+    category: "Atelier 1 — Ministère de l’Économie nationale",
+    image: event_thumb2,
+    speakers: [23],
+    venue: "Chapiteau",
+    date: schedule_days[1],
+    descriptive_paragraphs: ["Atelier animé par l’équipe du Ministère de l’Économie nationale sur la formalisation des entreprises, socle de la transformation économique congolaise."],
+  },
+  {
+    id: 19,
+    start_time: "10:40",
+    end_time: "11:20",
     topic: "De l’idée au produit numérique : les fondamentaux du digital pour entrepreneurs",
-    category: "Atelier pratique — CCC",
+    category: "Atelier 2 — CCC",
     image: event_thumb2,
     speakers: [19],
     venue: "Chapiteau",
@@ -362,8 +374,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 20,
-    start_time: "10:40",
-    end_time: "11:00",
+    start_time: "11:20",
+    end_time: "11:40",
     topic: "Prestation slameur",
     category: "Animation culturelle",
     image: event_thumb2,
@@ -374,8 +386,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 21,
-    start_time: "11:00",
-    end_time: "11:40",
+    start_time: "11:40",
+    end_time: "12:20",
     topic: "Financer son projet industriel : comprendre les instruments et mécanismes du FPI",
     category: "Atelier pratique — FPI",
     image: event_thumb2,
@@ -388,8 +400,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 22,
-    start_time: "11:40",
-    end_time: "12:00",
+    start_time: "12:20",
+    end_time: "12:40",
     topic: "Présentation de produits et services — pawaPay",
     category: "Présentation",
     image: event_thumb2,
@@ -400,8 +412,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 23,
-    start_time: "12:00",
-    end_time: "12:40",
+    start_time: "12:40",
+    end_time: "13:20",
     topic: "Structurer sa PME pour devenir finançable : organisation, gouvernance et pilotage de l’entreprise",
     category: "Atelier pratique — Agence CSB",
     image: event_thumb2,
@@ -412,8 +424,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 24,
-    start_time: "12:40",
-    end_time: "13:40",
+    start_time: "13:20",
+    end_time: "14:20",
     topic: "Prestation artistique et pause déjeuner",
     category: "Pause et animation culturelle",
     image: event_thumb2,
@@ -424,8 +436,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 25,
-    start_time: "13:40",
-    end_time: "14:20",
+    start_time: "14:20",
+    end_time: "15:00",
     topic: "Garantir son financement : comment le FOGEC facilite l’accès au crédit pour les entreprises congolaises",
     category: "Atelier pratique — FOGEC",
     image: event_thumb2,
@@ -438,8 +450,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 26,
-    start_time: "14:20",
-    end_time: "14:40",
+    start_time: "15:00",
+    end_time: "15:20",
     topic: "Présentation de produits et services — À confirmer",
     category: "Présentation",
     image: event_thumb2,
@@ -450,8 +462,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 27,
-    start_time: "14:40",
-    end_time: "15:20",
+    start_time: "15:20",
+    end_time: "16:00",
     topic: "Visa Pay et l’économie sans cash : les paiements digitaux comme levier de croissance pour les PME",
     category: "Atelier pratique — Visa Congo",
     image: event_thumb2,
@@ -464,8 +476,8 @@ const schedule_data: EventDataType[] = [
   },
   {
     id: 28,
-    start_time: "15:20",
-    end_time: "16:10",
+    start_time: "16:00",
+    end_time: "16:50",
     topic: "Mini-pitchs de sélection des cinq équipes finalistes du Hackathon",
     category: "Sélection Hackathon",
     image: event_thumb2,
@@ -671,6 +683,10 @@ const schedule_data: EventDataType[] = [
     ],
   },
 ];
+// Keep operational timings separately; public pages show participant-facing sessions only.
+const operationalSessionIds = new Set([1, 44, 45, 48, 49, 51, 15, 24, 38, 34]);
+const public_schedule = schedule_data.filter((session) => !operationalSessionIds.has(session.id));
+
 const title: string = "Programme détaillé";
 const sub_title: string = "Programme de l'événement";
 const description: string = `Trois jours pour connecter les idées, inspirer l'innovation et créer les opportunités qui façonneront l'économie de demain.`;
@@ -701,6 +717,7 @@ const breadcrumb_data: {
 };
 
 export {
+  schedule_data,
   schedule_days,
   bg_img,
   title,
@@ -711,4 +728,4 @@ export {
   breadcrumb_data,
 };
 
-export default schedule_data;
+export default public_schedule;

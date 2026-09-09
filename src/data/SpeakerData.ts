@@ -12,7 +12,7 @@ const speaker_data: SpeakerDataType[] = [
     type: "Individual",
     image: emmanuelPortrait,
     name: "Docteur Emmanuel LOMAMI KASONGO",
-    title: "Président et fondateur — Congolese Computer Community (CCC)",
+    title: "Président et fondateur — CCC",
     biography: "Docteur Emmanuel LOMAMI KASONGO est président et fondateur de la Congolese Computer Community (CCC). Il prononce l’allocution d’ouverture, échange avec Christian KATENDE lors du fireside chat et présente la synthèse et les recommandations de la première journée.",
   },
   {
@@ -21,7 +21,15 @@ const speaker_data: SpeakerDataType[] = [
     image: team_1,
     name: "Monsieur Christian KATENDE",
     title: "Président — ARPTC",
-    biography: "Christian KATENDE, président de l’ARPTC, participe au panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière. Il échange avec Docteur Emmanuel LOMAMI KASONGO lors du fireside chat « Le régulateur face à l’innovation ».",
+    biography: "Christian KATENDE, président de l’ARPTC, échange avec Docteur Emmanuel LOMAMI KASONGO lors du fireside chat « Le régulateur face à l’innovation ».",
+  },
+  {
+    id: 38,
+    type: "Individual",
+    image: team_1,
+    name: "Mirela PEKMEZI",
+    title: "Directrice générale de FINCA",
+    biography: "Mirela possède plus de 25 ans d’expérience dans la croissance organisationnelle, l’inclusion financière et la transformation institutionnelle. Elle a dirigé des institutions et des départements pour améliorer les efficacités grâce à une approche axée sur les données et les risques, l’autonomisation des personnes et la transformation technologique. Elle a impulsé le changement en mettant l’accent sur l’égalité des genres, la protection de l’environnement, l’impact social et une expérience pratique dans la direction, la restructuration et le lancement de nouveaux départements, succursales et produits.",
   },
   {
     id: 3,
@@ -57,7 +65,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant - ARPTC",
     title: "ARPTC",
     biography:
-      "L’ARPTC est représentée par Christian KATENDE dans le panel et le fireside chat de la première journée.",
+      "Un représentant de l’ARPTC participe au premier panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière lors de la première journée.",
   },
   {
     id: 7,
@@ -91,7 +99,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Représentant - Gouvernement",
     title: "Représentant du gouvernement",
-    biography: "Un représentant du Gouvernement participe à la clôture officielle de la première journée et à la visite des stands avec la FEC lors de la deuxième journée.",
+    biography: "Un représentant du Gouvernement participe à la clôture officielle de la première journée, puis à la coupure de ruban, à l’allocution et à la visite des stands avec la FEC et Emmanuel LOMAMI KASONGO lors de la deuxième journée.",
   },
   {
     id: 11,
@@ -123,10 +131,10 @@ const speaker_data: SpeakerDataType[] = [
     id: 14,
     type: "Individual",
     image: team_5,
-    name: "Représentant - APROCEM",
-    title: "APROCEM",
+    name: "Monsieur Pascal TCHELO MAZOMBO",
+    title: "Directeur général — APROCM",
     biography:
-      "Le représentant de l’APROCEM participe au panel consacré à l’entrepreneuriat, au financement et à l’industrialisation. Cette rencontre porte sur les obstacles au développement des initiatives congolaises et sur leur capacité à devenir des acteurs économiques de dimension régionale.",
+      "Monsieur Pascal TCHELO MAZOMBO est Directeur général de l’APROCM. Il participe au deuxième panel consacré à l’entrepreneuriat, au financement et à l’industrialisation, ainsi qu’au lancement du Hackathon lors de la première journée de VUK’AFRIK 2026.",
   },
   {
     id: 15,
@@ -166,12 +174,12 @@ const speaker_data: SpeakerDataType[] = [
   },
   {
     id: 19,
-    type: "Individual",
+    type: "Team",
     image: team_5,
-    name: "Représentant - CCC",
-    title: "Formateur — CCC",
+    name: "Équipe CCC",
+    title: "Formation — CCC",
     biography:
-        "Le représentant de la CCC anime une formation sur les fondamentaux du digital pour entrepreneurs, de l’idée au produit numérique. L’atelier comprend également une courte présentation des idées du Hackathon et de leur raison d’être, sans pitch formel.",
+        "L’équipe CCC anime une formation sur les fondamentaux du digital pour entrepreneurs, de l’idée au produit numérique. L’atelier comprend également une courte présentation des idées du Hackathon et de leur raison d’être, sans pitch formel.",
   },
   {
     id: 20,
@@ -204,7 +212,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Équipe du ministère de l’Économie nationale",
     title: "Ministère de l’Économie nationale",
-    biography: "Le ministère de l’Économie nationale est représenté lors de l’allocution institutionnelle de la première journée. Aucun atelier dédié à la formalisation n’est annoncé dans le programme actuel.",
+    biography: "Le ministère de l’Économie nationale est représenté lors de l’allocution institutionnelle de la première journée. Son équipe anime au deuxième jour l’atelier « De l’informel au formel : la formalisation des entreprises, socle de la transformation économique congolaise ».",
   },
   {
     id: 24,
@@ -272,7 +280,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_1,
     name: "Représentant - Finca",
     title: "Finca",
-    biography: "Finca participe au panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière le premier jour, puis anime un atelier sur l’éducation financière pour les entrepreneurs et les ménages le troisième jour.",
+    biography: "Finca anime un atelier sur l’éducation financière pour les entrepreneurs et les ménages le troisième jour.",
   },
   {
     id: 32,

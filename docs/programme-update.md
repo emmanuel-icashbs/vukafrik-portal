@@ -8,11 +8,26 @@ The timetable follows `VUKAFRIK_2026_Programme_Detaille_5.pdf` (included in
 - Manitek's product/service presentation is on Day 3, 11:30–12:00; its detailed content and presenter remain unspecified.
 - Daniel Mukoko Samba appears first on the speakers page. He has his own record, separate from the generic government representative.
 
-Session IDs are retained when a session continues. IDs 18 (former ministry workshop)
-and 40 (former Day 3 second product presentation) are removed because those sessions
-are absent from version 5. Newly separated protocol/transition entries use IDs 44–52.
+The organiser's latest corrections restore the ministry workshop (ID 18) on Day 2,
+10:00–10:40, followed by CCC at 10:40–11:20. Subsequent Day 2 activities move
+40 minutes later, preserving durations; the day ends at 16:50. The government
+representative leads the ribbon cutting and allocution, and Emmanuel joins the
+government and FEC for the stand visit. Mirela PEKMEZI (FINCA's managing director)
+replaces the generic FINCA representative in Panel 1 only; her supplied biography
+is included verbatim. The Day 3 FINCA workshop retains its organisation representative.
+
+Session IDs are retained when a session continues. ID 40 remains removed.
+Protocol/transition entries use IDs 44–52. The named `schedule_data` export keeps
+the operational timetable; the default export excludes arrivals, registration,
+breaks and transitions from public pages. Public names include their titles, and
+CCC and the ministry workshop identify their leading teams. The outdated version 5
+PDF download link is removed pending a revised document; the source PDF is retained.
 Historical speaker profiles remain reachable, but the speaker lists show current
-programme participants only. APROCEM and APROCEC retain the source's distinct spellings.
+programme participants only. Pascal TCHELO MAZOMBO (Directeur général — APROCM)
+replaces the former APROCEM placeholder in Panel 2 and joins the Hackathon launch.
+APROCM follows the organiser's corrected spelling; APROCEC remains a separate entry.
+Panel 1 uses the generic ARPTC representative; Christian KATENDE remains assigned
+to the fireside chat only.
 
 Internal spacing is scoped through `InternalPage.module.css`. Do not apply this
 class to the homepage or restore the reverted commit's global import changes.

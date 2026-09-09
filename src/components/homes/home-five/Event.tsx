@@ -9,7 +9,7 @@ import schedule_data, {
   title,
 } from "@/data/ScheduleData";
 import { paths_holder } from "@/data/MenuData";
-import { getSpeakerById, splitScheduleDate } from "@/utils/functions";
+import { getProgrammeSpeakerLabel, splitScheduleDate } from "@/utils/functions";
 const Event = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [filteredScheduleData, setFilteredScheduleData] = useState(
@@ -112,10 +112,10 @@ const Event = () => {
                                   key={index}
                                   href={{ pathname: paths_holder.speakers.list.link + "/" + speaker_id }}
                                   className="my-link"
-                                  style={{ cursor: "pointer" }}
+                                  style={{ cursor: "pointer", display: "block" }}
                                 >
-                                  {getSpeakerById(speaker_id)?.name}
-                                  {index + 1 < item.speakers.length ? ", " : ""}
+                                  {getProgrammeSpeakerLabel(speaker_id)}
+
                                 </Link>
                               ))}
                             </p>

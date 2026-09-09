@@ -23,6 +23,7 @@ import sponsor20 from "@/assets/img/sponsors/maajabu.webp";
 import sponsor21 from "@/assets/img/sponsors/pepsi.webp";
 import sponsor22 from "@/assets/img/sponsors/delegation-unikin.webp";
 import sponsor23 from "@/assets/img/sponsors/zola-kifuma.webp";
+import emploiRecruteCanada from "@/assets/img/sponsors/emploi-recrute-canada.jpg";
 import { vukafrik_event_data } from "./VukAfrikData";
 import { paths_holder } from "./MenuData";
 
@@ -60,6 +61,7 @@ const brands: Sponsor[] = [
   { id: "pepsi", name: "PEPSI", image: sponsor21, order: 22 },
   { id: "delegation-unikin", name: "Délégation facultaire — UNIKIN", image: sponsor22, order: 23 },
   { id: "zola-kifuma", name: "Zola Kifuma", image: sponsor23, order: 24 },
+  { id: "emploi-recrute-canada", name: "Emploi Recrute Canada", image: emploiRecruteCanada, order: 25 },
 ];
 
 const sub_title = "Nos Sponsors";

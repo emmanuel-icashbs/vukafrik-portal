@@ -10,6 +10,11 @@ export const getSpeakerById = (id: number): SpeakerDataType => {
   return speaker;
 };
 
+export const getProgrammeSpeakerLabel = (id: number): string => {
+  const speaker = getSpeakerById(id);
+  return speaker.type === "Team" ? speaker.name : `${speaker.name} (${speaker.title})`;
+};
+
 export const getSpeakersByIds = (ids: number[]): SpeakerDataType[] => {
   return ids.map((id) => getSpeakerById(id));
 };
@@ -45,7 +50,7 @@ export function deepTrim<T>(value: T): T {
     value !== null &&
     value.constructor === Object
   ) {
-    const result: Record<string, any> = {};
+    const result: Record<string, unknown> = {};
 
     for (const [key, val] of Object.entries(value)) {
       result[key] = deepTrim(val);

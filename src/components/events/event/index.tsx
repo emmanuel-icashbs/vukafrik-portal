@@ -17,11 +17,6 @@ const EventPage = () => {
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}
         />
-        <div className={internalStyles.download}>
-          <a href="/documents/VUKAFRIK_2026_Programme_Detaille_5.pdf" download>
-            Télécharger le programme détaillé (PDF)
-          </a>
-        </div>
         <Event />
         <Feature />
         <Blog />
