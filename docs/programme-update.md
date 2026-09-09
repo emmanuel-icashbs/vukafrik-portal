@@ -43,6 +43,11 @@ At the organiser's request, personal portraits are replaced by the existing gene
 speaker placeholder in cards, profile pages and session speaker rows. Names, titles
 and profile links remain; the contextual fireside-chat photograph is retained.
 
+The organiser subsequently supplied `Image (52).jpg` for Daniel Mukoko Samba.
+Its unchanged copy is `src/assets/img/vukafrik/speakers/daniel-mukoko-samba.jpg`;
+his cards, profile and session rows now display that portrait, including its credit.
+Other speakers continue to use the generic placeholder.
+
 Run `node programme-data.test.mjs` to check timetable continuity, rooms and speaker
 assignments. The existing indexing and metadata smoke tests run against a local
 production server (default port 3100).

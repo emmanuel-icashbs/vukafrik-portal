@@ -1,5 +1,5 @@
-import ministerPortrait from "@/assets/img/vukafrik/speakers/daniel-mukoko-samba.webp";
-import emmanuelPortrait from "@/assets/img/vukafrik/speakers/emmanuel-lomami-kasongo.webp";
+import ministerPortrait from "@/assets/img/vukafrik/speakers/daniel-mukoko-samba.jpg";
+import mirelaPortrait from "@/assets/img/vukafrik/speakers/mirela-pekmezi.jpg";
 import team_1 from "@/assets/img/team/team-5/thumb.png";
 import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
@@ -10,7 +10,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 1,
     type: "Individual",
-    image: emmanuelPortrait,
+    image: team_1,
     name: "Docteur Emmanuel LOMAMI KASONGO",
     title: "Président et fondateur — CCC",
     biography: "Docteur Emmanuel LOMAMI KASONGO est président et fondateur de la Congolese Computer Community (CCC). Il prononce l’allocution d’ouverture, échange avec Christian KATENDE lors du fireside chat et présente la synthèse et les recommandations de la première journée.",
@@ -26,7 +26,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 38,
     type: "Individual",
-    image: team_1,
+    image: mirelaPortrait,
     name: "Mirela PEKMEZI",
     title: "Directrice générale de FINCA",
     biography: "Mirela possède plus de 25 ans d’expérience dans la croissance organisationnelle, l’inclusion financière et la transformation institutionnelle. Elle a dirigé des institutions et des départements pour améliorer les efficacités grâce à une approche axée sur les données et les risques, l’autonomisation des personnes et la transformation technologique. Elle a impulsé le changement en mettant l’accent sur l’égalité des genres, la protection de l’environnement, l’impact social et une expérience pratique dans la direction, la restructuration et le lancement de nouveaux départements, succursales et produits.",

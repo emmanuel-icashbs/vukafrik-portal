@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import speakerPlaceholder from "@/assets/img/team/team-5/thumb.png";
+import SpeakerPortrait from "@/components/common/SpeakerPortrait";
 
 import { SpeakerDataType } from "@/utils/types";
 import { info_data } from "@/data/SpeakerData";
@@ -12,7 +11,7 @@ const TeamDetailsArea = ({ speaker }: { speaker: SpeakerDataType }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mb-30">
-            <Image src={speakerPlaceholder} alt="" style={{ width: "100%", maxHeight: 340, objectFit: "contain" }} />
+            <SpeakerPortrait speaker={speaker} size={340} />
           </div>
           <div className="col-lg-8">
             <div className="td-team-details-content">

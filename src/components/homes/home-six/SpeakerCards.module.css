@@ -12,7 +12,7 @@
   transition: background-color .2s ease;
 }
 .card h3 { color: inherit; font-size: 19px; line-height: 1.4; margin: 0 0 12px; }
-.placeholder { width: 100%; height: 220px; object-fit: contain; background: #f4f4f2; border-radius: 10px; margin-bottom: 20px; }
+.portrait { text-align: center; margin-bottom: 20px; }
 .card p { color: inherit; font-size: 14px; line-height: 1.6; margin: 0 0 24px; }
 .more { margin-top: auto; color: #ffd174; font-size: 14px; font-weight: 600; }
 .card:hover { color: white; background: #243c65; }

@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import speakerPlaceholder from "@/assets/img/team/team-5/thumb.png";
+import SpeakerPortrait from "@/components/common/SpeakerPortrait";
 import speaker_data, {
   description,
   sub_title,
@@ -55,7 +54,7 @@ const TeamHomeSix = ({ slice_number, ministerFirst = false }: { slice_number?: n
           {speakers.map((item) => (
             <div key={item.id} className="col mb-30">
               <Link className={styles.card} href={{ pathname: paths_holder.speakers.list.link + "/" + item.id }}>
-                <Image className={styles.placeholder} src={speakerPlaceholder} alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 20vw" />
+                <div className={styles.portrait}><SpeakerPortrait speaker={item} /></div>
                 <h3>{item.name}</h3>
                 <p>{item.title}</p>
                 <span className={styles.more}>Voir le profil <span aria-hidden="true">→</span></span>

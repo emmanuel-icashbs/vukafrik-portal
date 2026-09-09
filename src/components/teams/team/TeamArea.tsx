@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import speaker_data from "@/data/SpeakerData";
-import Image from "next/image";
+import SpeakerPortrait from "@/components/common/SpeakerPortrait";
 import Link from "next/link";
 
 import bg_img from "@/assets/img/team/bg.png";
@@ -45,7 +45,7 @@ const TeamArea = () => {
                   <span className="td-team-member-position">{item.title}</span>
                 </div>
                 <div className="td-team-thumb text-center">
-                  <Image src={item.image} alt="" />
+                  <SpeakerPortrait speaker={item} />
                 </div>
                 <div className="td-team-social-wrap">
                   <div className="team__social td-team-social td-social-icon-style">

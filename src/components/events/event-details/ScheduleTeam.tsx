@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import speakerPlaceholder from "@/assets/img/team/team-5/thumb.png";
+import SpeakerPortrait from "@/components/common/SpeakerPortrait";
 
 import { SpeakerDataType } from "@/utils/types";
 import { detail_page_data } from "@/data/ScheduleData";
@@ -22,7 +21,7 @@ const ScheduleTeam = ({ speakers }: { speakers: SpeakerDataType[] }) => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="td-schedule-team-thumb mb-15">
-                <Image className="thumb" src={speakerPlaceholder} alt="" width={80} height={100} style={{ objectFit: "contain" }} />
+                <SpeakerPortrait speaker={speaker} size={80} />
                 <div className="td-schedule-team-name">
                   <h4 className="td-title">
                     <Link href={{ pathname: paths_holder.speakers.list.link + "/" + speaker.id }}>{speaker.name}</Link>
