@@ -5,11 +5,11 @@ const breadcrumb_data: { title: string; sub_title: string } = {
   sub_title: "Contactez-nous",
 };
 const info_area = {
-  title: "Coordonnées de l'equipe VUK'AFRIK",
+  title: "Coordonnées de l’équipe VUK’AFRIK",
   sub_title:
-    "Lorem ipsum dolor sit amet consectetur adipiscing eleitut iquam purus sit amet luctus venenatis lectus magna fringilla urna por us non enim praesent elementum facilisise.",
+    "Une question sur VUK’AFRIK, votre inscription ou les possibilités de partenariat ? Contactez notre équipe par téléphone, par e-mail ou via le formulaire ci-dessous pour préparer votre participation à l’événement.",
   address: {
-    title: "Adresse",
+    title: "Lieu de l’événement",
     value: vukafrik_event_data.venue,
     link: vukafrik_event_data.venueHref,
   },
@@ -21,13 +21,13 @@ const info_area = {
   Email: {
     title: "Email",
     value: vukafrik_event_data.contacts.generalEmail,
-    link: vukafrik_event_data.contacts.generalEmail,
+    link: `mailto:${vukafrik_event_data.contacts.generalEmail}`,
   },
 };
 const form_area = {
-  title: "Envoyer un message a l'equipe VUK'AFRIK",
+  title: "Envoyer un message à l’équipe VUK’AFRIK",
   sub_title:
-    "Utilisez ce formulaire pour vos questions generales, partenariats, media et participation.",
+    "Sélectionnez le type de demande et précisez votre besoin : inscription, exposition, sponsoring, partenariat, médias ou volontariat. Indiquez vos coordonnées pour que notre équipe puisse vous répondre.",
   fields: [
     "Nom complet *",
     "Email *",

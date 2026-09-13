@@ -15,7 +15,6 @@ import sponsor12 from "@/assets/img/sponsors/fec.webp";
 import sponsor13 from "@/assets/img/sponsors/animf.webp";
 import sponsor14 from "@/assets/img/sponsors/aprofeec.webp";
 import sponsor15 from "@/assets/img/sponsors/finca.webp";
-import sponsor16 from "@/assets/img/sponsors/firstbank.webp";
 import sponsor17 from "@/assets/img/sponsors/rawsur.webp";
 import sponsor18 from "@/assets/img/sponsors/express.webp";
 import sponsor19 from "@/assets/img/sponsors/kl-energy.webp";
@@ -53,7 +52,6 @@ const brands: Sponsor[] = [
   { id: "animf", name: "ANIMF", image: sponsor13, order: 14 },
   { id: "aprofeec", name: "APROFEEC-RDC", image: sponsor14, order: 15 },
   { id: "finca", name: "FINCA", image: sponsor15, order: 16 },
-  { id: "firstbank", name: "FirstBank DRC", image: sponsor16, order: 17 },
   { id: "rawsur", name: "RAWSUR", image: sponsor17, order: 18 },
   { id: "express", name: "Express / Copie Cat", image: sponsor18, order: 19 },
   { id: "kl-energy", name: "KL Energy", image: sponsor19, order: 20 },
