@@ -135,7 +135,7 @@ const schedule_data: EventDataType[] = [
     topic: "Régulation, innovation, compétitivité et inclusion financière: construire un écosystème favorable à la croissance des startups et PME en RDC",
     category: "Premier Panel",
     image: event_thumb2,
-    speakers: [6, 35, 38, 36, 15],
+    speakers: [6, 35, 38, 36, 15, 40],
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [

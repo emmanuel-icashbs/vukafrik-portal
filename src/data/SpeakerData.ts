@@ -3,6 +3,7 @@ import mirelaPortrait from "@/assets/img/vukafrik/speakers/mirela-pekmezi.jpg";
 import emmanuelPortrait from "@/assets/img/vukafrik/speakers/emmanuel-lomami.jpg";
 import jeannettePortrait from "@/assets/img/vukafrik/speakers/jeannette-cilomba.jpg";
 import alinePortrait from "@/assets/img/vukafrik/speakers/aline-kimputu.jpg";
+import joelPortrait from "@/assets/img/vukafrik/speakers/joel-kabuya.jpg";
 import team_1 from "@/assets/img/team/team-5/thumb.png";
 import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
@@ -27,12 +28,29 @@ const speaker_data: SpeakerDataType[] = [
     biography: "Christian KATENDE, président de l’ARPTC, échange avec Docteur Emmanuel LOMAMI KASONGO lors du fireside chat « Le régulateur face à l’innovation ».",
   },
   {
+    id: 14,
+    type: "Individual",
+    image: team_5,
+    name: "Monsieur Pascal TCHELO MAZOMBO",
+    title: "Directeur général — APROCM",
+    biography:
+      "Monsieur Pascal TCHELO MAZOMBO est Directeur général de l’APROCM. Il participe au deuxième panel consacré à l’entrepreneuriat, au financement et à l’industrialisation, ainsi qu’au lancement du Hackathon lors de la première journée de VUK’AFRIK 2026.",
+  },
+  {
     id: 38,
     type: "Individual",
     image: mirelaPortrait,
     name: "Mirela PEKMEZI",
     title: "Directrice générale de FINCA",
     biography: "Mirela possède plus de 25 ans d’expérience dans la croissance organisationnelle, l’inclusion financière et la transformation institutionnelle. Elle a dirigé des institutions et des départements pour améliorer les efficacités grâce à une approche axée sur les données et les risques, l’autonomisation des personnes et la transformation technologique. Elle a impulsé le changement en mettant l’accent sur l’égalité des genres, la protection de l’environnement, l’impact social et une expérience pratique dans la direction, la restructuration et le lancement de nouveaux départements, succursales et produits.",
+  },
+  {
+    id: 40,
+    type: "Individual",
+    image: joelPortrait,
+    name: "Monsieur Joël KABUYA",
+    title: "Directeur général adjoint — Ecobank Congo RDC",
+    biography: "Joël KABUYA est Directeur général adjoint, Directeur de la banque commerciale et membre du Conseil d’administration d’Ecobank Congo RDC. Fort de plus de 19 ans d’expérience dans la finance, il est titulaire d’un MBA en audit et contrôle de la Haute École Francisco Ferrer de Bruxelles et expert-comptable agréé. Il a rejoint Ecobank RDC en 2021 après avoir été Directeur financier à la BCDC. Son expertise couvre la finance d’entreprise, l’audit, la gestion actif-passif et la réglementation bancaire.",
   },
   {
     id: 3,
@@ -129,15 +147,6 @@ const speaker_data: SpeakerDataType[] = [
     title: "FEC",
     biography:
       "Le représentant de la FEC participe au panel sur l’entrepreneuriat, le financement et l’industrialisation à VUK’AFRIK 2026. Il est également associé à la visite des stands par les officiels lors de la deuxième journée de l’événement.",
-  },
-  {
-    id: 14,
-    type: "Individual",
-    image: team_5,
-    name: "Monsieur Pascal TCHELO MAZOMBO",
-    title: "Directeur général — APROCM",
-    biography:
-      "Monsieur Pascal TCHELO MAZOMBO est Directeur général de l’APROCM. Il participe au deuxième panel consacré à l’entrepreneuriat, au financement et à l’industrialisation, ainsi qu’au lancement du Hackathon lors de la première journée de VUK’AFRIK 2026.",
   },
   {
     id: 15,
