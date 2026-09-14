@@ -4,6 +4,7 @@ import emmanuelPortrait from "@/assets/img/vukafrik/speakers/emmanuel-lomami.jpg
 import jeannettePortrait from "@/assets/img/vukafrik/speakers/jeannette-cilomba.jpg";
 import alinePortrait from "@/assets/img/vukafrik/speakers/aline-kimputu.jpg";
 import joelPortrait from "@/assets/img/vukafrik/speakers/joel-kabuya.jpg";
+import malouPortrait from "@/assets/img/vukafrik/speakers/malou-nzuzi.jpeg";
 import team_1 from "@/assets/img/team/team-5/thumb.png";
 import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
@@ -40,7 +41,7 @@ const speaker_data: SpeakerDataType[] = [
     id: 38,
     type: "Individual",
     image: mirelaPortrait,
-    name: "Mirela PEKMEZI",
+    name: "Madame Mirela PEKMEZI",
     title: "Directrice générale de FINCA",
     biography: "Mirela possède plus de 25 ans d’expérience dans la croissance organisationnelle, l’inclusion financière et la transformation institutionnelle. Elle a dirigé des institutions et des départements pour améliorer les efficacités grâce à une approche axée sur les données et les risques, l’autonomisation des personnes et la transformation technologique. Elle a impulsé le changement en mettant l’accent sur l’égalité des genres, la protection de l’environnement, l’impact social et une expérience pratique dans la direction, la restructuration et le lancement de nouveaux départements, succursales et produits.",
   },
@@ -51,6 +52,32 @@ const speaker_data: SpeakerDataType[] = [
     name: "Monsieur Joël KABUYA",
     title: "Directeur général adjoint — Ecobank Congo RDC",
     biography: "Joël KABUYA est Directeur général adjoint, Directeur de la banque commerciale et membre du Conseil d’administration d’Ecobank Congo RDC. Fort de plus de 19 ans d’expérience dans la finance, il est titulaire d’un MBA en audit et contrôle de la Haute École Francisco Ferrer de Bruxelles et expert-comptable agréé. Il a rejoint Ecobank RDC en 2021 après avoir été Directeur financier à la BCDC. Son expertise couvre la finance d’entreprise, l’audit, la gestion actif-passif et la réglementation bancaire.",
+  },
+  {
+    id: 17,
+    type: "Individual",
+    image: jeannettePortrait,
+    name: "Madame Jeannette CILOMBA",
+    title: "Vice-présidente — CCC",
+    biography:
+      "Jeannette CILOMBA participe à VUK’AFRIK 2026 au nom de la CCC dans le cadre d’un fireside chat. Cet échange avec le représentant de la CADECO figure au programme de la première journée, aux côtés des panels et des prises de parole institutionnelles.",
+  },
+  {
+    id: 21,
+    type: "Individual",
+    image: malouPortrait,
+    name: "Madame Malou NZUZI",
+    title: "Directrice générale — Agence CSB",
+    biography:
+        "Malou Nzuzi anime, au nom de l’Agence CSB, un atelier consacré à la structuration des PME pour les rendre finançables. Son intervention aborde l’organisation, la gouvernance et le pilotage de l’entreprise dans le cadre de la deuxième journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 39,
+    type: "Individual",
+    image: alinePortrait,
+    name: "Aline KIMPUTU KABALA",
+    title: "Fondatrice de JUHUDI Consulting · Vice-présidente de la CNFE — FEC",
+    biography: "Aline KIMPUTU KABALA est entrepreneure et experte en communication et marketing, forte de plus de 15 ans d’expérience. Fondatrice de JUHUDI Consulting et présidente de JUHUDI Fondation, elle œuvre pour l’autonomisation des femmes et des jeunes filles. Vice-présidente de la Commission nationale des femmes entrepreneures de la FEC et formatrice certifiée en création et développement d’entreprise, elle accompagne les porteuses de projets et promeut le leadership féminin en RDC.",
   },
   {
     id: 3,
@@ -110,7 +137,7 @@ const speaker_data: SpeakerDataType[] = [
     id: 9,
     type: "Individual",
     image: team_5,
-    name: "Monsieur Sony Ngandu",
+    name: "Monsieur Sony NGANDU",
     title: "Maître de cérémonie",
     biography: "Sony Ngandu anime l’ouverture protocolaire de VUK’AFRIK 2026 en qualité de maître de cérémonie.",
   },
@@ -167,15 +194,6 @@ const speaker_data: SpeakerDataType[] = [
       "Le représentant de l’ARSP participe au panel sur l’entrepreneuriat, le financement et l’industrialisation. Son intervention s’inscrit dans les échanges consacrés aux difficultés rencontrées par les initiatives congolaises pour se développer et prendre une place à l’échelle régionale.",
   },
   {
-    id: 17,
-    type: "Individual",
-    image: jeannettePortrait,
-    name: "Madame Jeannette CILOMBA",
-    title: "Vice-présidente — CCC",
-    biography:
-      "Jeannette CILOMBA participe à VUK’AFRIK 2026 au nom de la CCC dans le cadre d’un fireside chat. Cet échange avec le représentant de la CADECO figure au programme de la première journée, aux côtés des panels et des prises de parole institutionnelles.",
-  },
-  {
     id: 18,
     type: "Individual",
     image: team_5,
@@ -200,15 +218,6 @@ const speaker_data: SpeakerDataType[] = [
     name: "Équipe CCC Consulting",
     title: "CCC Consulting",
     biography: "CCC Consulting présente des solutions de gestion pour les entreprises. Aucune session dédiée n’est annoncée dans le programme actuel.",
-  },
-  {
-    id: 21,
-    type: "Individual",
-    image: team_5,
-    name: "Madame Malou Nzuzi",
-    title: "Directrice générale — Agence CSB",
-    biography:
-        "Malou Nzuzi anime, au nom de l’Agence CSB, un atelier consacré à la structuration des PME pour les rendre finançables. Son intervention aborde l’organisation, la gouvernance et le pilotage de l’entreprise dans le cadre de la deuxième journée de VUK’AFRIK 2026.",
   },
   {
     id: 22,
@@ -314,7 +323,7 @@ const speaker_data: SpeakerDataType[] = [
     id: 34,
     type: "Individual",
     image: ministerPortrait,
-    name: "Daniel Mukoko Samba",
+    name: "Monsieur Daniel MUKOKO SAMBA",
     title: "Vice-Premier Ministre, Ministre de l’Économie nationale",
     biography: "Daniel Mukoko Samba, Vice-Premier Ministre, Ministre de l’Économie nationale, prononce l’allocution institutionnelle de la première journée de VUK’AFRIK 2026.",
   },
@@ -341,14 +350,6 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant — Manitek",
     title: "Manitek",
     biography: "Manitek présente sa solution lors d’une session de produits et services le 25 septembre, de 11:30 à 12:00. Le contenu détaillé reste à préciser.",
-  },
-  {
-    id: 39,
-    type: "Individual",
-    image: alinePortrait,
-    name: "Aline KIMPUTU KABALA",
-    title: "Fondatrice de JUHUDI Consulting · Vice-présidente de la CNFE — FEC",
-    biography: "Aline KIMPUTU KABALA est entrepreneure et experte en communication et marketing, forte de plus de 15 ans d’expérience. Fondatrice de JUHUDI Consulting et présidente de JUHUDI Fondation, elle œuvre pour l’autonomisation des femmes et des jeunes filles. Vice-présidente de la Commission nationale des femmes entrepreneures de la FEC et formatrice certifiée en création et développement d’entreprise, elle accompagne les porteuses de projets et promeut le leadership féminin en RDC.",
   },
 ];
 
