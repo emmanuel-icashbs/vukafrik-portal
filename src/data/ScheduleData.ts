@@ -221,7 +221,7 @@ const schedule_data: EventDataType[] = [
     topic: "Entrepreneuriat, financement et industrialisation : pourquoi les initiatives congolaises peinent encore à devenir des leaders régionaux",
     category: "Deuxième Panel",
     image: event_thumb1,
-    speakers: [12, 16, 13, 14, 15],
+    speakers: [12, 16, 13, 14, 39],
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [

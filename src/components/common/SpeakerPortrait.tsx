@@ -4,7 +4,7 @@ import type { SpeakerDataType } from "@/utils/types";
 import styles from "./SpeakerPortrait.module.css";
 
 export default function SpeakerPortrait({ speaker, size = 220 }: { speaker: SpeakerDataType; size?: number }) {
-  const hasPortrait = speaker.id === 34 || speaker.id === 38;
+  const hasPortrait = [1, 17, 34, 38, 39].includes(speaker.id);
   return (
     <span className={styles.frame} style={{ width: size }}>
       <Image

@@ -1,5 +1,8 @@
 import ministerPortrait from "@/assets/img/vukafrik/speakers/daniel-mukoko-samba.jpg";
 import mirelaPortrait from "@/assets/img/vukafrik/speakers/mirela-pekmezi.jpg";
+import emmanuelPortrait from "@/assets/img/vukafrik/speakers/emmanuel-lomami.jpg";
+import jeannettePortrait from "@/assets/img/vukafrik/speakers/jeannette-cilomba.jpg";
+import alinePortrait from "@/assets/img/vukafrik/speakers/aline-kimputu.jpg";
 import team_1 from "@/assets/img/team/team-5/thumb.png";
 import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
@@ -10,7 +13,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 1,
     type: "Individual",
-    image: team_1,
+    image: emmanuelPortrait,
     name: "Docteur Emmanuel LOMAMI KASONGO",
     title: "Président et fondateur — CCC",
     biography: "Docteur Emmanuel LOMAMI KASONGO est président et fondateur de la Congolese Computer Community (CCC). Il prononce l’allocution d’ouverture, échange avec Christian KATENDE lors du fireside chat et présente la synthèse et les recommandations de la première journée.",
@@ -157,7 +160,7 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 17,
     type: "Individual",
-    image: team_5,
+    image: jeannettePortrait,
     name: "Madame Jeannette CILOMBA",
     title: "Vice-présidente — CCC",
     biography:
@@ -329,6 +332,14 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant — Manitek",
     title: "Manitek",
     biography: "Manitek présente sa solution lors d’une session de produits et services le 25 septembre, de 11:30 à 12:00. Le contenu détaillé reste à préciser.",
+  },
+  {
+    id: 39,
+    type: "Individual",
+    image: alinePortrait,
+    name: "Aline KIMPUTU KABALA",
+    title: "Fondatrice de JUHUDI Consulting · Vice-présidente de la CNFE — FEC",
+    biography: "Aline KIMPUTU KABALA est entrepreneure et experte en communication et marketing, forte de plus de 15 ans d’expérience. Fondatrice de JUHUDI Consulting et présidente de JUHUDI Fondation, elle œuvre pour l’autonomisation des femmes et des jeunes filles. Vice-présidente de la Commission nationale des femmes entrepreneures de la FEC et formatrice certifiée en création et développement d’entreprise, elle accompagne les porteuses de projets et promeut le leadership féminin en RDC.",
   },
 ];
 
