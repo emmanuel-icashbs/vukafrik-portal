@@ -323,7 +323,7 @@ const speaker_data: SpeakerDataType[] = [
     id: 34,
     type: "Individual",
     image: ministerPortrait,
-    name: "Monsieur Daniel MUKOKO SAMBA",
+    name: "Son Excellence Monsieur Daniel MUKOKO SAMBA",
     title: "Vice-Premier Ministre, Ministre de l’Économie nationale",
     biography: "Daniel Mukoko Samba, Vice-Premier Ministre, Ministre de l’Économie nationale, prononce l’allocution institutionnelle de la première journée de VUK’AFRIK 2026.",
   },
