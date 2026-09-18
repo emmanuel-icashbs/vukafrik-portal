@@ -20,7 +20,9 @@ const TeamDetailsArea = ({ speaker }: { speaker: SpeakerDataType }) => {
                 {speaker.title}
               </span>
               <span className="td-schedule-team-border mb-15"></span>
-              <p>{speaker.biography}</p>
+              {speaker.biography?.split(/\n\n+/).map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
 
               <div className="td-team-details-info mr-170">
                 <ul>

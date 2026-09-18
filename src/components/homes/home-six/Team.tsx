@@ -2,6 +2,7 @@
 import Link from "next/link";
 import SpeakerPortrait from "@/components/common/SpeakerPortrait";
 import speaker_data, {
+  additionalConfirmedSpeakerIds,
   description,
   sub_title,
   title,
@@ -11,7 +12,7 @@ import schedule from "@/data/ScheduleData";
 import { paths_holder } from "@/data/MenuData";
 
 const TeamHomeSix = ({ slice_number, ministerFirst = false }: { slice_number?: number; ministerFirst?: boolean }) => {
-  const currentSpeakerIds = new Set(schedule.flatMap((session) => session.speakers));
+  const currentSpeakerIds = new Set([...schedule.flatMap((session) => session.speakers), ...additionalConfirmedSpeakerIds]);
   const individualSpeakers = speaker_data.filter(
     (speaker) => speaker.type === "Individual" && currentSpeakerIds.has(speaker.id),
   );

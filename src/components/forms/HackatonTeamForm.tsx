@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed, registrationClosedMessage } from "@/data/RegistrationStatus";
 import PhoneInput from "../ui/PhoneInput";
 import { HackathonTeamFormType } from "@/utils/types";
 import FormMessageZone from "../ui/FormMessageZone";
@@ -14,7 +15,7 @@ const INIT_HACKATON_TEAM_DATA: HackathonTeamFormType = {
   accept_review_and_contact: false,
 };
 
-const HackatonTeamForm = () => {
+const OpenHackatonTeamForm = () => {
   const {
     data: hackatonTeamForm,
     handleChange,
@@ -108,5 +109,9 @@ const HackatonTeamForm = () => {
     </form>
   );
 };
+
+const HackatonTeamForm = () => registrationClosed
+  ? <p role="status" className="text-center py-4">{registrationClosedMessage}</p>
+  : <OpenHackatonTeamForm />;
 
 export default HackatonTeamForm;

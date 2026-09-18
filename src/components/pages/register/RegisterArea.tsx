@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import RegisterForm from "@/components/forms/RegisterForm";
 import { form_area } from "@/data/RegisterData";
 import { Suspense } from "react";
@@ -10,8 +11,8 @@ const RegisterArea = () => {
           <div className="col-md-10">
             <div className="tg-login-wrapper">
               <div className="tg-login-top text-center mb-30">
-                <h2>{form_area.title}</h2>
-                <p>{form_area.sub_title}</p>
+                <h2>{registrationClosed ? "Inscriptions closes" : form_area.title}</h2>
+                {!registrationClosed && <p>{form_area.sub_title}</p>}
               </div>
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">

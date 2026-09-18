@@ -1,3 +1,9 @@
+import juniorPortrait from "@/assets/img/vukafrik/speakers/junior-kalonji-nsenga.jpg";
+import pascalPortrait from "@/assets/img/vukafrik/speakers/pascal-tchelo-mazombo.jpeg";
+import alainPortrait from "@/assets/img/vukafrik/speakers/alain-betu.jpg";
+import gabrielPortrait from "@/assets/img/vukafrik/speakers/gabriel-lomemgo.jpg";
+import sarahPortrait from "@/assets/img/vukafrik/speakers/sarah-tsongo.jpg";
+import paternePortrait from "@/assets/img/vukafrik/speakers/paterne-binene-a-kadiat.jpg";
 import ministerPortrait from "@/assets/img/vukafrik/speakers/daniel-mukoko-samba.jpg";
 import mirelaPortrait from "@/assets/img/vukafrik/speakers/mirela-pekmezi.jpg";
 import emmanuelPortrait from "@/assets/img/vukafrik/speakers/emmanuel-lomami.jpg";
@@ -31,11 +37,19 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 14,
     type: "Individual",
-    image: team_5,
+    image: pascalPortrait,
     name: "Monsieur Pascal TCHELO MAZOMBO",
     title: "Directeur général — APROCM",
     biography:
       "Monsieur Pascal TCHELO MAZOMBO est Directeur général de l’APROCM. Il participe au deuxième panel consacré à l’entrepreneuriat, au financement et à l’industrialisation, ainsi qu’au lancement du Hackathon lors de la première journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 42,
+    type: "Individual",
+    image: paternePortrait,
+    name: "Monsieur Paterne BINENE-A-KADIAT",
+    title: "Directeur général — FDSU",
+    biography: "Expert en infrastructures numériques, gestion de projets et gouvernance d’entreprise\n\nNommé par l’Ordonnance présidentielle n° 25/236 du 19 juillet 2025 à la tête du Fonds de Développement du Service Universel, Binene-A-Kadiat Paterne est ingénieur en technologies et réseaux informatiques, formé à l’ESIS Salama Lubumbashi. Il détient deux MBA en gestion d’entreprise et gestion des affaires à l’IAE Paris-Sorbonne, ainsi qu’un Master II en économie et gestion. Cette double compétence lui a permis d’exercer comme conseiller technique au ministère des Postes, Télécommunications et Numériques, chargé de missions au FDSU et administrateur chez Benya Telecom DRC.\n\nDepuis 2019, il est point focal du PIDA au sein de l’Union africaine et du NEPAD, où il contribue au pilotage de projets d’infrastructures transfrontalières, aux politiques numériques et aux travaux sur la cybersécurité et l’harmonisation normative.\n\nSon expérience chez Tiger Resources, comme directeur informatique et directeur PMO, lui a permis de renforcer son expertise en performance, rentabilité et modernisation des infrastructures IT. Il a également dirigé l’élaboration du Plan Directeur des Infrastructures Numériques de la RDC, fondement de la stratégie nationale de connectivité.\n\nAujourd’hui Directeur Général du FDSU, Paterne Binene-A-Kadiat œuvre pour une transformation numérique axée sur l’impact, la performance, l’innovation et des solutions économiquement viables adaptées aux réalités du terrain.",
   },
   {
     id: 38,
@@ -60,7 +74,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Madame Jeannette CILOMBA",
     title: "Vice-présidente — CCC",
     biography:
-      "Jeannette CILOMBA participe à VUK’AFRIK 2026 au nom de la CCC dans le cadre d’un fireside chat. Cet échange avec Paterne Binene A Kadiat, Directeur général du FDSU, figure au programme de la première journée, aux côtés des panels et des prises de parole institutionnelles.",
+      "Jeannette CILOMBA participe à VUK’AFRIK 2026 au nom de la CCC dans le cadre d’un fireside chat. Cet échange avec Paterne Binene-A-Kadiat, Directeur général du FDSU, figure au programme de la première journée, aux côtés des panels et des prises de parole institutionnelles.",
   },
   {
     id: 21,
@@ -274,18 +288,18 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 28,
     type: "Individual",
-    image: team_1,
-    name: "Représentant - Neotex",
-    title: "Neotex",
-    biography: "Le représentant de Neotex intervient à VUK’AFRIK 2026 dans le cadre d’un atelier consacré à l’intelligence artificielle au service des entreprises congolaises. Son intervention aborde la stratégie, les cas d’usage et la perception visuelle intelligente.",
+    image: sarahPortrait,
+    name: "Madame Sarah TSONGO",
+    title: "Cloud & AI Engineer — Neotex.ai",
+    biography: "Ingénieur Cloud & Intelligence Artificielle chez Neotex, titulaire d’un Master en Génie Informatique, je participe à la conception, au développement et à la mise en production de solutions IA innovantes. Spécialisé en vision par ordinateur, j’interviens sur l’ensemble du cycle de vie des projets afin de transformer les données en solutions performantes répondant aux besoins opérationnels des entreprises.",
   },
   {
     id: 29,
     type: "Individual",
     image: team_1,
-    name: "Représentant - Pepsi",
-    title: "Pepsi",
-    biography: "Le représentant de Pepsi anime un atelier sur les liens entre la chaîne de distribution et les opportunités entrepreneuriales. Son intervention aborde la manière dont l’industrie agroalimentaire fait vivre les PME locales, dans le cadre de VUK’AFRIK 2026.",
+    name: "Monsieur Julien KAMAL",
+    title: "Directeur de ventes — Pepsi",
+    biography: "Monsieur Julien KAMAL est Directeur de ventes chez Pepsi. Il anime un atelier sur les liens entre la chaîne de distribution et les opportunités entrepreneuriales, ainsi que sur le rôle de l’industrie agroalimentaire pour les PME locales, lors de VUK’AFRIK 2026.",
   },
   {
     id: 30,
@@ -336,14 +350,6 @@ const speaker_data: SpeakerDataType[] = [
     biography: "La Banque Centrale du Congo participe au panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière.",
   },
   {
-    id: 36,
-    type: "Individual",
-    image: team_5,
-    name: "Représentant — pawaPay",
-    title: "pawaPay",
-    biography: "pawaPay présente ses solutions de paiement mobile money pour les entreprises lors de la deuxième journée.",
-  },
-  {
     id: 37,
     type: "Individual",
     image: team_5,
@@ -354,18 +360,10 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 41,
     type: "Individual",
-    image: team_1,
+    image: alainPortrait,
     name: "Monsieur Alain BETU",
     title: "Expert en politiques publiques",
-    biography: "Alain Betu est expert en politiques publiques. Il participe au premier panel de VUK’AFRIK 2026 consacré à la régulation, à l’innovation, à la compétitivité et à l’inclusion financière pour les startups et PME en RDC.",
-  },
-  {
-    id: 42,
-    type: "Individual",
-    image: team_1,
-    name: "Monsieur Paterne BINENE A KADIAT",
-    title: "Directeur général — FDSU",
-    biography: "Paterne Binene A Kadiat est Directeur général du FDSU. Il échange avec Jeannette Cilomba lors du fireside chat « Connecter les territoires : l’accès universel comme condition de l’entrepreneuriat congolais ».",
+    biography: "Alain Betu est un professionnel des télécommunications ayant près de vingt-et-un ans d'expérience dans la gestion des affaires règlementaires et des politiques publiques. Il a démontré son expertise dans la conformité règlementaires et en plaidoyer auprès des décideurs politiques en Afrique subsaharienne, visant à favoriser un environnement propice à l'innovation et l'investissement dans le secteur des télécommunications.\n\nDans son parcours professionnel, Alain Betu a récemment exercé en tant que gestionnaire des politiques publiques pour l’Afrique centrale à la GSMA, où il a mené des programmes de plaidoyer et contribué à d'importantes réformes réglementaires, incluant la libéralisation des réseaux de fibre optique et l'introduction de régimes de licence technologiquement neutre en République Démocratique du Congo, à Madagascar, au Tchad et aux Comores. Son parcours à Vodacom Congo en tant que responsable des affaires réglementaires lui a permis de jouer un rôle clé dans l'acquisition de licences, permettant le lancement des premiers réseaux 3G et 4G en République Démocratique du Congo (RDC). Il a également négocié avec succès des politiques qui ont permis de réduire considérablement les coûts opérationnels et d’améliorer la prestation de services.\n\nAdministrateur du Fonds de Développement du Service Universel (FDSU) depuis août 2025, il apporte son expertise à la promotion de l'accès universel aux services des télécommunications et numériques en RDC.\n\nTitulaire d’un diplôme en droit des affaires et des sociétés et d’une licence en télécommunications, Alain Betu a également participé à de nombreux programmes de formation et conférences, améliorant ses connaissances et compétences dans les relations gouvernementales, les politiques de télécommunications et les cadres réglementaires. Son leadership et sa maîtrise du secteur en font un atout pour tout projet stratégique.",
   },
   {
     id: 43,
@@ -378,12 +376,23 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 44,
     type: "Individual",
-    image: team_1,
-    name: "Coach Gabriel LOMENGO",
+    image: gabrielPortrait,
+    name: "Coah Gabriel LOMEMGO",
     title: "Coach",
-    biography: "Coach Gabriel Lomengo anime la master class « L’entrepreneur avant l’entreprise : posture, discipline et accompagnement pour durer » lors de la troisième journée de VUK’AFRIK 2026.",
+    biography: "Coah Gabriel LOMEMGO anime la master class « L’entrepreneur avant l’entreprise : posture, discipline et accompagnement pour durer » lors de la troisième journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 45,
+    type: "Individual",
+    image: juniorPortrait,
+    name: "Monsieur Junior KALONJI NSENGA",
+    title: "General Manager — NextGen Africa Consulting RDC",
+    biography: "Junior Kalonji Nsenga est General Manager de NextGen Africa Consulting RDC. Il présente des solutions CRM pour les entrepreneurs et les PME lors de la troisième journée de VUK’AFRIK 2026.",
   },
 ];
+
+// Confirmed speakers whose session assignment has not yet been supplied.
+export const additionalConfirmedSpeakerIds: number[] = [];
 
 const sub_title = "DES VOIX QUI FAÇONNENT L'AVENIR";
 const title = "Intervenants à la conférence";

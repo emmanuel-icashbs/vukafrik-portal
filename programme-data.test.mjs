@@ -20,8 +20,8 @@ const publicSchedule = data("./src/data/ScheduleData.ts");
 const speakers = data("./src/data/SpeakerData.ts");
 const byId = id => schedule.find(session => session.id === id);
 assert.equal(schedule.length, 50, "Detailed timetable includes the restored ministry workshop");
-assert.equal(publicSchedule.length, 39);
-assert.ok(publicSchedule.every(s => ![1, 44, 45, 48, 49, 51, 15, 24, 38, 34, 54].includes(s.id)), "Operational entries are excluded from public pages");
+assert.equal(publicSchedule.length, 40);
+assert.ok(publicSchedule.every(s => ![1, 44, 45, 48, 49, 51, 15, 24, 38, 34].includes(s.id)), "Operational entries are excluded from public pages");
 assert.equal(new Set(schedule.map(s => s.id)).size, schedule.length);
 assert.equal(new Set(speakers.map(s => s.id)).size, speakers.length);
 for (const day of ["01", "02", "03"]) {
@@ -63,7 +63,7 @@ assert.equal(byId(21).start_time, "11:40");
 assert.equal(byId(28).end_time, "16:50");
 assert.deepEqual(byId(7).speakers, [1, 2]);
 assert.deepEqual(byId(10).speakers, [42, 17]);
-assert.deepEqual(byId(22).speakers, [36]);
+assert.deepEqual(byId(22).speakers, [], "pawaPay presentation has no named representative");
 assert.deepEqual(byId(32).speakers, [43]);
 const day3 = schedule.filter(s => s.date.startsWith("Jour 03"));
 assert.deepEqual(day3.map(s => `${s.start_time}–${s.end_time}`), [
@@ -86,3 +86,8 @@ assert.match(byId(55).category, /confirmer/);
 assert.deepEqual(byId(56).speakers, [44]);
 for (const id of [23, 33, 36, 40, 41, 43]) assert.equal(byId(id), undefined, `Removed session ${id}`);
 console.log("Passed: version 9 timetable, parallel service, public visibility, rooms and speaker assignments.");
+
+assert.deepEqual(byId(57).speakers, [45]);
+assert.ok(publicSchedule.some(s => s.id === 57));
+assert.equal(byId(57).start_time, "11:30");
+assert.equal(byId(57).end_time, "11:50");

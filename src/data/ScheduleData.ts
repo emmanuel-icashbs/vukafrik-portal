@@ -238,7 +238,7 @@ const schedule_data: EventDataType[] = [
     speakers: [42, 17],
     venue: "Salon Congo",
     date: schedule_days[0],
-    descriptive_paragraphs: ["Paterne Binene A Kadiat, Directeur général du FDSU, échange avec Jeannette Cilomba, Vice-présidente de la CCC, sur l’accès universel comme condition de l’entrepreneuriat congolais."],
+    descriptive_paragraphs: ["Paterne Binene-A-Kadiat, Directeur général du FDSU, échange avec Jeannette Cilomba, Vice-présidente de la CCC, sur l’accès universel comme condition de l’entrepreneuriat congolais."],
   },
   {
     id: 11,
@@ -401,7 +401,7 @@ const schedule_data: EventDataType[] = [
     topic: "Présentation de produits et services — pawaPay",
     category: "Présentation",
     image: event_thumb2,
-    speakers: [36],
+    speakers: [],
     venue: "Chapiteau",
     date: schedule_days[1],
     descriptive_paragraphs: ["pawaPay présente ses solutions de paiement mobile money pour les entreprises."],
@@ -504,14 +504,14 @@ const schedule_data: EventDataType[] = [
     id: 29,
     start_time: "10:00",
     end_time: "10:35",
-    topic: "L’intelligence artificielle au service des entreprises congolaises : stratégie, cas d’usage et perception visuelle intelligente",
+    topic: "Intelligence Artificielle : transformer les problématiques métier en solutions concrètes.",
     category: "Atelier pratique — Neotex",
     image: event_thumb2,
     speakers: [28],
     venue: "Chapiteau",
     date: schedule_days[2],
     descriptive_paragraphs: [
-      "Neotex présente la stratégie, les cas d’usage et la perception visuelle intelligente au service des entreprises congolaises.",
+      "Madame Sarah Tsongo, Cloud & AI Engineer chez Neotex.ai, anime l’atelier « Intelligence Artificielle : transformer les problématiques métier en solutions concrètes. »",
     ],
   },
   {
@@ -543,14 +543,14 @@ const schedule_data: EventDataType[] = [
     ],
   },
   {
-    id: 54,
+    id: 57,
     start_time: "11:30",
     end_time: "11:50",
-    topic: "Pause",
-    category: "Pause",
-    speakers: [],
+    topic: "Solutions CRM pour les entrepreneurs et les PME",
+    category: "Présentation de produits — NextGen Africa Consulting RDC",
+    speakers: [45],
     venue: "Chapiteau",
-    descriptive_paragraphs: ["Pause avant l’atelier de Manitech Congo."],
+    descriptive_paragraphs: ["Junior Kalonji Nsenga, General Manager de NextGen Africa Consulting RDC, présente des solutions CRM pour les entrepreneurs et les PME, dédiées à la gestion de la relation client."],
     image: event_thumb2,
     date: schedule_days[2],
   },
@@ -611,10 +611,10 @@ const schedule_data: EventDataType[] = [
     start_time: "15:00",
     end_time: "15:35",
     topic: "L’entrepreneur avant l’entreprise : posture, discipline et accompagnement pour durer",
-    category: "Master class — Coach Gabriel Lomengo",
+    category: "Master class — Coah Gabriel LOMEMGO",
     speakers: [44],
     venue: "Chapiteau",
-    descriptive_paragraphs: ["Coach Gabriel Lomengo anime une master class consacrée à la posture, à la discipline et à l’accompagnement de l’entrepreneur pour durer."],
+    descriptive_paragraphs: ["Coah Gabriel LOMEMGO anime une master class consacrée à la posture, à la discipline et à l’accompagnement de l’entrepreneur pour durer."],
     image: event_thumb2,
     date: schedule_days[2],
   },
@@ -660,7 +660,7 @@ const schedule_data: EventDataType[] = [
   },
 ];
 // Keep operational timings separately; public pages show participant-facing sessions only.
-const operationalSessionIds = new Set([1, 44, 45, 48, 49, 51, 15, 24, 38, 34, 54]);
+const operationalSessionIds = new Set([1, 44, 45, 48, 49, 51, 15, 24, 38, 34]);
 const public_schedule = schedule_data.filter((session) => !operationalSessionIds.has(session.id));
 
 const title: string = "Programme détaillé";

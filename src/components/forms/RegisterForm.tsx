@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed, registrationClosedMessage } from "@/data/RegistrationStatus";
 import CountrySelect from "../ui/CountrySelect";
 import { DRC_COUNTRY } from "@/utils/contactFields";
 import PhoneInput from "../ui/PhoneInput";
@@ -26,7 +27,7 @@ const INIT_ATTENDEE_DATA: AttendeeFormType = {
   participation_days: "",
   accept_review_and_contact: false,
 };
-const RegisterForm = () => {
+const OpenRegisterForm = () => {
   const searchParams = useSearchParams();
   const [event_day] = useState<string | null>(searchParams.get("event_day"));
   const {
@@ -212,5 +213,9 @@ const RegisterForm = () => {
     </form>
   );
 };
+
+const RegisterForm = () => registrationClosed
+  ? <p role="status" className="text-center py-4">{registrationClosedMessage}</p>
+  : <OpenRegisterForm />;
 
 export default RegisterForm;

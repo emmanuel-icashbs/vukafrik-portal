@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import FooterOne from "@/layouts/footers/FooterOne";
 import Wrapper from "@/layouts/Wrapper";
@@ -18,8 +19,8 @@ export default function HackathonPage() {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">
-                <h2 id="hackathon-heading" className="text-white mb-20">Inscrire mon équipe</h2>
-                <p className="text-white mb-30">Inscrivez votre équipe au Hackathon VUK’AFRIK 2026, du 23 au 25 septembre au Pullman Hôtel, à Kinshasa. Renseignez le nom de votre équipe et les coordonnées de son responsable pour permettre à l’organisation de vous contacter.</p>
+                <h2 id="hackathon-heading" className="text-white mb-20">{registrationClosed ? "Inscriptions au Hackathon closes" : "Inscrire mon équipe"}</h2>
+                {!registrationClosed && <p className="text-white mb-30">Inscrivez votre équipe au Hackathon VUK’AFRIK 2026, du 23 au 25 septembre au Pullman Hôtel, à Kinshasa. Renseignez le nom de votre équipe et les coordonnées de son responsable pour permettre à l’organisation de vous contacter.</p>}
                 <HackatonTeamForm />
               </div>
             </div>
