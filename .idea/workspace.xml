@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="fix faq" />
+    <list default="true" id="d85cf118-a7fa-4e9f-8fd4-c5f1fee95cd7" name="Changes" comment="son excellence">
+      <change afterPath="$PROJECT_DIR$/src/assets/img/vukafrik/speakers/emmanuel-lomami-kasongo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +27,10 @@
     &quot;url&quot;: &quot;git@github.com:emmanuel-icashbs/vukafrik-portal.git&quot;,
     &quot;accountId&quot;: &quot;6892ef1c-5928-43ac-8230-f1ed0da11af6&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -78,6 +85,11 @@
       <workItem from="1788548759315" duration="4619000" />
       <workItem from="1788599052305" duration="6374000" />
       <workItem from="1788721203771" duration="2342000" />
+      <workItem from="1788761089112" duration="2740000" />
+      <workItem from="1788868272780" duration="4582000" />
+      <workItem from="1788954501287" duration="4445000" />
+      <workItem from="1789038554408" duration="3118000" />
+      <workItem from="1789566300473" duration="1760000" />
     </task>
     <task id="LOCAL-00002" summary="api key fix">
       <option name="closed" value="true" />
@@ -175,11 +187,86 @@
       <option name="project" value="LOCAL" />
       <updated>1788725036347</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix meetadata step 1">
+      <option name="closed" value="true" />
+      <created>1788762136830</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1788762136830</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix UI">
+      <option name="closed" value="true" />
+      <created>1788868371118</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1788868371118</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix UI">
+      <option name="closed" value="true" />
+      <created>1788878090108</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1788878090108</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix URL for hackathon form">
+      <option name="closed" value="true" />
+      <created>1788902160758</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1788902160759</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix program presentation">
+      <option name="closed" value="true" />
+      <created>1788960268745</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1788960268745</updated>
+    </task>
+    <task id="LOCAL-00019" summary="uploadd picture">
+      <option name="closed" value="true" />
+      <created>1788965073127</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1788965073127</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix text and removed first bank">
+      <option name="closed" value="true" />
+      <created>1789312977651</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1789312977651</updated>
+    </task>
+    <task id="LOCAL-00021" summary="son excellence">
+      <option name="closed" value="true" />
+      <created>1789566538144</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1789566538144</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add ignore" />
@@ -192,6 +279,13 @@
     <MESSAGE value="fix for fireside chat" />
     <MESSAGE value="fix homepage pictures" />
     <MESSAGE value="fix faq" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix faq" />
+    <MESSAGE value="fix meetadata step 1" />
+    <MESSAGE value="fix UI" />
+    <MESSAGE value="fix URL for hackathon form" />
+    <MESSAGE value="fix program presentation" />
+    <MESSAGE value="uploadd picture" />
+    <MESSAGE value="fix text and removed first bank" />
+    <MESSAGE value="son excellence" />
+    <option name="LAST_COMMIT_MESSAGE" value="son excellence" />
   </component>
 </project>

@@ -1,3 +1,29 @@
+# Programme version 9 — 18 September 2026
+
+Current source: `public/documents/VUKAFRIK_2026_Programme_Detaille_9.pdf`.
+Version 9 supersedes the historical notes below. The organiser confirmed that
+Day 2 has no main-stage session at 10:40–11:20, Emmanuel remains on the stand
+visit, and Day 3 remains in Chapiteau.
+
+- Panel 1: ARPTC, BCC, Mirela Pekmezi, Joël Kabuya and Alain Betu.
+- Fireside chat 2: Paterne Binene A Kadiat (FDSU) and Jeannette Cilomba.
+- Day 2: continuous ministry formalisation service 10:40–16:00, explicitly
+  parallel to the main programme; CCC moves to 12:40–13:20; CSB is removed.
+- Day 3: Manitech Congo / Sivi Malukisa, ecosystem panel (composition pending),
+  and Coach Gabriel Lomengo replace the former sessions. ENA, APROCEC, ANADEC
+  and closing networking are removed. Closing ends at 17:30.
+- New profiles use only roles and participation supplied by the programme,
+  with standard placeholder portraits. Existing portraits are preserved.
+- Continuing session IDs remain stable; new sessions use 53–56, new speakers
+  use 41–44. Historical speaker URLs remain available.
+- First keynote and Day 2 unnamed presentation remain unconfirmed.
+- Version 9 is available through the programme download link.
+
+Run `node programme-data.test.mjs` to validate version 9, including the intentional
+parallel service and the reserved main-stage gap.
+
+## Historical notes (superseded where different above)
+
 # Programme update — September 2026
 
 The timetable follows `VUKAFRIK_2026_Programme_Detaille_5.pdf` (included in

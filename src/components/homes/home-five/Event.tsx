@@ -39,6 +39,9 @@ const Event = () => {
               </span>
               <h2 className="td-section-title mb-10">{title}</h2>
               <p className="td-section-text">{description}</p>
+              <a href="/documents/VUKAFRIK_2026_Programme_Detaille_9.pdf" download>
+                Télécharger le programme détaillé (PDF)
+              </a>
             </div>
             <div
               className="nav td-schedule-4-tab-btn justify-content-center mb-30  wow fadeInUp"

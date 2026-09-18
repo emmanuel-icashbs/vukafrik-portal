@@ -60,7 +60,7 @@ const speaker_data: SpeakerDataType[] = [
     name: "Madame Jeannette CILOMBA",
     title: "Vice-présidente — CCC",
     biography:
-      "Jeannette CILOMBA participe à VUK’AFRIK 2026 au nom de la CCC dans le cadre d’un fireside chat. Cet échange avec le représentant de la CADECO figure au programme de la première journée, aux côtés des panels et des prises de parole institutionnelles.",
+      "Jeannette CILOMBA participe à VUK’AFRIK 2026 au nom de la CCC dans le cadre d’un fireside chat. Cet échange avec Paterne Binene A Kadiat, Directeur général du FDSU, figure au programme de la première journée, aux côtés des panels et des prises de parole institutionnelles.",
   },
   {
     id: 21,
@@ -341,7 +341,7 @@ const speaker_data: SpeakerDataType[] = [
     image: team_5,
     name: "Représentant — pawaPay",
     title: "pawaPay",
-    biography: "pawaPay participe au premier panel et présente ses solutions de paiement mobile money pour les entreprises lors de la deuxième journée.",
+    biography: "pawaPay présente ses solutions de paiement mobile money pour les entreprises lors de la deuxième journée.",
   },
   {
     id: 37,
@@ -350,6 +350,38 @@ const speaker_data: SpeakerDataType[] = [
     name: "Représentant — Manitek",
     title: "Manitek",
     biography: "Manitek présente sa solution lors d’une session de produits et services le 25 septembre, de 11:30 à 12:00. Le contenu détaillé reste à préciser.",
+  },
+  {
+    id: 41,
+    type: "Individual",
+    image: team_1,
+    name: "Monsieur Alain BETU",
+    title: "Expert en politiques publiques",
+    biography: "Alain Betu est expert en politiques publiques. Il participe au premier panel de VUK’AFRIK 2026 consacré à la régulation, à l’innovation, à la compétitivité et à l’inclusion financière pour les startups et PME en RDC.",
+  },
+  {
+    id: 42,
+    type: "Individual",
+    image: team_1,
+    name: "Monsieur Paterne BINENE A KADIAT",
+    title: "Directeur général — FDSU",
+    biography: "Paterne Binene A Kadiat est Directeur général du FDSU. Il échange avec Jeannette Cilomba lors du fireside chat « Connecter les territoires : l’accès universel comme condition de l’entrepreneuriat congolais ».",
+  },
+  {
+    id: 43,
+    type: "Individual",
+    image: team_1,
+    name: "Madame Sivi MALUKISA",
+    title: "Fondatrice et Directrice générale — Manitech Congo",
+    biography: "Sivi Malukisa est Fondatrice et Directrice générale de Manitech Congo. Elle anime l’atelier « De l’atelier à l’usine : industrialiser une PME congolaise à partir des produits du terroir » lors de la troisième journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 44,
+    type: "Individual",
+    image: team_1,
+    name: "Coach Gabriel LOMENGO",
+    title: "Coach",
+    biography: "Coach Gabriel Lomengo anime la master class « L’entrepreneur avant l’entreprise : posture, discipline et accompagnement pour durer » lors de la troisième journée de VUK’AFRIK 2026.",
   },
 ];
 
