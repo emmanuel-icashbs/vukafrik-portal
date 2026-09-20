@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1136.0",
     "@reduxjs/toolkit": "^2.11.1",
     "bootstrap": "^5.3.8",
     "jarallax": "^2.2.1",

@@ -1,0 +1,20 @@
+.page { min-height: 100svh; display: grid; place-items: center; padding: 40px 18px; background: #f3f5f0; color: #182c22; }
+.card { width: 100%; max-width: 680px; padding: clamp(24px, 6vw, 56px); background: white; border-radius: 24px; border-top: 6px solid #176540; box-shadow: 0 16px 60px #193d2010; }
+.brand { display: inline-block; color: #176540; font-size: 25px; font-weight: 800; margin-bottom: 32px; }
+.brand span { color: #8a5a10; }
+.eyebrow { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+.card h1 { font-size: clamp(26px, 5vw, 38px); line-height: 1.25; margin-bottom: 20px; }
+.card p { line-height: 1.8; color: #506057; }
+.actions { display: grid; gap: 12px; margin: 28px 0; }
+.primary, .secondary { display: block; padding: 15px 20px; border-radius: 10px; text-align: center; font-weight: 600; line-height: 1.5; }
+.primary { background: #176540; color: white; }
+.primary:hover { background: #104c30; color: white; }
+.secondary { background: #f0f5f1; color: #176540; }
+.secondary:hover { background: #e1eee5; color: #104c30; }
+.primary:focus-visible, .secondary:focus-visible, .brand:focus-visible { outline: 3px solid #b77d20; outline-offset: 4px; }
+.card .footnote { margin: 24px 0 0; font-size: 12px; }
+.counts { list-style: none; padding: 0; margin: 28px 0 20px; }
+.counts li { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #e5ece6; }
+.counts small { display: block; color: #506057; margin-top: 5px; }
+.counts strong { color: #176540; }
+.card .total { font-weight: 700; color: #182c22; font-size: 21px; margin-bottom: 28px; }
