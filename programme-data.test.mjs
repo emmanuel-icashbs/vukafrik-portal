@@ -20,8 +20,8 @@ const publicSchedule = data("./src/data/ScheduleData.ts");
 const speakers = data("./src/data/SpeakerData.ts");
 const byId = id => schedule.find(session => session.id === id);
 assert.equal(schedule.length, 50, "Detailed timetable includes the restored ministry workshop");
-assert.equal(publicSchedule.length, 40);
-assert.ok(publicSchedule.every(s => ![1, 44, 45, 48, 49, 51, 15, 24, 38, 34].includes(s.id)), "Operational entries are excluded from public pages");
+assert.equal(publicSchedule.length, 39);
+assert.ok(publicSchedule.every(s => ![1, 44, 45, 48, 49, 51, 15, 24, 38, 34, 58].includes(s.id)), "Operational entries are excluded from public pages");
 assert.equal(new Set(schedule.map(s => s.id)).size, schedule.length);
 assert.equal(new Set(speakers.map(s => s.id)).size, speakers.length);
 for (const day of ["01", "02", "03"]) {
@@ -39,8 +39,9 @@ for (const day of ["01", "02", "03"]) {
 }
 assert.deepEqual(byId(4).speakers, [34], "Minister's address does not replace generic government sessions");
 assert.deepEqual(byId(13).speakers, [10]);
-assert.deepEqual(byId(5).speakers, []);
-assert.match(byId(5).topic, /À confirmer/);
+assert.deepEqual(byId(5).speakers, [46]);
+assert.equal(byId(5).topic, "Les conditions de la croissance des entreprises congolaises");
+assert.equal(speakers.find(s => s.id === 46).name, "Boni MAYA");
 assert.deepEqual(byId(8).speakers, [7]);
 assert.deepEqual(byId(6).speakers, [6, 35, 38, 40, 41]);
 assert.deepEqual(byId(9).speakers, [12, 16, 13, 14, 39]);
@@ -63,7 +64,7 @@ assert.equal(byId(21).start_time, "11:40");
 assert.equal(byId(28).end_time, "16:50");
 assert.deepEqual(byId(7).speakers, [1, 2]);
 assert.deepEqual(byId(10).speakers, [42, 17]);
-assert.deepEqual(byId(22).speakers, [], "pawaPay presentation has no named representative");
+assert.equal(byId(22), undefined, "Superseded pawaPay session is removed");
 assert.deepEqual(byId(32).speakers, [43]);
 const day3 = schedule.filter(s => s.date.startsWith("Jour 03"));
 assert.deepEqual(day3.map(s => `${s.start_time}–${s.end_time}`), [
@@ -89,5 +90,19 @@ console.log("Passed: version 9 timetable, parallel service, public visibility, r
 
 assert.deepEqual(byId(57).speakers, [45]);
 assert.ok(publicSchedule.some(s => s.id === 57));
-assert.equal(byId(57).start_time, "11:30");
-assert.equal(byId(57).end_time, "11:50");
+assert.equal(byId(57).start_time, "12:20");
+assert.equal(byId(57).end_time, "12:40");
+
+assert.match(byId(57).date, /^Jour 02/);
+assert.match(byId(57).topic, /Solutions de gestion/);
+assert.match(byId(26).category, /CCC – Congo Innovation Group/);
+assert.match(byId(26).topic, /entrepreneur invisible/);
+assert.equal(byId(58).topic, "Pause");
+assert.deepEqual(byId(58).speakers, []);
+assert.equal(byId(58).start_time, "11:30");
+assert.equal(byId(58).end_time, "11:50");
+assert.equal(byId(10).topic, "La connectivité universelle : une opportunité pour la jeunesse");
+assert.match(byId(29).topic, /perception visuelle intelligente/);
+assert.equal(speakers.find(s => s.id === 44).name, "Coach Gabriel LOMENGO");
+assert.match(speakers.find(s => s.id === 45).biography, /deuxième journée/);
+console.log("Passed: final PDF keynote, presentations, workshop titles and Day 3 break.");

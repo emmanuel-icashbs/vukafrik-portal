@@ -1,3 +1,21 @@
+# Final programme — 20 September 2026
+
+Source: the organiser’s latest supplied VUKAFRIK_2026_Programme_Detaille_9.pdf.
+The downloadable copy in public/documents is replaced with that exact file.
+
+- Boni MAYA confirms the first keynote on enterprise growth.
+- The second fireside chat addresses universal connectivity and opportunities for youth.
+- NextGen moves to Day 2, 12:20–12:40, replacing pawaPay; session ID 57 is retained.
+- CCC – Congo Innovation Group fills Day 2, 15:00–15:20.
+- Day 3, 11:30–11:50, is a break (operational entry 58).
+- Neotex’s workshop title now follows the final PDF; Coach Gabriel LOMENGO’s name is corrected.
+- Existing confirmed speaker profiles and venue clarifications are retained where the PDF is silent.
+- Operational entries remain hidden from participant-facing programme pages.
+
+These notes supersede conflicting details in the historical versions below.
+
+---
+
 # Programme version 9 — 18 September 2026
 
 Current source: `public/documents/VUKAFRIK_2026_Programme_Detaille_9.pdf`.

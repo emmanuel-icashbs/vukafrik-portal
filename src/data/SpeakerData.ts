@@ -377,9 +377,9 @@ const speaker_data: SpeakerDataType[] = [
     id: 44,
     type: "Individual",
     image: gabrielPortrait,
-    name: "Coah Gabriel LOMEMGO",
+    name: "Coach Gabriel LOMENGO",
     title: "Coach",
-    biography: "Coah Gabriel LOMEMGO anime la master class « L’entrepreneur avant l’entreprise : posture, discipline et accompagnement pour durer » lors de la troisième journée de VUK’AFRIK 2026.",
+    biography: "Coach Gabriel LOMENGO anime la master class « L’entrepreneur avant l’entreprise : posture, discipline et accompagnement pour durer » lors de la troisième journée de VUK’AFRIK 2026.",
   },
   {
     id: 45,
@@ -387,7 +387,15 @@ const speaker_data: SpeakerDataType[] = [
     image: juniorPortrait,
     name: "Monsieur Junior KALONJI NSENGA",
     title: "General Manager — NextGen Africa Consulting RDC",
-    biography: "Junior Kalonji Nsenga est General Manager de NextGen Africa Consulting RDC. Il présente des solutions CRM pour les entrepreneurs et les PME lors de la troisième journée de VUK’AFRIK 2026.",
+    biography: "Junior Kalonji Nsenga est General Manager de NextGen Africa Consulting RDC. Il présente des solutions de gestion pour les entrepreneurs, PME et entreprises lors de la deuxième journée de VUK’AFRIK 2026.",
+  },
+  {
+    id: 46,
+    type: "Individual",
+    image: team_1,
+    name: "Boni MAYA",
+    title: "Intervenant — Keynote",
+    biography: "Boni MAYA présente la keynote « Les conditions de la croissance des entreprises congolaises » lors de la première journée de VUK’AFRIK 2026.",
   },
 ];
 
