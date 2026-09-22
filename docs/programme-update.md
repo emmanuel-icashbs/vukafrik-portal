@@ -1,3 +1,13 @@
+# Programme and speaker updates — 22 September 2026
+
+- “La parole aux acteurs de l’écosystème” (event 55) moves to Day 2, 14:20–15:00, replacing the FOGEC workshop. Its former Day 3 slot, 13:25–14:25, is unassigned; later sessions retain their times.
+- FOGEC, ARSP and Boni Maya are removed from speaker profiles and assignments. The first keynote remains, with its speaker to be confirmed.
+
+- Panel 1: Noemie Mutombo (ARPTC), Olivier Bampendi Mufuta (PNUD), Mirela Pekmezi, Joël Kabuya and Alain Betu. BCC is removed from this panel.
+- Panel 2: Dieumerci Pande, gestionnaire financier chez ASCADO et entrepreneur, joins the existing participants.
+- Noemie, Dieumerci and Olivier use the supplied portraits.
+- These website updates supersede the panel assignments below. The downloadable programme PDF has not been revised.
+
 # Final programme — 20 September 2026
 
 Source: the organiser’s latest supplied VUKAFRIK_2026_Programme_Detaille_9.pdf.
@@ -70,7 +80,7 @@ Historical speaker profiles remain reachable, but the speaker lists show current
 programme participants only. Pascal TCHELO MAZOMBO (Directeur général — APROCM)
 replaces the former APROCEM placeholder in Panel 2 and joins the Hackathon launch.
 APROCM follows the organiser's corrected spelling; APROCEC remains a separate entry.
-Panel 1 uses the generic ARPTC representative; Christian KATENDE remains assigned
+Panel 1 features Noemie MUTOMBO (ARPTC); Christian KATENDE remains assigned
 to the fireside chat only.
 
 Internal spacing is scoped through `InternalPage.module.css`. Do not apply this

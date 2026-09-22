@@ -19,8 +19,8 @@ const schedule = data("./src/data/ScheduleData.ts", "schedule_data");
 const publicSchedule = data("./src/data/ScheduleData.ts");
 const speakers = data("./src/data/SpeakerData.ts");
 const byId = id => schedule.find(session => session.id === id);
-assert.equal(schedule.length, 50, "Detailed timetable includes the restored ministry workshop");
-assert.equal(publicSchedule.length, 39);
+assert.equal(schedule.length, 49, "Detailed timetable includes the restored ministry workshop");
+assert.equal(publicSchedule.length, 38);
 assert.ok(publicSchedule.every(s => ![1, 44, 45, 48, 49, 51, 15, 24, 38, 34, 58].includes(s.id)), "Operational entries are excluded from public pages");
 assert.equal(new Set(schedule.map(s => s.id)).size, schedule.length);
 assert.equal(new Set(speakers.map(s => s.id)).size, speakers.length);
@@ -30,7 +30,7 @@ for (const day of ["01", "02", "03"]) {
     assert.match(session.start_time, /^\d{2}:\d{2}$/);
     assert.match(session.end_time, /^\d{2}:\d{2}$/);
     assert.ok(session.start_time < session.end_time, session.topic);
-    if (i && session.id !== 20 && sessions[i - 1].id !== 53) {
+    if (i && session.id !== 20 && sessions[i - 1].id !== 53 && !(day === "03" && session.id === 39)) {
       assert.equal(sessions[i - 1].end_time, session.start_time, `No unexpected gaps or overlaps: ${session.topic}`);
     }
     assert.equal(session.venue, day === "01" ? "Salon Congo" : "Chapiteau");
@@ -39,12 +39,12 @@ for (const day of ["01", "02", "03"]) {
 }
 assert.deepEqual(byId(4).speakers, [34], "Minister's address does not replace generic government sessions");
 assert.deepEqual(byId(13).speakers, [10]);
-assert.deepEqual(byId(5).speakers, [46]);
+assert.deepEqual(byId(5).speakers, []);
 assert.equal(byId(5).topic, "Les conditions de la croissance des entreprises congolaises");
-assert.equal(speakers.find(s => s.id === 46).name, "Boni MAYA");
+for (const id of [12, 16, 24, 46]) assert.equal(speakers.find(s => s.id === id), undefined);
 assert.deepEqual(byId(8).speakers, [7]);
-assert.deepEqual(byId(6).speakers, [6, 35, 38, 40, 41]);
-assert.deepEqual(byId(9).speakers, [12, 16, 13, 14, 39]);
+assert.deepEqual(byId(6).speakers, [6, 48, 38, 40, 41]);
+assert.deepEqual(byId(9).speakers, [13, 14, 39, 47]);
 assert.deepEqual(byId(11).speakers, [14]);
 assert.equal(speakers.find(s => s.id === 14).name, "Monsieur Pascal TCHELO MAZOMBO");
 assert.equal(speakers.find(s => s.id === 14).title, "Directeur général — APROCM");
@@ -69,7 +69,7 @@ assert.deepEqual(byId(32).speakers, [43]);
 const day3 = schedule.filter(s => s.date.startsWith("Jour 03"));
 assert.deepEqual(day3.map(s => `${s.start_time}–${s.end_time}`), [
   "09:30–10:00", "10:00–10:35", "10:35–10:55", "10:55–11:30", "11:30–11:50",
-  "11:50–12:35", "12:35–13:25", "13:25–14:25", "14:25–15:00", "15:00–15:35",
+  "11:50–12:35", "12:35–13:25", "14:25–15:00", "15:00–15:35",
   "15:35–16:25", "16:25–17:10", "17:10–17:30",
 ]);
 assert.match(speakers.find(s => s.id === 1).name, /LOMAMI KASONGO/);
@@ -83,6 +83,11 @@ assert.match(byId(53).topic, /en parallèle/);
 assert.ok(publicSchedule.some(s => s.id === 53));
 assert.equal(byId(20).start_time, "11:20");
 assert.deepEqual(byId(55).speakers, []);
+assert.match(byId(55).date, /^Jour 02/);
+assert.equal(byId(55).start_time, "14:20");
+assert.equal(byId(55).end_time, "15:00");
+assert.equal(byId(25), undefined);
+assert.equal(byId(39).start_time, "14:25", "The vacated Day 3 slot does not shift later sessions");
 assert.match(byId(55).category, /confirmer/);
 assert.deepEqual(byId(56).speakers, [44]);
 for (const id of [23, 33, 36, 40, 41, 43]) assert.equal(byId(id), undefined, `Removed session ${id}`);

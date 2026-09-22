@@ -11,8 +11,10 @@ import jeannettePortrait from "@/assets/img/vukafrik/speakers/jeannette-cilomba.
 import alinePortrait from "@/assets/img/vukafrik/speakers/aline-kimputu.jpg";
 import joelPortrait from "@/assets/img/vukafrik/speakers/joel-kabuya.jpg";
 import malouPortrait from "@/assets/img/vukafrik/speakers/malou-nzuzi.jpeg";
+import noemiePortrait from "@/assets/img/vukafrik/speakers/noemie-mutombo.jpg";
+import dieumerciPortrait from "@/assets/img/vukafrik/speakers/dieumerci-pande.jpeg";
+import olivierPortrait from "@/assets/img/vukafrik/speakers/olivier-bampendi-mufuta.jpg";
 import team_1 from "@/assets/img/team/team-5/thumb.png";
-import team_2 from "@/assets/img/team/team-5/thumb-2.png";
 import team_5 from "@/assets/img/team/team-5/thumb-5.png";
 import { InBetweenPathDataType, SpeakerDataType } from "@/utils/types";
 import { paths_holder } from "./MenuData";
@@ -123,11 +125,11 @@ const speaker_data: SpeakerDataType[] = [
   {
     id: 6,
     type: "Individual",
-    image: team_2,
-    name: "Représentant - ARPTC",
-    title: "ARPTC",
+    image: noemiePortrait,
+    name: "Madame Noemie MUTOMBO",
+    title: "Assistante exécutive du Président — ARPTC",
     biography:
-      "Un représentant de l’ARPTC participe au premier panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière lors de la première journée.",
+      "Noemie Mutombo est une professionnelle des télécommunications et des technologies de l’information et de la communication, spécialisée dans les politiques sectorielles et la conformité réglementaire. Assistante exécutive du Président de l’ARPTC, elle contribue à la coordination de la direction ainsi qu’à la stratégie et à la gestion institutionnelles.\n\nElle participe également, en qualité de représentante de son pays, aux travaux des associations régionales de régulation et de télécommunications CRASA et EACO, notamment à l’élaboration et à l’analyse de rapports sur les performances régionales. Son parcours en gestion du marketing et en analyse des données appliquée aux affaires nourrit une approche fondée sur les données. Elle parle français, lingala, anglais et swahili.\n\nÀ VUK’AFRIK 2026, elle participe au premier panel consacré à la régulation, à l’innovation, à la compétitivité et à l’inclusion financière.",
   },
   {
     id: 7,
@@ -172,15 +174,6 @@ const speaker_data: SpeakerDataType[] = [
     biography: "Sibia NGAYIHEMBAKO est Directrice générale adjointe de Finca. Ses interventions individuelles à VUK’AFRIK restent à confirmer.",
   },
   {
-    id: 12,
-    type: "Individual",
-    image: team_5,
-    name: "Représentant - FOGEC",
-    title: "FOGEC",
-    biography:
-      "Le représentant du FOGEC participe au panel consacré à l’entrepreneuriat, au financement et à l’industrialisation. Les échanges interrogent les difficultés rencontrées par les initiatives congolaises pour se développer et devenir des acteurs économiques de dimension régionale.",
-  },
-  {
     id: 13,
     type: "Individual",
     image: team_5,
@@ -197,15 +190,6 @@ const speaker_data: SpeakerDataType[] = [
     title: "PME",
     biography:
       "Le représentant d’une PME participe aux échanges sur l’entrepreneuriat, le financement et l’industrialisation à VUK’AFRIK 2026. Le panel aborde les difficultés de croissance des initiatives congolaises et les conditions de leur développement à l’échelle régionale.",
-  },
-  {
-    id: 16,
-    type: "Individual",
-    image: team_5,
-    name: "Représentant - ARSP",
-    title: "ARSP",
-    biography:
-      "Le représentant de l’ARSP participe au panel sur l’entrepreneuriat, le financement et l’industrialisation. Son intervention s’inscrit dans les échanges consacrés aux difficultés rencontrées par les initiatives congolaises pour se développer et prendre une place à l’échelle régionale.",
   },
   {
     id: 18,
@@ -248,15 +232,6 @@ const speaker_data: SpeakerDataType[] = [
     name: "Équipe du ministère de l’Économie nationale",
     title: "Ministère de l’Économie nationale",
     biography: "Le ministère de l’Économie nationale est représenté lors de l’allocution institutionnelle de la première journée. Son équipe anime au deuxième jour l’atelier « De l’informel au formel : la formalisation des entreprises, socle de la transformation économique congolaise ».",
-  },
-  {
-    id: 24,
-    type: "Team",
-    image: team_5,
-    name: "Équipe FOGEC",
-    title: "FOGEC",
-    biography:
-        "L’équipe FOGEC anime un atelier consacré à la garantie du financement et à l’accès au crédit pour les entreprises congolaises. L’intervention porte sur la manière dont le FOGEC facilite cet accès, dans le cadre de la deuxième journée de VUK’AFRIK 2026.",
   },
   {
     id: 25,
@@ -390,12 +365,20 @@ const speaker_data: SpeakerDataType[] = [
     biography: "Junior Kalonji Nsenga est General Manager de NextGen Africa Consulting RDC. Il présente des solutions de gestion pour les entrepreneurs, PME et entreprises lors de la deuxième journée de VUK’AFRIK 2026.",
   },
   {
-    id: 46,
+    id: 47,
     type: "Individual",
-    image: team_1,
-    name: "Boni MAYA",
-    title: "Intervenant — Keynote",
-    biography: "Boni MAYA présente la keynote « Les conditions de la croissance des entreprises congolaises » lors de la première journée de VUK’AFRIK 2026.",
+    image: dieumerciPortrait,
+    name: "Monsieur Dieumerci PANDE",
+    title: "Gestionnaire financier — ASCADO · Entrepreneur",
+    biography: "Dieumerci Pande est gestionnaire financier chez ASCADO et entrepreneur. À VUK’AFRIK 2026, il participe au deuxième panel consacré à l’entrepreneuriat, au financement et à l’industrialisation, qui aborde les difficultés rencontrées par les initiatives congolaises pour devenir des leaders régionaux.",
+  },
+  {
+    id: 48,
+    type: "Individual",
+    image: olivierPortrait,
+    name: "Monsieur Olivier BAMPENDI MUFUTA",
+    title: "Gouvernance numérique et innovation — PNUD (UNDP)",
+    biography: "Olivier Bampendi Mufuta travaille à la croisée de l’innovation, de la transformation numérique et de la réforme du secteur public. Au sein du Programme des Nations Unies pour le développement (PNUD) en République démocratique du Congo, il pilote des initiatives consacrées aux infrastructures publiques numériques, à l’intelligence artificielle au service du développement, aux écosystèmes d’innovation et à la gouvernance.\n\nSes contributions couvrent le déploiement de solutions numériques dans le secteur de la justice, la cartographie et le passage à l’échelle d’innovations locales au sein de l’écosystème FIKIRI, la mobilisation de réseaux de volontaires et le développement de jeux de données en langues locales, notamment en lingala, pour des services numériques inclusifs. Il s’attache à faire converger les solutions locales, les systèmes numériques et les réformes institutionnelles pour une transformation durable.\n\nÀ VUK’AFRIK 2026, il participe au premier panel sur la régulation, l’innovation, la compétitivité et l’inclusion financière.",
   },
 ];
 

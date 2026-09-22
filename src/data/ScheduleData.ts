@@ -123,10 +123,10 @@ const schedule_data: EventDataType[] = [
     topic: "Les conditions de la croissance des entreprises congolaises",
     category: "Première Keynote",
     image: event_thumb1,
-    speakers: [46],
+    speakers: [],
     venue: "Salon Congo",
     date: schedule_days[0], // day 01
-    descriptive_paragraphs: ["Boni MAYA présente la keynote « Les conditions de la croissance des entreprises congolaises »."],
+    descriptive_paragraphs: ["Keynote « Les conditions de la croissance des entreprises congolaises ». Intervenant à confirmer."],
   },
   {
     id: 6,
@@ -135,7 +135,7 @@ const schedule_data: EventDataType[] = [
     topic: "Régulation, innovation, compétitivité et inclusion financière: construire un écosystème favorable à la croissance des startups et PME en RDC",
     category: "Premier Panel",
     image: event_thumb2,
-    speakers: [6, 35, 38, 40, 41],
+    speakers: [6, 48, 38, 40, 41],
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
@@ -221,7 +221,7 @@ const schedule_data: EventDataType[] = [
     topic: "Entrepreneuriat, financement et industrialisation : pourquoi les initiatives congolaises peinent encore à devenir des leaders régionaux",
     category: "Deuxième Panel",
     image: event_thumb1,
-    speakers: [12, 16, 13, 14, 39],
+    speakers: [13, 14, 39, 47],
     venue: "Salon Congo",
     date: schedule_days[0],
     descriptive_paragraphs: [
@@ -433,18 +433,16 @@ const schedule_data: EventDataType[] = [
     descriptive_paragraphs: ["Une prestation artistique accompagne la pause déjeuner de 60 minutes."],
   },
   {
-    id: 25,
+    id: 55,
     start_time: "14:20",
     end_time: "15:00",
-    topic: "Garantir son financement : comment le FOGEC facilite l’accès au crédit pour les entreprises congolaises",
-    category: "Atelier 4 — FOGEC",
-    image: event_thumb2,
-    speakers: [24],
+    topic: "La parole aux acteurs de l’écosystème",
+    category: "Panel — Composition à confirmer",
+    speakers: [],
     venue: "Chapiteau",
+    descriptive_paragraphs: ["Panel consacré à la parole des acteurs de l’écosystème. La composition du panel reste à confirmer."],
+    image: event_thumb2,
     date: schedule_days[1],
-    descriptive_paragraphs: [
-      "Le FOGEC présente son rôle dans la garantie du financement et l’accès au crédit des entreprises congolaises.",
-    ],
   },
   {
     id: 26,
@@ -577,18 +575,6 @@ const schedule_data: EventDataType[] = [
     descriptive_paragraphs: [
       "Une prestation artistique accompagne la pause déjeuner.",
     ],
-  },
-  {
-    id: 55,
-    start_time: "13:25",
-    end_time: "14:25",
-    topic: "La parole aux acteurs de l’écosystème",
-    category: "Panel — Composition à confirmer",
-    speakers: [],
-    venue: "Chapiteau",
-    descriptive_paragraphs: ["Panel consacré à la parole des acteurs de l’écosystème. La composition du panel reste à confirmer."],
-    image: event_thumb2,
-    date: schedule_days[2],
   },
   {
     id: 39,
