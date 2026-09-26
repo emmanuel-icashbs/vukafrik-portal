@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import React, { useEffect, useState } from "react";
 import { useTimer } from "react-timer-hook";
 
@@ -40,4 +41,5 @@ const DealCounter: React.FC<DealCounterProps> = ({ expiryTimestamp }) => {
    );
 };
 
-export default DealCounter;
+const AvailableCountdown = (props: React.ComponentProps<typeof DealCounter>) => registrationClosed ? null : <DealCounter {...props} />;
+export default AvailableCountdown;

@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenus from "./MobileMenu";
@@ -29,7 +30,7 @@ const Sidebar = ({ sidebar, setSidebar }: MobileSidebarProps) => {
             <MobileMenus />
           </div>
           <div className="mt-30 ml-25 mr-25">
-            <Link className="td-btn td-left-right w-100 text-center" href="/register">
+            {!registrationClosed && <Link className="td-btn td-left-right w-100 text-center" href="/register">
               <span className="mr10 td-text d-inline-block mr-5">
                 {"S'inscrire"}
               </span>
@@ -52,7 +53,7 @@ const Sidebar = ({ sidebar, setSidebar }: MobileSidebarProps) => {
                   />
                 </svg>
               </span>
-            </Link>
+            </Link>}
           </div>
           <div className="social-links">
             <ul className="list-wrap">

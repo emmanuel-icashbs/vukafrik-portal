@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import MediaAccreditationForm from "@/components/forms/MediaAccreditationForm";
 import { media_accred_form_area } from "@/data/MediaAccreditationData";
 
@@ -8,10 +9,10 @@ const FormArea = () => {
         <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="tg-login-wrapper">
-              <div className="tg-login-top text-center mb-30">
+              {!registrationClosed && <div className="tg-login-top text-center mb-30">
                 <h2>{media_accred_form_area.title}</h2>
                 <p>{media_accred_form_area.sub_title}</p>
-              </div>
+              </div>}
               <div className="tg-login-form">
                 <div className="tg-tour-about-review-form">
                   <MediaAccreditationForm />

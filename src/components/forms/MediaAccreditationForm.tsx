@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import CountrySelect from "../ui/CountrySelect";
 import { DRC_COUNTRY } from "@/utils/contactFields";
 import PhoneInput from "../ui/PhoneInput";
@@ -43,7 +44,7 @@ const MediaAccreditationForm = () => {
   });
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} id={media_accred_form_area.id}>
+    <RegistrationGate><form onSubmit={(e) => handleSubmit(e)} id={media_accred_form_area.id}>
       <div className="row">
         <FormMessageZone
           isOpen={isToastOpen}
@@ -202,7 +203,7 @@ const MediaAccreditationForm = () => {
           title={media_accred_form_area.submit_button}
         />
       </div>
-    </form>
+    </form></RegistrationGate>
   );
 };
 

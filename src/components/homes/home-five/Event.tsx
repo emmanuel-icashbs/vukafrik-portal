@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -122,7 +123,7 @@ const Event = () => {
                                 </Link>
                               ))}
                             </p>
-                            {[11, 28, 35, 37].includes(item.id) && (
+                            {!registrationClosed && [11, 28, 35, 37].includes(item.id) && (
                               <Link href="/hackathon" className="my-link">Inscrire mon équipe →</Link>
                             )}
                           </div>

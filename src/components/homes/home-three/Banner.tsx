@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed, postEventTitle, postEventBody } from "@/data/RegistrationStatus";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Link from "next/link";
@@ -31,15 +32,16 @@ const Banner = () => {
                     <div className="col-lg-11">
                       <div className="td-hero-3-content p-relative mb-40">
                         <span className="td-hero-3-subtitle text mb-10 d-inline-block">
-                          {item.sub_title}
+                          {!registrationClosed && item.sub_title}
                         </span>
                         <h2
                           className="td-hero-3-title mb-35 text2"
-                          style={{ minHeight: "200px" }}
+                          style={{ minHeight: registrationClosed ? undefined : "200px" }}
                         >
-                          {getTextWithFixedLength(item.title)}
+                          {registrationClosed ? postEventTitle : getTextWithFixedLength(item.title)}
                         </h2>
-                        <Link
+                        {registrationClosed && <p className="text-white" style={{ maxWidth: 850, width: "calc(100% - 48px)", fontSize: "clamp(1rem, 2vw, 1.3rem)", lineHeight: 1.6 }}>{postEventBody}</p>}
+                        {!registrationClosed && <Link
                           className="td-btn td-btn-3-border td-left-right text3"
                           href={item.action.href}
                         >
@@ -65,7 +67,7 @@ const Banner = () => {
                               />
                             </svg>
                           </span>
-                        </Link>
+                        </Link>}
                       </div>
                     </div>
                   </div>

@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import DealCounter from "@/components/common/DealCounter"
 
 const Countdown = () => {
@@ -38,4 +39,5 @@ const Countdown = () => {
    )
 }
 
-export default Countdown
+const AvailableCountdown = () => registrationClosed ? null : <Countdown />;
+export default AvailableCountdown;

@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
@@ -46,7 +47,7 @@ const Testimonial = () => {
                     />
                   </svg>
                 </span>
-                <Link
+                {!registrationClosed && <Link
                   className="td-btn td-btn-3-border td-left-right text3 mb-20"
                   href={cta_data.reserve_stand.href}
                 >
@@ -72,7 +73,7 @@ const Testimonial = () => {
                       />
                     </svg>
                   </span>
-                </Link>
+                </Link>}
                 <h2 className="td-section-title text-white mb-35">{message}</h2>
                 <Swiper
                   {...setting}

@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import bg_img from "@/assets/img/cta/cta-bg.png";
 import { cta_data } from "@/data/CtaData";
 import { cta_sub_title, cta_title } from "@/data/SpeakerData";
@@ -26,7 +27,7 @@ const Cta = () => {
                 </div>
                 <div className="col-lg-7 text-center">
                   <div className="td-cta-2-form">
-                    <form
+                    <RegistrationGate><form
                       onSubmit={(e) => e.preventDefault()}
                       className="p-relative"
                     >
@@ -41,7 +42,7 @@ const Cta = () => {
                         {cta_data.become_speaker.title}
                         
                       </button>
-                    </form>
+                    </form></RegistrationGate>
                   </div>
                 </div>
               </div>

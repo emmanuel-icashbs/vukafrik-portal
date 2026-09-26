@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import Link from "next/link";
 import CheckOutForm from "./CheckOutForm";
 import { useSelector } from "react-redux";
@@ -40,7 +41,7 @@ const CheckoutArea = () => {
                 </a>
               </div>
               {showCoupon && (
-                <form
+                <RegistrationGate><form
                   onSubmit={(e) => e.preventDefault()}
                   className="coupon__code-form"
                   style={{ display: "block" }}
@@ -50,7 +51,7 @@ const CheckoutArea = () => {
                   <button type="submit" className="td-btn">
                     Apply coupon
                   </button>
-                </form>
+                </form></RegistrationGate>
               )}
             </div>
           </div>

@@ -1,7 +1,8 @@
+import RegistrationGate from "@/components/common/RegistrationGate";
 
 const BlogForm = () => {
    return (
-      <form onSubmit={(e) => e.preventDefault()}>
+      <RegistrationGate><form onSubmit={(e) => e.preventDefault()}>
          <div className="td-contact-form-box">
             <div className="row">
                <div className="col-md-6 mb-20">
@@ -27,7 +28,7 @@ const BlogForm = () => {
                </div>
             </div>
          </div>
-      </form>
+      </form></RegistrationGate>
    )
 }
 

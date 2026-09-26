@@ -1,4 +1,6 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import Link from "next/link";
 import { EventDataType } from "@/utils/types";
 import { vukafrik_event_data } from "@/data/VukAfrikData";
@@ -18,7 +20,7 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
 
   return (
     <div className="td-schedule-details-right ml-40 mb-40">
-      {[11, 28, 35, 37].includes(event.id) && (
+      {!registrationClosed && [11, 28, 35, 37].includes(event.id) && (
         <Link href="/hackathon" className="td-btn mb-25">Inscrire mon équipe</Link>
       )}
       <div className="td-schedule-details-right-list grey-bg mb-40">
@@ -78,7 +80,7 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
         </h3>
         <span className="td-schedule-team-border mb-15"></span>
         <div className="td-schedule-details-form">
-          <form onSubmit={(e) => e.preventDefault()}>
+          <RegistrationGate><form onSubmit={(e) => e.preventDefault()}>
             <div className="td-schedule-details-total-btn mb-35">
               <button
                 type="submit"
@@ -98,7 +100,7 @@ const EventSidebar = ({ event }: { event: EventDataType }) => {
                 {`${cta_data.register.title} pour tout le programme`}
               </button>
             </div>
-          </form>
+          </form></RegistrationGate>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import PhoneInput from "../ui/PhoneInput";
 
 import { speaker_form_area, session_preferences } from "@/data/SpeakerData";
@@ -37,7 +38,7 @@ const BecomeSpeakerForm = () => {
   });
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} id={speaker_form_area.id}>
+    <RegistrationGate><form onSubmit={(e) => handleSubmit(e)} id={speaker_form_area.id}>
       <div className="row">
         <FormMessageZone
           isOpen={isToastOpen}
@@ -200,7 +201,7 @@ const BecomeSpeakerForm = () => {
           title={speaker_form_area.submit_button}
         />
       </div>
-    </form>
+    </form></RegistrationGate>
   );
 };
 

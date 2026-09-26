@@ -1,3 +1,4 @@
+import RegistrationGate from "@/components/common/RegistrationGate";
 import Image from "next/image"
 import Link from "next/link"
 
@@ -78,14 +79,14 @@ const FooterThree = () => {
                            <h3 className="td-footer-title mb-20">Get Subscribed Today!</h3>
                            <p className="text mb-25">Stay informed with Eventee by subscribing <br />
                               to our newsletter.</p>
-                           <div className="td-footer-form td-footer-4-form p-relative">
+                           <RegistrationGate><div className="td-footer-form td-footer-4-form p-relative">
                               <input type="text" placeholder="E-mail Address" />
                               <button type="submit" className="td-footer-form-btn">
                                  <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.03931 8.9707H19.0393M19.0393 8.9707L12.0393 1.9707M19.0393 8.9707L12.0393 15.9707" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                  </svg>
                               </button>
-                           </div>
+                           </div></RegistrationGate>
                         </div>
                      </div>
                   </div>

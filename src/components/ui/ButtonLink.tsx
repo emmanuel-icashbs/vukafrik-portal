@@ -1,6 +1,9 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
+import { cta_data } from "@/data/CtaData";
 import Link from "next/link";
 
 const ButtonLink = ({ link, title }: { link: string; title: string }) => {
+  if (registrationClosed && Object.values(cta_data).some(cta => cta.href === link)) return null;
   return (
     <Link
       className="td-btn td-btn-3-border td-left-right text3 mb-20 d-flex align-items-center justify-content-center"

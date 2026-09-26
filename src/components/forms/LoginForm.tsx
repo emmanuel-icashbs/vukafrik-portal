@@ -1,10 +1,11 @@
-"use client"
+"use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import Link from "next/link"
 
 const LoginForm = () => {
 
    return (
-      <form onSubmit={(e) => e.preventDefault()}>
+      <RegistrationGate><form onSubmit={(e) => e.preventDefault()}>
          <div className="row">
             <div className="col-lg-12 mb-25">
                <input className="input" type="text" placeholder="E-mail" />
@@ -25,7 +26,7 @@ const LoginForm = () => {
                <button type="submit" className="td-btn w-100">Sign In</button>
             </div>
          </div>
-      </form>
+      </form></RegistrationGate>
    )
 }
 

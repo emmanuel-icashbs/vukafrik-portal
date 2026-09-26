@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import Link from "next/link"
 import NiceSelect from "@/ui/NiceSelect";
 import { useState } from "react";
@@ -58,7 +59,7 @@ const EventSidebar = () => {
             <h3 className="td-schedule-team-title mb-15">Registration</h3>
             <span className="td-schedule-team-border mb-15"></span>
             <div className="td-schedule-details-form">
-               <form onSubmit={(e) => e.preventDefault()}>
+               <RegistrationGate><form onSubmit={(e) => e.preventDefault()}>
                   <div className="item-select">
                      <NiceSelect
                         className="select item-first"
@@ -116,7 +117,7 @@ const EventSidebar = () => {
                   <div className="td-schedule-details-total-btn mb-35">
                      <button type="submit" className="td-btn w-100">Purcshae Now</button>
                   </div>
-               </form>
+               </form></RegistrationGate>
             </div>
          </div>
       </div>

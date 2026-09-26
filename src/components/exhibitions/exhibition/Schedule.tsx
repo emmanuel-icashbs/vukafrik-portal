@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Image from "next/image";
 import Link from "next/link";
 import village_data, {
@@ -66,7 +67,7 @@ const ExhibitionSchedule = () => {
                             <span className="d-block">{item.description}</span>
                             <span>{item.exhibitorFit}</span>
                           </div>
-                          <Link
+                          {!registrationClosed && <Link
                             className="td-btn td-btn-3-squre td-left-right text3 mr-25"
                             href={cta_data.become_exhibitor.href}
                           >
@@ -92,7 +93,7 @@ const ExhibitionSchedule = () => {
                                 />
                               </svg>
                             </span>
-                          </Link>
+                          </Link>}
                         </div>
                       </div>
                     </div>

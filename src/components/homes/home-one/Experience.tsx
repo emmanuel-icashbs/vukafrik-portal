@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Link from "next/link";
 import { useJarallax } from "@/hooks/useJarallax";
 import experience_data from "@/data/ExperienceData";
@@ -37,7 +38,7 @@ const Experience = () => {
               >
                 {experience_data.description}
               </p>
-              <Link
+              {!registrationClosed && <Link
                 className="td-btn td-left-right  wow fadeInLeft"
                 data-wow-duration=".9s"
                 data-wow-delay=".8s"
@@ -65,7 +66,7 @@ const Experience = () => {
                     />
                   </svg>
                 </span>
-              </Link>
+              </Link>}
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import RegistrationGate from "@/components/common/RegistrationGate";
 import { useState } from "react";
 
 interface MobileSidebarProps {
@@ -38,7 +39,7 @@ const Searchbar = ({ isSearch, setIsSearch }: MobileSidebarProps) => {
                            </button>
                         </div>
                         <div className="search__form">
-                           <form onSubmit={handleSubmit}>
+                           <RegistrationGate><form onSubmit={handleSubmit}>
                               <div className="search__input">
                                  <input
                                     type="text"
@@ -56,7 +57,7 @@ const Searchbar = ({ isSearch, setIsSearch }: MobileSidebarProps) => {
                                     </svg>
                                  </button>
                               </div>
-                           </form>
+                           </form></RegistrationGate>
                         </div>
                      </div>
                   </div>

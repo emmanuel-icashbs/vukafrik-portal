@@ -1,5 +1,6 @@
 "use client";
-import { registrationClosed, registrationClosedMessage } from "@/data/RegistrationStatus";
+import { RegistrationClosedNotice } from "@/components/common/RegistrationGate";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import PhoneInput from "../ui/PhoneInput";
 import { HackathonTeamFormType } from "@/utils/types";
 import FormMessageZone from "../ui/FormMessageZone";
@@ -111,7 +112,7 @@ const OpenHackatonTeamForm = () => {
 };
 
 const HackatonTeamForm = () => registrationClosed
-  ? <p role="status" className="text-center py-4">{registrationClosedMessage}</p>
+  ? <RegistrationClosedNotice />
   : <OpenHackatonTeamForm />;
 
 export default HackatonTeamForm;

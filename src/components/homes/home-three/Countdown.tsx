@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Link from "next/link";
 import DealCounter from "@/components/common/DealCounter";
 import countdown_data from "@/data/CountDownData";
@@ -101,4 +102,5 @@ const Countdown = () => {
   );
 };
 
-export default Countdown;
+const AvailableCountdown = () => registrationClosed ? null : <Countdown />;
+export default AvailableCountdown;

@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 
 import UseCartInfo from "@/hooks/UseCartInfo";
 import { addToCart, CartProduct, clear_cart, decrease_quantity, remove_cart_product } from "@/redux/features/cartSlice";
@@ -103,13 +104,13 @@ const CartArea = () => {
                            ))}
                            <tr>
                               <td colSpan={6} className="cart__actions">
-                                 <form
+                                 <RegistrationGate><form
                                     onSubmit={(e) => e.preventDefault()}
                                     className="cart__actions-form"
                                  >
                                     <input type="text" placeholder="Coupon code" />
                                     <button type="submit" className="td-btn">Apply coupon</button>
-                                 </form>
+                                 </form></RegistrationGate>
                                  <div className="update__cart-btn text-end f-right">
                                     <button
                                        onClick={() => dispatch(clear_cart())}

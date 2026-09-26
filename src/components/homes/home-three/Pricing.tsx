@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import { cta_data } from "@/data/CtaData";
 import { exhibitionGroups, exhibitionPricingNote, exhibitionDimensions, formatExhibitionPrice } from "@/data/ExhibitionOffers";
 import Link from "next/link";
@@ -32,18 +33,18 @@ const Pricing = ({ compact = false }: { compact?: boolean }) => {
                     <summary>Voir tous les avantages</summary>
                     <ul>{offer.benefits.slice(2).map((benefit) => <li key={benefit}>{benefit}</li>)}</ul>
                   </details>
-                  <Link className={styles.button} href={{ pathname: formPath, query: { offer: offer.id }, hash: formAnchor }} aria-label={`Demander : ${offer.title}`}>Demander cet espace <span aria-hidden="true">↗</span></Link>
+                  {!registrationClosed && <Link className={styles.button} href={{ pathname: formPath, query: { offer: offer.id }, hash: formAnchor }} aria-label={`Demander : ${offer.title}`}>Demander cet espace <span aria-hidden="true">↗</span></Link>}
                 </article>
               ))}
             </div>
           </section>
         ))}
-        <aside className={styles.conditions} aria-label="Conditions de réservation">
+        {!registrationClosed && <aside className={styles.conditions} aria-label="Conditions de réservation">
           <h3>Préparez votre demande d’exposition</h3>
           <p>Les espaces sont attribués selon l’ordre d’arrivée des inscriptions confirmées. L’envoi du formulaire constitue une demande et ne confirme pas l’attribution d’un espace.</p>
           <p>Chaque stand figure sur le plan officiel de la foire et dans le répertoire des exposants. Des arrangements personnalisés sont possibles selon vos besoins.</p>
-          <Link href={cta_data.become_exhibitor.href}>Faire une demande personnalisée →</Link>
-        </aside>
+          {!registrationClosed && <Link href={cta_data.become_exhibitor.href}>Faire une demande personnalisée →</Link>}
+        </aside>}
       </div>
     </div>
   );

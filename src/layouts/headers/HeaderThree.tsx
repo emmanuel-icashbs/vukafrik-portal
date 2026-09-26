@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./menu/NavMenu";
@@ -63,7 +64,7 @@ const HeaderThree = () => {
               <div className="col-xxl-2 col-xl-2 col-6 ">
                 <div className="td-menu-right-action td-menu-right-action-3 d-flex align-items-center justify-content-end">
                   <div className="td-header-menu-bar lh-1 p-relative ml-20">
-                    <Link
+                    {!registrationClosed && <Link
                       className="td-btn td-left-right d-none d-xl-block"
                       href={cta_data.register.href}
                     >
@@ -89,7 +90,7 @@ const HeaderThree = () => {
                           />
                         </svg>
                       </span>
-                    </Link>
+                    </Link>}
                     <button
                       onClick={() => setSidebar(true)}
                       className="tdmenu-offcanvas-open-btn mobile-nav-toggler d-block d-xl-none"

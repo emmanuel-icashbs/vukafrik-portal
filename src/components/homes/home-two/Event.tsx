@@ -1,4 +1,5 @@
 "use client";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -93,13 +94,13 @@ const EventHomeTwo = () => {
                           {item.exhibitorFit}
                         </span>
                       </div>
-                      <Link
+                      {!registrationClosed && <Link
                         className="td-btn-square"
                         href={`${paths_holder.exhibitions.list.link}?village_id=${item.id}#${exhibitor_form_area.id}`}
                         style={{ cursor: "default" }}
                       >
                         {cta_data.register.title}
-                      </Link>
+                      </Link>}
                     </div>
                   </div>
                 </div>

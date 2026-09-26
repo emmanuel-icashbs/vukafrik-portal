@@ -1,5 +1,6 @@
 "use client";
-import { registrationClosed, registrationClosedMessage } from "@/data/RegistrationStatus";
+import { RegistrationClosedNotice } from "@/components/common/RegistrationGate";
+import { registrationClosed } from "@/data/RegistrationStatus";
 import CountrySelect from "../ui/CountrySelect";
 import { DRC_COUNTRY } from "@/utils/contactFields";
 import PhoneInput from "../ui/PhoneInput";
@@ -215,7 +216,7 @@ const OpenRegisterForm = () => {
 };
 
 const RegisterForm = () => registrationClosed
-  ? <p role="status" className="text-center py-4">{registrationClosedMessage}</p>
+  ? <RegistrationClosedNotice />
   : <OpenRegisterForm />;
 
 export default RegisterForm;

@@ -1,3 +1,4 @@
+import { registrationClosed, eventsArchiveMessage } from "@/data/RegistrationStatus";
 import internalStyles from "@/components/common/InternalPage.module.css";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import FooterOne from "@/layouts/footers/FooterOne";
@@ -17,6 +18,7 @@ const EventPage = () => {
           title={breadcrumb_data.title}
           sub_title={breadcrumb_data.sub_title}
         />
+        {registrationClosed && <div className="container py-4"><p role="status" className="alert alert-light border mb-0">{eventsArchiveMessage}</p></div>}
         <Event />
         <Feature />
         <Blog />

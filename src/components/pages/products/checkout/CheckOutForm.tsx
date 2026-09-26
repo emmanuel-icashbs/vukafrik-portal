@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import { useState } from "react";
 import PhoneInput from "@/components/ui/PhoneInput";
 import CountrySelect from "@/components/ui/CountrySelect";
@@ -7,7 +8,7 @@ const CheckOutForm = () => {
    const [phone, setPhone] = useState("");
    return (
       <div className="col-lg-7">
-         <form onSubmit={(e) => e.preventDefault()} className="customer__form-wrap">
+         <RegistrationGate><form onSubmit={(e) => e.preventDefault()} className="customer__form-wrap">
             <span className="title">Billing Details</span>
             <div className="row">
                <div className="col-md-6">
@@ -75,7 +76,7 @@ const CheckOutForm = () => {
                <label htmlFor="note">Order notes (optional)</label>
                <textarea id="note" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
             </div>
-         </form>
+         </form></RegistrationGate>
       </div>
    )
 }

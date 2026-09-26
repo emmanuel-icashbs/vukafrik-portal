@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import HeaderThree from "@/layouts/headers/HeaderThree";
 import Banner from "./Banner";
 import Countdown from "./Countdown";
@@ -26,7 +27,7 @@ const HomeThree = () => {
       <HeaderThree />
       <main>
         <Banner />
-        <Countdown />
+        {!registrationClosed && <Countdown />}
         <Feature />
         <About />
         <Event />

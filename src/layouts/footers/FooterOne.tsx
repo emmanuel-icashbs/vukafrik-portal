@@ -1,3 +1,4 @@
+import { registrationClosed } from "@/data/RegistrationStatus";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -40,7 +41,7 @@ const FooterOne = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
+            {!registrationClosed && <div className="col-lg-3 col-md-6">
               <div className="td-footer-widget space ml-90 mb-40">
                 <h3 className="td-footer-title mb-20">
                   {footer_data.titles[1]}
@@ -55,7 +56,7 @@ const FooterOne = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div>}
             <div className="col-lg-3 col-md-6">
               <div className="td-footer-widget td-footer-subscribe mb-40">
                 <h3 className="td-footer-title mb-20">

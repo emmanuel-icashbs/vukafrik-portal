@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import PhoneInput from "../ui/PhoneInput";
 
 import {
@@ -62,7 +63,7 @@ const BecomeExhibitorForm = () => {
   const selectedOffer = exhibitionOffers.find((offer) => offer.title === exhibitorForm.preferred_format);
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)} id={exhibitor_form_area.id}>
+    <RegistrationGate><form onSubmit={(e) => handleSubmit(e)} id={exhibitor_form_area.id}>
       <div className="row">
         <FormMessageZone
           isOpen={isToastOpen}
@@ -242,7 +243,7 @@ const BecomeExhibitorForm = () => {
           title={exhibitor_form_area.submit_button}
         />
       </div>
-    </form>
+    </form></RegistrationGate>
   );
 };
 

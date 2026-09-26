@@ -1,4 +1,5 @@
 "use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import bg_img from "@/assets/img/cta/cta-bg.png";
 import { exhibitor_form_area } from "@/data/ExhibitionData";
 import { useRouter } from "next/navigation";
@@ -25,7 +26,7 @@ const Cta = () => {
                 </div>
                 <div className="col-lg-7 text-center">
                   <div className="td-cta-2-form">
-                    <form
+                    <RegistrationGate><form
                       onSubmit={(e) => e.preventDefault()}
                       className="p-relative"
                     >
@@ -39,7 +40,7 @@ const Cta = () => {
                       >
                         Subscribe Below
                       </button>
-                    </form>
+                    </form></RegistrationGate>
                   </div>
                 </div>
               </div>

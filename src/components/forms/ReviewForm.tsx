@@ -1,8 +1,9 @@
-"use client"
+"use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 
 const ReviewForm = () => {
    return (
-      <form onSubmit={(e) => e.preventDefault()}>
+      <RegistrationGate><form onSubmit={(e) => e.preventDefault()}>
          <div className="td-product-details-review-form-rating d-flex align-items-center mb-20">
             <p>Your Rating :</p>
             <div className="td-product-details-review-form-rating-icon d-flex align-items-center">
@@ -29,7 +30,7 @@ const ReviewForm = () => {
                </div>
             </div>
          </div>
-      </form>
+      </form></RegistrationGate>
    )
 }
 

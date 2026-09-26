@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 
 const Cta = () => {
    return (
@@ -16,10 +17,10 @@ const Cta = () => {
                         </div>
                         <div className="col-lg-7">
                            <div className="td-cta-2-form mb-25">
-                              <form onSubmit={(e) => e.preventDefault()} className="p-relative">
+                              <RegistrationGate><form onSubmit={(e) => e.preventDefault()} className="p-relative">
                                  <input className="td-input" type="text" placeholder="Your E-mail Address" />
                                  <button className="cta-btn" type="submit">Subscribe</button>
-                              </form>
+                              </form></RegistrationGate>
                            </div>
                         </div>
                      </div>

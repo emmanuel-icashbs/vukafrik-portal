@@ -1,3 +1,4 @@
+import { registrationClosed, registrationClosedMessage } from "@/data/RegistrationStatus";
 import { validateContactFields } from "@/utils/contactFields";
 import { createOrUpdateBrevoContact } from "@/services/brevo.service";
 import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
@@ -5,6 +6,9 @@ import { SpeakerFormType } from "@/utils/types";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
+  if (registrationClosed) {
+    return NextResponse.json({ success: false, message: registrationClosedMessage }, { status: 403 });
+  }
   try {
     const data: SpeakerFormType = await request.json();
 

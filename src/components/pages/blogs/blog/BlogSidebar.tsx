@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import RegistrationGate from "@/components/common/RegistrationGate";
 import Link from "next/link"
 import Image, { StaticImageData } from "next/image"
 
@@ -49,10 +50,10 @@ const BlogSidebar = () => {
                <h3 className="td-product-left-title">Search</h3>
                <span className="td-product-left-border"></span>
             </div>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <RegistrationGate><form onSubmit={(e) => e.preventDefault()}>
                <input type="text" placeholder="Search here" />
                <button type="submit"><i className="flaticon-search"></i></button>
-            </form>
+            </form></RegistrationGate>
          </div>
          <div className="td-product-categories-list td-product-bottom-border mb-35 pb-20">
             <div className="td-product-left-title-wrap mb-10">

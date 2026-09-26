@@ -1,3 +1,4 @@
+import { registrationClosed, registrationClosedMessage } from "@/data/RegistrationStatus";
 import { validateContactFields } from "@/utils/contactFields";
 import { NextResponse } from "next/server";
 
@@ -6,6 +7,9 @@ import { BREVO_CONTACT_TYPES, BREVO_LISTS } from "@/services/config";
 import { JournalistFormType } from "@/utils/types";
 
 export async function POST(request: Request) {
+  if (registrationClosed) {
+    return NextResponse.json({ success: false, message: registrationClosedMessage }, { status: 403 });
+  }
   try {
     const data: JournalistFormType = await request.json();
 
