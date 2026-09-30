@@ -40,6 +40,10 @@ const paths_holder = {
       title: "Expositions",
     },
   },
+  gallery: {
+    link: "/gallery",
+    title: "Galerie",
+  },
   contact: {
     link: "/contact",
     title: "Contact",
@@ -102,6 +106,12 @@ const menu_data: MenuItem[] = [
     has_dropdown: false,
     title: "Partenaires",
     link: paths_holder.sponsors.link,
+  },
+  {
+    id: 8,
+    has_dropdown: false,
+    title: paths_holder.gallery.title,
+    link: paths_holder.gallery.link,
   },
   {
     id: 6,

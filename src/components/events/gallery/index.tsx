@@ -2,7 +2,7 @@ import Breadcrumb from "@/components/common/Breadcrumb"
 import HeaderThree from "@/layouts/headers/HeaderThree"
 import GalleryArea from "./GalleryArea"
 import Cta from "@/components/homes/home-two/Cta"
-import FooterTwo from "@/layouts/footers/FooterTwo"
+import FooterOne from "@/layouts/footers/FooterOne"
 
 const Gallery = () => {
    return (
@@ -11,9 +11,9 @@ const Gallery = () => {
          <main>
             <Breadcrumb title="Galerie photos" sub_title="Galerie photos" />
             <GalleryArea />
-            <Cta />
+            <Cta variant="premium" />
          </main>
-         <FooterTwo />
+         <FooterOne />
       </>
    )
 }

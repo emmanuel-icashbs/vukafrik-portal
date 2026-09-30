@@ -49,7 +49,7 @@ const HomeThree = () => {
           </CtaWrapper>
         </div>
 
-        <Brand slice_number={8} />
+        <Brand />
 
         <Blog />
       </main>

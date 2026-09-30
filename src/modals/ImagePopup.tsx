@@ -3,6 +3,9 @@ import Lightbox from "yet-another-react-lightbox";
 
 interface SlideType {
   src: string;
+  alt?: string;
+  width?: number;
+  height?: number;
 }
 
 interface ImagePopupProps {
